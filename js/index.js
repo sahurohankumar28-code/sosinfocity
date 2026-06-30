@@ -49,54 +49,6 @@
         observer.observe(statsRow);
     }
 
-    // ---------------------------------------------
-    // PRODUCT TAB
-    // ---------------------------------------------
-    // function switchProductTab(event, tabId) {
-    //     if (event) event.preventDefault();
-
-    //     const buttons = document.querySelectorAll('.tab-btn');
-    //     buttons.forEach(btn => btn.classList.remove('active'));
-        
-    //     if (event && event.currentTarget) {
-    //         event.currentTarget.classList.add('active');
-    //     }
-        
-    //     const textContents = document.querySelectorAll('.product-tab-content');
-    //     textContents.forEach(content => content.classList.remove('active'));
-        
-    //     const mediaPanels = document.querySelectorAll('.product-media-panel');
-    //     mediaPanels.forEach(panel => {
-    //         panel.classList.remove('active');
-    //         const internalVideo = panel.querySelector('video');
-    //         if (internalVideo) {
-    //             internalVideo.pause();
-    //         }
-    //     });
-        
-    //     const targetedText = document.getElementById(tabId);
-    //     if (targetedText) {
-    //         targetedText.classList.add('active');
-    //     }
-        
-    //     const targetedMedia = document.getElementById('media-' + tabId);
-    //     if (targetedMedia) {
-    //         targetedMedia.classList.add('active');
-            
-    //         const freshVideo = targetedMedia.querySelector('video');
-    //         if (freshVideo) {
-    //             freshVideo.currentTime = 0;
-    //             const playPromise = freshVideo.play();
-    //             if (playPromise !== undefined) {
-    //                 playPromise.catch(error => {
-    //                     console.warn("Autoplay block deferred element fallback sequence: ", error);
-    //                 });
-    //             }
-    //         }
-    //     }
-    // }
-
-    // window.switchProductTab = switchProductTab;
 
     // ---------------------------------------------
     // INFINITE 3D COVERFLOW MODULE (SMOOTH & FLUID)

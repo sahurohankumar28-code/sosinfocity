@@ -36,6 +36,7 @@
                     </li>
                     <li><a href="case-studies.html">Case Studies</a></li>
                     <li><a href="careers.html">Careers</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html" class="btn-primary" style="padding:8px 22px;">Contact</a></li>
                 </ul>
@@ -45,7 +46,6 @@
             </nav>
 
             <div class="gallery-intro-pane">
-                <span class="matrix-tag"><i class="fas fa-circle-dot"></i> Live Infrastructure Telemetry</span>
                 <h1>SOS Good Vibes <br><span class="highlight-neon">Dynamic Exhibition</span></h1>
                 <p>An immersive look inside our high-performance workspace operations, data labs, and regional smart city deployment hubs across India.</p>
             </div>
@@ -55,11 +55,12 @@
     <div class="mobile-nav-overlay" id="mobileNavOverlay">
         <div class="close-mobile" id="closeMobileBtn"><i class="fas fa-times"></i></div>
         <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="solutions.html">Solutions</a></li>
             <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="careers.html">Careers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -68,78 +69,41 @@
     <main class="gallery-matrix-section">
         <div class="container">
             
-            <div class="matrix-filter-bar">
-                <button class="filter-btn active" data-filter="all"><span class="btn-code">//</span> All Nodes</button>
-                <button class="filter-btn" data-filter="labs"><span class="btn-code">//</span> Data Labs</button>
-                <button class="filter-btn" data-filter="hq"><span class="btn-code">//</span> HQ Operations</button>
-                <button class="filter-btn" data-filter="field"><span class="btn-code">//</span> Field Systems</button>
-            </div>
-
             <div class="matrix-layout-grid" id="galleryGrid">
                 
                 <div class="matrix-card size-tall" data-category="labs">
                     <div class="matrix-card-inner">
                         <img src="./images/Logo.png" alt="Data Lab Node A" class="gallery-img">
-                        <div class="matrix-card-meta">
-                            <span class="meta-tag">Labs</span>
-                            <h3>Neural Network Matrix Hub</h3>
-                            <p>Primary configuration facility running distributed automated logic arrays.</p>
-                        </div>
                     </div>
                 </div>
 
-                <div class="matrix-card size-wide" data-category="hq">
+                <div class="matrix-card size-tall" data-category="labs">
                     <div class="matrix-card-inner">
-                        <img src="./images/Logo.png" alt="HQ Command Center" class="gallery-img">
-                        <div class="matrix-card-meta">
-                            <span class="meta-tag">HQ</span>
-                            <h3>Bhubaneswar Operations Base</h3>
-                            <p>Central engineering management space overseeing regional smart city grid deployments.</p>
-                        </div>
+                        <img src="./images/Logo.png" alt="Data Lab Node A" class="gallery-img">
                     </div>
                 </div>
 
-                <div class="matrix-card" data-category="field">
+                <div class="matrix-card size-tall" data-category="labs">
                     <div class="matrix-card-inner">
-                        <img src="./images/Logo.png" alt="Wireless Field Deployment" class="gallery-img">
-                        <div class="matrix-card-meta">
-                            <span class="meta-tag">Field</span>
-                            <h3>Surveillance Cluster Array</h3>
-                            <p>Hardware testing suite for AI-driven multi-node tracking sensors.</p>
-                        </div>
+                        <img src="./images/Logo.png" alt="Data Lab Node A" class="gallery-img">
                     </div>
                 </div>
 
-                <div class="matrix-card" data-category="labs">
+                <div class="matrix-card size-tall" data-category="labs">
                     <div class="matrix-card-inner">
-                        <img src="./images/Logo.png" alt="Hardware Node B" class="gallery-img">
-                        <div class="matrix-card-meta">
-                            <span class="meta-tag">Labs</span>
-                            <h3>Optical Uplink Test Lab</h3>
-                            <p>Continuous validation architectures handling fiber data integrations.</p>
-                        </div>
+                        <img src="./images/Logo.png" alt="Data Lab Node A" class="gallery-img">
                     </div>
                 </div>
 
-                <div class="matrix-card size-wide" data-category="field">
+                <div class="matrix-card size-tall" data-category="labs">
                     <div class="matrix-card-inner">
-                        <img src="./images/Logo.png" alt="Smart City Infrastructure" class="gallery-img">
-                        <div class="matrix-card-meta">
-                            <span class="meta-tag">Field</span>
-                            <h3>Distributed Wireless Deployment</h3>
-                            <p>High-capacity hardware nodes providing seamless connectivity paths.</p>
-                        </div>
+                        <img src="./images/Logo.png" alt="Data Lab Node A" class="gallery-img">
                     </div>
                 </div>
-
-                <div class="matrix-card" data-category="hq">
+                
+                <div class="matrix-card size-tall" data-category="labs">
                     <div class="matrix-card-inner">
-                        <img src="./images/Logo.png" alt="Dev Team Room" class="gallery-img">
-                        <div class="matrix-card-meta">
-                            <span class="meta-tag">HQ</span>
-                            <h3>Agile Development Space</h3>
-                            <p>Collaborative ecosystem tailored for cross-department milestone reviews.</p>
-                        </div>
+                        <img src="./images/Logo.png" alt="Data Lab Node A" class="gallery-img">
                     </div>
                 </div>
 
@@ -156,9 +120,12 @@
         </div>
     </div>
 
+   <!-- Footer -->
     <footer class="footer">
         <video class="footer-video" autoplay muted loop playsinline>
-            <source src="https://ak.picdn.net/shutterstock/videos/4000038435/preview/stock-footage-futuristic-digital-landscape-featuring-blue-neural-network-lines-abstract-background-represents.mp4" type="video/mp4">
+            <source
+                src="https://ak.picdn.net/shutterstock/videos/4000038435/preview/stock-footage-futuristic-digital-landscape-featuring-blue-neural-network-lines-abstract-background-represents.mp4"
+                type="video/mp4">
         </video>
         <div class="container">
             <div class="footer-top">
@@ -178,7 +145,10 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/919124299848" class="whatsapp-float" target="919124299848">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
 
     <script src="./js/gallery.js"></script>
 </body>

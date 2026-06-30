@@ -16,6 +16,7 @@
             --text-secondary: #4b5563;
             --border-light: #eef2f6;
             --bg-light: #fafcff;
+            --bg-white: #ffffff;
             --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05);
             --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.1);
             --shadow-glow: 0 18px 40px -12px rgba(247,89,16,0.25);
@@ -23,7 +24,7 @@
 
         body { 
             font-family: 'Inter', sans-serif; 
-            background: white; 
+            background:var(--bg-white); 
             color: var(--text-primary); 
             line-height: 1.5; 
             scroll-behavior: smooth; 

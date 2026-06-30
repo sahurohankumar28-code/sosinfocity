@@ -1,9 +1,37 @@
+
+        .hero-header {
+            position: relative;
+            min-height: 50vh;
+            background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
+            
+        }
+       
+        .hero-header h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: white;
+            margin-top: 25px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero-header p {
+            color: rgba(255,255,255,0.7);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            text-align: center
+        }
+
 /* ==========================================================================
    CASE STUDIES: ATTRACTIVE PREMIUM CARDS GRID ARCHITECTURE
    ========================================================================== */
 
 .cs-blog-section {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #fafcff;
 }
 

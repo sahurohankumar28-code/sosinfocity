@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    HERO SECTION
    ========================================================================== */
@@ -161,13 +160,12 @@
 }
 
 /* ==========================================================================
-   PRODUCTS SECTION
+   PRODUCTS SECTION (STACKING SYSTEM)
    ========================================================================== */
 .products-section {
   padding: 80px 0 0px;
   background: #fff4eb;
 }
-
 
 .product-stacking-container {
   display: flex;
@@ -196,10 +194,11 @@
   height: 950px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
-  margin-top: 400px;
+  margin-top: -20px;
+  scroll-margin-top: 10vh;
 }
 
 /* Fallback for browsers without scroll-timeline support */
@@ -219,13 +218,14 @@
     visibility: visible !important;
     height: auto !important;
     min-height: 400px;
+    top: auto !important;
   }
 }
 
 .product-snap-section .content {
-  position: fixed;
-  inset: 0;
-  margin: auto;
+  position: sticky;
+  top: 10vh;
+  margin: 0 auto;
   width: calc(100% - 80px);
   max-width: 1200px;
   height: clamp(500px, 70vh, 750px);
@@ -241,6 +241,11 @@
   box-shadow: 0 30px 80px rgba(10, 15, 22, 0.08);
 }
 
+/* Explicit rule forcing Card 1 to remain waiting, static, and unblurred */
+.product-snap-section:first-of-type .content {
+  animation-name: zoom-scroll-first;
+}
+
 .feature-row-inner.reverse {
   direction: rtl;
 }
@@ -249,6 +254,7 @@
   direction: ltr;
 }
 
+/* Keyframes for standard cards (2, 3, etc.) - Entry and Exit */
 @keyframes zoom-scroll {
   0% {
     filter: none;
@@ -257,6 +263,22 @@
     visibility: hidden;
   }
   35%, 65% {
+    filter: none;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    filter: none;
+    transform: scale3d(0.88, 0.88, 0.88) translate3d(0, -40px, -60px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Dedicated Keyframes for Card 1 - Purely Pinned Baseline then Outward Exit Only */
+@keyframes zoom-scroll-first {
+  0%, 65% {
     filter: none;
     transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
@@ -342,7 +364,6 @@
   padding: 10px 0;
   overflow: hidden;
 }
-
 
 .industries-header {
   text-align: center;
@@ -490,7 +511,7 @@
    PARTNERS
    ========================================================================== */
 .partners {
-  padding:20px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -613,6 +634,7 @@
     height: auto;
     min-height: 500px;
     position: relative;
+    top: auto;
   }
   
   .product-snap-section {

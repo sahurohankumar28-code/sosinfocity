@@ -159,13 +159,13 @@
     // PARTNERS MARQUEE ENGINE
     // ---------------------------------------------
     const partnerLogos = [
-        "./images/allied.png", "./images/SonicWall.png", "./images/aruba.png", "./images/Microsoft.png", 
-        "./images/Cambium.png", "./images/Cisco.png", "./images/D-Link.png", "./images/Jio.png", 
-        "./images/Digisol.png", "./images/HPE.png", "./images/juniper.png", "./images/Red_Hat.png",   
-        "./images/SE.png", "./images/Ruckus.png", "./images/Honeywell.png","./images/Airtel.png",
-        "./images/LG.png", "./images/NETGEAR.png", "./images/AWS.png", "./images/Peplink.png",
-        "./images/Railtel.png", "./images/Mikrotik.png", "./images/Bosch.png", "./images/Dell_EMC.png", 
-        "./images/IBM.png", "./images/Sophos.png" 
+        "images/allied.png", "images/SonicWall.png", "images/aruba.png", "images/Microsoft.png", 
+        "images/Cambium.png", "images/Cisco.png", "images/D-Link.png", "images/Jio.png", 
+        "images/Digisol.png", "images/HPE.png", "images/juniper.png", "images/Red_Hat.png",   
+        "images/SE.png", "images/Ruckus.png", "images/Honeywell.png","images/Airtel.png",
+        "images/LG.png", "images/NETGEAR.png", "images/AWS.png", "images/Peplink.png",
+        "images/Railtel.png", "images/Mikrotik.png", "images/Bosch.png", "images/Dell_EMC.png", 
+        "images/IBM.png", "images/Sophos.png" 
     ];
 
     function getLogoPath(filename) {

@@ -46,12 +46,11 @@
 }
 
 .hero-main h1 {
-  font-family: "Sansita", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-style: normal;
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: 70px;
   font-weight: 750;
   line-height: 1.1;
-  letter-spacing: 0.02em;
   color: white;
   max-width: 900px;
 }

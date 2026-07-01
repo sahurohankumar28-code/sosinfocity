@@ -165,7 +165,7 @@
         "images/SE.png", "images/Ruckus.png", "images/Honeywell.png","images/Airtel.png",
         "images/LG.png", "images/NETGEAR.png", "images/AWS.png", "images/Peplink.png",
         "images/Railtel.png", "images/Mikrotik.png", "images/Bosch.png", "images/Dell_EMC.png", 
-        "images/IBM.png", "images/sophos.png" 
+        "images/IBM.png", "images/sophos.png",
     ];
 
     function getLogoPath(filename) {

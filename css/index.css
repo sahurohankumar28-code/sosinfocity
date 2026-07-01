@@ -371,10 +371,11 @@
 }
 
 .industries-header h2 {
+  display: inline-block;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 16px;
-  color: var(--text-primary);
+  color: var(--primary);
 }
 
 .industries-coverflow-viewport {

@@ -371,10 +371,9 @@
 }
 
 .industries-header h2 {
-  display: inline-block;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-top: 20px;
   color: var(--primary);
 }
 

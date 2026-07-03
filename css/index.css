@@ -836,7 +836,7 @@
 }
 
 /* ==========================================================================
-   HOMEPAGE MOBILE OVERRIDE: PARITY MATCH PARTNERS-STYLE PRODUCT MARQUEE
+   HOMEPAGE MOBILE OVERRIDE: PRODUCT MARQUEE (Parity with Partners)
    ========================================================================== */
 
 @media (max-width: 768px) {
@@ -845,12 +845,30 @@
     padding: 40px 0;
     background: #fff4eb;
     text-align: center;
-    overflow: hidden; /* Prevents horizontal scroll issues */
+    overflow: hidden;
+  }
+
+  .products-section .container {
+    padding: 0;
+    max-width: 100%;
   }
 
   .products-header {
     margin-bottom: 32px;
-    padding: 0 20px; /* Adds some padding for better mobile spacing */
+    padding: 0 20px;
+  }
+
+  .products-header .section-tag {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f75910;
+    font-weight: 600;
+  }
+
+  .products-header h2 {
+    font-size: 1.8rem;
+    margin-top: 8px;
   }
 
   /* 2. Main Container - Exactly like .marquee */
@@ -862,27 +880,35 @@
     mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
     background: transparent;
-  }
-
-  /* 3. Track Container - Exactly like .marquee-track */
-  /* CRITICAL FIX: Removed .product-snap-section selector and used the wrapper */
-  .product-stacking-container .product-marquee-track {
-    display: flex;
-    gap: 30px;
-    align-items: stretch; /* Changed from center to stretch for consistent card heights */
-    width: max-content;
-    animation: smoothMarqueeRun 45s linear infinite;
-    will-change: transform;
     padding: 10px 0;
   }
 
+  /* 3. Flatten all sections into one unified track */
+  .product-stacking-container .product-snap-section {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    width: max-content;
+    animation: smoothMarqueeRun 45s linear infinite;
+    will-change: transform;
+    padding: 0;
+    margin: 0;
+    height: auto !important;
+    position: relative;
+    top: auto;
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+    /* Remove any individual section positioning */
+    transform: none !important;
+  }
+
   /* 4. Individual Product Cards - Exactly like .partner-item */
-  .product-stacking-container .product-card {
+  .product-stacking-container .product-snap-section .content {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    height: 380px;
-    width: 280px;
+    height: 400px;
+    width: 290px;
     background: #ffffff;
     border: 1px solid #f1f5f9;
     border-radius: 24px;
@@ -890,77 +916,107 @@
     transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), 
                 border-color 0.3s, 
                 box-shadow 0.3s;
-    position: relative;
-    overflow: hidden;
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+    animation: none !important;
+    opacity: 0.9;
+    filter: grayscale(15%);
+    visibility: visible !important;
+    /* Override any flex row layouts */
+    flex-direction: column !important;
   }
 
-  /* 5. Card Content Layout */
-  .product-stacking-container .product-card .feature-image {
+  /* 5. Card Content Layout - Reorder for mobile */
+  .product-stacking-container .product-snap-section .content .feature-image {
     width: 100%;
     aspect-ratio: 16/10;
     border-radius: 12px;
     margin-bottom: 14px;
     overflow: hidden;
     flex-shrink: 0;
+    order: -1; /* Moves image to top */
   }
 
-  .product-stacking-container .product-card .feature-image img {
+  .product-stacking-container .product-snap-section .content .feature-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
 
-  .product-stacking-container .product-card .feature-text {
+  .product-stacking-container .product-snap-section .content .feature-text {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 6px;
     text-align: left;
+    padding: 0;
   }
 
-  .product-stacking-container .product-card .feature-text h3 {
+  .product-stacking-container .product-snap-section .content .feature-text h3 {
     font-size: 1.15rem;
     line-height: 1.3;
     margin: 0;
     font-weight: 600;
+    color: #1a2634;
   }
 
-  .product-stacking-container .product-card .feature-text p {
+  .product-stacking-container .product-snap-section .content .feature-text .subtitle {
+    font-size: 0.8rem;
+    color: #f75910;
+    font-weight: 500;
+    margin: 0;
+    display: block !important; /* Override any hiding */
+  }
+
+  .product-stacking-container .product-snap-section .content .feature-text p:not(.subtitle) {
     font-size: 0.85rem;
     line-height: 1.45;
     color: #526173;
-    margin: 0;
+    margin: 4px 0 0 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  /* Hide subtitle and list for clean card design */
-  .product-stacking-container .product-card .feature-text .subtitle,
-  .product-stacking-container .product-card .feature-text .feature-list {
+  /* Hide feature list for cleaner cards */
+  .product-stacking-container .product-snap-section .content .feature-text .feature-list {
     display: none;
   }
 
   /* 6. Hover Effects - Mirroring .partner-item behavior */
-  .product-stacking-container .product-card:hover {
-    transform: translateY(-4px) scale(1.02);
+  .product-stacking-container .product-snap-section .content:hover {
+    transform: translateY(-4px) scale(1.02) !important;
     border-color: #f75910;
     box-shadow: 0 10px 25px rgba(247, 89, 16, 0.12);
+    filter: grayscale(0%);
+    opacity: 1 !important;
   }
 
-  .product-stacking-container .product-card:hover .feature-image img {
+  .product-stacking-container .product-snap-section .content:hover .feature-image img {
     transform: scale(1.05);
   }
 
   /* 7. Pause on hover - Exactly like .marquee:hover .marquee-track */
-  .product-stacking-container:hover .product-marquee-track {
+  .product-stacking-container:hover .product-snap-section {
     animation-play-state: paused;
   }
 
-  /* 8. Duplicate the cards in HTML for seamless looping */
-  /* You'll need to duplicate your product cards in the HTML */
+  /* 8. Handle reverse class - override for mobile */
+  .product-stacking-container .product-snap-section .content.reverse {
+    flex-direction: column !important;
+  }
+
+  /* 9. Remove any individual section spacing */
+  .product-stacking-container .product-snap-section.section-one,
+  .product-stacking-container .product-snap-section.section-two,
+  .product-stacking-container .product-snap-section.section-three,
+  .product-stacking-container .product-snap-section.section-four {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* ==========================================================================

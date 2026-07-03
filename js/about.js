@@ -1,7 +1,5 @@
 /**
- * SOS Infocity - Unified Architecture Core
- * Consolidates Counter Analytics, Responsive Layout Overlays, 
- * 3D Engine Trackers, and Continuous Ribbon States.
+ * SOS Infocity - Unified Architecture Core Custom Build
  */
 (function () {
     "use strict";
@@ -14,22 +12,12 @@
     });
     window.scrollTo(0, 0);
     
-    // 1. GLOBAL INITIALIZATION & WINDOW MANAGEMENT
-    if (history.scrollRestoration) {
-        history.scrollRestoration = 'manual';
-    }
-    
-    window.addEventListener('beforeunload', () => {
-        window.scrollTo(0, 0);
-    });
-
-    // 2. COUNTER ANIMATION ENGINE
     function animateCounter(elementId, targetValue, duration = 2800) {
         const element = document.getElementById(elementId);
         if (!element) return;
         
         let current = 0;
-        const stepTime = 16; // Targets ~60fps layout loops
+        const stepTime = 16;
         const increments = targetValue / (duration / stepTime);
         
         const timer = setInterval(() => {
@@ -43,7 +31,6 @@
         }, stepTime);
     }
 
-    // 3. RESPONSIVE NAVIGATION DRAWER CONTEXT
     function initMobileNavigation() {
         const mobileBtn = document.getElementById('mobileMenuBtn');
         const overlay = document.getElementById('mobileNavOverlay');
@@ -61,7 +48,6 @@
         });
     }
 
-    // 4. PERSPECTIVE MOUSE TRACKING CONTROLLER (3D Matrix Transform)
     function initPerspectiveController() {
         const stage = document.querySelector('.marquee-display-pane');
         const display = document.querySelector('.led-tv-display-curve');
@@ -78,7 +64,6 @@
                 const x = e.clientX - rect.left - (rect.width / 2);
                 const y = e.clientY - rect.top - (rect.height / 2);
                 
-                // Max angular deviation calculated boundaries (2.5 degrees)
                 const rotateX = -(y / rect.height) * 2.5; 
                 const rotateY = (x / rect.width) * 2.5;
                 
@@ -92,7 +77,6 @@
         });
     }
 
-    // 5. MARQUEE HOVER INTERACTION CONTROLLERS
     function initMarqueeInteractions() {
         const track = document.getElementById('testimonialMarqueeTrack');
         if (!track) return;
@@ -106,18 +90,60 @@
         });
     }
 
-    // SYNCED SYNCHRONIZATION HOOK PIPELINES
+    // SCROLL TIMELINE GRAPH DRAW ENGINE
+    function initScrollTimelineEngine() {
+        const path = document.getElementById('roadProgressPath');
+        const targetSection = document.querySelector('.journey-section'); 
+        const sectionHeader = document.querySelector('.journey-section .section-header'); 
+        const nodes = document.querySelectorAll('.road-milestone-landmark'); 
+        
+        if (!path || !targetSection || !sectionHeader) return;
+
+        const pathLength = path.getTotalLength();
+        path.style.strokeDasharray = pathLength;
+        path.style.strokeDashoffset = pathLength;
+
+        function updateTimelineScrollState() {
+            const headerRect = sectionHeader.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            const triggerPoint = windowHeight * 0.80;
+            let progress = 0;
+            
+            if (headerRect.top <= triggerPoint) {
+                const totalScrollableDistance = targetSection.offsetHeight - (windowHeight - triggerPoint);
+                const scrolledDistance = triggerPoint - headerRect.top;
+                
+                progress = scrolledDistance / totalScrollableDistance;
+                progress = Math.max(0, Math.min(1, progress)); 
+            }
+
+            path.style.strokeDashoffset = pathLength - (progress * pathLength);
+
+            nodes.forEach((node, index) => {
+                const nodeTriggerOffset = (index + 0.2) / nodes.length;
+                if (progress >= nodeTriggerOffset) {
+                    node.classList.add('node-activated');
+                } else {
+                    node.classList.remove('node-activated');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateTimelineScrollState);
+        window.addEventListener('resize', updateTimelineScrollState);
+        updateTimelineScrollState(); 
+    }
+
     const runSystemInitializations = () => {
         window.scrollTo(0, 0);
         initMobileNavigation();
         initPerspectiveController();
         initMarqueeInteractions();
+        initScrollTimelineEngine(); 
         
-        // Execute Metrics Counters
         animateCounter('projectsCount', 185, 2600);
         animateCounter('clientsCount', 340, 2600);
-        
-        console.log("SOS Infocity Engineering Layer: Active Optimization Framework Loaded.");
     };
 
     if (document.readyState === 'complete' || document.readyState === 'interactive') {
@@ -125,12 +151,4 @@
     } else {
         document.addEventListener('DOMContentLoaded', runSystemInitializations);
     }
-
-    // RESIZE MONITOR THREAD
-    window.addEventListener('resize', () => {
-        const display = document.querySelector('.led-tv-display-curve');
-        if (display && window.innerWidth <= 1024) {
-            display.style.transform = 'none';
-        }
-    });
 })();

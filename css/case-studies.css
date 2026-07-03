@@ -203,3 +203,27 @@
 .cs-card:hover .card-footer-link i {
     transform: translateX(4px);
 }
+
+/* ==========================================================================
+   CASE STUDIES RESPONSIVE CASCADE
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+    .cs-cards-blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cs-blog-section {
+        padding: 30px 0;
+    }
+    .cs-cards-blog-grid {
+        grid-template-columns: 1fr; /* Stack vertically cleanly for easy mobile scrolling */
+        gap: 32px;
+    }
+    .cs-card-body {
+        padding: 24px;
+    }
+}

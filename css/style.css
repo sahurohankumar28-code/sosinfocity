@@ -389,22 +389,45 @@
             color: white;
         }
         
-        @media (max-width: 1024px) { 
-            .about-grid, .product-item { grid-template-columns: 1fr; } 
-            .cs-card { flex: 0 0 calc((100% - 24px) / 2); } 
-            .logo img { height: 65px; }
-            .nav-links { gap: 20px; }
-        }
-        @media (max-width: 900px) { 
-            .nav-links { display: none; } 
-            .mobile-menu-btn { display: flex; } 
-            .container { padding: 0 24px; } 
-            .scroll-arrow { width: 40px; height: 40px; } 
-        }
-        @media (max-width: 768px) { 
-            .cs-card { flex: 0 0 100%; } 
-            .services-grid { grid-template-columns: 1fr; } 
-            .hero-main h1 { font-size: 2.2rem; } 
-            .industry-card { width: 270px; } 
-            .scroll-arrow { width: 36px; height: 36px; } 
-        }
+/* ==========================================================================
+   GLOBAL DESIGN RESILIENCY CASCADE
+========================================================================== */
+
+@media (max-width: 1024px) { 
+    .container {
+        padding: 0 24px;
+    }
+    .logo img { 
+        height: 60px; 
+    }
+    .nav-links { 
+        gap: 16px; 
+    }
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) { 
+    .nav-links { 
+        display: none !important; /* Hide structural desktop nav links completely */
+    } 
+    .mobile-menu-btn { 
+        display: flex !important; /* Activate responsive touch button layout menu */
+    } 
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px; /* Optimize readability standard across smaller phone form-factors */
+    }
+    .container {
+        padding: 0 16px;
+    }
+    .btn-primary, .btn-outline {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-top: 12px;
+    }
+}

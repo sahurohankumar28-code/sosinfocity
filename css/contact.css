@@ -345,3 +345,37 @@
                 justify-content: center;
             }
         }
+
+        /* ==========================================================================
+   CONTACT PAGE RESPONSIVE CASCADE
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-map-side {
+        min-height: 400px;
+        order: 2; /* Put map under form element for natural hierarchy */
+    }
+    .contact-form-side {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-overlay {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin: 20px;
+        max-width: calc(100% - 40px);
+    }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}

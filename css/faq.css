@@ -175,3 +175,30 @@
             color: var(--text-secondary);
             margin-bottom: 24px;
         }
+/* ==========================================================================
+   FAQ SECTION RESPONSIVE CASCADE
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .faq-grid {
+        grid-template-columns: 1fr; /* Transition away from two-column grids to avoid cramped lines */
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 40px 0;
+    }
+    .faq-header h2 {
+        font-size: 1.8rem;
+    }
+    .faq-cat-btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+    .faq-cta {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+}

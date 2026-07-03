@@ -942,3 +942,125 @@
     width: 290px; 
   }
 }
+
+
+
+/* ==========================================================================
+   ABOUT PAGE RESPONSIVE CASCADE
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1200px) {
+  .las-bento-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .bento-card.bento-lead, 
+  .bento-card.bento-row-wide { 
+    grid-column: span 2; 
+  }
+}
+
+/* Tablets (Portrait) */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .mv-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .las-split-container { 
+    grid-template-columns: 1fr; 
+    gap: 50px; 
+    padding: 0 24px; 
+  }
+  .marquee-display-pane { 
+    order: 2; 
+  }
+  .marquee-content-pane { 
+    padding-left: 0; 
+    text-align: center; 
+  }
+  .intro-desc { 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+}
+
+/* Small Tablets */
+@media (max-width: 992px) {
+  .hubs-wrapper {
+    padding: 45px 30px;
+  }
+  .hubs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Mobile Core (Smartphones & Mini-Tablets) */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .timeline-item {
+    min-width: 100%;
+  }
+  .las-bento-section, 
+  .las-testimonials-section { 
+    padding: 40px 0; 
+  }
+  .las-bento-grid { 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
+  .bento-card.bento-lead, 
+  .bento-card.bento-row-wide { 
+    grid-column: span 1; 
+  }
+  .bento-card { 
+    padding: 30px 24px; 
+    border-radius: 24px; 
+  }
+  .columns-wrapper { 
+    height: 400px; 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .vertical-marquee-col:nth-child(3) { 
+    display: none; /* Hide 3rd column to maintain symmetry on narrow displays */
+  }
+  .led-tv-display-curve { 
+    transform: none !important; /* Flatten 3D perspective to avoid horizontal scrolling on touch */
+    padding: 12px; 
+  }
+}
+
+/* Small Smartphones */
+@media (max-width: 640px) {
+  .hubs-wrapper {
+    padding: 30px 20px;
+    border-radius: 24px;
+  }
+  .hubs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .member-image-frame {
+    height: 240px;
+  }
+  .hubs-header-small h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .las-ts-card { 
+    width: 280px; 
+    padding: 24px;
+  }
+  .stat-block h4 {
+    font-size: 2rem;
+  }
+}

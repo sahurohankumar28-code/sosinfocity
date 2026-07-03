@@ -834,3 +834,136 @@
     visibility: visible !important;
   }
 }
+
+/* ==========================================================================
+   HOMEPAGE RESPONSIVE CASCADE (UPDATED FOR MOBILE ZOOM-SCROLL)
+   ========================================================================== */
+
+@media (max-width: 1160px) {
+  .industries-slider-stage .industry-card { 
+    width: 580px; 
+    height: 340px; 
+  }
+  .industries-slider-stage { 
+    height: 390px; 
+  }
+}
+
+/* Tablets, Small Laptops & Mobile Layout Matrix */
+@media (max-width: 992px) {
+  .product-stacking-container { 
+    padding-bottom: 20px; 
+  }
+  .industries-slider-stage .industry-card { 
+    width: 460px; 
+    height: 280px; 
+  }
+  .industries-slider-stage { 
+    height: 320px; 
+  }
+  
+  /* Retain mobile stacking behavior while preserving the zoom-scroll setup */
+  .product-snap-section {
+    height: 100vh; /* Lock height to viewport to enforce clean scroll snapping */
+    margin-top: 0;
+  }
+  
+  .product-snap-section .content {
+    grid-template-columns: 1fr; /* Drop side-by-side to a unified single vertical column */
+    gap: 20px;
+    padding: 30px 24px;
+    height: 80vh; /* Give card content vertical breathing room inside the snap section */
+    position: sticky;
+    top: 10vh;
+    
+    /* RE-ENABLE ANIMATION INTERFACE FOR SMARTPHONES */
+    animation: zoom-scroll ease-in-out both;
+    animation-timeline: --section;
+  }
+
+  .product-snap-section:first-of-type .content {
+    animation-name: zoom-scroll-first;
+  }
+  
+  .feature-image {
+    aspect-ratio: 16/9; /* Flatten the screenshot ratio so text below doesn't get clipped */
+    width: 100%;
+  }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+  .section-header h2, 
+  .feature-text h3, 
+  .industries-header h2 {
+    font-size: 1.6rem;
+  }
+  .hero-main h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .industries-slider-stage .industry-card { 
+    width: 85vw; 
+    height: 240px; 
+  }
+  .industries-slider-stage { 
+    height: 280px; 
+  }
+  .industries-slider-stage .industry-info { 
+    padding: 16px; 
+    margin: 12px; 
+    width: calc(100% - 24px); 
+  }
+  .marquee-track { 
+    gap: 20px; 
+  }
+  .partner-item { 
+    width: 130px; 
+    height: 60px; 
+  }
+}
+
+/* Extra Tight Viewports (Small Smartphones) */
+@media (max-width: 480px) {
+  .product-snap-section .content {
+    padding: 20px 16px;
+    height: 85vh;
+    top: 7.5vh;
+  }
+  .feature-text h3 {
+    font-size: 1.35rem;
+  }
+  .feature-list li {
+    font-size: 0.88rem;
+    gap: 8px;
+  }
+}
+
+/* Accessibility settings for users preferring reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-gradient-text {
+    animation: none;
+    background: linear-gradient(135deg, #ffffff 30%, #ffede3 50%, #ffb347 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .marquee-track,
+  .vertical-track-inner {
+    animation: none !important;
+  }
+  .product-snap-section .content {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    visibility: visible !important;
+  }
+}

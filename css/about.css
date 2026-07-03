@@ -137,6 +137,7 @@
   background: #f8f9fc;
   overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .road-timeline-container {

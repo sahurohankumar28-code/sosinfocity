@@ -836,111 +836,101 @@
 }
 
 /* ==========================================================================
-   HOMEPAGE RESPONSIVE STACKING CASCADE (MOBILE VIEW EXCLUSIVELY)
+   HOMEPAGE MOBILE VIEW OVERRIDE: INFINITE HORIZONTAL PRODUCT MARQUEE
    ========================================================================== */
 
-/* Core Mobile Breakpoint (Smartphones & Large Handhelds) */
 @media (max-width: 768px) {
-  .product-stacking-container { 
-    padding-bottom: 20px; 
+  /* 1. Reset Stacking Rules & Setup the Track Window */
+  .product-stacking-container {
     background: #fff4eb;
+    padding: 40px 0;
+    overflow: hidden; /* Clips elements sliding out of the mobile frame */
+    display: block;
   }
-  
-  /* THE EXACT TRACKING CONTAINER HEIGHT MATCHED TO DESKTOP FOR PERFECT ANIMATION MARGINS */
+
+  .products-header {
+    margin-bottom: 32px;
+  }
+
+  /* 2. Flatten Stacking Track Containers to a Single Row Line */
   .product-snap-section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    view-timeline: --section;
-    height: 950px; /* Crucial: Matches desktop exactly to preserve scroll entry/exit rates */
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    display: inline-flex;
+    height: auto !important; /* Disables desktop tracking box heights */
+    width: max-content;
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
     position: relative;
-    margin-top: -20px;
-    scroll-margin-top: 10vh;
-  }
-  
-  /* MOBILE CARD CARD RE-ARCHITECTING WITH EXACT ZOOM-SCROLL BINDINGS */
-  .product-snap-section .content {
-    position: sticky;
-    top: 10vh;
-    margin: 0 auto;
-    width: calc(100% - 32px); /* Tightened lateral padding for mobile displays */
-    max-width: 1200px;
-    height: 75vh; /* Responsive height safety boundary to prevent clipping */
+    margin: 0;
+    padding: 0;
+    top: auto;
     
-    /* ANIMATION PROPERTY MATRIX MATCHED EXACTLY TO DESKTOP */
-    animation: zoom-scroll ease-in-out both;
-    animation-timeline: --section;
-    
-    /* Structural Shift to Single Column Layout */
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 36px;
-    padding: 28px 20px;
-    box-shadow: 0 30px 80px rgba(10, 15, 22, 0.08);
-    overflow: hidden;
+    /* Connect the horizontal loop animation */
+    animation: mobileProductMarquee 25s linear infinite;
+    will-change: transform;
   }
 
-  /* Explicit rule forcing Card 1 to remain waiting, static, and unblurred */
+  /* Disable all desktop scroll-timeline animation assignments completely */
+  .product-snap-section .content,
   .product-snap-section:first-of-type .content {
-    animation-name: zoom-scroll-first;
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: none !important;
+    
+    /* Structure individual product blocks as side-by-side cards */
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Fixed uniform width for neat presentation in the loop */
+    height: 480px; 
+    padding: 24px 20px;
+    margin-right: 20px; /* Spacing between loop items */
+    border-radius: 24px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(10, 15, 22, 0.05);
   }
 
-  /* Mobile Content Refinement Elements */
+  /* 3. Re-scale Inner Elements for Compact Horizontal Profiles */
   .feature-image {
     width: 100%;
-    aspect-ratio: 16/9; /* Flattens visual frame so card content doesn't break overflow limitations */
-    border-radius: 16px;
-    order: -1; /* Visually keeps card layout image above text blocks */
+    aspect-ratio: 16/10;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    order: -1;
   }
 
   .feature-text {
-    gap: 8px;
-  }
-
-  .feature-text h3 {
-    font-size: 1.4rem;
-    line-height: 1.25;
-  }
-
-  .feature-text p {
-    font-size: 0.88rem;
-    line-height: 1.45;
-  }
-
-  .feature-list {
-    margin-top: 2px;
     gap: 6px;
   }
 
-  .feature-list li {
-    font-size: 0.82rem;
+  .feature-text h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .feature-text p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Clips extra descriptions to save uniform vertical size */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .feature-list {
+    display: none; /* Safely omit extensive list bullet-points to remain compact inside the marquee track */
   }
 }
 
-/* Extra Tight Phone Forms Viewport Fixes (Small Smartphones) */
-@media (max-width: 480px) {
-  .product-snap-section {
-    height: 850px; /* Compressed track space accommodating smaller physical device heights */
+/* 4. Infinite Smooth Loop Translation Frame */
+@keyframes mobileProductMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
   }
-
-  .product-snap-section .content {
-    height: 78vh;
-    top: 7vh;
-    padding: 20px 16px;
-    gap: 14px;
-  }
-
-  .feature-image {
-    aspect-ratio: 16/10;
-  }
-
-  .feature-text h3 {
-    font-size: 1.25rem;
+  100% {
+    /* Set this to exactly -50% in production once you have cloned your product blocks */
+    transform: translate3d(-50%, 0, 0); 
   }
 }

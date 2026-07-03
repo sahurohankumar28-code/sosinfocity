@@ -92,48 +92,61 @@
 
     // SCROLL TIMELINE GRAPH DRAW ENGINE
     function initScrollTimelineEngine() {
-        const path = document.getElementById('roadProgressPath');
-        const targetSection = document.querySelector('.journey-section'); 
-        const sectionHeader = document.querySelector('.journey-section .section-header'); 
-        const nodes = document.querySelectorAll('.road-milestone-landmark'); 
-        
-        if (!path || !targetSection || !sectionHeader) return;
+    const path = document.getElementById('roadProgressPath');
+    const targetSection = document.querySelector('.journey-section'); 
+    const sectionHeader = document.querySelector('.journey-section .section-header'); 
+    const nodes = document.querySelectorAll('.road-milestone-landmark'); 
+    
+    if (!targetSection || !nodes.length) return;
 
-        const pathLength = path.getTotalLength();
+    // Detect if we are executing layout scripts on a mobile/tablet footprint
+    const isMobileLayout = () => window.innerWidth <= 1024;
+
+    let pathLength = 0;
+    if (path) {
+        pathLength = path.getTotalLength();
         path.style.strokeDasharray = pathLength;
         path.style.strokeDashoffset = pathLength;
+    }
 
-        function updateTimelineScrollState() {
-            const headerRect = sectionHeader.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            
-            const triggerPoint = windowHeight * 0.80;
-            let progress = 0;
-            
-            if (headerRect.top <= triggerPoint) {
-                const totalScrollableDistance = targetSection.offsetHeight - (windowHeight - triggerPoint);
-                const scrolledDistance = triggerPoint - headerRect.top;
-                
-                progress = scrolledDistance / totalScrollableDistance;
-                progress = Math.max(0, Math.min(1, progress)); 
-            }
-
-            path.style.strokeDashoffset = pathLength - (progress * pathLength);
-
-            nodes.forEach((node, index) => {
-                const nodeTriggerOffset = (index + 0.2) / nodes.length;
-                if (progress >= nodeTriggerOffset) {
-                    node.classList.add('node-activated');
-                } else {
-                    node.classList.remove('node-activated');
-                }
-            });
+    function updateTimelineScrollState() {
+        // Automatically make cards appear active/visible sequentially or natively on smaller screens
+        if (isMobileLayout()) {
+            nodes.forEach(node => node.classList.add('node-activated'));
+            return;
         }
 
-        window.addEventListener('scroll', updateTimelineScrollState);
-        window.addEventListener('resize', updateTimelineScrollState);
-        updateTimelineScrollState(); 
+        if (!path || !sectionHeader) return;
+
+        const headerRect = sectionHeader.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const triggerPoint = windowHeight * 0.80;
+        let progress = 0;
+        
+        if (headerRect.top <= triggerPoint) {
+            const totalScrollableDistance = targetSection.offsetHeight - (windowHeight - triggerPoint);
+            const scrolledDistance = triggerPoint - headerRect.top;
+            
+            progress = scrolledDistance / totalScrollableDistance;
+            progress = Math.max(0, Math.min(1, progress)); 
+        }
+
+        path.style.strokeDashoffset = pathLength - (progress * pathLength);
+
+        nodes.forEach((node, index) => {
+            const nodeTriggerOffset = (index + 0.2) / nodes.length;
+            if (progress >= nodeTriggerOffset) {
+                node.classList.add('node-activated');
+            } else {
+                node.classList.remove('node-activated');
+            }
+        });
     }
+
+    window.addEventListener('scroll', updateTimelineScrollState, { passive: true });
+    window.addEventListener('resize', updateTimelineScrollState);
+    updateTimelineScrollState(); 
+}
 
     const runSystemInitializations = () => {
         window.scrollTo(0, 0);

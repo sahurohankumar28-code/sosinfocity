@@ -99,7 +99,6 @@
     
     if (!targetSection || !nodes.length) return;
 
-    // Detect if we are executing layout scripts on a mobile/tablet footprint
     const isMobileLayout = () => window.innerWidth <= 1024;
 
     let pathLength = 0;
@@ -110,12 +109,23 @@
     }
 
     function updateTimelineScrollState() {
-        // Automatically make cards appear active/visible sequentially or natively on smaller screens
+        // MOBILE SCROLL POPUP ENGINE
         if (isMobileLayout()) {
-            nodes.forEach(node => node.classList.add('node-activated'));
+            const triggerBottom = window.innerHeight * 0.85; // Element pops up when 15% from bottom viewport edge
+
+            nodes.forEach((node) => {
+                const nodeTop = node.getBoundingClientRect().top;
+
+                if (nodeTop < triggerBottom) {
+                    node.classList.add('node-activated');
+                } else {
+                    node.classList.remove('node-activated'); // Optional: Keeps animation reusable up and down
+                }
+            });
             return;
         }
 
+        // DESKTOP SVG ENGAGEMENT ENGINE
         if (!path || !sectionHeader) return;
 
         const headerRect = sectionHeader.getBoundingClientRect();

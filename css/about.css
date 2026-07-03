@@ -130,7 +130,7 @@
 }
 
 /* ==========================================================================
-   JOURNEY SECTION - ENHANCED & STABLE ULTRA-RESPONSIVE
+   JOURNEY SECTION - ENHANCED DESKTOP & SCROLL ENGINE CORE
    ========================================================================== */
 .journey-section {
   padding: 80px 0 120px 0;
@@ -165,13 +165,14 @@
 
 .road-track-progress {
   fill: none;
-  stroke: #f75910; 
+  stroke: #f75910; /* Main Orange Progress Line */
   stroke-width: 40px;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: stroke-dashoffset 0.1s linear;
 }
 
+/* Desktop absolute pin formatting structure coordinates */
 .road-milestone-landmark {
   position: absolute;
   z-index: 5;
@@ -186,6 +187,7 @@
   transform: translate(-50%, -24px);
 }
 
+/* Milestone pin positioning badge layouts */
 .pin-marker-assembly {
   position: relative;
   display: flex;
@@ -235,6 +237,7 @@
   filter: blur(2px);
 }
 
+/* Fine Grey Connector Lines */
 .connector-line {
   width: 2px;
   height: 35px;
@@ -247,6 +250,7 @@
   opacity: 1;
 }
 
+/* Individual Content Panel Cards */
 .milestone-text-block {
   width: 100%;
   background: #ffffff;
@@ -326,109 +330,6 @@
 
 .milestone-purple .donut-badge { background: #7c3aed; color: #7c3aed; }
 .milestone-purple .block-header { background: #7c3aed; }
-
-/* ==========================================================================
-   MOBILE & TABLET RESPONSIVE CONVERSION OVERRIDES (Screens <= 1024px)
-   ========================================================================== */
-@media (max-width: 1024px) {
-  .journey-section {
-    padding: 60px 0;
-  }
-  
-  .road-timeline-container {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px 10px 20px 30px; /* Indent everything to allow room for a vertical axis track line */
-    position: relative;
-    max-width: 650px;
-    margin: 40px auto 0 auto;
-  }
-
-  /* Create a custom continuous clean vertical line axis background for mobile */
-  .road-timeline-container::before {
-    content: '';
-    position: absolute;
-    left: 4px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: #e2e8f0;
-    border-radius: 2px;
-    z-index: 1;
-  }
-  
-  .road-svg-canvas { 
-    display: none !important; 
-  }
-  
-  .road-milestone-landmark, 
-  .road-milestone-landmark.position-below {
-    position: relative !important;
-    left: auto !important;
-    top: auto !important;
-    transform: none !important;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    gap: 20px;
-    width: 100% !important;
-  }
-  
-  .connector-line, 
-  .pin-shadow { 
-    display: none !important; 
-  }
-  
-  .pin-marker-assembly {
-    order: -1;
-    flex-shrink: 0;
-    transform: scale(0.9) translateX(-42px) !important; /* Positions center badge on the vertical line axis */
-    opacity: 1 !important;
-    margin-top: 6px;
-    z-index: 2;
-  }
-
-  .donut-badge {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  .badge-inner-circle i {
-    font-size: 1rem;
-  }
-  
-  .milestone-text-block {
-    opacity: 1 !important;
-    transform: none !important;
-    box-shadow: 0 4px 20px rgba(10, 15, 22, 0.05) !important;
-    border: 1px solid #edf2f7 !important;
-    flex-grow: 1;
-  }
-  
-  .block-header {
-    text-align: left;
-    padding: 10px 16px;
-  }
-  
-  .milestone-text-block p { 
-    padding: 14px 16px;
-    font-size: 0.88rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .road-timeline-container {
-    padding-left: 25px;
-    gap: 24px;
-  }
-  .pin-marker-assembly {
-    transform: scale(0.8) translateX(-44px) !important;
-  }
-  .milestone-text-block p {
-    font-size: 0.85rem;
-  }
-}
 
 /* ==========================================================================
    EXECUTIVE TRUST INFRASTRUCTURE PANELS
@@ -930,6 +831,9 @@
   }
 }
 
+/* ==========================================================================
+   TABLET & MOBILE DYNAMIC CASCADE RECONSTRUCTION (Screens <= 1024px)
+   ========================================================================== */
 @media (max-width: 1024px) {
   .about-grid,
   .mv-wrapper {
@@ -958,6 +862,123 @@
     margin-left: auto; 
     margin-right: auto; 
   }
+
+  /* -------------------------------------------------------------
+     MILESTONES RESPONSIVE SCROLL-POPUP SYSTEM
+     ------------------------------------------------------------- */
+  .journey-section {
+    padding: 60px 0;
+  }
+  
+  .road-timeline-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px 20px 30px;
+    position: relative;
+    max-width: 650px;
+    margin: 40px auto 0 auto;
+  }
+
+  /* Continuous linear track timeline axis background */
+  .road-timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #e2e8f0;
+    border-radius: 2px;
+    z-index: 1;
+  }
+  
+  .road-svg-canvas { 
+    display: none !important; 
+  }
+  
+  .road-milestone-landmark, 
+  .road-milestone-landmark.position-below {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 20px;
+    width: 100% !important;
+  }
+  
+  .connector-line, 
+  .pin-shadow { 
+    display: none !important; 
+  }
+  
+  /* Initial hidden state for the indicator badges */
+  .pin-marker-assembly {
+    order: -1;
+    flex-shrink: 0;
+    transform: scale(0.3) translateX(-42px) !important;
+    opacity: 0 !important;
+    margin-top: 6px;
+    z-index: 2;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease !important;
+  }
+
+  /* Initial hidden state for text panels (resides shifted 30px down) */
+  .milestone-text-block {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    box-shadow: 0 4px 20px rgba(10, 15, 22, 0.05) !important;
+    border: 1px solid #edf2f7 !important;
+    flex-grow: 1;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease !important;
+  }
+
+  /* POPUP ACTIVATED ENGINE STYLES (TRIGGERED BY SCROLL ENGINE) */
+  .road-milestone-landmark.node-activated .pin-marker-assembly {
+    transform: scale(0.9) translateX(-42px) !important;
+    opacity: 1 !important;
+  }
+
+  .road-milestone-landmark.node-activated .milestone-text-block {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .donut-badge {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .badge-inner-circle i {
+    font-size: 1rem;
+  }
+  
+  .block-header {
+    text-align: left;
+    padding: 10px 16px;
+    color: #1f2937;
+  }
+  
+  .milestone-text-block p { 
+    padding: 14px 16px;
+    font-size: 0.88rem;
+  }
+
+  /* Year color remapping variants for responsive structures */
+  .milestone-gold .year-digits { color: #eab308; }
+  .milestone-yellow .year-digits { color: #d97706; }
+  .milestone-green .year-digits { color: #22c55e; }
+  .milestone-teal .year-digits { color: #0d9488; }
+  .milestone-red .year-digits { color: #ef4444; }
+  .milestone-orange .year-digits { color: #f97316; }
+  .milestone-magenta .year-digits { color: #ec4899; }
+  .milestone-blue .year-digits { color: #2563eb; }
+  .milestone-cyan .year-digits { color: #06b6d4; }
+  .milestone-indigo .year-digits { color: #4f46e5; }
+  .milestone-purple .year-digits { color: #7c3aed; }
 }
 
 @media (max-width: 992px) {
@@ -1034,6 +1055,16 @@
 }
 
 @media (max-width: 480px) {
+  .road-timeline-container {
+    padding-left: 25px;
+    gap: 24px;
+  }
+  .road-milestone-landmark.node-activated .pin-marker-assembly {
+    transform: scale(0.8) translateX(-44px) !important;
+  }
+  .milestone-text-block p {
+    font-size: 0.85rem;
+  }
   .las-ts-card { 
     width: 290px; 
   }

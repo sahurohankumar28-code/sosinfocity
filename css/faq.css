@@ -201,4 +201,14 @@
         padding: 30px 20px;
         border-radius: 20px;
     }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }

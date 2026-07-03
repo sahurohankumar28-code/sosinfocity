@@ -378,4 +378,7 @@
     .social-icons {
         justify-content: center;
     }
+    .footer-bottom p {
+           text-align: center
+    }
 }

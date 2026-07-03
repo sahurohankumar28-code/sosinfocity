@@ -471,6 +471,16 @@
     .section-header h2 {
         font-size: 2rem;
     }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }
 
 /* Small Smartphones (Touch Interface Fixes) */
@@ -500,5 +510,15 @@
     }
     .ring.r3 {
         display: none; /* Hide excessive background vector circles to minimize rendering load */
+    }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
     }
 }

@@ -375,6 +375,16 @@
     .experience-toggle-container {
         width: 100%; /* Full-width toggle for easy thumb-tapping access */
     }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }
 
 @media (max-width: 480px) {
@@ -388,5 +398,15 @@
     }
     .file-drop-zone {
         padding: 20px 10px;
+    }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
     }
 }

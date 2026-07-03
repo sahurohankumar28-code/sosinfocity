@@ -400,4 +400,14 @@ body.gallery-dark-mode {
   .lightbox-content-wrapper {
     max-width: 92vw;
   }
+  .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }

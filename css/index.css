@@ -921,6 +921,16 @@
   .feature-list li {
     font-size: 0.82rem;
   }
+  .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }
 
 /* Extra Tight Phone Forms Viewport Fixes (Small Smartphones) */
@@ -943,4 +953,14 @@
   .feature-text h3 {
     font-size: 1.25rem;
   }
+  .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }

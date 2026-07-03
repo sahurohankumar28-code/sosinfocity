@@ -1029,6 +1029,16 @@
   .section-header h2 {
     font-size: 2rem;
   }
+  .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }
 
 @media (max-width: 640px) {
@@ -1052,6 +1062,16 @@
   .stat-block h4 {
     font-size: 2rem;
   }
+  .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }
 
 @media (max-width: 480px) {
@@ -1077,4 +1097,14 @@
   .stats-row {
     gap: 20px;
   }
+  .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-bottom p {
+           text-align: center
+    }
 }

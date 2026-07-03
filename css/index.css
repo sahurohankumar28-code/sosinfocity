@@ -173,10 +173,31 @@
   background: #fff4eb;
 }
 
+/* Default Desktop/Tablet Header Styles */
 .products-header {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 64px;
+  overflow: hidden;
+}
+
+.products-header-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+}
+
+.products-header-item {
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Hide duplicate on desktop layouts */
+.products-header-item[aria-hidden="true"] {
+  display: none;
 }
 
 .products-header h2 {
@@ -360,7 +381,7 @@
 .industries-section {
   position: relative;
   background: #fafcff;
-  padding: 10px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -373,8 +394,8 @@
 .industries-header h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 16px;
-  color: var(--text-primary);
+  margin-top: 20px;
+  color: var(--primary);
 }
 
 .industries-coverflow-viewport {
@@ -644,6 +665,59 @@
 }
 
 @media (max-width: 768px) {
+  /* Transform Products Header into a Full-Width Mobile Marquee */
+  .products-header {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    max-width: none;
+    margin-bottom: 40px;
+    padding: 14px 0;
+    display: flex;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  }
+
+  .products-header-track {
+    display: flex;
+    width: max-content;
+    animation: smoothHeaderMarquee 18s linear infinite;
+    will-change: transform;
+  }
+
+  .products-header-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  /* Unhide the duplicate track element on mobile viewports */
+  .products-header-item[aria-hidden="true"] {
+    display: flex;
+  }
+
+  .products-header h2 {
+    font-size: 1.6rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+  }
+
+  .products-header .section-tag {
+    margin-bottom: 0 !important;
+    display: inline-block;
+  }
+
+  @keyframes smoothHeaderMarquee {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+  }
+
+  /* Standard Mobile Layout Fixes */
   .section-header h2, 
   .feature-text h3, 
   .industries-header h2, 
@@ -712,262 +786,16 @@
     color: transparent;
   }
   
-  .marquee-track {
-    animation: none;
-  }
-  
-  .product-snap-section .content {
-    animation: none;
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    visibility: visible !important;
-  }
-}
-
-
-/* ==========================================================================
-   HOMEPAGE RESPONSIVE CASCADE
-   ========================================================================== */
-
-@media (max-width: 1160px) {
-  .industries-slider-stage .industry-card { 
-    width: 580px; 
-    height: 340px; 
-  }
-  .industries-slider-stage { 
-    height: 390px; 
-  }
-}
-
-@media (max-width: 992px) {
-  .product-stacking-container { 
-    padding-bottom: 20px; 
-  }
-  .industries-slider-stage .industry-card { 
-    width: 460px; 
-    height: 280px; 
-  }
-  .industries-slider-stage { 
-    height: 320px; 
-  }
-  
-  /* Fallback and restructuring of stacking product containers on tablet/touch systems */
-  .product-snap-section .content {
-    grid-template-columns: 1fr !important;
-    gap: 30px;
-    padding: 40px;
-    height: auto !important;
-    min-height: 500px;
-    position: relative !important;
-    top: auto !important;
-    transform: none !important;
-    animation: none !important;
-  }
-  .product-snap-section {
-    height: auto !important;
-    min-height: auto;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section-header h2, 
-  .feature-text h3, 
-  .industries-header h2 {
-    font-size: 1.6rem;
-  }
-  .hero-main h1 {
-    font-size: clamp(2rem, 8vw, 3rem);
-  }
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  .industries-slider-stage .industry-card { 
-    width: 85vw; 
-    height: 240px; 
-  }
-  .industries-slider-stage { 
-    height: 280px; 
-  }
-  .industries-slider-stage .industry-info { 
-    padding: 16px; 
-    margin: 12px; 
-    width: calc(100% - 24px); 
-  }
-  .marquee-track { 
-    gap: 20px; 
-  }
-  .partner-item { 
-    width: 130px; 
-    height: 60px; 
-  }
-  .product-snap-section .content {
-    padding: 24px 16px;
-    width: 100%;
-  }
-}
-
-/* Accessibility settings for users preferring reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  .hero-gradient-text {
-    animation: none;
-    background: linear-gradient(135deg, #ffffff 30%, #ffede3 50%, #ffb347 70%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
   .marquee-track,
-  .vertical-track-inner {
-    animation: none !important;
+  .products-header-track {
+    animation: none;
   }
+  
   .product-snap-section .content {
-    animation: none !important;
+    animation: none;
     opacity: 1 !important;
     transform: none !important;
     filter: none !important;
     visibility: visible !important;
   }
-}
-
-/* ==========================================================================
-   HOMEPAGE MOBILE OVERRIDE: PARITY MATCH PARTNERS-STYLE PRODUCT MARQUEE
-   ========================================================================== */
-
-@media (max-width: 768px) {
-  /* 1. Base Section Container Reset */
-  .products-section {
-    padding: 40px 0;
-    background: #fff4eb;
-    text-align: center;
-    overflow: hidden; /* Prevents horizontal scroll issues */
-  }
-
-  .products-header {
-    margin-bottom: 32px;
-    padding: 0 20px; /* Adds some padding for better mobile spacing */
-  }
-
-  /* 2. Main Container - Exactly like .marquee */
-  .product-stacking-container {
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    position: relative;
-    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
-    background: transparent;
-  }
-
-  /* 3. Track Container - Exactly like .marquee-track */
-  /* CRITICAL FIX: Removed .product-snap-section selector and used the wrapper */
-  .product-stacking-container .product-marquee-track {
-    display: flex;
-    gap: 30px;
-    align-items: stretch; /* Changed from center to stretch for consistent card heights */
-    width: max-content;
-    animation: smoothMarqueeRun 45s linear infinite;
-    will-change: transform;
-    padding: 10px 0;
-  }
-
-  /* 4. Individual Product Cards - Exactly like .partner-item */
-  .product-stacking-container .product-card {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    height: 380px;
-    width: 280px;
-    background: #ffffff;
-    border: 1px solid #f1f5f9;
-    border-radius: 24px;
-    padding: 20px;
-    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), 
-                border-color 0.3s, 
-                box-shadow 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* 5. Card Content Layout */
-  .product-stacking-container .product-card .feature-image {
-    width: 100%;
-    aspect-ratio: 16/10;
-    border-radius: 12px;
-    margin-bottom: 14px;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-
-  .product-stacking-container .product-card .feature-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-
-  .product-stacking-container .product-card .feature-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    text-align: left;
-  }
-
-  .product-stacking-container .product-card .feature-text h3 {
-    font-size: 1.15rem;
-    line-height: 1.3;
-    margin: 0;
-    font-weight: 600;
-  }
-
-  .product-stacking-container .product-card .feature-text p {
-    font-size: 0.85rem;
-    line-height: 1.45;
-    color: #526173;
-    margin: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  /* Hide subtitle and list for clean card design */
-  .product-stacking-container .product-card .feature-text .subtitle,
-  .product-stacking-container .product-card .feature-text .feature-list {
-    display: none;
-  }
-
-  /* 6. Hover Effects - Mirroring .partner-item behavior */
-  .product-stacking-container .product-card:hover {
-    transform: translateY(-4px) scale(1.02);
-    border-color: #f75910;
-    box-shadow: 0 10px 25px rgba(247, 89, 16, 0.12);
-  }
-
-  .product-stacking-container .product-card:hover .feature-image img {
-    transform: scale(1.05);
-  }
-
-  /* 7. Pause on hover - Exactly like .marquee:hover .marquee-track */
-  .product-stacking-container:hover .product-marquee-track {
-    animation-play-state: paused;
-  }
-
-  /* 8. Duplicate the cards in HTML for seamless looping */
-  /* You'll need to duplicate your product cards in the HTML */
-}
-
-/* ==========================================================================
-   KEYFRAME ANIMATION - Shared with Partners Marquee
-   ========================================================================== */
-
-@keyframes smoothMarqueeRun {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
 }

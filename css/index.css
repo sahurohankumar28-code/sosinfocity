@@ -836,15 +836,15 @@
 }
 
 /* ==========================================================================
-   HOMEPAGE MOBILE VIEW OVERRIDE: INFINITE HORIZONTAL PRODUCT MARQUEE
+   HOMEPAGE MOBILE OVERRIDE: INFINITE HORIZONTAL PRODUCT CARD MARQUEE
    ========================================================================== */
 
 @media (max-width: 768px) {
-  /* 1. Reset Stacking Rules & Setup the Track Window */
+  /* 1. Reset Stacking & Layout Rules on the Container */
   .product-stacking-container {
     background: #fff4eb;
     padding: 40px 0;
-    overflow: hidden; /* Clips elements sliding out of the mobile frame */
+    overflow: hidden; /* Hide cards sliding off the edge of the mobile screen */
     display: block;
   }
 
@@ -852,10 +852,10 @@
     margin-bottom: 32px;
   }
 
-  /* 2. Flatten Stacking Track Containers to a Single Row Line */
+  /* 2. Transform Stacking Sections into a Single Row Line Track */
   .product-snap-section {
     display: inline-flex;
-    height: auto !important; /* Disables desktop tracking box heights */
+    height: auto !important; /* Disables the strict 950px desktop tracking heights */
     width: max-content;
     scroll-snap-align: none;
     scroll-snap-stop: normal;
@@ -864,12 +864,12 @@
     padding: 0;
     top: auto;
     
-    /* Connect the horizontal loop animation */
-    animation: mobileProductMarquee 25s linear infinite;
+    /* Connect the horizontal translation keyframes loop */
+    animation: mobileProductMarquee 30s linear infinite;
     will-change: transform;
   }
 
-  /* Disable all desktop scroll-timeline animation assignments completely */
+  /* Completely strip out desktop scroll-timeline & sticky bindings */
   .product-snap-section .content,
   .product-snap-section:first-of-type .content {
     position: relative !important;
@@ -880,25 +880,25 @@
     visibility: visible !important;
     filter: none !important;
     
-    /* Structure individual product blocks as side-by-side cards */
+    /* Format the individual product blocks as horizontal layout items */
     display: flex;
     flex-direction: column;
-    width: 300px; /* Fixed uniform width for neat presentation in the loop */
-    height: 480px; 
+    width: 290px; /* Fixed uniform card width for balanced scannability */
+    height: 460px; 
     padding: 24px 20px;
-    margin-right: 20px; /* Spacing between loop items */
+    margin-right: 20px; /* Gap spacing between marquee cards */
     border-radius: 24px;
     flex-shrink: 0;
     box-shadow: 0 10px 30px rgba(10, 15, 22, 0.05);
   }
 
-  /* 3. Re-scale Inner Elements for Compact Horizontal Profiles */
+  /* 3. Re-scale Inner Card Elements for Mobile Viewport Economy */
   .feature-image {
     width: 100%;
     aspect-ratio: 16/10;
     border-radius: 12px;
     margin-bottom: 16px;
-    order: -1;
+    order: -1; /* Keeps product screenshot above the copy blocks */
   }
 
   .feature-text {
@@ -912,25 +912,25 @@
 
   .feature-text p {
     font-size: 0.85rem;
-    line-height: 1.4;
+    line-height: 1.45;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Clips extra descriptions to save uniform vertical size */
+    -webkit-line-clamp: 3; /* Clips heavy text to keep cards uniformly aligned */
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
+  /* Omit details loop list to keep cards light within the running marquee */
   .feature-list {
-    display: none; /* Safely omit extensive list bullet-points to remain compact inside the marquee track */
+    display: none; 
   }
 }
 
-/* 4. Infinite Smooth Loop Translation Frame */
+/* 4. Infinite Loop Animation Frame Configuration */
 @keyframes mobileProductMarquee {
   0% {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    /* Set this to exactly -50% in production once you have cloned your product blocks */
-    transform: translate3d(-50%, 0, 0); 
+    transform: translate3d(-50%, 0, 0); /* Perfectly resets if elements are cleanly cloned */
   }
 }

@@ -968,17 +968,17 @@
   }
 
   /* Year color remapping variants for responsive structures */
-  .milestone-gold .year-digits { color: #eab308; }
-  .milestone-yellow .year-digits { color: #d97706; }
-  .milestone-green .year-digits { color: #22c55e; }
-  .milestone-teal .year-digits { color: #0d9488; }
-  .milestone-red .year-digits { color: #ef4444; }
-  .milestone-orange .year-digits { color: #f97316; }
-  .milestone-magenta .year-digits { color: #ec4899; }
-  .milestone-blue .year-digits { color: #2563eb; }
-  .milestone-cyan .year-digits { color: #06b6d4; }
-  .milestone-indigo .year-digits { color: #4f46e5; }
-  .milestone-purple .year-digits { color: #7c3aed; }
+  .milestone-gold .year-digits { color: #ffffff; }
+  .milestone-yellow .year-digits { color: #ffffff; }
+  .milestone-green .year-digits { color: #ffffff; }
+  .milestone-teal .year-digits { color: #ffffff; }
+  .milestone-red .year-digits { color: #ffffff; }
+  .milestone-orange .year-digits { color: #ffffff; }
+  .milestone-magenta .year-digits { color: #ffffff; }
+  .milestone-blue .year-digits { color: #ffffff; }
+  .milestone-cyan .year-digits { color: #ffffff; }
+  .milestone-indigo .year-digits { color: #ffffff; }
+  .milestone-purple .year-digits { color: #ffffff; }
 }
 
 @media (max-width: 992px) {

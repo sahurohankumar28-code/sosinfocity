@@ -167,7 +167,7 @@
 
     if (!cart || sections.length === 0 || !container) return;
 
-    // Reveal / Hide entire mini navigation context on product frame entering bounds
+    // Reveals the mini tracking bar when scrolling into the product section
     const visibilityObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -185,7 +185,7 @@
 
     visibilityObserver.observe(container);
 
-    // Map scroll focus states to actively highlight current target panel
+    // Dynamically tracks card highlights using the standard layout viewport matrix bounds
     const activeCardObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -348,7 +348,7 @@
       updateCoverflowLayout();
     });
 
-    // Initialize mobile mini navigation deck tracking ruleset on appropriate layout viewports
+    // Initialize mobile tracker if viewport constraint matches layout rules
     if (window.innerWidth <= 768) {
       setupMobileProductCartTracker();
     }

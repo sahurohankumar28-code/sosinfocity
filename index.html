@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
 
 <body>
@@ -133,15 +132,28 @@
         </div>
     </section>
 
-    <!-- PRODUCTS SECTION -->
-
     <section class="products-section">
         <div class="container">
             <div class="products-header">
                 <span class="section-tag">Software Products</span>
                 <h2>Built for Real-World Business Challenges</h2>
             </div>
-            
+
+            <div class="product-mobile-cart" id="productMobileCart">
+                <div class="cart-pill active" onclick="scrollToProduct(1)">
+                    <i class="fas fa-link"></i><span>Integration</span>
+                </div>
+                <div class="cart-pill" onclick="scrollToProduct(2)">
+                    <i class="fas fa-eye"></i><span>Visibility</span>
+                </div>
+                <div class="cart-pill" onclick="scrollToProduct(3)">
+                    <i class="fas fa-expand-arrows-alt"></i><span>Scale</span>
+                </div>
+                <div class="cart-pill" onclick="scrollToProduct(4)">
+                    <i class="fas fa-shield-alt"></i><span>Security</span>
+                </div>
+            </div>
+
             <div class="product-stacking-container">
                 <div class="product-snap-section section-one">
                     <div class="content feature-row-inner">
@@ -236,7 +248,6 @@
         </div>
     </section>
 
-    <!-- Industries Section -->
     <section class="industries-section">
         <div class="container">
             <div class="industries-header">
@@ -246,7 +257,6 @@
 
         <div class="industries-coverflow-viewport">
             <div class="industries-slider-stage" id="industriesStage">
-
                 <div class="industry-card">
                     <img src="https://www.shutterstock.com/shutterstock/photos/710676328/display_1500/stock-photo-indian-law-concept-showing-wooden-gavel-and-indian-flag-710676328.jpg"
                         alt="Government Sector">
@@ -318,7 +328,6 @@
                         <p>Distributed workflow dashboards and security infrastructure for field operation groups.</p>
                     </div>
                 </div>
-
             </div>
 
             <div class="industries-controls">
@@ -329,14 +338,12 @@
         </div>
     </section>
 
-    <!-- Partners -->
     <section class="partners">
         <div class="marquee">
             <div class="marquee-track" id="partnerTrack"></div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <video class="footer-video" autoplay muted loop playsinline>
             <source
@@ -360,10 +367,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- <a href="https://wa.me/919124299848" class="whatsapp-float" target="919124299848">
-        <i class="fab fa-whatsapp"></i>
-    </a> -->
 
     <script src="./js/index.js"></script>
 </body>

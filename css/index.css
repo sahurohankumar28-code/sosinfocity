@@ -30,9 +30,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(105deg,
-      rgba(10, 15, 22, 0.85) 0%,
-      rgba(10, 15, 22, 0.65) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(10, 15, 22, 0.85) 0%,
+    rgba(10, 15, 22, 0.65) 100%
+  );
   z-index: 1;
 }
 
@@ -56,11 +58,13 @@
 }
 
 .hero-gradient-text {
-  background: linear-gradient(135deg,
-      #ffffff 30%,
-      #ffede3 50%,
-      #ffb347 70%,
-      #ffffff 90%);
+  background: linear-gradient(
+    135deg,
+    #ffffff 30%,
+    #ffede3 50%,
+    #ffb347 70%,
+    #ffffff 90%
+  );
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -125,9 +129,10 @@
   background: rgba(255, 255, 255, 0.85);
   border-radius: 28px;
   padding: 32px 28px;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
-              border-color 0.4s, 
-              box-shadow 0.4s;
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s,
+    box-shadow 0.4s;
   border: 1px solid rgba(247, 89, 16, 0.15);
   box-shadow: var(--shadow-sm);
 }
@@ -207,7 +212,7 @@
     margin-top: 100px;
     padding: 60px 0;
   }
-  
+
   .product-snap-section .content {
     position: relative !important;
     animation: none !important;
@@ -261,7 +266,8 @@
     opacity: 0;
     visibility: hidden;
   }
-  35%, 65% {
+  35%,
+  65% {
     filter: none;
     transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
@@ -277,7 +283,8 @@
 
 /* Dedicated Keyframes for Card 1 - Purely Pinned Baseline then Outward Exit Only */
 @keyframes zoom-scroll-first {
-  0%, 65% {
+  0%,
+  65% {
     filter: none;
     transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
@@ -355,6 +362,68 @@
 }
 
 /* ==========================================================================
+   MOBILE MINI-CART NAVIGATION ENGINE (SCROLL DEPLOYED)
+   ========================================================================== */
+.product-mobile-cart {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translate3d(-50%, 140%, 0) scale(0.95);
+  background: rgba(10, 15, 22, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 8px;
+  border-radius: 40px;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(247, 89, 16, 0.15);
+  gap: 6px;
+  transition:
+    transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  width: calc(100% - 32px);
+  max-width: 460px;
+  justify-content: space-between;
+}
+
+.product-mobile-cart.visible {
+  transform: translate3d(-50%, 0, 0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  flex: 1;
+  white-space: nowrap;
+}
+
+.cart-pill i {
+  font-size: 0.85rem;
+}
+
+.cart-pill.active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(247, 89, 16, 0.35);
+}
+
+/* ==========================================================================
    INDUSTRIES SECTION
    ========================================================================== */
 .industries-section {
@@ -409,14 +478,16 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
   will-change: transform, opacity;
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
-              opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
-              box-shadow 0.6s ease;
+  transition:
+    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.6s ease;
 }
 
 .industries-slider-stage .industry-card.active-center {
-  box-shadow: 0 30px 60px rgba(10, 15, 22, 0.3), 
-              0 0 0 2px rgba(247, 89, 16, 0.3);
+  box-shadow:
+    0 30px 60px rgba(10, 15, 22, 0.3),
+    0 0 0 2px rgba(247, 89, 16, 0.3);
 }
 
 .industries-slider-stage .industry-card img {
@@ -431,7 +502,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 60%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.2) 60%
+  );
   z-index: 1;
 }
 
@@ -452,7 +527,9 @@
   padding: 24px;
   opacity: 0;
   transform: translate3d(0, 15px, 0);
-  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .industries-slider-stage .industry-card.active-center .industry-info {
@@ -476,7 +553,9 @@
   color: #9ca3af;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
   padding: 10px;
 }
 
@@ -519,8 +598,20 @@
   width: 100%;
   display: flex;
   position: relative;
-  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
 }
 
 .marquee-track {
@@ -542,9 +633,10 @@
   border: 1px solid #f1f5f9;
   border-radius: 16px;
   padding: 10px 20px;
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), 
-              border-color 0.3s, 
-              box-shadow 0.3s;
+  transition:
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .partner-logo {
@@ -552,7 +644,9 @@
   max-width: 100%;
   object-fit: contain;
   opacity: 0.75;
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .partner-item:hover .partner-logo {
@@ -565,26 +659,30 @@
 }
 
 @keyframes smoothMarqueeRun {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 /* ==========================================================================
    RESPONSIVE DESIGN SYSTEM OVERRIDES
    ========================================================================== */
 @media (max-width: 1160px) {
-  .feature-row-inner { 
-    gap: 40px; 
-    padding: 40px; 
+  .feature-row-inner {
+    gap: 40px;
+    padding: 40px;
   }
-  
-  .industries-slider-stage .industry-card { 
-    width: 580px; 
-    height: 340px; 
+
+  .industries-slider-stage .industry-card {
+    width: 580px;
+    height: 340px;
   }
-  
-  .industries-slider-stage { 
-    height: 390px; 
+
+  .industries-slider-stage {
+    height: 390px;
   }
 }
 
@@ -594,37 +692,37 @@
     gap: 30px;
     padding: 35px;
   }
-  
+
   .feature-row-inner.reverse {
     direction: ltr;
   }
-  
+
   .feature-row-sticky {
     position: relative;
     top: 0 !important;
     margin-bottom: 40px;
   }
-  
+
   .feature-row-sticky .feature-row-inner,
   .feature-row-sticky.zoomed-out .feature-row-inner {
     opacity: 1 !important;
     transform: none !important;
     box-shadow: 0 15px 35px rgba(10, 15, 22, 0.05) !important;
   }
-  
-  .product-stacking-container { 
-    padding-bottom: 20px; 
+
+  .product-stacking-container {
+    padding-bottom: 20px;
   }
-  
-  .industries-slider-stage .industry-card { 
-    width: 460px; 
-    height: 280px; 
+
+  .industries-slider-stage .industry-card {
+    width: 460px;
+    height: 280px;
   }
-  
-  .industries-slider-stage { 
-    height: 320px; 
+
+  .industries-slider-stage {
+    height: 320px;
   }
-  
+
   /* Fix product section on tablet */
   .product-snap-section .content {
     grid-template-columns: 1fr;
@@ -635,7 +733,7 @@
     position: relative;
     top: auto;
   }
-  
+
   .product-snap-section {
     height: auto;
     min-height: 600px;
@@ -644,55 +742,72 @@
 }
 
 @media (max-width: 768px) {
-  .section-header h2, 
-  .feature-text h3, 
-  .industries-header h2, 
+  .product-mobile-cart {
+    display: flex; /* Activate floating bar matrix */
+  }
+
+  .whatsapp-float {
+    bottom: 96px !important; /* Push floating WhatsApp bubble up to clear space */
+  }
+
+  .section-header h2,
+  .feature-text h3,
+  .industries-header h2,
   .partners h2 {
     font-size: 1.8rem;
   }
-  
-  .industries-slider-stage .industry-card { 
-    width: 88vw; 
-    height: 250px; 
+
+  .industries-slider-stage .industry-card {
+    width: 88vw;
+    height: 250px;
   }
-  
-  .industries-slider-stage { 
-    height: 290px; 
+
+  .industries-slider-stage {
+    height: 290px;
   }
-  
-  .industries-slider-stage .industry-info { 
-    padding: 16px; 
-    margin: 12px; 
-    width: calc(100% - 24px); 
+
+  .industries-slider-stage .industry-info {
+    padding: 16px;
+    margin: 12px;
+    width: calc(100% - 24px);
   }
-  
-  .marquee-track { 
-    gap: 20px; 
+
+  .marquee-track {
+    gap: 20px;
   }
-  
-  .partner-item { 
-    width: 140px; 
-    height: 70px; 
+
+  .partner-item {
+    width: 140px;
+    height: 70px;
   }
-  
+
   /* Fix product section on mobile */
   .product-snap-section .content {
     padding: 25px 20px;
     min-height: 400px;
     width: calc(100% - 30px);
   }
-  
+
   .product-snap-section {
     margin-top: 60px;
     min-height: 500px;
   }
-  
+
   .feature-text h3 {
     font-size: 1.6rem;
   }
-  
+
   .hero-main h1 {
     font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .cart-pill span {
+    display: none; /* Hide typography descriptors on very narrow viewports to avoid breaking constraints */
+  }
+  .cart-pill {
+    padding: 10px 6px;
   }
 }
 
@@ -703,7 +818,7 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   .hero-gradient-text {
     animation: none;
     background: linear-gradient(135deg, #ffffff 30%, #ffede3 50%, #ffb347 70%);
@@ -711,11 +826,11 @@
     background-clip: text;
     color: transparent;
   }
-  
+
   .marquee-track {
     animation: none;
   }
-  
+
   .product-snap-section .content {
     animation: none;
     opacity: 1 !important;
@@ -725,33 +840,31 @@
   }
 }
 
-
 /* ==========================================================================
    HOMEPAGE RESPONSIVE CASCADE
    ========================================================================== */
-
 @media (max-width: 1160px) {
-  .industries-slider-stage .industry-card { 
-    width: 580px; 
-    height: 340px; 
+  .industries-slider-stage .industry-card {
+    width: 580px;
+    height: 340px;
   }
-  .industries-slider-stage { 
-    height: 390px; 
+  .industries-slider-stage {
+    height: 390px;
   }
 }
 
 @media (max-width: 992px) {
-  .product-stacking-container { 
-    padding-bottom: 20px; 
+  .product-stacking-container {
+    padding-bottom: 20px;
   }
-  .industries-slider-stage .industry-card { 
-    width: 460px; 
-    height: 280px; 
+  .industries-slider-stage .industry-card {
+    width: 460px;
+    height: 280px;
   }
-  .industries-slider-stage { 
-    height: 320px; 
+  .industries-slider-stage {
+    height: 320px;
   }
-  
+
   /* Fallback and restructuring of stacking product containers on tablet/touch systems */
   .product-snap-section .content {
     grid-template-columns: 1fr !important;
@@ -772,8 +885,8 @@
 }
 
 @media (max-width: 768px) {
-  .section-header h2, 
-  .feature-text h3, 
+  .section-header h2,
+  .feature-text h3,
   .industries-header h2 {
     font-size: 1.6rem;
   }
@@ -783,24 +896,24 @@
   .services-grid {
     grid-template-columns: 1fr;
   }
-  .industries-slider-stage .industry-card { 
-    width: 85vw; 
-    height: 240px; 
+  .industries-slider-stage .industry-card {
+    width: 85vw;
+    height: 240px;
   }
-  .industries-slider-stage { 
-    height: 280px; 
+  .industries-slider-stage {
+    height: 280px;
   }
-  .industries-slider-stage .industry-info { 
-    padding: 16px; 
-    margin: 12px; 
-    width: calc(100% - 24px); 
+  .industries-slider-stage .industry-info {
+    padding: 16px;
+    margin: 12px;
+    width: calc(100% - 24px);
   }
-  .marquee-track { 
-    gap: 20px; 
+  .marquee-track {
+    gap: 20px;
   }
-  .partner-item { 
-    width: 130px; 
-    height: 60px; 
+  .partner-item {
+    width: 130px;
+    height: 60px;
   }
   .product-snap-section .content {
     padding: 24px 16px;
@@ -838,20 +951,17 @@
 /* ==========================================================================
    HOMEPAGE RESPONSIVE STACKING CASCADE (MOBILE VIEW EXCLUSIVELY)
    ========================================================================== */
-
-/* Core Mobile Breakpoint (Smartphones & Large Handhelds) */
 @media (max-width: 768px) {
-  .product-stacking-container { 
-    padding-bottom: 20px; 
+  .product-stacking-container {
+    padding-bottom: 20px;
     background: #fff4eb;
   }
-  
-  /* THE EXACT TRACKING CONTAINER HEIGHT MATCHED TO DESKTOP FOR PERFECT ANIMATION MARGINS */
+
   .product-snap-section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     view-timeline: --section;
-    height: 950px; /* Crucial: Matches desktop exactly to preserve scroll entry/exit rates */
+    height: 950px;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -860,21 +970,18 @@
     margin-top: -20px;
     scroll-margin-top: 10vh;
   }
-  
-  /* MOBILE CARD CARD RE-ARCHITECTING WITH EXACT ZOOM-SCROLL BINDINGS */
+
   .product-snap-section .content {
     position: sticky;
     top: 10vh;
     margin: 0 auto;
-    width: calc(100% - 32px); /* Tightened lateral padding for mobile displays */
+    width: calc(100% - 32px);
     max-width: 1200px;
-    height: 75vh; /* Responsive height safety boundary to prevent clipping */
-    
-    /* ANIMATION PROPERTY MATRIX MATCHED EXACTLY TO DESKTOP */
+    height: 75vh;
+
     animation: zoom-scroll ease-in-out both;
     animation-timeline: --section;
-    
-    /* Structural Shift to Single Column Layout */
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -886,17 +993,15 @@
     overflow: hidden;
   }
 
-  /* Explicit rule forcing Card 1 to remain waiting, static, and unblurred */
   .product-snap-section:first-of-type .content {
     animation-name: zoom-scroll-first;
   }
 
-  /* Mobile Content Refinement Elements */
   .feature-image {
     width: 100%;
-    aspect-ratio: 16/9; /* Flattens visual frame so card content doesn't break overflow limitations */
+    aspect-ratio: 16/9;
     border-radius: 16px;
-    order: -1; /* Visually keeps card layout image above text blocks */
+    order: -1;
   }
 
   .feature-text {
@@ -921,22 +1026,22 @@
   .feature-list li {
     font-size: 0.82rem;
   }
+
   .footer-top {
-        flex-direction: column;
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
-    .footer-bottom p {
-           text-align: center
-    }
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .footer-bottom p {
+    text-align: center;
+  }
 }
 
-/* Extra Tight Phone Forms Viewport Fixes (Small Smartphones) */
 @media (max-width: 480px) {
   .product-snap-section {
-    height: 850px; /* Compressed track space accommodating smaller physical device heights */
+    height: 850px;
   }
 
   .product-snap-section .content {
@@ -953,14 +1058,15 @@
   .feature-text h3 {
     font-size: 1.25rem;
   }
+
   .footer-top {
-        flex-direction: column;
-        text-align: center;
-    }
-    .social-icons {
-        justify-content: center;
-    }
-    .footer-bottom p {
-           text-align: center
-    }
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .footer-bottom p {
+    text-align: center;
+  }
 }

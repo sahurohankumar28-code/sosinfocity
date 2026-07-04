@@ -66,56 +66,7 @@
     text-align: left;
 }
 
-/* Inline Dynamic Search Console Layout */
-.hero-search-bar {
-    display: flex;
-    background: #ffffff;
-    padding: 8px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
-    max-width: 500px;
-    border: 1px solid #e2e8f0;
-}
 
-.search-input-wrapper {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    padding-left: 16px;
-}
-
-.search-icon-left {
-    color: #94a3b8;
-    margin-right: 12px;
-    font-size: 1.1rem;
-}
-
-.hero-search-bar input {
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: #0f172a;
-    width: 100%;
-}
-
-.btn-search-trigger {
-    background:var(--primary);
-    color: #ffffff;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background 0.2s ease;
-}
-
-.btn-search-trigger:hover {
-    background: var(--primary);
-}
 
 /* Graphical Circle Element Frame */
 .hero-graphic-side {

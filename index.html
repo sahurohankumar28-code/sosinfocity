@@ -1,371 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>SOS Infocity</title>
+    <link rel="icon" href="images/Logo.png" type="image/png" sizes="32x32" />
+    <meta
+      name="description"
+      content="SOS Infocity delivers AI-driven IT solutions, secure networks..."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>SOS Infocity | Home</title>
-    <link rel="icon" href="images/Logo.png" type="image/png" sizes="32x32">
-    <meta name="description"
-        content="SOS Infocity delivers AI-driven IT solutions, secure networks, surveillance, and enterprise analytics for modern businesses.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
-
-</head>
-
-<body>
-
+  <body>
     <div class="hero-header">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source
-                src="https://ak.picdn.net/shutterstock/videos/3954292949/preview/stock-footage-global-social-network-connections-and-earth-digital-data-transfer-online-communication-community.mp4"
-                type="video/mp4">
-        </video>
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source
+          src="https://ak.picdn.net/shutterstock/videos/3954292949/preview/stock-footage-global-social-network-connections-and-earth-digital-data-transfer-online-communication-community.mp4"
+          type="video/mp4"
+        />
+      </video>
 
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="images/logo.png" alt="SOS Infocity">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="solutions.html">Solutions <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-menu">
-                            <a href="ai-intelligent-systems.html"><i class="fas fa-microchip"></i> AI Intelligent
-                                Systems</a>
-                            <a href="it-network-solutions.html"><i class="fas fa-network-wired"></i> IT Network
-                                Solutions</a>
-                            <a href="security-surveillance.html"><i class="fas fa-shield-halved"></i> Security
-                                Surveillance</a>
-                            <a href="data-bi-analytics.html"><i class="fas fa-chart-line"></i> Data, BI & Analytics</a>
-                            <a href="connectivity-solutions.html"><i class="fas fa-cloud-arrow-up"></i> Connectivity
-                                Solutions</a>
-                        </div>
-                    </li>
+      <div class="container">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
 
-                    <li><a href="case-studies.html">Case Studies</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html" class="btn-primary" style="padding:8px 22px;">Contact</a></li>
-                </ul>
-                <div class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-
-            <div class="mobile-nav-overlay" id="mobileNavOverlay">
-                <div class="close-mobile" id="closeMobileBtn"><i class="fas fa-times"></i></div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="case-studies.html">Case Studies</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="hero-main">
-                <h1><span class="hero-gradient-text">Smart Infrastructure.<br>Secure Networks.<br>Intelligent
-                        Operations.</span></h1>
-                <p class="hero-desc">AI-driven solutions, enterprise networking, and end-to-end digital transformation —
-                    built for resilience and scale.</p>
-                <div class="hero-buttons">
-                    <a href="case-studies.html" class="btn-primary"><i class="fas fa-arrow-right"></i> Explore Case
-                        Studies</a>
-                    <a href="contact.html" class="btn-outline"><i class="fas fa-headset"></i> Talk to expert</a>
-                </div>
-            </div>
+        <div class="hero-main">
+          <h1>
+            <span class="hero-gradient-text"
+              >Smart Infrastructure.<br />Secure Networks.<br />Intelligent
+              Operations.</span
+            >
+          </h1>
+          <p class="hero-desc">
+            AI-driven solutions, enterprise networking, and end-to-end digital
+            transformation — built for resilience and scale.
+          </p>
+          <div class="hero-buttons">
+            <a href="case-studies.html" class="btn-primary"
+              ><i class="fas fa-arrow-right"></i> Explore Case Studies</a
+            >
+            <a href="contact.html" class="btn-outline"
+              ><i class="fas fa-headset"></i> Talk to expert</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <section class="services-section">
-        <div class="container">
-            <div class="section-header"><span class="section-tag">Core Capabilities</span>
-                <h2>What we deliver</h2>
-                <p>End-to-end enterprise technology solutions built for performance, security, and digital innovation.
-                </p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-brain"></i></div>
-                    <h3>AI & Automation</h3>
-                    <p>Intelligent process automation, computer vision, and generative AI solutions that drive
-                        efficiency.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-server"></i></div>
-                    <h3>Network Infrastructure</h3>
-                    <p>SD-WAN, zero-trust networking, and 5G-ready architecture.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-camera"></i></div>
-                    <h3>Cyber-Physical Security</h3>
-                    <p>AI surveillance, biometric access, real-time threat detection.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-chart-simple"></i></div>
-                    <h3>Analytics & BI</h3>
-                    <p>Self-service dashboards, predictive models, data lakehouse integration.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-wifi"></i></div>
-                    <h3>Connectivity Solutions</h3>
-                    <p>Structured cabling, enterprise Wi-Fi, unified communications.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Software Engineering</h3>
-                    <p>Custom development, legacy modernization, API-led integrations.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Capabilities</span>
+          <h2>What we deliver</h2>
+          <p>
+            End-to-end enterprise technology solutions built for performance,
+            security, and digital innovation.
+          </p>
         </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-brain"></i></div>
+            <h3>AI & Automation</h3>
+            <p>
+              Intelligent process automation, computer vision, and generative AI
+              solutions that drive efficiency.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Network Infrastructure</h3>
+            <p>SD-WAN, zero-trust networking, and 5G-ready architecture.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-camera"></i></div>
+            <h3>Cyber-Physical Security</h3>
+            <p>
+              AI surveillance, biometric access, real-time threat detection.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-chart-simple"></i></div>
+            <h3>Analytics & BI</h3>
+            <p>
+              Self-service dashboards, predictive models, data lakehouse
+              integration.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-wifi"></i></div>
+            <h3>Connectivity Solutions</h3>
+            <p>Structured cabling, enterprise Wi-Fi, unified communications.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Software Engineering</h3>
+            <p>
+              Custom development, legacy modernization, API-led integrations.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PRODUCTS SECTION -->
 
     <section class="products-section">
-        <div class="container">
-            <div class="products-header">
-                <span class="section-tag">Software Products</span>
-                <h2>Built for Real-World Business Challenges</h2>
-            </div>
-            
-            <div class="product-stacking-container">
-                <div class="product-snap-section section-one">
-                    <div class="content feature-row-inner">
-                        <div class="feature-text">
-                            <h3>Effortless Integration</h3>
-                            <p class="subtitle">Works with what you already have</p>
-                            <p>Designed to fit smoothly into current infrastructure and daily workflows, without
-                                creating unnecessary complexity.</p>
-                            <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Easy integration with existing infrastructure
-                                </li>
-                                <li><i class="fas fa-check-circle"></i> Supports multiple teams and locations</li>
-                                <li><i class="fas fa-check-circle"></i> Designed for steady long-term use</li>
-                                <li><i class="fas fa-check-circle"></i> Simple for everyday users to adopt</li>
-                            </ul>
-                        </div>
-                        <div class="feature-image">
-                            <img src="https://www.shutterstock.com/shutterstock/photos/2698054735/display_1500/stock-photo-ai-agent-data-tools-and-workflow-automation-concept-with-businessman-using-digital-tablet-and-2698054735.jpg"
-                                alt="Integration" loading="lazy" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-snap-section section-two">
-                    <div class="content feature-row-inner reverse">
-                        <div class="feature-text">
-                            <h3>Clear Visibility &amp; Coordination</h3>
-                            <p class="subtitle">See everything, respond faster</p>
-                            <p>Connected systems and dashboards help teams view operations clearly and coordinate
-                                seamlessly across departments.</p>
-                            <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Real-time monitoring and reporting</li>
-                                <li><i class="fas fa-check-circle"></i> Shared access to key information</li>
-                                <li><i class="fas fa-check-circle"></i> Faster coordination between teams</li>
-                                <li><i class="fas fa-check-circle"></i> Supports data-driven planning</li>
-                            </ul>
-                        </div>
-                        <div class="feature-image">
-                            <img src="https://www.shutterstock.com/shutterstock/photos/2761270911/display_1500/stock-photo-wind-energy-engineering-team-planning-sustainable-grid-infrastructure-at-sunset-industrial-2761270911.jpg"
-                                alt="Dashboard" loading="lazy" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-snap-section section-three">
-                    <div class="content feature-row-inner">
-                        <div class="feature-text">
-                            <h3>Scalable for Growing Teams</h3>
-                            <p class="subtitle">Expand without limits</p>
-                            <p>Flexible foundations that support expansion across departments, regions, and rising
-                                operational demands.</p>
-                            <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Modular rollout for phased implementation</li>
-                                <li><i class="fas fa-check-circle"></i> Works across distributed branch environments
-                                </li>
-                                <li><i class="fas fa-check-circle"></i> Built to handle rising user and data loads</li>
-                                <li><i class="fas fa-check-circle"></i> Supports future feature additions without rework
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="feature-image">
-                            <img src="https://www.shutterstock.com/shutterstock/photos/2768985903/display_1500/stock-photo-business-hands-stack-together-team-teamwork-partner-corporation-financial-planner-hand-holding-2768985903.jpg"
-                                alt="Scalability" loading="lazy" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-snap-section section-four">
-                    <div class="content feature-row-inner reverse">
-                        <div class="feature-text">
-                            <h3>Secure Lifecycle &amp; Support</h3>
-                            <p class="subtitle">Reliable from launch to optimization</p>
-                            <p>From deployment to long-term optimization, our products stay reliable through updates,
-                                monitoring, and structured support.</p>
-                            <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Security-first release and update cycles</li>
-                                <li><i class="fas fa-check-circle"></i> Ongoing monitoring of system health and usage
-                                </li>
-                                <li><i class="fas fa-check-circle"></i> Faster issue resolution with support-ready
-                                    architecture</li>
-                                <li><i class="fas fa-check-circle"></i> Improvement roadmap aligned with business needs
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="feature-image">
-                            <img src="https://www.shutterstock.com/shutterstock/photos/2524990407/display_1500/stock-photo-devops-software-development-and-it-operations-concept-business-software-engineer-methodology-2524990407.jpg"
-                                alt="Security" loading="lazy" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="products-header">
+          <span class="section-tag">Software Products</span>
+          <h2>Built for Real-World Business Challenges</h2>
         </div>
+
+        <div class="product-stacking-container">
+          <div class="product-snap-section section-one">
+            <div class="content feature-row-inner">
+              <div class="feature-text">
+                <h3>Effortless Integration</h3>
+                <p class="subtitle">Works with what you already have</p>
+                <p>
+                  Designed to fit smoothly into current infrastructure and daily
+                  workflows, without creating unnecessary complexity.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Easy integration with
+                    existing infrastructure
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Supports multiple teams
+                    and locations
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Designed for steady
+                    long-term use
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Simple for everyday
+                    users to adopt
+                  </li>
+                </ul>
+              </div>
+              <div class="feature-image">
+                <img
+                  src="https://www.shutterstock.com/shutterstock/photos/2698054735/display_1500/stock-photo-ai-agent-data-tools-and-workflow-automation-concept-with-businessman-using-digital-tablet-and-2698054735.jpg"
+                  alt="Integration"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-snap-section section-two">
+            <div class="content feature-row-inner reverse">
+              <div class="feature-text">
+                <h3>Clear Visibility &amp; Coordination</h3>
+                <p class="subtitle">See everything, respond faster</p>
+                <p>
+                  Connected systems and dashboards help teams view operations
+                  clearly and coordinate seamlessly across departments.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Real-time monitoring and
+                    reporting
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Shared access to key
+                    information
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Faster coordination
+                    between teams
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Supports data-driven
+                    planning
+                  </li>
+                </ul>
+              </div>
+              <div class="feature-image">
+                <img
+                  src="https://www.shutterstock.com/shutterstock/photos/2761270911/display_1500/stock-photo-wind-energy-engineering-team-planning-sustainable-grid-infrastructure-at-sunset-industrial-2761270911.jpg"
+                  alt="Dashboard"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-snap-section section-three">
+            <div class="content feature-row-inner">
+              <div class="feature-text">
+                <h3>Scalable for Growing Teams</h3>
+                <p class="subtitle">Expand without limits</p>
+                <p>
+                  Flexible foundations that support expansion across
+                  departments, regions, and rising operational demands.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Modular rollout for
+                    phased implementation
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Works across distributed
+                    branch environments
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Built to handle rising
+                    user and data loads
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Supports future feature
+                    additions without rework
+                  </li>
+                </ul>
+              </div>
+              <div class="feature-image">
+                <img
+                  src="https://www.shutterstock.com/shutterstock/photos/2768985903/display_1500/stock-photo-business-hands-stack-together-team-teamwork-partner-corporation-financial-planner-hand-holding-2768985903.jpg"
+                  alt="Scalability"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-snap-section section-four">
+            <div class="content feature-row-inner reverse">
+              <div class="feature-text">
+                <h3>Secure Lifecycle &amp; Support</h3>
+                <p class="subtitle">Reliable from launch to optimization</p>
+                <p>
+                  From deployment to long-term optimization, our products stay
+                  reliable through updates, monitoring, and structured support.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Security-first release
+                    and update cycles
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Ongoing monitoring of
+                    system health and usage
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Faster issue resolution
+                    with support-ready architecture
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Improvement roadmap
+                    aligned with business needs
+                  </li>
+                </ul>
+              </div>
+              <div class="feature-image">
+                <img
+                  src="https://www.shutterstock.com/shutterstock/photos/2524990407/display_1500/stock-photo-devops-software-development-and-it-operations-concept-business-software-engineer-methodology-2524990407.jpg"
+                  alt="Security"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Industries Section -->
     <section class="industries-section">
-        <div class="container">
-            <div class="industries-header">
-                <h2>Reliable IT & Network Solutions Across Industries</h2>
+      <div class="container">
+        <div class="industries-header">
+          <h2>Reliable IT & Network Solutions Across Industries</h2>
+        </div>
+      </div>
+
+      <div class="industries-coverflow-viewport">
+        <div class="industries-slider-stage" id="industriesStage">
+          <div class="industry-card">
+            <img
+              src="https://www.shutterstock.com/shutterstock/photos/710676328/display_1500/stock-photo-indian-law-concept-showing-wooden-gavel-and-indian-flag-710676328.jpg"
+              alt="Government Sector"
+            />
+            <div class="industry-info">
+              <h4>Government & Public Sector</h4>
+              <p>
+                Secure networks, safe public monitoring systems, and
+                e-governance foundations.
+              </p>
             </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/z/stock-photo-caucasian-man-handing-cash-to-bank-teller-across-counter-both-hands-visible-through-protective-2757439467.jpg"
+              alt="Banking Infrastructure"
+            />
+            <div class="industry-info">
+              <h4>Banking & Financial Services</h4>
+              <p>
+                High-speed branch data loops, zero-trust cybersecurity, and
+                server connectivity.
+              </p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/z/stock-photo--g-global-network-technology-communication-antenna-tower-for-wireless-high-speed-internet-2436050911.jpg"
+              alt="Telecom Layouts"
+            />
+            <div class="industry-info">
+              <h4>Telecom Operations</h4>
+              <p>
+                Advanced routing channels, backhaul fiber operations, and
+                unified tower integrations.
+              </p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/z/stock-photo-cold-rolled-steel-coil-at-storage-area-in-steel-industry-plant-2523349199.jpg"
+              alt="Industrial Steel Systems"
+            />
+            <div class="industry-info">
+              <h4>Steel & Power Industry</h4>
+              <p>
+                Heavy automation links, industrial monitoring matrices, and
+                continuous runtime metrics.
+              </p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/image-photo/industrial-ball-mill-grinds-ore-260nw-2623328631.jpg"
+              alt="Mining Safety Loops"
+            />
+            <div class="industry-info">
+              <h4>Metal & Mining Sector</h4>
+              <p>
+                Predictive physical asset metrics tracking and site-to-site
+                telemetry routing networks.
+              </p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/z/stock-photo-cement-plant-factory-manufacturing-industrial-architecture-aerial-2499224769.jpg"
+              alt="Cement Mills"
+            />
+            <div class="industry-info">
+              <h4>Cement & Chemical Processing</h4>
+              <p>
+                Machine health automation feeds and process stability management
+                metrics systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/image-photo/students-graduation-caps-sky-happiness-260nw-2475380851.jpg"
+              alt="Universities Networks"
+            />
+            <div class="industry-info">
+              <h4>Education & Universities</h4>
+              <p>
+                Campus Wi-Fi structures, dynamic student record firewalls, and
+                smart digital auditoriums.
+              </p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img
+              src="https://image.shutterstock.com/z/stock-photo-food-donation-and-clipboard-with-hands-of-person-for-community-service-humanitarian-outreach-and-2715858287.jpg"
+              alt="NGO Sector Systems"
+            />
+            <div class="industry-info">
+              <h4>NGO & Development Projects</h4>
+              <p>
+                Distributed workflow dashboards and security infrastructure for
+                field operation groups.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="industries-coverflow-viewport">
-            <div class="industries-slider-stage" id="industriesStage">
-
-                <div class="industry-card">
-                    <img src="https://www.shutterstock.com/shutterstock/photos/710676328/display_1500/stock-photo-indian-law-concept-showing-wooden-gavel-and-indian-flag-710676328.jpg"
-                        alt="Government Sector">
-                    <div class="industry-info">
-                        <h4>Government & Public Sector</h4>
-                        <p>Secure networks, safe public monitoring systems, and e-governance foundations.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/z/stock-photo-caucasian-man-handing-cash-to-bank-teller-across-counter-both-hands-visible-through-protective-2757439467.jpg"
-                        alt="Banking Infrastructure">
-                    <div class="industry-info">
-                        <h4>Banking & Financial Services</h4>
-                        <p>High-speed branch data loops, zero-trust cybersecurity, and server connectivity.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/z/stock-photo--g-global-network-technology-communication-antenna-tower-for-wireless-high-speed-internet-2436050911.jpg"
-                        alt="Telecom Layouts">
-                    <div class="industry-info">
-                        <h4>Telecom Operations</h4>
-                        <p>Advanced routing channels, backhaul fiber operations, and unified tower integrations.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/z/stock-photo-cold-rolled-steel-coil-at-storage-area-in-steel-industry-plant-2523349199.jpg"
-                        alt="Industrial Steel Systems">
-                    <div class="industry-info">
-                        <h4>Steel & Power Industry</h4>
-                        <p>Heavy automation links, industrial monitoring matrices, and continuous runtime metrics.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/image-photo/industrial-ball-mill-grinds-ore-260nw-2623328631.jpg"
-                        alt="Mining Safety Loops">
-                    <div class="industry-info">
-                        <h4>Metal & Mining Sector</h4>
-                        <p>Predictive physical asset metrics tracking and site-to-site telemetry routing networks.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/z/stock-photo-cement-plant-factory-manufacturing-industrial-architecture-aerial-2499224769.jpg"
-                        alt="Cement Mills">
-                    <div class="industry-info">
-                        <h4>Cement & Chemical Processing</h4>
-                        <p>Machine health automation feeds and process stability management metrics systems.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/image-photo/students-graduation-caps-sky-happiness-260nw-2475380851.jpg"
-                        alt="Universities Networks">
-                    <div class="industry-info">
-                        <h4>Education & Universities</h4>
-                        <p>Campus Wi-Fi structures, dynamic student record firewalls, and smart digital auditoriums.</p>
-                    </div>
-                </div>
-
-                <div class="industry-card">
-                    <img src="https://image.shutterstock.com/z/stock-photo-food-donation-and-clipboard-with-hands-of-person-for-community-service-humanitarian-outreach-and-2715858287.jpg"
-                        alt="NGO Sector Systems">
-                    <div class="industry-info">
-                        <h4>NGO & Development Projects</h4>
-                        <p>Distributed workflow dashboards and security infrastructure for field operation groups.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="industries-controls">
-                <button class="nav-arrow-btn" onclick="shiftCoverflow(-1)"><i class="fas fa-chevron-left"></i></button>
-                <div class="indicator-dots" id="coverflowDots"></div>
-                <button class="nav-arrow-btn" onclick="shiftCoverflow(1)"><i class="fas fa-chevron-right"></i></button>
-            </div>
+        <div class="industries-controls">
+          <button class="nav-arrow-btn" onclick="shiftCoverflow(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="indicator-dots" id="coverflowDots"></div>
+          <button class="nav-arrow-btn" onclick="shiftCoverflow(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- Partners -->
     <section class="partners">
-        <div class="marquee">
-            <div class="marquee-track" id="partnerTrack"></div>
-        </div>
+      <div class="marquee">
+        <div class="marquee-track" id="partnerTrack"></div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <video class="footer-video" autoplay muted loop playsinline>
-            <source
-                src="https://ak.picdn.net/shutterstock/videos/4000038435/preview/stock-footage-futuristic-digital-landscape-featuring-blue-neural-network-lines-abstract-background-represents.mp4"
-                type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="SOS Infocity">
-                </div>
-                <div class="social-icons">
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 SOS Infocity. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
-    <!-- <a href="https://wa.me/919124299848" class="whatsapp-float" target="919124299848">
-        <i class="fab fa-whatsapp"></i>
-    </a> -->
-
+    <script src="./js/header-footer.js"></script>
     <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/solutions.js"></script>
+  </body>
 </html>

@@ -1,0 +1,332 @@
+.hero-header {
+  position: relative;
+  min-height: 20vh;
+  background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
+}
+
+.hero-header h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: white;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+/* ==========================================================================
+   INTELLIGENT ENERGY MANAGEMENT SYSTEMS (IEMS) COMPONENT STYLING
+   ========================================================================== */
+
+.iems-page {
+  background: var(--bg-white);
+  overflow: hidden;
+}
+
+/* ── Hero Segment ── */
+.iems-hero {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.iems-hero h1 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.iems-hero-badge {
+  margin-bottom: 16px;
+}
+
+.iems-hero-badge .section-tag {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.iems-hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-mid);
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+.iems-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.iems-hero-cta:hover {
+  background: var(--primary-light);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.iems-hero-cta svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Image Panel visual matrix ── */
+.iems-hero-visual {
+  position: relative;
+}
+
+.iems-hero-img-wrap {
+  border-radius: 28px; /* Synced beautifully with .board-member-card in about.css */
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: var(--orange-light);
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.iems-hero-visual:hover .iems-hero-img-wrap {
+  transform: scale(1.015);
+}
+
+.iems-hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.iems-hero-img-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.iems-hero-img-fallback svg {
+  width: 64px;
+  height: 64px;
+  stroke: var(--primary);
+  opacity: 0.5;
+}
+
+/* ==========================================================================
+   DETERMINISTIC OVERVIEW PROCESSOR GRID
+   ========================================================================== */
+.iems-divider {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px;
+  border-top: 1px solid var(--border-light);
+}
+
+.iems-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.iems-section h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.iems-overview-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.iems-overview-text p {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--ink-mid);
+  margin: 0;
+}
+
+/* ── Feature Architecture Block Matrix ── */
+.iems-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.iems-feat {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 24px; /* Matches .hub-team-member-card radius in about.css */
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition:
+    border-color 0.4s ease,
+    transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.4s;
+  will-change: transform;
+}
+
+.iems-feat:hover {
+  border-color: rgba(247, 89, 16, 0.25);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-glow);
+}
+
+.iems-feat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--orange-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 20px;
+  border: 1px solid var(--orange-mid);
+}
+
+.iems-feat h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.iems-feat p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ==========================================================================
+   SYSTEM BENEFIT OUTCOMES
+   ========================================================================== */
+.iems-benefits {
+  display: grid;
+  grid-template-columns: 1.21fr 0.79fr; /* Fine balanced asymmetrical structure */
+  gap: 60px;
+  align-items: center;
+}
+
+.iems-benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.iems-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--ink-mid);
+}
+
+.iems-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--orange-light);
+  border: 1px solid var(--orange-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--primary);
+}
+
+/* ==========================================================================
+   TABLET & MOBILE DYNAMIC CASCADE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .iems-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 24px 40px;
+  }
+
+  .iems-overview-text {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .iems-benefits {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .iems-section {
+    padding: 50px 24px;
+  }
+
+  .iems-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .iems-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .iems-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .iems-feat {
+    padding: 24px;
+  }
+}

@@ -1,12 +1,9 @@
-/* ==========================================================================
-   THE DARK THEME MATRIX STYLING FRAMEWORK
-   ========================================================================== */
+
 body.gallery-dark-mode {
   background: #06090e;
   color: #e2e8f0;
 }
 
-/* Gallery Specific Hero Variant */
 .gallery-hero-header {
   position: relative;
   min-height: 45vh;
@@ -70,9 +67,6 @@ body.gallery-dark-mode {
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   MATRIX FILTER CONTROLS MENU
-   ========================================================================== */
 .gallery-matrix-section {
   padding: 60px 0 100px;
   background: #06090e;
@@ -122,9 +116,6 @@ body.gallery-dark-mode {
   color: var(--primary);
 }
 
-/* ==========================================================================
-   BENTO ASYMMETRICAL TELEMETRY GRID
-   ========================================================================== */
 .matrix-layout-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -176,7 +167,6 @@ body.gallery-dark-mode {
   filter: brightness(0.85) contrast(1.05);
 }
 
-/* Linear Scannable Mask Shader */
 .matrix-card-inner::after {
   content: "";
   position: absolute;
@@ -230,7 +220,6 @@ body.gallery-dark-mode {
   max-width: 480px;
 }
 
-/* Hover Interface Transformations */
 .matrix-card-inner:hover img {
   transform: scale(1.04);
   filter: brightness(0.95) contrast(1.05);
@@ -247,9 +236,7 @@ body.gallery-dark-mode {
     0 0 30px rgba(247, 89, 16, 0.05);
 }
 
-/* ==========================================================================
-   MODAL LIGHTBOX OVERLAY COMPONENTS
-   ========================================================================== */
+
 .matrix-lightbox {
   position: fixed;
   inset: 0;
@@ -328,9 +315,6 @@ body.gallery-dark-mode {
   font-weight: 500;
 }
 
-/* ==========================================================================
-   ANIMATION BEACONS
-   ========================================================================== */
 @keyframes pulseBeacon {
   0% {
     opacity: 0.4;
@@ -343,9 +327,6 @@ body.gallery-dark-mode {
   }
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN ADAPTATION CASCADE
-   ========================================================================== */
 @media (max-width: 1100px) {
   .matrix-layout-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -377,9 +358,6 @@ body.gallery-dark-mode {
   }
 }
 
-/* ==========================================================================
-   GALLERY PAGE RESPONSIVE CASCADE
-   ========================================================================== */
 
 @media (max-width: 1100px) {
   .matrix-layout-grid {
@@ -387,7 +365,7 @@ body.gallery-dark-mode {
     grid-auto-rows: 280px;
   }
   .matrix-card.size-wide {
-    grid-column: span 1; /* Fall back to standard block to avoid clipping profiles */
+    grid-column: span 1; 
   }
 }
 

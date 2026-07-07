@@ -1,4 +1,4 @@
-// Simple Navigation Drawer Controller
+
 const openBtn = document.getElementById("mobileMenuBtn");
 const closeBtn = document.getElementById("closeMobileBtn");
 const overlay = document.getElementById("mobileNavOverlay");
@@ -16,9 +16,7 @@ window.addEventListener("beforeunload", () => {
 });
 window.scrollTo(0, 0);
 
-// ---------------------------------------------------------------------------
-// DATA DRIVEN ENTERPRISE CASE STUDIES - INJECTION ENGINE
-// ---------------------------------------------------------------------------
+
 const caseStudiesData = [
   {
     num: "01",
@@ -82,7 +80,6 @@ function renderBlogGridCaseStudies() {
   });
 }
 
-// Global execution trigger
 document.addEventListener("DOMContentLoaded", () => {
   renderBlogGridCaseStudies();
 });

@@ -1,8 +1,4 @@
-/**
- * SOS Infocity - Advanced Matrix Gallery Layer
- * Controls Categorized Node Filtering Engine, Mobile Menus,
- * and Lightbox Media State Managers.
- */
+
 (function () {
   "use strict";
 
@@ -14,7 +10,6 @@
   });
   window.scrollTo(0, 0);
 
-  // 1. MOBILE RESPONSIVE DRAWER OVERLAYS
   function initMobileNavigation() {
     const mobileBtn = document.getElementById("mobileMenuBtn");
     const overlay = document.getElementById("mobileNavOverlay");
@@ -30,7 +25,6 @@
     });
   }
 
-  // 2. ISOLATED BENTO CATEGORY FILTER ENGINE
   function initGridFilteringEngine() {
     const filterButtons = document.querySelectorAll(".filter-btn");
     const gridItems = document.querySelectorAll(".matrix-card");
@@ -40,13 +34,11 @@
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        // Adjust dynamic button state classes
         filterButtons.forEach((btn) => btn.classList.remove("active"));
         button.classList.add("active");
 
         const targetFilter = button.getAttribute("data-filter");
 
-        // Animate grid elements opacity state matrices
         gridItems.forEach((item) => {
           const itemCategory = item.getAttribute("data-category");
 
@@ -60,7 +52,6 @@
     });
   }
 
-  // 3. SECURE MEDIA INTERACTION LIGHTBOX DISPLAY
   function initLightboxMediaViewer() {
     const cards = document.querySelectorAll(".matrix-card-inner");
     const lightbox = document.getElementById("matrixLightbox");
@@ -74,7 +65,7 @@
     if (!cards.length || !lightbox || !lightboxImg || !lightboxCap || !closeBtn)
       return;
 
-    // Open Lightbox Handling Linkage
+    
     cards.forEach((card) => {
       card.addEventListener("click", () => {
         const imgSource = card
@@ -87,24 +78,26 @@
 
         lightbox.classList.add("active");
         lightbox.setAttribute("aria-hidden", "false");
-        document.body.style.overflow = "hidden"; // Lock behind-viewport tracking scroll lines
+        document.body.style.overflow = "hidden"; 
+        
       });
     });
 
-    // Close Lightbox Handling Linkage
+    
     const deactivateLightbox = () => {
       lightbox.classList.remove("active");
       lightbox.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
       setTimeout(() => {
         lightboxImg.setAttribute("src", "");
-      }, 300); // Purge asset pipeline buffer
+      }, 300); 
+      
     };
 
     closeBtn.addEventListener("click", deactivateLightbox);
     if (overlay) overlay.addEventListener("click", deactivateLightbox);
 
-    // Escape Key Binding Tracker
+    
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && lightbox.classList.contains("active")) {
         deactivateLightbox();
@@ -112,7 +105,7 @@
     });
   }
 
-  // SYSTEM INTEGRATION START ROUTER PIPELINES
+  
   const bootGallerySystems = () => {
     initMobileNavigation();
     initGridFilteringEngine();

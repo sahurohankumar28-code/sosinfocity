@@ -1,3 +1,9 @@
+
+#header-placeholder {
+  position: relative;
+  z-index: 100; 
+}
+
 .hero-header {
   position: relative;
   min-height: 100vh;
@@ -33,7 +39,7 @@
   align-items: center;
   margin-top: 40px;
   position: relative;
-  z-index: 5;
+  z-index: 5; 
 }
 
 .hero-text-side h1 {
@@ -55,7 +61,6 @@
   text-align: left;
 }
 
-/* Graphical Circle Element Frame */
 .hero-graphic-side {
   position: relative;
   display: flex;
@@ -75,7 +80,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Concentric Rings Layout Vector Elements */
 .vector-ring-system {
   position: absolute;
   inset: 0;
@@ -103,10 +107,6 @@
   width: 520px;
   height: 520px;
 }
-
-/* ==========================================================================
-           CULTURE HIGHLIGHTS SPLIT GRID
-           ========================================================================== */
 .careers-culture-section {
   padding: 120px 0;
   background: #ffffff;
@@ -213,9 +213,6 @@
   pointer-events: none;
 }
 
-/* ==========================================================================
-           MODERN GRID OPENINGS LAYOUT FRAMEWORK
-           ========================================================================== */
 .openings-section {
   padding: 40px 0 120px;
   background: #ffffff;
@@ -330,79 +327,7 @@
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
 }
 
-/* ==========================================================================
-           FOOTER STYLING
-           ========================================================================== */
-.footer {
-  position: relative;
-  background: #0a0f16;
-  color: #ffffff;
-  padding: 60px 0 30px;
-  overflow: hidden;
-}
 
-.footer-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.15;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.footer .container {
-  position: relative;
-  z-index: 2;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
-
-.footer-brand img {
-  max-height: 50px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons a {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.05);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  background: var(--primary);
-  transform: translateY(-3px);
-}
-
-.footer-bottom {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9rem;
-}
-
-/* ==========================================================================
-           CAREERS PAGE RESPONSIVE CASCADE SYSTEM
-           ========================================================================== */
 @media (max-width: 1024px) {
   .hero-content-split {
     grid-template-columns: 1fr;

@@ -6,7 +6,6 @@ window.addEventListener("beforeunload", () => {
 });
 window.scrollTo(0, 0);
 
-// Mobile Menu Functionality
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const mobileNavOverlay = document.getElementById("mobileNavOverlay");
 const closeMobileBtn = document.getElementById("closeMobileBtn");
@@ -25,7 +24,6 @@ if (mobileMenuBtn && mobileNavOverlay && closeMobileBtn) {
   });
 }
 
-// Form Submission Handler
 const contactForm = document.getElementById("contactForm");
 const formAlert = document.getElementById("formAlert");
 
@@ -53,7 +51,6 @@ if (contactForm) {
     submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
     submitBtn.disabled = true;
 
-    // Simulate form submission
     setTimeout(() => {
       const submissions = JSON.parse(
         localStorage.getItem("contact_submissions") || "[]",
@@ -90,7 +87,6 @@ function showAlert(message, type) {
   }, 5000);
 }
 
-// Active link highlighting for Contact page
 document.querySelectorAll(".nav-links a").forEach((link) => {
   if (link.textContent.trim() === "Contact") {
     link.style.color = "var(--primary-light)";

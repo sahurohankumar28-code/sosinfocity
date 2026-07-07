@@ -32,10 +32,8 @@
   <body>
     <div class="hero-header">
       <div class="container">
-        <!-- Header -->
         <div id="header-placeholder"></div>
 
-        <!-- Hero Title -->
         <div style="margin-top: 40px">
           <h1>Driving India’s digital transformation</h1>
           <p>
@@ -46,7 +44,6 @@
       </div>
     </div>
 
-    <!-- About Main Content: Our Story -->
     <section class="about-hero-section">
       <div class="container">
         <div class="about-grid">
@@ -95,7 +92,6 @@
       </div>
     </section>
 
-    <!-- Mission & Vision Cards (Enhanced) -->
     <section class="mv-section">
       <div class="container">
         <div style="text-align: center">
@@ -152,7 +148,6 @@
       </div>
     </section>
 
-    <!-- Journey Winding Road Timeline / Milestones -->
     <section class="journey-section">
       <div class="container">
         <div class="section-header">
@@ -173,13 +168,16 @@
             <path
               id="roadProgressPath"
               class="road-track-progress"
-              d="M 0,220 L 1050,220 C 1150,220 1150,380 1000,420 L 150,580 C 50,600 50,760 200,760 L 1200,760"
+              d="M 160,245 L 1050,220 C 1150,220 1150,380 1000,420 L 150,580 C 50,600 50,760 200,760 L 1000,760"
             />
+            <g id="roadArrow" style="opacity: 0;">
+              <polygon points="-15,-10 15,0 -15,10" fill="#f75910" />
+            </g>
           </svg>
 
           <div
             class="road-milestone-landmark milestone-gold position-above"
-            style="left: 14%; top: 245px"
+            style="left: 14%; top: 270px"
           >
             <div class="milestone-text-block">
               <div class="block-header">
@@ -203,7 +201,7 @@
 
           <div
             class="road-milestone-landmark milestone-yellow"
-            style="left: 38%; top: 245px"
+            style="left: 38%; top: 266px"
           >
             <div class="milestone-text-block">
               <div class="block-header">
@@ -227,7 +225,7 @@
 
           <div
             class="road-milestone-landmark milestone-green"
-            style="left: 62%; top: 265px"
+            style="left: 62%; top: 273px"
           >
             <div class="milestone-text-block">
               <div class="block-header">
@@ -430,7 +428,6 @@
         </div>
       </div>
     </section>
-    <!-- Insights Section -->
 
     <section class="insights-section">
       <div class="container">
@@ -568,7 +565,6 @@
       </div>
     </section>
 
-    <!-- VOICES FROM THE INFRASTRUCTURE SECTION -->
     <section class="las-testimonials-section">
       <div class="container">
         <div class="las-section-heading centered">
@@ -579,7 +575,7 @@
 
       <div class="las-ts-viewport">
         <div class="las-ts-track" id="testimonialMarqueeTrack">
-          <!-- Group A -->
+          
           <div class="las-ts-card">
             <div class="ts-quote-mark">“</div>
             <div class="ts-header">
@@ -643,7 +639,6 @@
             </p>
           </div>
 
-          <!-- Group B (Cloned nodes for a flawless seamless infinity ribbon wrap loop) -->
           <div class="las-ts-card" aria-hidden="true">
             <div class="ts-quote-mark">“</div>
             <div class="ts-header">
@@ -710,9 +705,7 @@
       </div>
     </section>
 
-    <!-- WORKSPACE GALLERY SECTION -->
     <section class="las-hero-marquee-section">
-      <!-- Structural Background Layer configuration -->
       <div class="las-gallery-bg-overlay"></div>
 
       <div class="las-split-container">
@@ -808,12 +801,11 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <div id="footer-placeholder"></div>
 
     <script src="./js/header-footer.js"></script>
 
     <script src="./js/about.js"></script>
-    <script src="./js/solutions.js"></script>
+    
   </body>
 </html>

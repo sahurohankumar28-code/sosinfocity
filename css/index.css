@@ -1,6 +1,4 @@
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
+
 .hero-header {
   position: relative;
   min-height: 100vh;
@@ -98,9 +96,6 @@
   margin-top: 40px;
 }
 
-/* ==========================================================================
-   SERVICES SECTION
-   ========================================================================== */
 .services-section {
   padding: 80px 0;
   background: linear-gradient(125deg, #fef9f5 0%, #ffffff 40%, #fff5ed 100%);
@@ -163,9 +158,6 @@
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   PRODUCTS SECTION (CRISP STACKING CARD SYSTEM)
-   ========================================================================== */
 .products-section {
   padding: 80px 0;
   background: #fff4eb;
@@ -191,11 +183,10 @@
   background: #fff4eb;
 }
 
-/* Scroll Tracks for Panels */
 .product-snap-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* Controlled structural length for native scrolling */
+  height: 100vh; 
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -203,7 +194,6 @@
   view-timeline: --section;
 }
 
-/* Crisp Hardware-Accelerated Content Cards */
 .product-snap-section .content {
   position: sticky;
   top: 12vh;
@@ -222,18 +212,16 @@
   padding: 48px;
   box-shadow: 0 20px 50px rgba(10, 15, 22, 0.06);
 
-  /* Bind structural scroll behaviors */
+  
   animation: zoom-scroll ease-in-out both;
   animation-timeline: --section;
 
-  /* Fix Blurry Text: Forces hardware acceleration and sharp raster rendering */
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Incremental Sticky Stack Offsets to create layered accumulation look */
 .product-snap-section.section-one .content {
   top: 12vh;
   animation-name: zoom-scroll-first;
@@ -255,7 +243,6 @@
   direction: ltr;
 }
 
-/* Performance Optimized Scaling Paths */
 @keyframes zoom-scroll {
   0% {
     transform: scale(0.96) translate3d(0, 30px, 0);
@@ -284,7 +271,6 @@
   }
 }
 
-/* No Scroll Timeline Fallbacks */
 @supports not (animation-timeline: --section) {
   .product-snap-section {
     height: auto;
@@ -297,7 +283,6 @@
   }
 }
 
-/* Interior Typography and List Design Blocks */
 .feature-text {
   display: flex;
   flex-direction: column;
@@ -362,9 +347,6 @@
   display: block;
 }
 
-/* ==========================================================================
-   INDUSTRIES SECTION
-   ========================================================================== */
 .industries-section {
   position: relative;
   background: #fafcff;
@@ -524,9 +506,6 @@
   border-radius: 6px;
 }
 
-/* ==========================================================================
-   PARTNERS MARQUEE
-   ========================================================================== */
 .partners {
   padding: 40px 0;
   text-align: center;
@@ -606,9 +585,6 @@
   }
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN SYSTEM OVERRIDES
-   ========================================================================== */
 
 @media (max-width: 1160px) {
   .product-snap-section .content {
@@ -633,7 +609,6 @@
     font-size: 1.8rem;
   }
 
-  /* Split ratio tuning for smaller tablet spaces */
   .product-snap-section .content {
     grid-template-columns: 1.1fr 0.9fr;
     padding: 32px;
@@ -655,7 +630,6 @@
   }
 }
 
-/* SMARTPHONE BREAKPOINT */
 @media (max-width: 768px) {
   .hero-main h1 {
     font-size: clamp(2rem, 7vw, 2.8rem);
@@ -668,12 +642,10 @@
     grid-template-columns: 1fr;
   }
 
-  /* Extends frame tracking bounds to prevent pixel distortion and blur */
   .product-snap-section {
     height: 105vh;
   }
 
-  /* Structural shifting: converts two-column grid into crisp one-column display */
   .product-snap-section .content {
     display: flex;
     flex-direction: column;
@@ -685,14 +657,12 @@
     box-shadow: 0 15px 40px rgba(10, 15, 22, 0.08);
   }
 
-  /* Force the visual image above text details cleanly */
   .feature-image {
     order: -1;
     aspect-ratio: 16/9;
     border-radius: 16px;
   }
 
-  /* Precise Fluid Typography Updates */
   .feature-text {
     gap: 4px;
   }
@@ -739,7 +709,6 @@
   }
 }
 
-/* EXTRA SMALL PHONES */
 @media (max-width: 480px) {
   .product-snap-section .content {
     padding: 16px;
@@ -757,7 +726,6 @@
   }
 }
 
-/* REDUCED MOTION SAFEGUARDS */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

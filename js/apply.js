@@ -7,7 +7,6 @@ window.addEventListener("beforeunload", () => {
 window.scrollTo(0, 0);
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Dynamic Header Synchronizer Engine
   const urlParams = new URLSearchParams(window.location.search);
   const selectedJob = urlParams.get("job");
   const headerTitleElement = document.getElementById("activeRoleHeader");
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     headerTitleElement.textContent = decodeURIComponent(selectedJob);
   }
 
-  // 2. Wizard Management Parameters
   let currentStepIndex = 0;
   const steps = document.querySelectorAll(".form-step-panel");
   const dots = document.querySelectorAll(".step-dot");
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return isValid;
   }
 
-  // 3. Sequential Button Directives Handler
   formsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("next-step-btn")) {
       if (validateCurrentStepInputs()) {
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 4. Conditional Toggle Selector (Page 2)
   const experienceRadios = document.querySelectorAll(
     'input[name="hasExperience"]',
   );
@@ -79,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 5. Document Upload Dropzone Handlers
   const fileInput = document.getElementById("resumeFile");
   const dropZone = document.getElementById("dropZone");
   const fileBadgeRow = document.getElementById("fileBadgeRow");
@@ -104,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 6. Final Data Packet Interception Pipeline
   formsContainer.addEventListener("submit", (e) => {
     e.preventDefault();
     alert(

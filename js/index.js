@@ -1,9 +1,5 @@
 (function () {
   "use strict";
-
-  // ---------------------------------------------
-  // RESET SCROLL TO TOP ON REFRESH
-  // ---------------------------------------------
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   }
@@ -12,9 +8,6 @@
   });
   window.scrollTo(0, 0);
 
-  // ---------------------------------------------
-  // STATS / COUNTER ANIMATION ENGINE
-  // ---------------------------------------------
   function animateCounter(elementId, targetValue, duration = 2800) {
     const element = document.getElementById(elementId);
     if (!element) return;
@@ -52,9 +45,6 @@
     observer.observe(statsRow);
   }
 
-  // ---------------------------------------------
-  // INFINITE 3D COVERFLOW MODULE (SMOOTH & FLUID)
-  // ---------------------------------------------
   let currentCoverflowIndex = 0;
   let coverflowCards = [];
   let coverflowAutoTimer = null;
@@ -97,7 +87,7 @@
 
         card.style.transform = `translate3d(${translateX}px, 0px, ${translateZ}px) scale(${scale}) rotateY(${rotateY}deg)`;
         card.style.zIndex = 40 - absOffset;
-        card.style.opacity = opacity < 0 ? 0 : opacity;
+        card.style.opacity = Math.max(opacity, 0);
         card.style.pointerEvents = absOffset <= 1 ? "auto" : "none";
       }
     });
@@ -157,9 +147,6 @@
     startCoverflowPlaybackLoop();
   }
 
-  // ---------------------------------------------
-  // PARTNERS MARQUEE ENGINE
-  // ---------------------------------------------
   const partnerLogos = [
     "images/allied.png",
     "images/SonicWall.png",
@@ -252,9 +239,6 @@
     });
   }
 
-  // ---------------------------------------------
-  // GLOBAL INITIALIZATION CONTROLLER
-  // ---------------------------------------------
   function initializeAllComponents() {
     try {
       renderPartners();

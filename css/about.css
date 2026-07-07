@@ -1,6 +1,3 @@
-/* ==========================================================================
-   GLOBAL UTILITIES & SHARED HERO DEFINITIONS
-   ========================================================================== */
 .hero-header {
   position: relative;
   min-height: 50vh;
@@ -27,9 +24,6 @@
   text-align: center;
 }
 
-/* ==========================================================================
-   STORY & ANALYTICS LAYOUTS
-   ========================================================================== */
 .about-hero-section {
   background: linear-gradient(125deg, #fef9f5 0%, #ffffff 100%);
   padding: 50px 0;
@@ -84,9 +78,6 @@
   transform: scale(1.02);
 }
 
-/* ==========================================================================
-   MISSION & VISION COMPONENT SHELL
-   ========================================================================== */
 .mv-section {
   padding: 50px 0;
   background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
@@ -129,9 +120,6 @@
   line-height: 1.7;
 }
 
-/* ==========================================================================
-   JOURNEY SECTION - ENHANCED DESKTOP & SCROLL ENGINE CORE
-   ========================================================================== */
 .journey-section {
   padding: 80px 0 120px 0;
   background: #f8f9fc;
@@ -158,21 +146,20 @@
 .road-track-bg {
   fill: none;
   stroke: #e2e8f0;
-  stroke-width: 54px;
+  stroke-width: 12px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .road-track-progress {
   fill: none;
-  stroke: #f75910; /* Main Orange Progress Line */
-  stroke-width: 40px;
+  stroke: #f75910;
+  stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: stroke-dashoffset 0.1s linear;
 }
 
-/* Desktop absolute pin formatting structure coordinates */
 .road-milestone-landmark {
   position: absolute;
   z-index: 5;
@@ -187,7 +174,6 @@
   transform: translate(-50%, -24px);
 }
 
-/* Milestone pin positioning badge layouts */
 .pin-marker-assembly {
   position: relative;
   display: flex;
@@ -239,7 +225,6 @@
   filter: blur(2px);
 }
 
-/* Fine Grey Connector Lines */
 .connector-line {
   width: 2px;
   height: 35px;
@@ -252,7 +237,6 @@
   opacity: 1;
 }
 
-/* Individual Content Panel Cards */
 .milestone-text-block {
   width: 100%;
   background: #ffffff;
@@ -299,100 +283,39 @@
   text-align: left;
 }
 
-/* ==========================================================================
-   COLOR MAP DESIGN OVERLAYS
-   ========================================================================== */
-.milestone-gold .donut-badge {
-  background: #eab308;
-  color: #eab308;
-}
-.milestone-gold .block-header {
-  background: #eab308;
-}
+.milestone-gold .donut-badge { background: #eab308; color: #eab308; }
+.milestone-gold .block-header { background: #eab308; }
 
-.milestone-yellow .donut-badge {
-  background: #d97706;
-  color: #d97706;
-}
-.milestone-yellow .block-header {
-  background: #d97706;
-}
+.milestone-yellow .donut-badge { background: #d97706; color: #d97706; }
+.milestone-yellow .block-header { background: #d97706; }
 
-.milestone-green .donut-badge {
-  background: #22c55e;
-  color: #22c55e;
-}
-.milestone-green .block-header {
-  background: #22c55e;
-}
+.milestone-green .donut-badge { background: #22c55e; color: #22c55e; }
+.milestone-green .block-header { background: #22c55e; }
 
-.milestone-teal .donut-badge {
-  background: #0d9488;
-  color: #0d9488;
-}
-.milestone-teal .block-header {
-  background: #0d9488;
-}
+.milestone-teal .donut-badge { background: #0d9488; color: #0d9488; }
+.milestone-teal .block-header { background: #0d9488; }
 
-.milestone-red .donut-badge {
-  background: #ef4444;
-  color: #ef4444;
-}
-.milestone-red .block-header {
-  background: #ef4444;
-}
+.milestone-red .donut-badge { background: #ef4444; color: #ef4444; }
+.milestone-red .block-header { background: #ef4444; }
 
-.milestone-orange .donut-badge {
-  background: #f97316;
-  color: #f97316;
-}
-.milestone-orange .block-header {
-  background: #f97316;
-}
+.milestone-orange .donut-badge { background: #f97316; color: #f97316; }
+.milestone-orange .block-header { background: #f97316; }
 
-.milestone-magenta .donut-badge {
-  background: #ec4899;
-  color: #ec4899;
-}
-.milestone-magenta .block-header {
-  background: #ec4899;
-}
+.milestone-magenta .donut-badge { background: #ec4899; color: #ec4899; }
+.milestone-magenta .block-header { background: #ec4899; }
 
-.milestone-blue .donut-badge {
-  background: #2563eb;
-  color: #2563eb;
-}
-.milestone-blue .block-header {
-  background: #2563eb;
-}
+.milestone-blue .donut-badge { background: #2563eb; color: #2563eb; }
+.milestone-blue .block-header { background: #2563eb; }
 
-.milestone-cyan .donut-badge {
-  background: #06b6d4;
-  color: #06b6d4;
-}
-.milestone-cyan .block-header {
-  background: #06b6d4;
-}
+.milestone-cyan .donut-badge { background: #06b6d4; color: #06b6d4; }
+.milestone-cyan .block-header { background: #06b6d4; }
 
-.milestone-indigo .donut-badge {
-  background: #4f46e5;
-  color: #4f46e5;
-}
-.milestone-indigo .block-header {
-  background: #4f46e5;
-}
+.milestone-indigo .donut-badge { background: #4f46e5; color: #4f46e5; }
+.milestone-indigo .block-header { background: #4f46e5; }
 
-.milestone-purple .donut-badge {
-  background: #7c3aed;
-  color: #7c3aed;
-}
-.milestone-purple .block-header {
-  background: #7c3aed;
-}
+.milestone-purple .donut-badge { background: #7c3aed; color: #7c3aed; }
+.milestone-purple .block-header { background: #7c3aed; }
 
-/* ==========================================================================
-   EXECUTIVE TRUST INFRASTRUCTURE PANELS
-   ========================================================================== */
 .insights-section {
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
   padding: 90px 0;
@@ -489,9 +412,6 @@
   border-color: var(--primary);
 }
 
-/* ==========================================================================
-   MINIMALIST TEAM HUB CONTROLLERS
-   ========================================================================== */
 .hubs-wrapper {
   background: #ffffff;
   border-radius: 36px;
@@ -598,9 +518,6 @@
   transform: scale(1.05);
 }
 
-/* ==========================================================================
-   DYNAMIC INFINITE TESTIMONIAL MARQUEE TRACKS
-   ========================================================================== */
 .las-testimonials-section {
   padding: 20px 0 60px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
@@ -737,9 +654,6 @@
   }
 }
 
-/* ==========================================================================
-   WORKSPACE MATRIX GALLERY SECTION
-   ========================================================================== */
 .las-hero-marquee-section {
   padding: 100px 0;
   position: relative;
@@ -957,50 +871,13 @@
   }
 }
 
-/* ==========================================================================
-   CONSOLIDATED SINGLE-CASCADE BREAKPOINT SYSTEM
-   ========================================================================== */
 @media (max-width: 1200px) {
   .about-grid {
     gap: 40px;
   }
 }
 
-/* ==========================================================================
-   TABLET & MOBILE DYNAMIC CASCADE RECONSTRUCTION (Screens <= 1024px)
-   ========================================================================== */
 @media (max-width: 1024px) {
-  .about-grid,
-  .mv-wrapper {
-    grid-template-columns: 1fr;
-    flex-direction: column;
-  }
-  .logo img {
-    height: 65px;
-  }
-  .nav-links {
-    gap: 20px;
-  }
-  .las-split-container {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    padding: 0 24px;
-  }
-  .marquee-display-pane {
-    order: 2;
-  }
-  .marquee-content-pane {
-    padding-left: 0;
-    text-align: center;
-  }
-  .intro-desc {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* -------------------------------------------------------------
-     MILESTONES RESPONSIVE SCROLL-POPUP SYSTEM
-     ------------------------------------------------------------- */
   .journey-section {
     padding: 60px 0;
   }
@@ -1016,7 +893,6 @@
     margin: 40px auto 0 auto;
   }
 
-  /* Continuous linear track timeline axis background */
   .road-timeline-container::before {
     content: "";
     position: absolute;
@@ -1024,9 +900,13 @@
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #e2e8f0;
+    background: #f75910; 
     border-radius: 2px;
     z-index: 1;
+  }
+
+  .road-timeline-container::after {
+    display: none !important;
   }
 
   .road-svg-canvas {
@@ -1046,12 +926,11 @@
     width: 100% !important;
   }
 
-  .connector-line,
+  connector-line,
   .pin-shadow {
     display: none !important;
   }
 
-  /* Initial hidden state for the indicator badges */
   .pin-marker-assembly {
     order: -1;
     flex-shrink: 0;
@@ -1064,7 +943,6 @@
       opacity 0.4s ease !important;
   }
 
-  /* Initial hidden state for text panels (resides shifted 30px down) */
   .milestone-text-block {
     opacity: 0 !important;
     transform: translateY(30px) !important;
@@ -1076,7 +954,6 @@
       opacity 0.6s ease !important;
   }
 
-  /* POPUP ACTIVATED ENGINE STYLES (TRIGGERED BY SCROLL ENGINE) */
   .road-milestone-landmark.node-activated .pin-marker-assembly {
     transform: scale(0.9) translateX(-42px) !important;
     opacity: 1 !important;
@@ -1106,39 +983,39 @@
     font-size: 0.88rem;
   }
 
-  /* Year color remapping variants for responsive structures */
-  .milestone-gold .year-digits {
-    color: #ffffff;
-  }
-  .milestone-yellow .year-digits {
-    color: #ffffff;
-  }
-  .milestone-green .year-digits {
-    color: #ffffff;
-  }
-  .milestone-teal .year-digits {
-    color: #ffffff;
-  }
-  .milestone-red .year-digits {
-    color: #ffffff;
-  }
-  .milestone-orange .year-digits {
-    color: #ffffff;
-  }
-  .milestone-magenta .year-digits {
-    color: #ffffff;
-  }
-  .milestone-blue .year-digits {
-    color: #ffffff;
-  }
-  .milestone-cyan .year-digits {
-    color: #ffffff;
-  }
-  .milestone-indigo .year-digits {
-    color: #ffffff;
-  }
+  .milestone-gold .year-digits,
+  .milestone-yellow .year-digits,
+  .milestone-green .year-digits,
+  .milestone-teal .year-digits,
+  .milestone-red .year-digits,
+  .milestone-orange .year-digits,
+  .milestone-magenta .year-digits,
+  .milestone-blue .year-digits,
+  .milestone-cyan .year-digits,
+  .milestone-indigo .year-digits,
   .milestone-purple .year-digits {
     color: #ffffff;
+  }
+}
+
+.dropdown-menu li a, 
+#header-placeholder .solutions-dropdown a,
+.perk-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu,
+  #header-placeholder nav,
+  .hero-text-side {
+    border-left: 4px solid #ff6b00; 
+    padding-left: 15px;
+  }
+
+  .perk-item {
+    border-left: 3px solid #ff6b00;
+    padding-left: 12px;
   }
 }
 

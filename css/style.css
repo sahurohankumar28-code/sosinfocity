@@ -1,6 +1,4 @@
-/* ------------------------------
-   GLOBAL STYLES & RESET
------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +90,6 @@ body {
   margin-bottom: -1px;
 }
 
-/* ========== REFINED NAVBAR ========== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -146,7 +143,6 @@ body {
   color: var(--primary-light);
 }
 
-/* Dropdown styling */
 .dropdown {
   position: relative;
   z-index: 200;
@@ -228,7 +224,6 @@ body {
   color: white;
 }
 
-/* Mobile Menu Button */
 .mobile-menu-btn {
   display: none;
   color: white;
@@ -247,7 +242,6 @@ body {
   background: rgba(247, 89, 16, 0.3);
 }
 
-/* Mobile Navigation Overlay */
 .mobile-nav-overlay {
   position: fixed;
   inset: 0;
@@ -308,7 +302,6 @@ body {
   padding-left: 8px;
 }
 
-/* Footer */
 .footer {
   position: relative;
   background-color: #0a0f16;
@@ -393,9 +386,6 @@ body {
   margin: 0 0 20px 0;
 }
 
-/* ==========================================================================
-   GLOBAL DESIGN RESILIENCY CASCADE
-========================================================================== */
 @media (max-width: 1024px) {
   .container {
     padding: 0 24px;

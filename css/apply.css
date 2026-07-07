@@ -1,4 +1,3 @@
-/* Hero Section */
 .hero-header {
   position: relative;
   min-height: 50vh;
@@ -25,7 +24,6 @@
   text-align: center;
 }
 
-/* Master Form Page Box Model[cite: 1] */
 .application-form-section {
   padding: 60px 0 100px;
   background: #f8fafc;
@@ -40,7 +38,6 @@
   overflow: hidden;
 }
 
-/* Form Controls Block[cite: 1] */
 .form-card-container {
   padding: 50px 60px;
   display: flex;
@@ -71,7 +68,6 @@
   margin-top: 6px;
 }
 
-/* Panel Sliding Effects Layout[cite: 1] */
 .form-step-panel {
   display: none;
 }
@@ -92,7 +88,6 @@
   }
 }
 
-/* Field Configurations[cite: 1] */
 .form-group {
   margin-bottom: 24px;
   display: flex;
@@ -130,7 +125,6 @@
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
-/* Segmented Toggle Box Design (YES / NO Switch) */
 .experience-toggle-container {
   display: flex;
   background: #f1f5f9;
@@ -166,7 +160,6 @@
   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
 }
 
-/* Conditional Textarea Frame Transitions */
 .conditional-exp-field {
   max-height: 0;
   opacity: 0;
@@ -182,7 +175,6 @@
   margin-top: 16px;
 }
 
-/* Prefix Appends Layout (LinkedIn Module) */
 .input-prefix-group {
   display: flex;
   border: 1px solid #cbd5e1;
@@ -212,7 +204,6 @@
   width: 100%;
 }
 
-/* File Asset Drag Box Area Layout[cite: 1] */
 .file-drop-zone {
   border: 2px dashed #cbd5e1;
   background: #f8fafc;
@@ -243,7 +234,6 @@
   color: #334155;
 }
 
-/* File Badging[cite: 1] */
 .loaded-file-badge {
   display: flex;
   align-items: center;
@@ -281,7 +271,6 @@
   color: #ef4444;
 }
 
-/* Action Links Navigation Configurations[cite: 1] */
 .form-action-row {
   display: flex;
   gap: 16px;
@@ -316,7 +305,6 @@
   background: #f8fafc;
 }
 
-/* Progress Dot Array Layout */
 .step-indicator-dots {
   display: flex;
   gap: 8px;
@@ -338,7 +326,6 @@
   border-radius: 4px;
 }
 
-/* --- Right Credibility Side Pane Layout[cite: 1] --- */
 .form-visual-pane {
   height: 750px;
   width: 250px;
@@ -397,7 +384,6 @@
   color: #cbd5e1;
 }
 
-/* Media Breakpoints Adapter[cite: 1] */
 @media (max-width: 1024px) {
   .split-form-layout {
     grid-template-columns: 1fr;
@@ -419,7 +405,7 @@
     grid-template-columns: 1fr;
   }
   .form-visual-pane {
-    display: none; /* Safely omit decorative side-pane to save viewport economy */
+    display: none; 
   }
   .form-card-container {
     padding: 40px 24px;
@@ -431,14 +417,14 @@
     font-size: 1.5rem;
   }
   .form-action-row {
-    flex-direction: column-reverse; /* Put 'Back' button visually underneath 'Next' */
+    flex-direction: column-reverse; 
     gap: 12px;
   }
   .btn-form-nav {
     width: 100%;
   }
   .experience-toggle-container {
-    width: 100%; /* Full-width toggle for easy thumb-tapping access */
+    width: 100%;
   }
   .footer-top {
     flex-direction: column;

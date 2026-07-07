@@ -1,6 +1,3 @@
-/**
- * SOS Infocity - Unified Architecture Core Custom Build
- */
 (function () {
   "use strict";
 
@@ -90,16 +87,14 @@
     });
   }
 
-  // SCROLL TIMELINE GRAPH DRAW ENGINE
   function initScrollTimelineEngine() {
     const path = document.getElementById("roadProgressPath");
+    const arrow = document.getElementById("roadArrow");
     const targetSection = document.querySelector(".journey-section");
-    const sectionHeader = document.querySelector(
-      ".journey-section .section-header",
-    );
+    const timelineContainer = document.querySelector(".road-timeline-container"); // Track the row container directly
     const nodes = document.querySelectorAll(".road-milestone-landmark");
 
-    if (!targetSection || !nodes.length) return;
+    if (!targetSection || !timelineContainer || !nodes.length) return;
 
     const isMobileLayout = () => window.innerWidth <= 1024;
 
@@ -111,43 +106,70 @@
     }
 
     function updateTimelineScrollState() {
-      // MOBILE SCROLL POPUP ENGINE
       if (isMobileLayout()) {
-        const triggerBottom = window.innerHeight * 0.85; // Element pops up when 15% from bottom viewport edge
+        if (arrow) arrow.style.opacity = "0";
+        const triggerBottom = window.innerHeight * 0.85; 
 
         nodes.forEach((node) => {
           const nodeTop = node.getBoundingClientRect().top;
-
           if (nodeTop < triggerBottom) {
             node.classList.add("node-activated");
           } else {
-            node.classList.remove("node-activated"); // Optional: Keeps animation reusable up and down
+            node.classList.remove("node-activated"); 
           }
         });
         return;
       }
 
-      // DESKTOP SVG ENGAGEMENT ENGINE
-      if (!path || !sectionHeader) return;
+      if (!path) return;
 
-      const headerRect = sectionHeader.getBoundingClientRect();
+      // Measure relative to the milestone row container, not the section header
+      const containerRect = timelineContainer.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const triggerPoint = windowHeight * 0.8;
+      
+      // Starts exactly when the 2016/timeline row enters the viewport area (at 85% from top)
+      const startTrigger = windowHeight * 0.85; 
+      const endTrigger = -containerRect.height + windowHeight * 0.4;
+
       let progress = 0;
 
-      if (headerRect.top <= triggerPoint) {
-        const totalScrollableDistance =
-          targetSection.offsetHeight - (windowHeight - triggerPoint);
-        const scrolledDistance = triggerPoint - headerRect.top;
+      if (containerRect.top <= startTrigger) {
+        const totalDistance = startTrigger - endTrigger;
+        const traveledDistance = startTrigger - containerRect.top;
 
-        progress = scrolledDistance / totalScrollableDistance;
+        progress = traveledDistance / totalDistance;
         progress = Math.max(0, Math.min(1, progress));
       }
 
-      path.style.strokeDashoffset = pathLength - progress * pathLength;
+      const currentLength = progress * pathLength;
+      path.style.strokeDashoffset = pathLength - currentLength;
+
+      // Real-time vector tangent calculation for arrowhead scaling and rotation
+      if (arrow) {
+        if (progress > 0.001) {
+          arrow.style.opacity = "1";
+          
+          const point = path.getPointAtLength(currentLength);
+          const lookAheadLength = Math.min(pathLength, currentLength + 2);
+          const aheadPoint = path.getPointAtLength(lookAheadLength);
+          
+          const deltaX = aheadPoint.x - point.x;
+          const deltaY = aheadPoint.y - point.y;
+          const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+          
+          arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
+        } else {
+          // Keep arrow visible but locked at the 2016 starting node coordinates when progress is 0
+          arrow.style.opacity = "1";
+          const startPoint = path.getPointAtLength(0);
+          const nextPoint = path.getPointAtLength(2);
+          const angle = Math.atan2(nextPoint.y - startPoint.y, nextPoint.x - startPoint.x) * (180 / Math.PI);
+          arrow.setAttribute("transform", `translate(${startPoint.x}, ${startPoint.y}) rotate(${angle})`);
+        }
+      }
 
       nodes.forEach((node, index) => {
-        const nodeTriggerOffset = (index + 0.2) / nodes.length;
+        const nodeTriggerOffset = index / nodes.length;
         if (progress >= nodeTriggerOffset) {
           node.classList.add("node-activated");
         } else {

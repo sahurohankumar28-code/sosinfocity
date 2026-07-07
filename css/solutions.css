@@ -23,16 +23,12 @@
   z-index: 1;
   text-align: center;
 }
-/* ==========================================================================
-   INTELLIGENT ENERGY MANAGEMENT SYSTEMS (IEMS) COMPONENT STYLING
-   ========================================================================== */
 
 .iems-page {
   background: var(--bg-white);
   overflow: hidden;
 }
 
-/* ── Hero Segment ── */
 .iems-hero {
   max-width: 1180px;
   margin: 0 auto;
@@ -104,13 +100,12 @@
   height: 16px;
 }
 
-/* ── Image Panel visual matrix ── */
 .iems-hero-visual {
   position: relative;
 }
 
 .iems-hero-img-wrap {
-  border-radius: 28px; /* Synced beautifully with .board-member-card in about.css */
+  border-radius: 28px; 
   overflow: hidden;
   border: 1px solid var(--border-light);
   background: var(--orange-light);
@@ -149,9 +144,6 @@
   opacity: 0.5;
 }
 
-/* ==========================================================================
-   DETERMINISTIC OVERVIEW PROCESSOR GRID
-   ========================================================================== */
 .iems-divider {
   max-width: 1180px;
   margin: 0 auto;
@@ -187,7 +179,6 @@
   margin: 0;
 }
 
-/* ── Feature Architecture Block Matrix ── */
 .iems-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -198,7 +189,7 @@
 .iems-feat {
   background: #ffffff;
   border: 1px solid var(--border-light);
-  border-radius: 24px; /* Matches .hub-team-member-card radius in about.css */
+  border-radius: 24px; 
   padding: 32px;
   box-shadow: var(--shadow-sm);
   transition:
@@ -243,12 +234,9 @@
   margin: 0;
 }
 
-/* ==========================================================================
-   SYSTEM BENEFIT OUTCOMES
-   ========================================================================== */
 .iems-benefits {
   display: grid;
-  grid-template-columns: 1.21fr 0.79fr; /* Fine balanced asymmetrical structure */
+  grid-template-columns: 1.21fr 0.79fr; 
   gap: 60px;
   align-items: center;
 }
@@ -285,9 +273,6 @@
   color: var(--primary);
 }
 
-/* ==========================================================================
-   TABLET & MOBILE DYNAMIC CASCADE RESPONSIVENESS
-   ========================================================================== */
 @media (max-width: 1024px) {
   .iems-hero {
     grid-template-columns: 1fr;

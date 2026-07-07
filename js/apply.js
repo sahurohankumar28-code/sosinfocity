@@ -10,9 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const selectedJob = urlParams.get("job");
   const headerTitleElement = document.getElementById("activeRoleHeader");
+  const appliedRoleInput = document.getElementById("appliedRole");
 
   if (selectedJob && headerTitleElement) {
     headerTitleElement.textContent = decodeURIComponent(selectedJob);
+    if (appliedRoleInput) {
+      appliedRoleInput.value = decodeURIComponent(selectedJob);
+    }
   }
 
   let currentStepIndex = 0;
@@ -64,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   experienceRadios.forEach((radio) => {
     radio.addEventListener("change", (e) => {
-      if (e.target.value === "yes") {
+      if (e.target.value === "Yes") {
         expTextAreaBlock.classList.add("visible");
         expTextarea.setAttribute("required", "true");
       } else {
@@ -99,16 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  formsContainer.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert(
-      "Credentials Logged! Your application profile has been successfully processed into our system pipeline.",
-    );
-    formsContainer.reset();
-    if (fileInput) fileInput.value = "";
-    if (fileBadgeRow) fileBadgeRow.style.display = "none";
-    if (dropZone) dropZone.style.display = "block";
-    if (expTextAreaBlock) expTextAreaBlock.classList.remove("visible");
-    syncWizardView(0);
-  });
+  // ==============================================
+  // NO FORM SUBMIT HANDLER - Form submits to PHP
+  // ==============================================
 });

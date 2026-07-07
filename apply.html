@@ -32,7 +32,7 @@
         <div class="container split-form-layout">
             
             <div class="form-card-container">
-                <form id="applicationForm" class="premium-interactive-form">
+                <form id="applicationForm" class="premium-interactive-form" action="process_application.php" method="POST" enctype="multipart/form-data">
                     
                     <div class="form-header-tracking">
                         <span class="section-tag">Application Gateway</span>
@@ -75,6 +75,8 @@
                             </div>
                         </div>
 
+                        <input type="hidden" id="appliedRole" name="appliedRole" value="">
+
                         <div class="form-action-row">
                             <button type="button" class="btn-form-nav primary next-step-btn">Continue to Experience</button>
                         </div>
@@ -96,7 +98,7 @@
                         </div>
 
                         <div class="form-group conditional-exp-field" id="experienceDetailsBlock">
-                            <label for="experienceDetails">Enter Experience Details *</label>
+                            <label for="experienceDetails">Enter Experience Details</label>
                             <div class="input-with-icon">
                                 <textarea id="experienceDetails" name="experienceDetails" rows="4" placeholder="List your previous roles, roles metrics, and timelines..."></textarea>
                             </div>
@@ -161,9 +163,7 @@
 
     <div id="footer-placeholder"></div>
     
-    
     <script src="./js/header-footer.js"></script>
-
     <script src="./js/apply.js"></script>
     
 </body>

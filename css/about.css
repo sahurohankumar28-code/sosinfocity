@@ -1030,6 +1030,11 @@
     margin-bottom: 16px;
     text-align: center;
   }
+
+  }
+  .about-highlight span {
+    text-align: center;
+  }
   .about-highlight p {
     font-size: 1rem;
     text-align: left;

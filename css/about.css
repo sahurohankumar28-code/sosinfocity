@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. HERO HEADER SECTION
+   ========================================================================== */
 .hero-header {
   position: relative;
   min-height: 50vh;
@@ -24,6 +27,9 @@
   text-align: center;
 }
 
+/* ==========================================================================
+   2. ABOUT HERO SECTION
+   ========================================================================== */
 .about-hero-section {
   background: linear-gradient(125deg, #fef9f5 0%, #ffffff 100%);
   padding: 50px 0;
@@ -78,6 +84,9 @@
   transform: scale(1.02);
 }
 
+/* ==========================================================================
+   3. MISSION & VALUES SECTION (MV)
+   ========================================================================== */
 .mv-section {
   padding: 50px 0;
   background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
@@ -120,6 +129,9 @@
   line-height: 1.7;
 }
 
+/* ==========================================================================
+   4. ROAD TIMELINE / JOURNEY SECTION
+   ========================================================================== */
 .journey-section {
   padding: 80px 0 120px 0;
   background: #f8f9fc;
@@ -283,6 +295,7 @@
   text-align: left;
 }
 
+/* Timeline Dynamic Color Variants */
 .milestone-gold .donut-badge { background: #eab308; color: #eab308; }
 .milestone-gold .block-header { background: #eab308; }
 
@@ -316,6 +329,10 @@
 .milestone-purple .donut-badge { background: #7c3aed; color: #7c3aed; }
 .milestone-purple .block-header { background: #7c3aed; }
 
+
+/* ==========================================================================
+   5. INSIGHTS & BOARD MEMBERS SECTION
+   ========================================================================== */
 .insights-section {
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
   padding: 90px 0;
@@ -412,6 +429,10 @@
   border-color: var(--primary);
 }
 
+
+/* ==========================================================================
+   6. HUBS & TEAM CARDS
+   ========================================================================== */
 .hubs-wrapper {
   background: #ffffff;
   border-radius: 36px;
@@ -518,6 +539,10 @@
   transform: scale(1.05);
 }
 
+
+/* ==========================================================================
+   7. TESTIMONIALS SECTION (MARQUEE HORIZONTAL)
+   ========================================================================== */
 .las-testimonials-section {
   padding: 20px 0 60px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
@@ -536,20 +561,8 @@
   position: relative;
   padding: 20px 0;
   user-select: none;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 12%,
-    #000 88%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 12%,
-    #000 88%,
-    transparent
-  );
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
 }
 
 .las-ts-track {
@@ -646,14 +659,14 @@
 }
 
 @keyframes smoothTestimonialMarquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
+
+/* ==========================================================================
+   8. HERO GRID GRID MARQUEE SECTION (3D LED SCREEN EFFECT)
+   ========================================================================== */
 .las-hero-marquee-section {
   padding: 100px 0;
   position: relative;
@@ -676,11 +689,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(6, 9, 14, 0.6) 0%,
-    rgba(6, 9, 14, 0.8) 100%
-  );
+  background: linear-gradient(180deg, rgba(6, 9, 14, 0.6) 0%, rgba(6, 9, 14, 0.8) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -723,12 +732,7 @@
   pointer-events: none;
   z-index: 5;
   border-radius: 28px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.03) 0%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .columns-wrapper {
@@ -738,20 +742,8 @@
   height: 520px;
   overflow: hidden;
   position: relative;
-  mask-image: linear-gradient(
-    to bottom,
-    transparent,
-    #000 8%,
-    #000 92%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent,
-    #000 8%,
-    #000 92%,
-    transparent
-  );
+  mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
 }
 
 .vertical-marquee-col {
@@ -765,15 +757,9 @@
   gap: 16px;
 }
 
-.track-down .vertical-track-inner {
-  animation: verticalScrollDown 24s linear infinite;
-}
-.track-up .vertical-track-inner {
-  animation: verticalScrollUp 24s linear infinite;
-}
-.columns-wrapper:hover .vertical-track-inner {
-  animation-play-state: paused;
-}
+.track-down .vertical-track-inner { animation: verticalScrollDown 24s linear infinite; }
+.track-up .vertical-track-inner { animation: verticalScrollUp 24s linear infinite; }
+.columns-wrapper:hover .vertical-track-inner { animation-play-state: paused; }
 
 .marquee-poster-card {
   position: relative;
@@ -798,18 +784,10 @@
   display: block;
 }
 
-.marquee-poster-card.size-1-5 {
-  height: 100px;
-}
-.marquee-poster-card.size-3 {
-  height: 140px;
-}
-.marquee-poster-card.size-4-5 {
-  height: 180px;
-}
-.marquee-poster-card.size-6 {
-  height: 230px;
-}
+.marquee-poster-card.size-1-5 { height: 100px; }
+.marquee-poster-card.size-3 { height: 140px; }
+.marquee-poster-card.size-4-5 { height: 180px; }
+.marquee-poster-card.size-6 { height: 230px; }
 
 .marquee-poster-card:hover {
   transform: scale(1.08) translateZ(30px);
@@ -835,11 +813,7 @@
   font-style: italic;
   font-weight: 300;
   font-family: serif;
-  background: linear-gradient(
-    135deg,
-    #ffffff 30%,
-    rgba(255, 255, 255, 0.6) 100%
-  );
+  background: linear-gradient(135deg, #ffffff 30%, rgba(255, 255, 255, 0.6) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -854,29 +828,40 @@
 }
 
 @keyframes verticalScrollDown {
-  0% {
-    transform: translate3d(0, -50%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+  0% { transform: translate3d(0, -50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
 
 @keyframes verticalScrollUp {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, -50%, 0);
-  }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, -50%, 0); }
 }
 
+
+/* ==========================================================================
+   9. MISCELLANEOUS GLOBAL STYLES
+   ========================================================================== */
+.dropdown-menu li a, 
+#header-placeholder .solutions-dropdown a,
+.perk-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+/* ==========================================================================
+   10. MEDIA QUERIES (RESPONSIVE LAYOUTS)
+   ========================================================================== */
+
+/* --- Large Display Tweaks --- */
 @media (max-width: 1200px) {
   .about-grid {
     gap: 40px;
+    padding: 0 20px;
   }
 }
 
+/* --- Tablets & Horizontal Screens --- */
 @media (max-width: 1024px) {
   .journey-section {
     padding: 60px 0;
@@ -926,7 +911,7 @@
     width: 100% !important;
   }
 
-  connector-line,
+  .connector-line, /* Fixed: Missing Class Dot Added */
   .pin-shadow {
     display: none !important;
   }
@@ -998,27 +983,7 @@
   }
 }
 
-.dropdown-menu li a, 
-#header-placeholder .solutions-dropdown a,
-.perk-item {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .dropdown-menu,
-  #header-placeholder nav,
-  .hero-text-side {
-    border-left: 4px solid #ff6b00; 
-    padding-left: 15px;
-  }
-
-  .perk-item {
-    border-left: 3px solid #ff6b00;
-    padding-left: 12px;
-  }
-}
-
+/* --- Hubs Layout Responsiveness --- */
 @media (max-width: 992px) {
   .hubs-wrapper {
     padding: 45px 30px;
@@ -1029,6 +994,7 @@
   }
 }
 
+/* --- Nav & Global Container Viewport Width Blocks --- */
 @media (max-width: 900px) {
   .nav-links {
     display: none;
@@ -1041,10 +1007,53 @@
   }
 }
 
+/* --- Mobile Landscapes / Standard Mobile Framework (768px Breakpoint) --- */
 @media (max-width: 768px) {
+  /* Dynamic Responsive Upgrades for the About Section Layout */
+  .about-hero-section {
+    padding: 40px 0;
+  }
   .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr !important;
+    gap: 32px;
+  }
+  .about-img {
+    order: -1; /* Placed top-side image on smaller devices natively */
+  }
+  .about-img img {
+    border-radius: 20px;
+    max-height: 380px;
+    object-fit: cover;
+  }
+  .about-highlight h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .about-highlight p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .stats-row {
+    justify-content: space-around;
+    gap: 24px;
+    margin: 24px 0;
+  }
+  .stat-block {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+
+  /* Structural Framework Elements Overrides */
+  .dropdown-menu,
+  #header-placeholder nav,
+  .hero-text-side {
+    border-left: 4px solid #ff6b00; 
+    padding-left: 15px;
+  }
+  .perk-item {
+    border-left: 3px solid #ff6b00;
+    padding-left: 12px;
   }
   .las-testimonials-section {
     padding: 40px 0;
@@ -1079,6 +1088,7 @@
   }
 }
 
+/* --- Small Mobile Formats --- */
 @media (max-width: 640px) {
   .hubs-wrapper {
     padding: 40px 20px;
@@ -1112,7 +1122,22 @@
   }
 }
 
+/* --- Ultra Compact Screen Layout Dimensions --- */
 @media (max-width: 480px) {
+  /* Deep Compact Configuration Updates for About Section Content */
+  .about-highlight h2 {
+    font-size: 1.75rem;
+  }
+  .stats-row {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .stat-block h4 {
+    font-size: 2.2rem;
+  }
+
+  /* General Compact Overrides */
   .road-timeline-container {
     padding-left: 25px;
     gap: 24px;
@@ -1128,12 +1153,6 @@
   }
   .hero-header h1 {
     font-size: 2rem;
-  }
-  .about-highlight h2 {
-    font-size: 1.8rem;
-  }
-  .stats-row {
-    gap: 20px;
   }
   .footer-top {
     flex-direction: column;

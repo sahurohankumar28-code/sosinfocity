@@ -91,7 +91,7 @@
     const path = document.getElementById("roadProgressPath");
     const arrow = document.getElementById("roadArrow");
     const targetSection = document.querySelector(".journey-section");
-    const timelineContainer = document.querySelector(".road-timeline-container"); // Track the row container directly
+    const timelineContainer = document.querySelector(".road-timeline-container"); 
     const nodes = document.querySelectorAll(".road-milestone-landmark");
 
     if (!targetSection || !timelineContainer || !nodes.length) return;
@@ -122,12 +122,9 @@
       }
 
       if (!path) return;
-
-      // Measure relative to the milestone row container, not the section header
       const containerRect = timelineContainer.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       
-      // Starts exactly when the 2016/timeline row enters the viewport area (at 85% from top)
       const startTrigger = windowHeight * 0.85; 
       const endTrigger = -containerRect.height + windowHeight * 0.4;
 
@@ -144,7 +141,6 @@
       const currentLength = progress * pathLength;
       path.style.strokeDashoffset = pathLength - currentLength;
 
-      // Real-time vector tangent calculation for arrowhead scaling and rotation
       if (arrow) {
         if (progress > 0.001) {
           arrow.style.opacity = "1";
@@ -159,7 +155,6 @@
           
           arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
         } else {
-          // Keep arrow visible but locked at the 2016 starting node coordinates when progress is 0
           arrow.style.opacity = "1";
           const startPoint = path.getPointAtLength(0);
           const nextPoint = path.getPointAtLength(2);

@@ -850,10 +850,10 @@
 
 
 /* ==========================================================================
-   10. MEDIA QUERIES (RESPONSIVE LAYOUTS)
+   10. MEDIA QUERIES (RESPONSIVE BREAKPOINTS)
    ========================================================================== */
 
-/* --- Large Display Tweaks --- */
+/* --- Large Desktop Adjustments --- */
 @media (max-width: 1200px) {
   .about-grid {
     gap: 40px;
@@ -861,7 +861,7 @@
   }
 }
 
-/* --- Tablets & Horizontal Screens --- */
+/* --- Tablets & Medium Devices --- */
 @media (max-width: 1024px) {
   .journey-section {
     padding: 60px 0;
@@ -911,7 +911,7 @@
     width: 100% !important;
   }
 
-  .connector-line, /* Fixed: Missing Class Dot Added */
+  .connector-line, 
   .pin-shadow {
     display: none !important;
   }
@@ -983,7 +983,7 @@
   }
 }
 
-/* --- Hubs Layout Responsiveness --- */
+/* --- Team Hubs Grid Viewports --- */
 @media (max-width: 992px) {
   .hubs-wrapper {
     padding: 45px 30px;
@@ -994,7 +994,7 @@
   }
 }
 
-/* --- Nav & Global Container Viewport Width Blocks --- */
+/* --- Header & Navigation Toggles --- */
 @media (max-width: 900px) {
   .nav-links {
     display: none;
@@ -1007,9 +1007,9 @@
   }
 }
 
-/* --- Mobile Landscapes / Standard Mobile Framework (768px Breakpoint) --- */
+/* --- Standard Mobile & Landscapes (768px Core Mobile Viewport) --- */
 @media (max-width: 768px) {
-  /* Dynamic Responsive Upgrades for the About Section Layout */
+  /* [FIXED] About Section Mobile Refactor */
   .about-hero-section {
     padding: 40px 0;
   }
@@ -1018,7 +1018,7 @@
     gap: 32px;
   }
   .about-img {
-    order: -1; /* Placed top-side image on smaller devices natively */
+    order: -1; 
   }
   .about-img img {
     border-radius: 20px;
@@ -1044,7 +1044,37 @@
     text-align: center;
   }
 
-  /* Structural Framework Elements Overrides */
+  /* [FIXED] Purpose & Direction (M&V Section) Card Spacing */
+  .mv-wrapper {
+    flex-direction: column !important;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  .mv-card {
+    padding: 32px 24px;
+  }
+
+  /* [FIXED] Workspace Gallery Overlapping / Squeezing Layout Glitch */
+  .las-split-container {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+    padding: 0 24px;
+  }
+  .marquee-content-pane {
+    padding-left: 0;
+    text-align: center;
+  }
+  .intro-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .marquee-display-pane {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* Global Layout Overrides */
   .dropdown-menu,
   #header-placeholder nav,
   .hero-text-side {
@@ -1088,7 +1118,7 @@
   }
 }
 
-/* --- Small Mobile Formats --- */
+/* --- Small Mobile Layouts --- */
 @media (max-width: 640px) {
   .hubs-wrapper {
     padding: 40px 20px;
@@ -1110,21 +1140,11 @@
   .stat-block h4 {
     font-size: 2rem;
   }
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-  .social-icons {
-    justify-content: center;
-  }
-  .footer-bottom p {
-    text-align: center;
-  }
 }
 
-/* --- Ultra Compact Screen Layout Dimensions --- */
+/* --- Ultra Compact Devices --- */
 @media (max-width: 480px) {
-  /* Deep Compact Configuration Updates for About Section Content */
+  /* Extra Clean Stat Alignments for Super Narrow Layouts */
   .about-highlight h2 {
     font-size: 1.75rem;
   }
@@ -1137,7 +1157,7 @@
     font-size: 2.2rem;
   }
 
-  /* General Compact Overrides */
+  /* Compact Timeline Adjustments */
   .road-timeline-container {
     padding-left: 25px;
     gap: 24px;
@@ -1148,20 +1168,12 @@
   .milestone-text-block p {
     font-size: 0.85rem;
   }
+  
+  /* general mini-mobile tweaks */
   .las-ts-card {
     width: 290px;
   }
   .hero-header h1 {
     font-size: 2rem;
-  }
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-  .social-icons {
-    justify-content: center;
-  }
-  .footer-bottom p {
-    text-align: center;
   }
 }

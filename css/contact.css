@@ -140,8 +140,10 @@
   flex-direction: column;
 }
 
+/* Fixed: Targets both class variant or standard tag frames seamlessly */
+.contact-map-side iframe,
 .map-iframe {
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   min-height: 750px;
   border: none;
@@ -150,6 +152,7 @@
   display: block;
 }
 
+.contact-map-side:hover iframe,
 .contact-map-side:hover .map-iframe {
   filter: grayscale(0);
 }
@@ -220,6 +223,9 @@
   border: 1px solid #f5c6cb;
 }
 
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE VIEWPORTS)
+   ========================================================================== */
 
 @media (max-width: 1024px) {
   .contact-container {
@@ -232,12 +238,25 @@
   }
 
   .contact-map-side {
-    min-height: 450px;
+    min-height: auto;
     order: 2;
+    background: #ffffff;
+  }
+
+  .contact-map-side iframe,
+  .map-iframe {
+    min-height: 400px;
   }
 
   .map-overlay {
-    max-width: 400px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    max-width: 100%;
+    margin: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
   }
 }
 
@@ -253,23 +272,11 @@
   }
 
   .map-overlay {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    max-width: 100%;
     margin: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
-  .contact-map-side {
-    min-height: auto;
-    background: #ffffff;
-  }
-
+  .contact-map-side iframe,
   .map-iframe {
-    width: 100px;
     height: 350px;
   }
 }

@@ -819,7 +819,7 @@
 }
 
 /* ==========================================================================
-   9. LAPTOP FIXED COORDINATES (Desktop Only)
+   9. LAPTOP FIXED COORDINATES (Desktop Only Layout Architecture)
    ========================================================================== */
 @media (min-width: 1025px) {
   .node-1  { left: 14%; top: 270px; }
@@ -850,7 +850,7 @@
     flex-direction: column;
   }
   
-  /* Timeline Mobile Track Re-mapping */
+  /* --- Clean Vertical Road Milestone Track for Mobile Devices --- */
   .road-timeline-container {
     height: auto !important;
     display: flex;
@@ -899,10 +899,20 @@
     transform: translateX(0) !important;
   }
 
-  .las-ts-card {
-    width: 100%;
-    max-width: 100%;
+  /* --- Human Metrics Adaptive Frame Fit --- */
+  .las-ts-viewport {
+    mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
   }
+  .las-ts-card {
+    width: 320px;
+    padding: 24px;
+  }
+  .ts-quote-mark {
+    font-size: 4rem;
+    right: 20px;
+  }
+
   .las-split-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -935,5 +945,8 @@
   }
   .hubs-wrapper {
     padding: 30px 15px;
+  }
+  .las-ts-card {
+    width: 280px;
   }
 }

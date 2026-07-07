@@ -1,51 +1,30 @@
 /* ==========================================================================
-   0. ROOT & SYSTEM OVERRIDES
-   ========================================================================== */
-:root {
-  --primary: #f75910;
-  --primary-light: #ff8a3d;
-  --primary-dark: #d64507;
-  --dark-bg: #0a0f16;
-  --text-primary: #171717;
-  --text-secondary: #4b5563;
-  --border-light: #eef2f6;
-  --bg-light: #fafcff;
-  --bg-white: #ffffff;
-  --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 18px 40px -12px rgba(247, 89, 16, 0.25);
-}
-
-/* ==========================================================================
    1. HERO HEADER SECTION
    ========================================================================== */
 .hero-header {
   position: relative;
-  min-height: 45vh;
-  background: linear-gradient(135deg, #0a0f16 0%, #111827 100%);
-  display: flex;
-  align-items: center;
-  padding: 60px 0;
-}
-
-.hero-content-wrapper {
-  max-width: 800px;
-  margin: 40px auto 0 auto;
-  text-align: center;
+  min-height: 50vh;
+  background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
 }
 
 .hero-header h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.02em;
-  margin-bottom: 20px;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: white;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .hero-header p {
-  color: #9ca3af;
-  font-size: 1.15rem;
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 /* ==========================================================================

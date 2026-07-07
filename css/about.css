@@ -850,16 +850,16 @@
     flex-direction: column;
   }
   
-  /* --- Clean Vertical Road Milestone Track for Mobile Devices --- */
+ /* --- Clean Vertical Road Milestone Track for Mobile Devices --- */
   .road-timeline-container {
     height: auto !important;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding-left: 25px;
+    gap: 35px;
+    padding-left: 45px; /* Increased padding to give the cards and pins breathing room */
     margin-top: 40px;
     position: relative;
-    border-left: 3px dashed #e2e8f0;
+    border-left: 3px dashed var(--primary); /* Changed from light gray to your primary orange color */
   }
   .road-svg-canvas {
     display: none !important;
@@ -871,28 +871,30 @@
     transform: none !important;
     width: 100% !important;
     display: flex;
-    flex-direction: row-reverse !important;
+    flex-direction: row; /* Aligns left-to-right natively */
     align-items: center !important;
-    gap: 15px;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   .road-milestone-landmark.position-below {
     transform: none !important;
   }
   .pin-marker-assembly {
     position: absolute !important;
-    left: -37px;
+    left: -68px; /* Perfectly centers the circular pin badge directly over the orange dashed line */
     top: calc(50% - 28px);
     margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .connector-line, .pin-shadow {
     display: none !important;
   }
   .milestone-text-block {
     opacity: 0;
-    transform: translateX(20px) !important;
+    transform: translateX(15px) !important;
     width: 100% !important;
-    max-width: 100%;
+    max-width: calc(100% - 40px); /* Keeps the card perfectly inside mobile container spacing */
   }
   .road-milestone-landmark.node-activated .milestone-text-block {
     opacity: 1;

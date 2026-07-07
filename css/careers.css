@@ -79,7 +79,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* --- Ring Layout System --- */
 .vector-ring-system {
   position: absolute;
   inset: 0;
@@ -92,7 +91,7 @@
 
 .ring {
   position: absolute;
-  border: 1.5px dashed rgba(37, 99, 235, 0.25); /* Dashed tracks matching reference image */
+  border: 1.5px dashed rgba(37, 99, 235, 0.25); 
   border-radius: 50%;
 }
 
@@ -100,7 +99,6 @@
 .ring.r2 { width: 470px; height: 470px; }
 .ring.r3 { width: 560px; height: 560px; }
 
-/* --- Floating Icon Badges --- */
 .orbit-badge {
   position: absolute;
   width: 40px;
@@ -117,7 +115,6 @@
   z-index: 5;
 }
 
-/* --- Gentle Floating Keyframe Layouts --- */
 @keyframes stationary-float-y {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
@@ -130,7 +127,6 @@
   100% { transform: translateX(0px); }
 }
 
-/* --- Inner Ring Positions (r1) --- */
 .ring.r1 .orbit-badge:nth-child(1) {
   top: -20px;
   left: calc(50% - 20px);
@@ -142,7 +138,6 @@
   animation: stationary-float-y 4.6s ease-in-out infinite 0.4s;
 }
 
-/* --- Middle Ring Positions (r2) --- */
 .ring.r2 .orbit-badge:nth-child(1) {
   left: -20px;
   top: calc(50% - 20px);
@@ -154,7 +149,6 @@
   animation: stationary-float-x 4.4s ease-in-out infinite 0.2s;
 }
 
-/* --- Outer Ring Positions (r3) --- */
 .ring.r3 .orbit-badge:nth-child(1) {
   top: 14%;
   left: 14%;
@@ -166,7 +160,6 @@
   animation: stationary-float-y 4.8s ease-in-out infinite 0.1s;
 }
 
-/* --- Rest of your original Careers Section Styling --- */
 .careers-culture-section {
   padding: 120px 0;
   background: #ffffff;
@@ -428,6 +421,6 @@
     height: 220px;
   }
   .ring.r3 {
-    display: none; /* Hide outer floating track on super small devices */
+    display: none; 
   }
 }

@@ -702,7 +702,7 @@
   margin: 0 auto;
   padding: 0 32px;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr; /* Left side (Display) larger than Right side (Content) */
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 60px;
   align-items: center;
 }
@@ -819,7 +819,24 @@
 }
 
 /* ==========================================================================
-   9. MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
+   9. LAPTOP FIXED COORDINATES (Desktop Only)
+   ========================================================================== */
+@media (min-width: 1025px) {
+  .node-1  { left: 14%; top: 270px; }
+  .node-2  { left: 38%; top: 266px; }
+  .node-3  { left: 62%; top: 273px; }
+  .node-4  { left: 86%; top: 245px; }
+  .node-5  { left: 78%; top: 500px; }
+  .node-6  { left: 56%; top: 540px; }
+  .node-7  { left: 34%; top: 610px; }
+  .node-8  { left: 12%; top: 480px; }
+  .node-9  { left: 26%; top: 700px; }
+  .node-10 { left: 50%; top: 700px; }
+  .node-11 { left: 75%; top: 700px; }
+}
+
+/* ==========================================================================
+   10. MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
    ========================================================================== */
 @media (max-width: 1024px) {
   .about-grid {
@@ -832,30 +849,59 @@
   .mv-wrapper {
     flex-direction: column;
   }
+  
+  /* Timeline Mobile Track Re-mapping */
   .road-timeline-container {
-    height: auto;
+    height: auto !important;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-left: 40px;
+    gap: 30px;
+    padding-left: 25px;
+    margin-top: 40px;
+    position: relative;
+    border-left: 3px dashed #e2e8f0;
   }
   .road-svg-canvas {
-    display: none;
+    display: none !important;
   }
   .road-milestone-landmark {
     position: relative !important;
-    left: auto !important;
-    top: auto !important;
+    left: 0 !important;
+    top: 0 !important;
     transform: none !important;
     width: 100% !important;
-    align-items: flex-start;
-    text-align: left;
+    display: flex;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    gap: 15px;
+    justify-content: flex-end;
   }
-  .connector-line {
-    display: none;
+  .road-milestone-landmark.position-below {
+    transform: none !important;
   }
+  .pin-marker-assembly {
+    position: absolute !important;
+    left: -37px;
+    top: calc(50% - 28px);
+    margin: 0 !important;
+  }
+  .connector-line, .pin-shadow {
+    display: none !important;
+  }
+  .milestone-text-block {
+    opacity: 0;
+    transform: translateX(20px) !important;
+    width: 100% !important;
+    max-width: 100%;
+  }
+  .road-milestone-landmark.node-activated .milestone-text-block {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+
   .las-ts-card {
     width: 100%;
+    max-width: 100%;
   }
   .las-split-container {
     grid-template-columns: 1fr;
@@ -867,5 +913,27 @@
   }
   .intro-desc {
     margin: 0 auto;
+  }
+  .columns-wrapper {
+    height: 320px;
+  }
+}
+
+@media (max-width: 580px) {
+  .stats-row {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .stat-block {
+    flex: 1 1 40%;
+  }
+  .columns-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columns-wrapper :nth-child(3) {
+    display: none;
+  }
+  .hubs-wrapper {
+    padding: 30px 15px;
   }
 }

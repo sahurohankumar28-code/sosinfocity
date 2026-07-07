@@ -1078,7 +1078,7 @@
   .dropdown-menu,
   #header-placeholder nav,
   .hero-text-side {
-    border-left: 4px solid #ff6b00; 
+    border-left: none; 
     padding-left: 15px;
   }
   .perk-item {

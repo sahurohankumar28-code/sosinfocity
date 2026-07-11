@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. HERO HEADER SECTION
+   HERO HEADER SECTION
    ========================================================================== */
 .hero-header {
   position: relative;
@@ -28,21 +28,38 @@
 }
 
 /* ==========================================================================
-   2. ABOUT HERO SECTION
+   ABOUT HERO SECTION (OUR STORY WITH TEXT WRAPPING GRAPHICS)
    ========================================================================== */
 .about-hero-section {
   background: #ffffff;
   padding: 90px 0;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
-  align-items: center;
+.about-story-wrap {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
-.about-highlight h2 {
+.about-img-floating {
+  float: right;
+  width: 42%;
+  margin-left: 45px;
+  margin-bottom: 25px;
+  shape-outside: inset(0% 0% 0% 0% round 24px);
+}
+
+.about-img-floating img {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(10, 15, 22, 0.08);
+  border: 1px solid var(--border-light);
+}
+
+.about-text-content h2 {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 24px;
@@ -50,47 +67,64 @@
   letter-spacing: -0.01em;
 }
 
-.about-highlight p {
+.about-text-content p {
   color: var(--text-secondary);
-  line-height: 1.75;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-bottom: 22px;
   font-size: 1.05rem;
-}
-
-.stats-row {
-  display: flex;
-  gap: 40px;
-  margin-top: 35px;
-  flex-wrap: wrap;
-}
-
-.stat-block h4 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1;
-  margin-bottom: 8px;
-}
-
-.stat-block p {
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.about-img img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 24px;
-  box-shadow: var(--shadow-md);
+  text-align: justify;
 }
 
 /* ==========================================================================
-   3. MISSION & VALUES SECTION (MV)
+   PREMIUM CENTERED COUNTER STRIP LAYOUT
+   ========================================================================== */
+.stats-row-fullwidth {
+  display: flex;
+  width: 100%;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  padding: 40px 20px;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: var(--shadow-sm);
+  clear: both;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-item h4 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 10px;
+  font-feature-settings: "tnum";
+}
+
+.stat-item p {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.stat-item-divider {
+  width: 1px;
+  height: 65px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.08) 20%, rgba(0, 0, 0, 0.08) 80%, transparent);
+}
+
+/* ==========================================================================
+   MISSION & VALUES SECTION (RESET CARDS AND BULLETS)
    ========================================================================== */
 .mv-section {
-  padding: 90px 0;
+  padding: 45px 0;
   background: #f9fafb;
 }
 
@@ -108,53 +142,98 @@
 .mv-wrapper {
   display: flex;
   gap: 32px;
+  align-items: stretch;
 }
 
-.mv-card {
+.mv-card-reset {
   flex: 1;
   background: #ffffff;
-  border-radius: 20px;
-  padding: 45px 35px;
+  border-radius: 24px;
+  padding: 50px 40px;
   border: 1px solid var(--border-light);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px -10px rgba(10, 15, 22, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mv-card h3 {
-  font-size: 1.5rem;
+.mv-card-reset:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px -12px rgba(10, 15, 22, 0.08);
+}
+
+.mv-card-reset h3 {
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
-.mv-card h3 i {
+.mv-card-reset h3 i {
   color: var(--primary);
 }
 
-.mv-card p {
+.mv-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mv-bullet-list li {
+  position: relative;
+  padding-left: 28px;
   color: var(--text-secondary);
-  line-height: 1.7;
-  font-size: 1rem;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.mv-bullet-list li:last-child {
+  margin-bottom: 0;
+}
+
+.mv-bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(247, 89, 16, 0.15);
 }
 
 /* ==========================================================================
-   4. ROAD TIMELINE / JOURNEY SECTION
+   4. ROAD TIMELINE / JOURNEY SECTION (SCROLL PINNED HIGHWAY)
    ========================================================================== */
 .journey-section {
   padding: 20px 0;
-  background: #f8f9fc;
-  overflow: hidden;
+  background: #f8fafc;
+  overflow: visible;
   position: relative;
   text-align: center;
+}
+
+.section-header {
+  margin-bottom: 20px;
 }
 
 .road-timeline-container {
   position: relative;
   width: 100%;
-  height: 950px;
-  margin-top: 40px;
+  height: 850px;
+  margin-top: 20px;
+}
+
+.section-header h2 {
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  margin-bottom: 0;
 }
 
 .road-svg-canvas {
@@ -168,15 +247,15 @@
 .road-track-bg {
   fill: none;
   stroke: #e2e8f0;
-  stroke-width: 12px;
+  stroke-width: 18px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .road-track-progress {
   fill: none;
-  stroke: #f75910;
-  stroke-width: 6px;
+  stroke: #f6881f;
+  stroke-width: 12px;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: stroke-dashoffset 0.1s linear;
@@ -188,164 +267,425 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 230px;
-  transform: translate(-50%, -192px);
+  width: 240px;
+  transform: translate(-50%, var(--y-shift, -192px));
+}
+
+.road-milestone-landmark.position-above {
+  --y-shift: -192px;
+  --y-drift-start: 15px;
+}
+.road-milestone-landmark.position-above .milestone-text-block {
+  order: 1;
+  margin-bottom: 15px;
+}
+.road-milestone-landmark.position-above .pin-marker-assembly {
+  order: 2;
 }
 
 .road-milestone-landmark.position-below {
-  transform: translate(-50%, -24px);
+  --y-shift: -24px;
+  --y-drift-start: -15px;
+}
+.road-milestone-landmark.position-below .milestone-text-block {
+  order: 3;
+  margin-top: 15px;
+}
+.road-milestone-landmark.position-below .pin-marker-assembly {
+  order: 1;
 }
 
-.pin-marker-assembly {
+/* --- INVISIBLE PRE-SCROLL ANIMATION STATES --- */
+.road-milestone-landmark .pin-marker-assembly {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: scale(0.5);
+  transform: scale(0);
   opacity: 0;
-  transition:
-    transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
-    opacity 0.4s ease;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
   z-index: 10;
-  width: 56px;
-  height: 56px;
+  width: 80px;
+  height: 80px;
 }
 
+.road-milestone-landmark .milestone-text-block {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(10, 15, 22, 0.05);
+  overflow: hidden;
+  z-index: 15;
+}
+
+/* --- DESKTOP HOVER MATRIX TOGGLES --- */
+@media (min-width: 1025px) {
+  .road-milestone-landmark .milestone-text-block {
+    opacity: 0 !important;
+    visibility: hidden;
+    transform: translateY(var(--y-drift-start)) scale(0.95);
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+      transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+      visibility 0.4s;
+  }
+
+  .road-milestone-landmark.node-activated:hover .milestone-text-block {
+    opacity: 1 !important;
+    visibility: visible;
+    transform: translateY(0) scale(1) !important;
+  }
+
+  .road-milestone-landmark.node-activated .pin-marker-assembly:hover {
+    cursor: pointer;
+  }
+}
+
+/* --- ANIMATED POP TRIGGERS ACTIVE (FIRED BY SCROLL ENGINE) --- */
 .road-milestone-landmark.node-activated .pin-marker-assembly {
   transform: scale(1);
   opacity: 1;
 }
 
-.donut-badge {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  padding: 4px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+/* ========================================================================== 
+   GEO-LOCATION BALLOON PIN STRUCTURE 
+   ========================================================================== */
+
+/* The balloon pin - traditional map marker shape */
+.geo-balloon-pin {
+  position: relative;
+  width: 64px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.badge-inner-circle {
+/* SVG shape for the balloon */
+.geo-balloon-pin svg {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+  transition: filter 0.3s ease;
+}
+
+.road-milestone-landmark.node-activated .geo-balloon-pin:hover svg {
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.4));
+}
+
+/* Inner circle with number */
+.pin-number-circle {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: #ffffff;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-}
-
-.pin-shadow {
-  width: 32px;
-  height: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  margin-top: 4px;
-  filter: blur(2px);
-}
-
-.connector-line {
-  width: 2px;
-  height: 35px;
-  background: #cbd5e1;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.road-milestone-landmark.node-activated .connector-line {
-  opacity: 1;
-}
-
-.milestone-text-block {
-  width: 100%;
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(10, 15, 22, 0.06);
-  border: 1px solid #e2e8f0;
-  opacity: 0;
-  transform: translateY(15px);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
-  overflow: hidden;
-  z-index: 15;
-}
-
-.road-milestone-landmark.position-below .milestone-text-block {
-  transform: translateY(-15px);
-}
-
-.road-milestone-landmark.node-activated .milestone-text-block {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.block-header {
-  padding: 8px 14px;
-  color: white;
-  text-align: center;
-}
-
-.year-digits {
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  color: #0a0f16;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+/* Shadow beneath the balloon */
+.balloon-shadow {
+  width: 20px;
+  height: 6px;
+  background: rgba(10, 15, 22, 0.2);
+  border-radius: 50%;
+  margin-top: -2px;
+  filter: blur(3px);
+  transition: transform 0.3s ease;
+}
+
+.road-milestone-landmark.node-activated .geo-balloon-pin:hover+.balloon-shadow,
+.road-milestone-landmark.node-activated .geo-balloon-pin:hover~.balloon-shadow {
+  transform: scale(0.8);
+}
+
+/* Color variants for different milestone colors */
+.milestone-gold .geo-balloon-pin svg .balloon-body {
+  fill: #eab308;
+}
+.milestone-gold .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-yellow .geo-balloon-pin svg .balloon-body {
+  fill: #d97706;
+}
+.milestone-yellow .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-green .geo-balloon-pin svg .balloon-body {
+  fill: #22c55e;
+}
+.milestone-green .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-teal .geo-balloon-pin svg .balloon-body {
+  fill: #0d9488;
+}
+.milestone-teal .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-blue .geo-balloon-pin svg .balloon-body {
+  fill: #2563eb;
+}
+.milestone-blue .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-cyan .geo-balloon-pin svg .balloon-body {
+  fill: #06b6d4;
+}
+.milestone-cyan .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-magenta .geo-balloon-pin svg .balloon-body {
+  fill: #ec4899;
+}
+.milestone-magenta .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-red .geo-balloon-pin svg .balloon-body {
+  fill: #ef4444;
+}
+.milestone-red .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-orange .geo-balloon-pin svg .balloon-body {
+  fill: #f97316;
+}
+.milestone-orange .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-indigo .geo-balloon-pin svg .balloon-body {
+  fill: #4f46e5;
+}
+.milestone-indigo .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.milestone-purple .geo-balloon-pin svg .balloon-body {
+  fill: #7c3aed;
+}
+.milestone-purple .geo-balloon-pin svg .balloon-shine {
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+/* Hover animation - subtle bounce */
+.road-milestone-landmark.node-activated .geo-balloon-pin:hover {
+  animation: balloonBounce 0.6s ease;
+}
+
+@keyframes balloonBounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Pulsing glow effect when activated */
+.road-milestone-landmark.node-activated .geo-balloon-pin::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(247, 89, 16, 0.15) 0%, transparent 70%);
+  animation: pinPulse 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes pinPulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
 }
 
 .milestone-text-block p {
-  padding: 14px;
-  font-size: 0.82rem;
-  line-height: 1.55;
+  padding: 12px;
+  font-size: 0.8rem;
+  line-height: 1.5;
   color: #4b5563;
   margin: 0;
   background: white;
-  text-align: left;
+  text-align: center;
 }
 
-/* Timeline Dynamic Color Variants */
-.milestone-gold .donut-badge { background: #eab308; color: #eab308; }
-.milestone-gold .block-header { background: #eab308; }
+/* ==========================================================================
+   9. CHRONOLOGICAL SNAKING GRID COORDINATES (DESKTOP DESIGNS)
+   ========================================================================== */
+@media (min-width: 1025px) {
+  .node-1 {
+    left: 14%;
+    top: 620px;
+  }
+  .node-2 {
+    left: 38%;
+    top: 567px;
+  }
+  .node-3 {
+    left: 62%;
+    top: 620px;
+  }
+  .node-4 {
+    left: 86%;
+    top: 567px;
+  }
 
-.milestone-yellow .donut-badge { background: #d97706; color: #d97706; }
-.milestone-yellow .block-header { background: #d97706; }
+  .node-5 {
+    left: 78%;
+    top: 420px;
+  }
+  .node-6 {
+    left: 56%;
+    top: 367px;
+  }
+  .node-7 {
+    left: 35%;
+    top: 420px;
+  }
+  .node-8 {
+    left: 15%;
+    top: 367px;
+  }
 
-.milestone-green .donut-badge { background: #22c55e; color: #22c55e; }
-.milestone-green .block-header { background: #22c55e; }
-
-.milestone-teal .donut-badge { background: #0d9488; color: #0d9488; }
-.milestone-teal .block-header { background: #0d9488; }
-
-.milestone-red .donut-badge { background: #ef4444; color: #ef4444; }
-.milestone-red .block-header { background: #ef4444; }
-
-.milestone-orange .donut-badge { background: #f97316; color: #f97316; }
-.milestone-orange .block-header { background: #f97316; }
-
-.milestone-magenta .donut-badge { background: #ec4899; color: #ec4899; }
-.milestone-magenta .block-header { background: #ec4899; }
-
-.milestone-blue .donut-badge { background: #2563eb; color: #2563eb; }
-.milestone-blue .block-header { background: #2563eb; }
-
-.milestone-cyan .donut-badge { background: #06b6d4; color: #06b6d4; }
-.milestone-cyan .block-header { background: #06b6d4; }
-
-.milestone-indigo .donut-badge { background: #4f46e5; color: #4f46e5; }
-.milestone-indigo .block-header { background: #4f46e5; }
-
-.milestone-purple .donut-badge { background: #7c3aed; color: #7c3aed; }
-.milestone-purple .block-header { background: #7c3aed; }
-
+  .node-9 {
+    left: 26%;
+    top: 220px;
+  }
+  .node-10 {
+    left: 50%;
+    top: 167px;
+  }
+  .node-11 {
+    left: 74%;
+    top: 220px;
+  }
+}
 
 /* ==========================================================================
-   5. INSIGHTS & BOARD MEMBERS SECTION
+   10. MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .road-timeline-container {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 55px;
+    margin-top: 40px;
+    position: relative;
+    border-left: 3px dashed var(--primary);
+  }
+  .road-svg-canvas {
+    display: none !important;
+  }
+  .road-milestone-landmark {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start;
+  }
+
+  .road-milestone-landmark .pin-marker-assembly {
+    position: absolute !important;
+    left: -68px;
+    top: calc(50% - 30px);
+    margin: 0 !important;
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .geo-balloon-pin {
+    width: 44px;
+    height: 56px;
+  }
+
+  .pin-number-circle {
+    width: 28px;
+    height: 28px;
+    top: 5px;
+    font-size: 0.6rem;
+  }
+
+  .balloon-shadow {
+    width: 14px;
+    height: 4px;
+  }
+
+  .geo-balloon-pin::after {
+    display: none !important;
+  }
+
+  .pin-shadow {
+    display: none !important;
+  }
+  .milestone-text-block {
+    opacity: 0;
+    transform: translateX(15px) !important;
+    width: 100% !important;
+    max-width: calc(100% - 20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .road-milestone-landmark.node-activated .milestone-text-block {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+}
+
+/* ==========================================================================
+   INSIGHTS & BOARD MEMBERS SECTION
    ========================================================================== */
 .insights-section {
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .board-canvas {
@@ -362,10 +702,7 @@
   border-radius: 28px;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition:
-    transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-    border-color 0.4s,
-    box-shadow 0.4s;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s, box-shadow 0.4s;
   position: relative;
 }
 
@@ -439,9 +776,8 @@
   border-color: var(--primary);
 }
 
-
 /* ==========================================================================
-   6. HUBS & TEAM CARDS
+   HUBS & TEAM CARDS
    ========================================================================== */
 .hubs-wrapper {
   background: #ffffff;
@@ -485,10 +821,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition:
-    transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-    border-color 0.4s ease,
-    box-shadow 0.4s ease;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease, box-shadow 0.4s ease;
   will-change: transform;
 }
 
@@ -549,12 +882,11 @@
   transform: scale(1.05);
 }
 
-
 /* ==========================================================================
-   7. TESTIMONIALS SECTION (MARQUEE HORIZONTAL)
+   TESTIMONIALS SECTION (MARQUEE HORIZONTAL)
    ========================================================================== */
 .las-testimonials-section {
-  padding: 20px 0 60px 0;
+  padding: 60px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
   text-align: center;
   overflow: hidden;
@@ -596,10 +928,7 @@
   flex-direction: column;
   text-align: left;
   flex-shrink: 0;
-  transition:
-    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.4s ease,
-    box-shadow 0.4s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .ts-quote-mark {
@@ -669,13 +998,16 @@
 }
 
 @keyframes smoothTestimonialMarquee {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
-
 /* ==========================================================================
-   8. HERO GRID GRID MARQUEE SECTION (3D LED SCREEN EFFECT)
+   HERO GRID MARQUEE SECTION (3D LED SCREEN EFFECT)
    ========================================================================== */
 .las-hero-marquee-section {
   padding: 100px 0;
@@ -687,11 +1019,12 @@
 .las-gallery-bg-overlay {
   position: absolute;
   inset: 0;
-  background-image: url("https://www.shutterstock.com/shutterstock/photos/2370586545/display_1500/stock-photo-blurred-empty-open-space-office-abstract-light-bokeh-at-office-interior-background-for-design-2370586545.jpg");
+  background-image: url("https://www.shutterstock.com/shutterstock/photos/2240141901/display_1500/stock-photo-background-image-of-office-interior-with-workplaces-separated-by-partition-walls-cubicles-with-2240141901.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
   pointer-events: none;
+  opacity: 0.20;
 }
 
 .las-split-container {
@@ -745,8 +1078,12 @@
   gap: 16px;
 }
 
-.track-down .vertical-track-inner { animation: verticalScrollDown 24s linear infinite; }
-.track-up .vertical-track-inner { animation: verticalScrollUp 24s linear infinite; }
+.track-down .vertical-track-inner {
+  animation: verticalScrollDown 24s linear infinite;
+}
+.track-up .vertical-track-inner {
+  animation: verticalScrollUp 24s linear infinite;
+}
 
 .marquee-poster-card {
   position: relative;
@@ -764,14 +1101,23 @@
   display: block;
 }
 
-.marquee-poster-card.size-1-5 { height: 100px; }
-.marquee-poster-card.size-3 { height: 140px; }
-.marquee-poster-card.size-4-5 { height: 180px; }
-.marquee-poster-card.size-6 { height: 230px; }
+.marquee-poster-card.size-1-5 {
+  height: 100px;
+}
+.marquee-poster-card.size-3 {
+  height: 140px;
+}
+.marquee-poster-card.size-4-5 {
+  height: 180px;
+}
+.marquee-poster-card.size-6 {
+  height: 230px;
+}
 
 .marquee-content-pane {
   text-align: left;
   padding-left: 20px;
+  color: #ffffff;
 }
 
 .section-tag-alt {
@@ -790,116 +1136,76 @@
   line-height: 1.2;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
+  color: #ffffff;
 }
 
 .highlight-italic {
   font-style: italic;
   font-weight: 300;
   font-family: serif;
-  color: rgba(48, 48, 48, 0.7);
+  color: var(--primary);
 }
 
 .intro-desc {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #1e2125;
+  color: rgba(255, 255, 255, 0.75);
   max-width: 500px;
 }
 
 @keyframes verticalScrollDown {
-  0% { transform: translate3d(0, -50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @keyframes verticalScrollUp {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, -50%, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
 }
 
 /* ==========================================================================
-   9. LAPTOP FIXED COORDINATES (Desktop Only Layout Architecture)
-   ========================================================================== */
-@media (min-width: 1025px) {
-  .node-1  { left: 14%; top: 270px; }
-  .node-2  { left: 38%; top: 266px; }
-  .node-3  { left: 62%; top: 273px; }
-  .node-4  { left: 86%; top: 245px; }
-  .node-5  { left: 78%; top: 500px; }
-  .node-6  { left: 56%; top: 540px; }
-  .node-7  { left: 34%; top: 610px; }
-  .node-8  { left: 12%; top: 480px; }
-  .node-9  { left: 26%; top: 700px; }
-  .node-10 { left: 50%; top: 700px; }
-  .node-11 { left: 75%; top: 700px; }
-}
-
-/* ==========================================================================
-   10. MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
+   MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
    ========================================================================== */
 @media (max-width: 1024px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .about-img-floating {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
   }
-  .about-img img {
-    height: 350px;
+  .stats-row-fullwidth {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 10px;
+  }
+  .stat-item-divider {
+    width: 80%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.08);
   }
   .mv-wrapper {
     flex-direction: column;
   }
-  
- /* --- Clean Vertical Road Milestone Track for Mobile Devices --- */
-  .road-timeline-container {
+  .journey-section {
     height: auto !important;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    padding-left: 45px; /* Increased padding to give the cards and pins breathing room */
-    margin-top: 40px;
+    padding: 60px 0;
+  }
+  .journey-section .container {
     position: relative;
-    border-left: 3px dashed var(--primary); /* Changed from light gray to your primary orange color */
-  }
-  .road-svg-canvas {
-    display: none !important;
-  }
-  .road-milestone-landmark {
-    position: relative !important;
-    left: 0 !important;
-    top: 0 !important;
-    transform: none !important;
-    width: 100% !important;
-    display: flex;
-    flex-direction: row; /* Aligns left-to-right natively */
-    align-items: center !important;
-    justify-content: flex-start;
-  }
-  .road-milestone-landmark.position-below {
-    transform: none !important;
-  }
-  .pin-marker-assembly {
-    position: absolute !important;
-    left: -68px; /* Perfectly centers the circular pin badge directly over the orange dashed line */
-    top: calc(50% - 28px);
-    margin: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .connector-line, .pin-shadow {
-    display: none !important;
-  }
-  .milestone-text-block {
-    opacity: 0;
-    transform: translateX(15px) !important;
-    width: 100% !important;
-    max-width: calc(100% - 40px); /* Keeps the card perfectly inside mobile container spacing */
-  }
-  .road-milestone-landmark.node-activated .milestone-text-block {
-    opacity: 1;
-    transform: translateX(0) !important;
+    top: auto;
+    height: auto;
+    overflow: visible;
+    padding: 0 24px;
   }
 
-  /* --- Human Metrics Adaptive Frame Fit --- */
   .las-ts-viewport {
     mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
@@ -930,13 +1236,6 @@
 }
 
 @media (max-width: 580px) {
-  .stats-row {
-    gap: 20px;
-    justify-content: space-between;
-  }
-  .stat-block {
-    flex: 1 1 40%;
-  }
   .columns-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }

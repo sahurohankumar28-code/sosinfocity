@@ -9,6 +9,9 @@
   });
   window.scrollTo(0, 0);
 
+  /**
+   * Smoothly animates numerical statistic nodes from zero up to the target values
+   */
   function animateCounter(elementId, targetValue, duration = 2800) {
     const element = document.getElementById(elementId);
     if (!element) return;
@@ -28,6 +31,9 @@
     }, stepTime);
   }
 
+  /**
+   * Initializes responsive sliding side-drawer behaviors for small devices
+   */
   function initMobileNavigation() {
     const mobileBtn = document.getElementById("mobileMenuBtn");
     const overlay = document.getElementById("mobileNavOverlay");
@@ -45,6 +51,9 @@
     });
   }
 
+  /**
+   * Drives subtle mouse-tracking physics on the 3D-curved workspace gallery canvas
+   */
   function initPerspectiveController() {
     const stage = document.querySelector(".marquee-display-pane");
     const display = document.querySelector(".led-tv-display-curve");
@@ -74,6 +83,9 @@
     });
   }
 
+  /**
+   * Manages state interruptions when a cursor anchors over the continuous testimonial carousel
+   */
   function initMarqueeInteractions() {
     const track = document.getElementById("testimonialMarqueeTrack");
     if (!track) return;
@@ -87,12 +99,18 @@
     });
   }
 
+  /**
+   * SCROLL-DRIVEN PINNING HIGHWAY ENGINE
+   * Pins the timeline section to prevent normal down-paging until the path completes tracking.
+   */
   function initScrollTimelineEngine() {
-    const path = document.getElementById("roadProgressPath");
+    const path = document.getElementById("roadProgressOverlay");
     const arrow = document.getElementById("roadArrow");
-    const targetSection = document.querySelector(".journey-section");
-    const timelineContainer = document.querySelector(".road-timeline-container"); 
+    const targetSection = document.getElementById("roadTimelineSection");
+    const timelineContainer = document.getElementById("roadCanvas"); 
     const nodes = document.querySelectorAll(".road-milestone-landmark");
+    const progressFill = document.getElementById("journeyProgressFill");
+    const progressPercent = document.getElementById("journeyProgressPercent");
 
     if (!targetSection || !timelineContainer || !nodes.length) return;
 
@@ -105,8 +123,20 @@
       path.style.strokeDashoffset = pathLength;
     }
 
+    // Allocate runway height space and activate sticky pinning setup parameters
+    if (!isMobileLayout()) {
+      targetSection.style.position = "relative";
+      targetSection.style.height = "1020px"; 
+      timelineContainer.style.position = "sticky";
+      timelineContainer.style.top = "0"; 
+    }
+
     function updateTimelineScrollState() {
       if (isMobileLayout()) {
+        targetSection.style.height = "auto";
+        timelineContainer.style.position = "relative";
+        timelineContainer.style.top = "auto";
+        
         if (arrow) arrow.style.opacity = "0";
         const triggerBottom = window.innerHeight * 0.85; 
 
@@ -121,51 +151,52 @@
         return;
       }
 
-      if (!path) return;
-      const containerRect = timelineContainer.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+      // Calculations relative to the overall runway section
+      const sectionRect = targetSection.getBoundingClientRect();
+      const totalScrollRunway = targetSection.offsetHeight - timelineContainer.offsetHeight;
       
-      const startTrigger = windowHeight * 0.85; 
-      const endTrigger = -containerRect.height + windowHeight * 0.4;
+      let progress = -sectionRect.top / totalScrollRunway;
+      progress = Math.max(0, Math.min(1, progress));
 
-      let progress = 0;
-
-      if (containerRect.top <= startTrigger) {
-        const totalDistance = startTrigger - endTrigger;
-        const traveledDistance = startTrigger - containerRect.top;
-
-        progress = traveledDistance / totalDistance;
-        progress = Math.max(0, Math.min(1, progress));
+      // Update progress indicator
+      if (progressFill) {
+        progressFill.style.width = (progress * 100) + "%";
+      }
+      if (progressPercent) {
+        progressPercent.textContent = Math.round(progress * 100) + "%";
       }
 
-      const currentLength = progress * pathLength;
-      path.style.strokeDashoffset = pathLength - currentLength;
+      if (path) {
+        const currentLength = progress * pathLength;
+        path.style.strokeDashoffset = pathLength - currentLength;
 
-      if (arrow) {
-        if (progress > 0.001) {
-          arrow.style.opacity = "1";
-          
-          const point = path.getPointAtLength(currentLength);
-          const lookAheadLength = Math.min(pathLength, currentLength + 2);
-          const aheadPoint = path.getPointAtLength(lookAheadLength);
-          
-          const deltaX = aheadPoint.x - point.x;
-          const deltaY = aheadPoint.y - point.y;
-          const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-          
-          arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
-        } else {
-          arrow.style.opacity = "1";
-          const startPoint = path.getPointAtLength(0);
-          const nextPoint = path.getPointAtLength(2);
-          const angle = Math.atan2(nextPoint.y - startPoint.y, nextPoint.x - startPoint.x) * (180 / Math.PI);
-          arrow.setAttribute("transform", `translate(${startPoint.x}, ${startPoint.y}) rotate(${angle})`);
+        if (arrow) {
+          if (progress > 0.001) {
+            arrow.style.opacity = "1";
+            const point = path.getPointAtLength(currentLength);
+            const lookAheadLength = Math.min(pathLength, currentLength + 2);
+            const aheadPoint = path.getPointAtLength(lookAheadLength);
+            
+            const deltaX = aheadPoint.x - point.x;
+            const deltaY = aheadPoint.y - point.y;
+            const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+            
+            arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
+          } else {
+            arrow.style.opacity = "1";
+            const startPoint = path.getPointAtLength(0);
+            const nextPoint = path.getPointAtLength(2);
+            const angle = Math.atan2(nextPoint.y - startPoint.y, nextPoint.x - startPoint.x) * (180 / Math.PI);
+            arrow.setAttribute("transform", `translate(${startPoint.x}, ${startPoint.y}) rotate(${angle})`);
+          }
         }
       }
 
+      // Activate nodes systematically as the vector stroke moves through their index segment
       nodes.forEach((node, index) => {
-        const nodeTriggerOffset = index / nodes.length;
-        if (progress >= nodeTriggerOffset) {
+        const activateThreshold = (index / nodes.length) - 0.04;
+        
+        if (progress >= Math.max(0, activateThreshold)) {
           node.classList.add("node-activated");
         } else {
           node.classList.remove("node-activated");
@@ -173,13 +204,21 @@
       });
     }
 
-    window.addEventListener("scroll", updateTimelineScrollState, {
-      passive: true,
+    window.addEventListener("scroll", updateTimelineScrollState, { passive: true });
+    window.addEventListener("resize", () => {
+      if (!isMobileLayout()) {
+        targetSection.style.height = "1000px";
+        timelineContainer.style.position = "sticky";
+        timelineContainer.style.top = "0";
+      }
+      updateTimelineScrollState();
     });
-    window.addEventListener("resize", updateTimelineScrollState);
     updateTimelineScrollState();
   }
 
+  /**
+   * Core orchestrator entry point
+   */
   const runSystemInitializations = () => {
     window.scrollTo(0, 0);
     initMobileNavigation();

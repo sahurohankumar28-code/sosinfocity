@@ -1019,7 +1019,7 @@
 .las-gallery-bg-overlay {
   position: absolute;
   inset: 0;
-  background-image: url("https://www.shutterstock.com/shutterstock/photos/2240141901/display_1500/stock-photo-background-image-of-office-interior-with-workplaces-separated-by-partition-walls-cubicles-with-2240141901.jpg");
+  background-image: url("images/2.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;

@@ -1,4 +1,42 @@
 /* ==========================================================================
+   GLOBAL STYLES & VARIABLES
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #f75910;
+  --primary-light: #ff8a3d;
+  --primary-dark: #d64507;
+  --dark-bg: #0a0f16;
+  --text-primary: #171717;
+  --text-secondary: #4b5563;
+  --border-light: #eef2f6;
+  --bg-light: #fafcff;
+  --bg-white: #ffffff;
+  --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 18px 40px -12px rgba(247, 89, 16, 0.25);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-white);
+  color: var(--text-primary);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ==========================================================================
    HERO HEADER SECTION
    ========================================================================== */
 .hero-header {
@@ -207,7 +245,7 @@
 }
 
 /* ==========================================================================
-   4. ROAD TIMELINE / JOURNEY SECTION (SCROLL PINNED HIGHWAY)
+   ROAD TIMELINE / JOURNEY SECTION (SCROLL PINNED HIGHWAY)
    ========================================================================== */
 .journey-section {
   padding: 20px 0;
@@ -295,7 +333,6 @@
   order: 1;
 }
 
-/* --- INVISIBLE PRE-SCROLL ANIMATION STATES --- */
 .road-milestone-landmark .pin-marker-assembly {
   position: relative;
   display: flex;
@@ -317,7 +354,6 @@
   z-index: 15;
 }
 
-/* --- DESKTOP HOVER MATRIX TOGGLES --- */
 @media (min-width: 1025px) {
   .road-milestone-landmark .milestone-text-block {
     opacity: 0 !important;
@@ -339,7 +375,6 @@
   }
 }
 
-/* --- ANIMATED POP TRIGGERS ACTIVE (FIRED BY SCROLL ENGINE) --- */
 .road-milestone-landmark.node-activated .pin-marker-assembly {
   transform: scale(1);
   opacity: 1;
@@ -348,8 +383,6 @@
 /* ========================================================================== 
    GEO-LOCATION BALLOON PIN STRUCTURE 
    ========================================================================== */
-
-/* The balloon pin - traditional map marker shape */
 .geo-balloon-pin {
   position: relative;
   width: 64px;
@@ -361,7 +394,6 @@
   transition: transform 0.3s ease;
 }
 
-/* SVG shape for the balloon */
 .geo-balloon-pin svg {
   width: 100%;
   height: 100%;
@@ -373,7 +405,6 @@
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.4));
 }
 
-/* Inner circle with number */
 .pin-number-circle {
   position: absolute;
   top: 8px;
@@ -397,7 +428,6 @@
   letter-spacing: -0.02em;
 }
 
-/* Shadow beneath the balloon */
 .balloon-shadow {
   width: 20px;
   height: 6px;
@@ -413,108 +443,49 @@
   transform: scale(0.8);
 }
 
-/* Color variants for different milestone colors */
-.milestone-gold .geo-balloon-pin svg .balloon-body {
-  fill: #eab308;
-}
-.milestone-gold .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-gold .geo-balloon-pin svg .balloon-body { fill: #eab308; }
+.milestone-gold .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-yellow .geo-balloon-pin svg .balloon-body {
-  fill: #d97706;
-}
-.milestone-yellow .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-yellow .geo-balloon-pin svg .balloon-body { fill: #d97706; }
+.milestone-yellow .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-green .geo-balloon-pin svg .balloon-body {
-  fill: #22c55e;
-}
-.milestone-green .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-green .geo-balloon-pin svg .balloon-body { fill: #22c55e; }
+.milestone-green .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-teal .geo-balloon-pin svg .balloon-body {
-  fill: #0d9488;
-}
-.milestone-teal .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-teal .geo-balloon-pin svg .balloon-body { fill: #0d9488; }
+.milestone-teal .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-blue .geo-balloon-pin svg .balloon-body {
-  fill: #2563eb;
-}
-.milestone-blue .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-blue .geo-balloon-pin svg .balloon-body { fill: #2563eb; }
+.milestone-blue .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-cyan .geo-balloon-pin svg .balloon-body {
-  fill: #06b6d4;
-}
-.milestone-cyan .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-cyan .geo-balloon-pin svg .balloon-body { fill: #06b6d4; }
+.milestone-cyan .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-magenta .geo-balloon-pin svg .balloon-body {
-  fill: #ec4899;
-}
-.milestone-magenta .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-magenta .geo-balloon-pin svg .balloon-body { fill: #ec4899; }
+.milestone-magenta .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-red .geo-balloon-pin svg .balloon-body {
-  fill: #ef4444;
-}
-.milestone-red .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-red .geo-balloon-pin svg .balloon-body { fill: #ef4444; }
+.milestone-red .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-orange .geo-balloon-pin svg .balloon-body {
-  fill: #f97316;
-}
-.milestone-orange .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-orange .geo-balloon-pin svg .balloon-body { fill: #f97316; }
+.milestone-orange .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-indigo .geo-balloon-pin svg .balloon-body {
-  fill: #4f46e5;
-}
-.milestone-indigo .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-indigo .geo-balloon-pin svg .balloon-body { fill: #4f46e5; }
+.milestone-indigo .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-.milestone-purple .geo-balloon-pin svg .balloon-body {
-  fill: #7c3aed;
-}
-.milestone-purple .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-purple .geo-balloon-pin svg .balloon-body { fill: #7c3aed; }
+.milestone-purple .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-/* Hover animation - subtle bounce */
 .road-milestone-landmark.node-activated .geo-balloon-pin:hover {
   animation: balloonBounce 0.6s ease;
 }
 
 @keyframes balloonBounce {
-  0% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  70% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0%, 100%, 50% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  70% { transform: translateY(-5px); }
 }
 
-/* Pulsing glow effect when activated */
 .road-milestone-landmark.node-activated .geo-balloon-pin::after {
   content: '';
   position: absolute;
@@ -526,18 +497,8 @@
 }
 
 @keyframes pinPulse {
-  0% {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
+  0%, 100% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
 }
 
 .milestone-text-block p {
@@ -551,229 +512,168 @@
 }
 
 /* ==========================================================================
-   9. CHRONOLOGICAL SNAKING GRID COORDINATES (DESKTOP DESIGNS)
+   CHRONOLOGICAL SNAKING GRID COORDINATES (DESKTOP DESIGNS)
    ========================================================================== */
 @media (min-width: 1025px) {
-  .node-1 {
-    left: 14%;
-    top: 620px;
-  }
-  .node-2 {
-    left: 38%;
-    top: 567px;
-  }
-  .node-3 {
-    left: 62%;
-    top: 620px;
-  }
-  .node-4 {
-    left: 86%;
-    top: 567px;
-  }
-
-  .node-5 {
-    left: 78%;
-    top: 420px;
-  }
-  .node-6 {
-    left: 56%;
-    top: 367px;
-  }
-  .node-7 {
-    left: 35%;
-    top: 420px;
-  }
-  .node-8 {
-    left: 15%;
-    top: 367px;
-  }
-
-  .node-9 {
-    left: 26%;
-    top: 220px;
-  }
-  .node-10 {
-    left: 50%;
-    top: 167px;
-  }
-  .node-11 {
-    left: 74%;
-    top: 220px;
-  }
+  .node-1 { left: 14%; top: 620px; }
+  .node-2 { left: 38%; top: 567px; }
+  .node-3 { left: 62%; top: 620px; }
+  .node-4 { left: 86%; top: 567px; }
+  .node-5 { left: 78%; top: 420px; }
+  .node-6 { left: 56%; top: 367px; }
+  .node-7 { left: 35%; top: 420px; }
+  .node-8 { left: 15%; top: 367px; }
+  .node-9 { left: 26%; top: 220px; }
+  .node-10 { left: 50%; top: 167px; }
+  .node-11 { left: 74%; top: 220px; }
 }
 
 /* ==========================================================================
-   10. MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
+   NEW UNIQUE EDITORIAL BOARD STYLES ("The Brain Trust")
    ========================================================================== */
-@media (max-width: 1024px) {
-  .road-timeline-container {
-    height: auto !important;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    padding-left: 55px;
-    margin-top: 40px;
-    position: relative;
-    border-left: 3px dashed var(--primary);
-  }
-  .road-svg-canvas {
-    display: none !important;
-  }
-  .road-milestone-landmark {
-    position: relative !important;
-    left: 0 !important;
-    top: 0 !important;
-    transform: none !important;
-    width: 100% !important;
-    display: flex;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start;
-  }
-
-  .road-milestone-landmark .pin-marker-assembly {
-    position: absolute !important;
-    left: -68px;
-    top: calc(50% - 30px);
-    margin: 0 !important;
-    transform: scale(1) !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  .geo-balloon-pin {
-    width: 44px;
-    height: 56px;
-  }
-
-  .pin-number-circle {
-    width: 28px;
-    height: 28px;
-    top: 5px;
-    font-size: 0.6rem;
-  }
-
-  .balloon-shadow {
-    width: 14px;
-    height: 4px;
-  }
-
-  .geo-balloon-pin::after {
-    display: none !important;
-  }
-
-  .pin-shadow {
-    display: none !important;
-  }
-  .milestone-text-block {
-    opacity: 0;
-    transform: translateX(15px) !important;
-    width: 100% !important;
-    max-width: calc(100% - 20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-  }
-  .road-milestone-landmark.node-activated .milestone-text-block {
-    opacity: 1;
-    transform: translateX(0) !important;
-  }
+.editorial-board-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #fdfefe 0%, #f4f7fb 100%);
 }
 
-/* ==========================================================================
-   INSIGHTS & BOARD MEMBERS SECTION
-   ========================================================================== */
-.insights-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
-  padding: 10px 0;
-}
-
-.board-canvas {
+.editorial-board-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-  margin-bottom: 90px;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
-.board-member-card {
+.editorial-title-card {
+  background: #0a0f16;
+  padding: 50px 40px;
+  border-radius: 32px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(10, 15, 22, 0.15);
+}
+
+.editorial-title-card h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.editorial-title-card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.geometric-decor {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: var(--primary);
+  opacity: 0.15;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.editorial-profiles-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.premium-leader-card {
   background: #ffffff;
   border: 1px solid var(--border-light);
   border-radius: 28px;
-  overflow: hidden;
+  padding: 24px;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s, box-shadow 0.4s;
-  position: relative;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
 
-.board-member-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--primary);
-  box-shadow: var(--shadow-glow);
-}
-
-.board-card-media {
+.leader-image-wrapper {
   position: relative;
-  height: 340px;
-  background: #111622;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 20px;
   overflow: hidden;
+  background: #111622;
+  height: 240px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.board-card-media::after {
-  content: "";
+.leader-image-wrapper img {
+  height: 90%;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.05);
+  transition: transform 0.4s ease;
+}
+
+.leader-badge {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(10, 15, 22, 0.8) 0%, transparent 60%);
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  color: #0a0f16;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
 }
 
-.board-card-media img {
-  max-width: 130px;
-  height: auto;
-  filter: brightness(1.2) contrast(1.1);
-  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  z-index: 2;
+.leader-details {
+  padding-top: 24px;
 }
 
-.board-member-card:hover .board-card-media img {
-  transform: scale(1.08) rotate(2deg);
-}
-
-.executive-meta {
-  padding: 35px 32px;
-  position: relative;
-}
-
-.executive-meta h3 {
-  font-size: 1.6rem;
+.leader-details h3 {
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 4px;
 }
 
-.executive-meta .editorial-title {
-  font-size: 0.95rem;
-  color: var(--primary);
+.leader-subtitle {
+  font-size: 0.85rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: 16px;
 }
 
-.executive-manifesto {
+.leader-quote {
+  font-size: 0.92rem;
+  line-height: 1.6;
   color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.65;
-  position: relative;
-  padding-left: 20px;
-  border-left: 3px solid var(--border-light);
-  transition: border-color 0.3s ease;
+  font-style: italic;
+  border-left: 2px solid var(--primary);
+  padding-left: 12px;
+  margin: 0;
 }
 
-.board-member-card:hover .executive-manifesto {
-  border-color: var(--primary);
+.premium-leader-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-glow);
+  border-color: rgba(247, 89, 16, 0.2);
+}
+
+.premium-leader-card:hover .leader-image-wrapper img {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1025px) {
+  .profile-offset-down { transform: translateY(35px); }
+  .profile-offset-up { transform: translateY(-25px); }
+  .profile-offset-down:hover { transform: translateY(27px); }
+  .profile-offset-up:hover { transform: translateY(-33px); }
 }
 
 /* ==========================================================================
@@ -998,12 +898,8 @@
 }
 
 @keyframes smoothTestimonialMarquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 /* ==========================================================================
@@ -1019,12 +915,12 @@
 .las-gallery-bg-overlay {
   position: absolute;
   inset: 0;
-  background-image: url("images/2.jpg");
+  background-image: url("/images/desk.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.20;
+  opacity: 0.35;
 }
 
 .las-split-container {
@@ -1078,12 +974,8 @@
   gap: 16px;
 }
 
-.track-down .vertical-track-inner {
-  animation: verticalScrollDown 24s linear infinite;
-}
-.track-up .vertical-track-inner {
-  animation: verticalScrollUp 24s linear infinite;
-}
+.track-down .vertical-track-inner { animation: verticalScrollDown 24s linear infinite; }
+.track-up .vertical-track-inner { animation: verticalScrollUp 24s linear infinite; }
 
 .marquee-poster-card {
   position: relative;
@@ -1101,18 +993,10 @@
   display: block;
 }
 
-.marquee-poster-card.size-1-5 {
-  height: 100px;
-}
-.marquee-poster-card.size-3 {
-  height: 140px;
-}
-.marquee-poster-card.size-4-5 {
-  height: 180px;
-}
-.marquee-poster-card.size-6 {
-  height: 230px;
-}
+.marquee-poster-card.size-1-5 { height: 100px; }
+.marquee-poster-card.size-3 { height: 140px; }
+.marquee-poster-card.size-4-5 { height: 180px; }
+.marquee-poster-card.size-6 { height: 230px; }
 
 .marquee-content-pane {
   text-align: left;
@@ -1154,21 +1038,13 @@
 }
 
 @keyframes verticalScrollDown {
-  0% {
-    transform: translate3d(0, -50%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+  0% { transform: translate3d(0, -50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
 
 @keyframes verticalScrollUp {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, -50%, 0);
-  }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, -50%, 0); }
 }
 
 /* ==========================================================================
@@ -1205,47 +1081,86 @@
     overflow: visible;
     padding: 0 24px;
   }
-
+  .road-timeline-container {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 55px;
+    margin-top: 40px;
+    position: relative;
+    border-left: 3px dashed var(--primary);
+  }
+  .road-svg-canvas {
+    display: none !important;
+  }
+  .road-milestone-landmark {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start;
+  }
+  .road-milestone-landmark .pin-marker-assembly {
+    position: absolute !important;
+    left: -68px;
+    top: calc(50% - 30px);
+    margin: 0 !important;
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .geo-balloon-pin { width: 44px; height: 56px; }
+  .pin-number-circle { width: 28px; height: 28px; top: 5px; font-size: 0.6rem; }
+  .balloon-shadow { width: 14px; height: 4px; }
+  .geo-balloon-pin::after, .pin-shadow { display: none !important; }
+  .milestone-text-block {
+    opacity: 0;
+    transform: translateX(15px) !important;
+    width: 100% !important;
+    max-width: calc(100% - 20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .road-milestone-landmark.node-activated .milestone-text-block {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+  .editorial-board-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .editorial-title-card {
+    text-align: center;
+    padding: 40px 24px;
+  }
   .las-ts-viewport {
     mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
   }
-  .las-ts-card {
-    width: 320px;
-    padding: 24px;
-  }
-  .ts-quote-mark {
-    font-size: 4rem;
-    right: 20px;
-  }
+  .las-ts-card { width: 320px; padding: 24px; }
+  .ts-quote-mark { font-size: 4rem; right: 20px; }
+  .las-split-container { grid-template-columns: 1fr; gap: 40px; }
+  .marquee-content-pane { padding-left: 0; text-align: center; }
+  .intro-desc { margin: 0 auto; }
+  .columns-wrapper { height: 320px; }
+}
 
-  .las-split-container {
+@media (max-width: 640px) {
+  .editorial-profiles-wrap {
     grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .marquee-content-pane {
-    padding-left: 0;
-    text-align: center;
-  }
-  .intro-desc {
-    margin: 0 auto;
-  }
-  .columns-wrapper {
-    height: 320px;
+    gap: 30px;
   }
 }
 
 @media (max-width: 580px) {
-  .columns-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .columns-wrapper :nth-child(3) {
-    display: none;
-  }
-  .hubs-wrapper {
-    padding: 30px 15px;
-  }
-  .las-ts-card {
-    width: 280px;
-  }
+  .columns-wrapper { grid-template-columns: repeat(2, 1fr); }
+  .columns-wrapper :nth-child(3) { display: none; }
+  .hubs-wrapper { padding: 30px 15px; }
+  .las-ts-card { width: 280px; }
 }

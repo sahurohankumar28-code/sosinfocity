@@ -1,50 +1,12 @@
 (function () {
   "use strict";
-
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   }
-
-  /**
-   * Initialize GSAP Stacking Cards Effect
-   */
-  function initProductStacking() {
-    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
-
-    gsap.registerPlugin(ScrollTrigger);
-    
-    const cards = gsap.utils.toArray(".c-card");
-    if (cards.length === 0) return;
-
-    ScrollTrigger.matchMedia({
-      "(min-width: 769px)": function() {
-        cards.forEach((card, index) => {
-          const scaleValue = 1 - (cards.length - 1 - index) * 0.05; 
-          
-          ScrollTrigger.create({
-            trigger: card,
-            start: "top 12%",
-            endTrigger: "#cardsStack",
-            end: "bottom 80%",
-            pin: true,
-            pinSpacing: false,
-            scrub: true,
-            invalidateOnRefresh: true,
-            animation: gsap.to(card, {
-              scale: scaleValue,
-              opacity: 1, // FORCED OPAQUE: Prevents text underneath bleeding through
-              ease: "none"
-            })
-          });
-        });
-      },
-      "(max-width: 768px)": function() {
-        ScrollTrigger.getAll().forEach(t => {
-          if(t.trigger && t.trigger.classList.contains('c-card')) t.kill(true);
-        });
-      }
-    });
-  }
+  window.addEventListener("beforeunload", () => {
+    window.scrollTo(0, 0);
+  });
+  window.scrollTo(0, 0);
 
   function animateCounter(elementId, targetValue, duration = 2800) {
     const element = document.getElementById(elementId);
@@ -79,6 +41,7 @@
       },
       { threshold: 0.1 },
     );
+
     observer.observe(statsRow);
   }
 
@@ -185,19 +148,43 @@
   }
 
   const partnerLogos = [
-    "images/allied.png", "images/SonicWall.png", "images/aruba.png", "images/Microsoft.png",
-    "images/Cambium.png", "images/Cisco.png", "images/D-Link.png", "images/Jio.png",
-    "images/Digisol.png", "images/HPE.png", "images/juniper.png", "images/Red_Hat.png",
-    "images/SE.png", "images/Ruckus.png", "images/Honeywell.png", "images/Airtel.png",
-    "images/LG.png", "images/NETGEAR.png", "images/AWS.png", "images/Peplink.png",
-    "images/Railtel.png", "images/Mikrotik.png", "images/Bosch.png", "images/Dell_EMC.png",
-    "images/IBM.png", "images/sophos.png"
+    "images/allied.png",
+    "images/SonicWall.png",
+    "images/aruba.png",
+    "images/Microsoft.png",
+    "images/Cambium.png",
+    "images/Cisco.png",
+    "images/D-Link.png",
+    "images/Jio.png",
+    "images/Digisol.png",
+    "images/HPE.png",
+    "images/juniper.png",
+    "images/Red_Hat.png",
+    "images/SE.png",
+    "images/Ruckus.png",
+    "images/Honeywell.png",
+    "images/Airtel.png",
+    "images/LG.png",
+    "images/NETGEAR.png",
+    "images/AWS.png",
+    "images/Peplink.png",
+    "images/Railtel.png",
+    "images/Mikrotik.png",
+    "images/Bosch.png",
+    "images/Dell_EMC.png",
+    "images/IBM.png",
+    "images/sophos.png",
   ];
 
   function getLogoPath(filename) {
     return [
-      `images/${filename}`, `assets/images/${filename}`, `assets/${filename}`,
-      `img/${filename}`, `partner-logos/${filename}`, `logos/${filename}`, `${filename}`
+      `images/${filename}`,
+      `assets/images/${filename}`,
+      `assets/${filename}`,
+      `img/${filename}`,
+      `partner-logos/${filename}`,
+      `logos/${filename}`,
+      `${filename}`,
     ];
   }
 
@@ -206,12 +193,17 @@
     if (!partnerTrack) return;
 
     partnerTrack.innerHTML = "";
+    partnerTrack.style.transform = "translate3d(0, 0, 0)";
+
     const doubledLogos = [...partnerLogos, ...partnerLogos];
 
     doubledLogos.forEach((logo, index) => {
       const item = document.createElement("div");
       item.className = "partner-item";
-      if (index >= partnerLogos.length) item.setAttribute("aria-hidden", "true");
+
+      if (index >= partnerLogos.length) {
+        item.setAttribute("aria-hidden", "true");
+      }
 
       const img = document.createElement("img");
       img.className = "partner-logo";
@@ -237,8 +229,11 @@
         }
       }
 
-      img.onerror = tryNextPath;
+      img.onerror = function () {
+        tryNextPath();
+      };
       tryNextPath();
+
       item.appendChild(img);
       partnerTrack.appendChild(item);
     });
@@ -252,7 +247,6 @@
     }
 
     setupScrollTriggeredCounters();
-    initProductStacking();
 
     const stage = document.getElementById("industriesStage");
     if (stage) {
@@ -273,12 +267,17 @@
     });
 
     const heroVideo = document.querySelector(".hero-video");
-    if (heroVideo) heroVideo.play().catch(() => console.log("Autoplay blocked"));
+    if (heroVideo)
+      heroVideo.play().catch((e) => console.log("Autoplay blocked"));
   }
 
-  if (document.readyState === "complete" || document.readyState === "interactive") {
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
     initializeAllComponents();
   } else {
     window.addEventListener("DOMContentLoaded", initializeAllComponents);
   }
+
 })();

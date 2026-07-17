@@ -1,0 +1,441 @@
+/* ==========================================================================
+   SOS INFOTECH & TELECOM - TRANSPARENT COMPONENT SOLUTIONS ARCHITECTURE
+   ========================================================================== */
+.hero-header {
+  position: relative;
+  min-height: 20vh;
+  background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
+}
+
+.hero-header h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: white;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+
+body.modal-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+.master-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.iems-page {
+  background: transparent !important;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   ASYMMETRIC LEAD HEADER BLOCK SETUP
+   -------------------------------------------------------------------------- */
+.solutions-hero-intro {
+  max-width: 900px;
+  margin: 0 auto 100px auto;
+  text-align: left;
+  border-left: 4px solid var(--primary);
+  padding: 10px 0 10px 32px;
+}
+
+.solutions-hero-intro h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.solutions-hero-intro p {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  opacity: 0.85;
+}
+
+.solutions-hero-intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   TYPOGRAPHIC ECOSYSTEM INTERFACE ROWS
+   -------------------------------------------------------------------------- */
+.typo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 32px;
+  margin-bottom: 40px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--border-light);
+  border-radius: 28px;
+  cursor: pointer;
+  background: transparent;
+  
+  /* Acceleration Initialization Configuration */
+  opacity: 0;
+  transform: translate3d(0, 60px, 0);
+  will-change: transform, opacity, background-color, border-color, box-shadow;
+  transition: 
+    opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    padding 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.typo-row.layout-left { flex-direction: row; }
+.typo-row.layout-right { flex-direction: row-reverse; }
+
+.typo-row.in-view {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Fluid Hover Environment Layer */
+.typo-row:hover {
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(var(--blur-radius));
+  -webkit-backdrop-filter: blur(var(--blur-radius));
+  border-color: var(--glass-border);
+  box-shadow: 
+    0 30px 60px -15px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.typo-text-pane {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.typo-text-pane h2 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.typo-text-pane p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.read-more-link {
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.typo-row:hover .read-more-link {
+  color: var(--primary-light) !important;
+  gap: 14px;
+}
+
+/* Image Text-Mask Clip Node Processing */
+.typo-number-mask {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(8rem, 16vw, 15rem);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  user-select: none;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s;
+}
+
+.typo-row:hover .typo-number-mask {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   PREMIUM ASYMMETRICAL "WHY SOS" SHOWCASE GRID
+   -------------------------------------------------------------------------- */
+.why-sos-showcase-v2 {
+  margin-top: 100px;
+  padding-top: 80px;
+  border-top: 1px solid var(--border-light);
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.why-sos-tall-media {
+  width: 100%;
+  height: 550px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.why-sos-tall-media img,
+.why-sos-horizontal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.why-sos-tall-media:hover img,
+.why-sos-horizontal-media:hover img {
+  transform: scale(1.03);
+}
+
+.why-sos-editorial-right h2 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.why-sos-lead-p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  opacity: 0.85;
+}
+
+.why-sos-split-footer {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.why-sos-secondary-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-sos-secondary-text p {
+  opacity: 0.8;
+}
+
+.why-sos-horizontal-media {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   GLASSMORPHIC OVERLAY MODAL ENVIRONMENT
+   -------------------------------------------------------------------------- */
+.details-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
+}
+
+.details-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.modal-card-view {
+  background: #ffffff;
+  width: 100%;
+  max-width: 1050px;
+  max-height: 85vh;
+  border-radius: 32px;
+  overflow-y: auto;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translate3d(0, 50px, 0) scale(0.96);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.details-modal-overlay.active .modal-card-view {
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.popup-split-layout {
+  display: flex;
+  min-height: 600px;
+}
+
+.popup-image-pane {
+  width: 40%;
+  min-height: 100%;
+  position: relative;
+  background-color: #0d131f;
+}
+
+.popup-image-pane img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.popup-content-pane {
+  width: 60%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.modal-dismiss-trigger {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 16px;
+  color: #171717;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+.modal-dismiss-trigger:hover {
+  background: var(--primary);
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.popup-content-pane h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #171717 !important;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.popup-content-pane h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #171717 !important;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.popup-content-pane p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4b5563 !important;
+  margin-bottom: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   COMPREHENSIVE RESPONSIVE DESIGN ARRAYS
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .master-container { padding: 60px 24px; }
+  .why-sos-showcase-v2 { gap: 40px; }
+  .why-sos-tall-media { height: 460px; }
+  .popup-content-pane { padding: 40px; }
+}
+
+@media (max-width: 968px) {
+  .typo-row:hover { padding-left: 32px; padding-right: 32px; }
+  .why-sos-showcase-v2 { grid-template-columns: 1fr; }
+  .why-sos-tall-media { height: 380px; }
+  .why-sos-split-footer { grid-template-columns: 1fr; gap: 30px; }
+  .why-sos-horizontal-media { height: 240px; }
+  
+  .popup-split-layout { flex-direction: column; }
+  .popup-image-pane { width: 100%; height: 280px; }
+  .popup-image-pane img { position: relative; height: 280px; }
+  .popup-content-pane { width: 100%; padding: 40px 28px; }
+}
+
+@media (max-width: 768px) {
+  .solutions-hero-intro { padding-left: 20px; margin-bottom: 60px; }
+  
+  .typo-row, .typo-row.layout-right {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    transform: translate3d(0, 40px, 0);
+  }
+  
+  .typo-row:hover { padding: 40px 20px; border: 1px solid transparent; border-bottom: 1px solid var(--border-light); box-shadow: none; background: transparent; }
+  .typo-text-pane { width: 100%; }
+  .typo-number-mask { width: 100%; font-size: 7.5rem; justify-content: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .master-container { padding: 40px 16px; }
+  .solutions-hero-intro h1 { font-size: 2.2rem; }
+  .modal-card-view { max-height: 90vh; border-radius: 24px; }
+  .popup-content-pane { padding: 32px 20px; }
+  .popup-content-pane h1 { font-size: 1.75rem; }
+  .modal-dismiss-trigger { top: 16px; right: 16px; }
+}

@@ -1,10 +1,14 @@
 (function () {
   "use strict";
 
-  if (history.scrollRestoration) {
+  
+ if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   }
-
+  window.addEventListener("beforeunload", () => {
+    window.scrollTo(0, 0);
+  });
+  window.scrollTo(0, 0);
   /**
    * Initialize GSAP Stacking Cards Effect
    */

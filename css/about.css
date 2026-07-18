@@ -160,7 +160,7 @@ body {
    MISSION & VALUES SECTION (RESET CARDS AND BULLETS)
    ========================================================================== */
 .mv-section {
-  padding: 45px 0;
+  padding: 40px 0;
   background: #f9fafb;
 }
 
@@ -502,7 +502,7 @@ body {
    UNIQUE EDITORIAL BOARD STYLES ("The Brain Trust")
    ========================================================================== */
 .editorial-board-section {
-  padding: 80px 0;
+  padding: 30px 0;
   background: linear-gradient(180deg, #fdfefe 0%, #f4f7fb 100%);
 }
 
@@ -860,6 +860,7 @@ body {
   0% { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(-50%, 0, 0); }
 }
+
 /* ==========================================================================
    HERO GRID MARQUEE SECTION (3D LED SCREEN EFFECT)
    ========================================================================== */
@@ -868,17 +869,20 @@ body {
   position: relative;
   overflow: hidden;
   background: #06090e;
+  min-height: 600px;
 }
 
 .las-gallery-bg-overlay {
   position: absolute;
   inset: 0;
-  background-image: url("images/gallery.jpg");
-  background-size: cover;
-  background-position: center;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.15;
+  background: 
+    radial-gradient(ellipse at 30% 40%, rgba(247, 89, 16, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 60%, rgba(247, 89, 16, 0.12) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 100%, rgba(247, 89, 16, 0.06) 0%, transparent 30%),
+    radial-gradient(ellipse at 50% 0%, rgba(247, 89, 16, 0.04) 0%, transparent 40%),
+    linear-gradient(180deg, #06090e 0%, #0d1520 50%, #06090e 100%);
 }
 
 .las-split-container {
@@ -1005,8 +1009,6 @@ body {
   100% { transform: translate3d(0, -50%, 0); }
 }
 
-
-
 /* ==========================================================================
    MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
    ========================================================================== */
@@ -1083,6 +1085,36 @@ body {
   .columns-wrapper {
     height: 320px;
   }
+  
+  /* Editorial board responsive */
+  .editorial-board-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .editorial-profiles-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile-offset-down, .profile-offset-up {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .editorial-profiles-wrap {
+    grid-template-columns: 1fr;
+  }
+  .editorial-title-card {
+    padding: 30px 24px;
+  }
+  .editorial-title-card h2 {
+    font-size: 1.8rem;
+  }
+  .hubs-wrapper {
+    padding: 30px 20px;
+  }
+  .hubs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 580px) {
@@ -1095,7 +1127,19 @@ body {
   .hubs-wrapper {
     padding: 30px 15px;
   }
+  .hubs-grid {
+    grid-template-columns: 1fr;
+  }
   .las-ts-card {
     width: 280px;
+  }
+  .about-text-content h2 {
+    font-size: 1.8rem;
+  }
+  .stat-item h4 {
+    font-size: 2.5rem;
+  }
+  .mv-card-reset {
+    padding: 30px 20px;
   }
 }

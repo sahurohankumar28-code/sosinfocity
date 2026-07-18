@@ -32,6 +32,34 @@
   }
 
   /**
+   * Triggers counter animations when stats section comes into view
+   */
+  function initCountersOnScroll() {
+    const statsSection = document.querySelector('.stats-row-fullwidth');
+    if (!statsSection) return;
+
+    let countersStarted = false;
+
+    const checkVisibility = () => {
+      const rect = statsSection.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible && !countersStarted) {
+        countersStarted = true;
+        animateCounter("projectsCount", 185, 2600);
+        animateCounter("clientsCount", 340, 2600);
+        window.removeEventListener("scroll", checkVisibility);
+        window.removeEventListener("resize", checkVisibility);
+      }
+    };
+
+    window.addEventListener("scroll", checkVisibility, { passive: true });
+    window.addEventListener("resize", checkVisibility, { passive: true });
+    // Check immediately in case it's already visible
+    checkVisibility();
+  }
+
+  /**
    * Initializes responsive sliding side-drawer behaviors for small devices
    */
   function initMobileNavigation() {
@@ -225,9 +253,7 @@
     initPerspectiveController();
     initMarqueeInteractions();
     initScrollTimelineEngine();
-
-    animateCounter("projectsCount", 185, 2600);
-    animateCounter("clientsCount", 340, 2600);
+    initCountersOnScroll(); // Initialize counters on scroll instead of immediately
   };
 
   if (

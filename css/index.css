@@ -165,7 +165,8 @@
   overflow: hidden;
   margin-bottom: 24px;
   transform-origin: center center;
-  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 .c-card__description {
   display: flex;
@@ -283,9 +284,9 @@
   z-index: 1;
 }
 .industries-slider-stage .industry-info {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  z-index: 2; color: #ffffff; background: rgba(10, 15, 22, 0.6);
-  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+ position: absolute; bottom: 0; left: 0; right: 0;
+  z-index: 2; color: #ffffff; background: rgba(10, 15, 22, 0.85); 
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); 
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   margin: 20px; width: calc(100% - 40px); border-radius: 16px;
   padding: 24px; opacity: 0; transform: translate3d(0, 15px, 0);

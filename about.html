@@ -156,11 +156,18 @@
 
         <div class="road-timeline-container" id="roadCanvas">
           <svg class="road-svg-canvas" viewBox="0 0 1200 850" preserveAspectRatio="none">
-            <path id="roadProgressOverlay" class="road-track-progress" d="M 100,620 L 1050,620 C 1150,620 1150,420 1000,420 L 150,420 C 50,420 50,220 200,220 L 1050,220" stroke="#f75910" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-            <g id="roadArrow" style="opacity: 0;">
-              <polygon points="-18,-12 18,0 -18,12" fill="#f6881f" />
-            </g>
-          </svg>
+          <path id="roadProgressOverlay" class="road-track-progress" 
+                d="M 120,600 
+                  L 880,600 
+                  C 1050,600 1050,400 880,400 
+                  L 200,400 
+                  C 50,400 50,200 200,200 
+                  L 1050,200" 
+                stroke="#f75910" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <g id="roadArrow" style="opacity: 0;">
+            <polygon points="-18,-12 18,0 -18,12" fill="#f6881f" />
+          </g>
+        </svg>
 
           <div class="road-milestone-landmark milestone-gold position-above node-1">
             <div class="milestone-text-block"><p><b>2016:</b> Launched SOS Infotech & Telecom with last-mile wireless RF connectivity links solving field challenges.</p></div>
@@ -250,7 +257,7 @@
             </div>
           </div>
 
-          <div class="road-milestone-landmark milestone-orange position-above node-9">
+          <div class="road-milestone-landmark milestone-orange position-below node-9">
             <div class="milestone-text-block"><p><b>2024:</b> Expanded system operations serving over 400+ distinct enterprise accounts spanning across 6 Indian states.</p></div>
             <div class="pin-marker-assembly">
               <div class="geo-balloon-pin">
@@ -272,7 +279,7 @@
             </div>
           </div>
 
-          <div class="road-milestone-landmark milestone-purple position-above node-11">
+          <div class="road-milestone-landmark milestone-purple position-below node-11">
             <div class="milestone-text-block"><p><b>2026:</b> Deploying highly distributed cloud networking fabrics and automated AI compute cluster nodes nationwide.</p></div>
             <div class="pin-marker-assembly">
               <div class="geo-balloon-pin">

@@ -1,14 +1,6 @@
 (function () {
   "use strict";
 
-  if (history.scrollRestoration) {
-    history.scrollRestoration = "manual";
-  }
-  window.addEventListener("beforeunload", () => {
-    window.scrollTo(0, 0);
-  });
-  window.scrollTo(0, 0);
-
   /**
    * Smoothly animates numerical statistic nodes from zero up to the target values
    */
@@ -57,26 +49,6 @@
     window.addEventListener("resize", checkVisibility, { passive: true });
     // Check immediately in case it's already visible
     checkVisibility();
-  }
-
-  /**
-   * Initializes responsive sliding side-drawer behaviors for small devices
-   */
-  function initMobileNavigation() {
-    const mobileBtn = document.getElementById("mobileMenuBtn");
-    const overlay = document.getElementById("mobileNavOverlay");
-    const closeBtn = document.getElementById("closeMobileBtn");
-
-    if (!mobileBtn || !overlay || !closeBtn) return;
-
-    const openMenu = () => overlay.classList.add("open");
-    const closeMenu = () => overlay.classList.remove("open");
-
-    mobileBtn.addEventListener("click", openMenu);
-    closeBtn.addEventListener("click", closeMenu);
-    overlay.addEventListener("click", (e) => {
-      if (e.target === overlay) closeMenu();
-    });
   }
 
   /**
@@ -142,6 +114,9 @@
 
     if (!targetSection || !timelineContainer || !nodes.length) return;
 
+    let ticking = false;
+    let mobileObserver;
+
     const isMobileLayout = () => window.innerWidth <= 1024;
 
     let pathLength = 0;
@@ -159,25 +134,38 @@
       timelineContainer.style.top = "0"; 
     }
 
-    function updateTimelineScrollState() {
-      if (isMobileLayout()) {
-        targetSection.style.height = "auto";
-        timelineContainer.style.position = "relative";
-        timelineContainer.style.top = "auto";
-        
-        if (arrow) arrow.style.opacity = "0";
-        const triggerBottom = window.innerHeight * 0.85; 
-
-        nodes.forEach((node) => {
-          const nodeTop = node.getBoundingClientRect().top;
-          if (nodeTop < triggerBottom) {
-            node.classList.add("node-activated");
+    function setupMobileObserver() {
+      if (mobileObserver) mobileObserver.disconnect();
+      
+      const triggerBottom = window.innerHeight * 0.85;
+      mobileObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("node-activated");
           } else {
-            node.classList.remove("node-activated"); 
+            // Optional: remove class when scrolling up
+            // entry.target.classList.remove("node-activated");
           }
         });
+      }, { rootMargin: `0px 0px -${window.innerHeight - triggerBottom}px 0px` });
+
+      nodes.forEach(node => mobileObserver.observe(node));
+    }
+
+    function handleMobileLayout() {
+      targetSection.style.height = "auto";
+      timelineContainer.style.position = "relative";
+      timelineContainer.style.top = "auto";
+      if (arrow) arrow.style.opacity = "0";
+      setupMobileObserver();
+    }
+
+    function updateTimelineForDesktop() {
+      if (isMobileLayout()) {
+        handleMobileLayout();
         return;
       }
+      if (mobileObserver) mobileObserver.disconnect();
 
       // Calculations relative to the overall runway section
       const sectionRect = targetSection.getBoundingClientRect();
@@ -232,24 +220,34 @@
       });
     }
 
-    window.addEventListener("scroll", updateTimelineScrollState, { passive: true });
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateTimelineForDesktop();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", () => {
       if (!isMobileLayout()) {
         targetSection.style.height = "1000px";
         timelineContainer.style.position = "sticky";
         timelineContainer.style.top = "0";
+        if (mobileObserver) mobileObserver.disconnect();
       }
-      updateTimelineScrollState();
+      // Recalculate on resize
+      updateTimelineForDesktop();
     });
-    updateTimelineScrollState();
+    updateTimelineForDesktop(); // Initial check
   }
 
   /**
    * Core orchestrator entry point
    */
   const runSystemInitializations = () => {
-    window.scrollTo(0, 0);
-    initMobileNavigation();
     initPerspectiveController();
     initMarqueeInteractions();
     initScrollTimelineEngine();

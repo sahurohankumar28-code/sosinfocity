@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Set scroll restoration to manual
+  if (history.scrollRestoration) {
+    history.scrollRestoration = "manual";
+  }
+  // On page load, scroll to the top
+  window.scrollTo(0, 0);
+
   // 1. Fetch Header and Footer asynchronously
   const loadHeader = fetch("header.html")
     .then((response) => response.text())

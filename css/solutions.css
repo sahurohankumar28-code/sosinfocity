@@ -117,7 +117,6 @@ body.modal-open {
 .typo-row:hover {
   background-color: var(--glass-bg);
   backdrop-filter: blur(var(--blur-radius));
-  -webkit-backdrop-filter: blur(var(--blur-radius));
   border-color: var(--glass-border);
   box-shadow: 
     0 30px 60px -15px rgba(0, 0, 0, 0.15),
@@ -178,7 +177,6 @@ body.modal-open {
   user-select: none;
   background-size: cover;
   background-position: center;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
@@ -276,7 +274,6 @@ body.modal-open {
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
   z-index: 99999;
   display: flex;
   justify-content: center;
@@ -284,14 +281,13 @@ body.modal-open {
   padding: 24px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
+  transition: opacity 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 .details-modal-overlay.active {
   opacity: 1;
   pointer-events: auto;
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 }
 
 .modal-card-view {

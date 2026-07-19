@@ -265,14 +265,6 @@
     <div id="footer-placeholder"></div>
 
     <script>
-        if (history.scrollRestoration) {
-          history.scrollRestoration = "manual";
-        }
-        window.addEventListener("beforeunload", () => {
-          window.scrollTo(0, 0);
-        });
-        window.scrollTo(0, 0);
-
       function revealSolutionDetails(targetTemplate) {
         const overlay = document.getElementById('solutionDetailsOverlay');
         const contentBox = document.getElementById('modalInjectionNode');

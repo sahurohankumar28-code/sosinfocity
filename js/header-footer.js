@@ -81,3 +81,40 @@ function highlightActiveTab() {
     }
   });
 }
+
+
+/*-------------------------------*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // ==========================================
+  // 1. Splash Screen Control (Video-based)
+  // ==========================================
+  const splashScreen = document.getElementById("splash-screen");
+  const splashVideo = document.getElementById("splash-video");
+
+  const hideSplash = () => {
+    if (splashScreen && !splashScreen.classList.contains("hidden")) {
+      splashScreen.classList.add("hidden");
+    }
+  };
+
+  if (splashVideo) {
+    // Hide splash screen when video ends
+    splashVideo.addEventListener("ended", hideSplash);
+
+    // Play safety fallback in case browser blocks autoplay or video fails to load
+    splashVideo.play().catch(() => {
+      // If autoplay is blocked, hide splash after 3 seconds
+      setTimeout(hideSplash, 3000);
+    });
+
+    // Timeout safety fallback (e.g., if video stalls or takes too long)
+    setTimeout(hideSplash, 6000);
+  } else {
+    // Fallback timer if video element isn't found
+    setTimeout(hideSplash, 2500);
+  }
+
+});
+

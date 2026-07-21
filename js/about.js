@@ -2,7 +2,7 @@
   "use strict";
 
   /**
-   * Smoothly animates numerical statistic nodes from zero up to the target values
+   * Smoothly animates numerical statistic nodes from zero up to target values
    */
   function animateCounter(elementId, targetValue, duration = 2800) {
     const element = document.getElementById(elementId);
@@ -27,7 +27,7 @@
    * Triggers counter animations when stats section comes into view
    */
   function initCountersOnScroll() {
-    const statsSection = document.querySelector('.stats-row-fullwidth');
+    const statsSection = document.querySelector(".stats-row-fullwidth");
     if (!statsSection) return;
 
     let countersStarted = false;
@@ -47,12 +47,11 @@
 
     window.addEventListener("scroll", checkVisibility, { passive: true });
     window.addEventListener("resize", checkVisibility, { passive: true });
-    // Check immediately in case it's already visible
     checkVisibility();
   }
 
   /**
-   * Drives subtle mouse-tracking physics on the 3D-curved workspace gallery canvas
+   * Drives mouse-tracking physics on workspace gallery pane for desktop
    */
   function initPerspectiveController() {
     const stage = document.querySelector(".marquee-display-pane");
@@ -84,7 +83,7 @@
   }
 
   /**
-   * Manages state interruptions when a cursor anchors over the continuous testimonial carousel
+   * Manages state interruptions when hovering over testimonial track
    */
   function initMarqueeInteractions() {
     const track = document.getElementById("testimonialMarqueeTrack");
@@ -100,22 +99,78 @@
   }
 
   /**
-   * SCROLL-DRIVEN PINNING HIGHWAY ENGINE
-   * Pins the timeline section to prevent normal down-paging until the path completes tracking.
+   * Sets up IntersectionObserver for scroll animations on mobile
+   */
+  function setupMobileObserver(nodes, mobileObserver) {
+    if (mobileObserver) mobileObserver.disconnect();
+
+    mobileObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("node-activated");
+          }
+        });
+      },
+      { root: null, threshold: 0.18, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    nodes.forEach((node) => {
+      node.classList.remove("node-activated");
+      mobileObserver.observe(node);
+    });
+
+    return mobileObserver;
+  }
+
+  /**
+   * Updates arrow rotation based on path progress
+   */
+  function updateArrowRotation(arrow, path, currentLength, pathLength) {
+    if (currentLength > 0) {
+      arrow.style.opacity = "1";
+      const point = path.getPointAtLength(currentLength);
+      const lookAheadLength = Math.min(pathLength, currentLength + 2);
+      const aheadPoint = path.getPointAtLength(lookAheadLength);
+
+      const deltaX = aheadPoint.x - point.x;
+      const deltaY = aheadPoint.y - point.y;
+      const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+
+      arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
+    } else {
+      arrow.style.opacity = "0";
+    }
+  }
+
+  /**
+   * Updates node activation states based on scroll progress
+   */
+  function updateNodeActivation(nodes, progress) {
+    nodes.forEach((node, index) => {
+      const activateThreshold = index / nodes.length - 0.04;
+      if (progress >= Math.max(0, activateThreshold)) {
+        node.classList.add("node-activated");
+      } else {
+        node.classList.remove("node-activated");
+      }
+    });
+  }
+
+  /**
+   * SCROLL-DRIVEN HIGHWAY & MOBILE ANIMATION TIMELINE ENGINE
    */
   function initScrollTimelineEngine() {
     const path = document.getElementById("roadProgressOverlay");
     const arrow = document.getElementById("roadArrow");
     const targetSection = document.getElementById("roadTimelineSection");
-    const timelineContainer = document.getElementById("roadCanvas"); 
+    const timelineContainer = document.getElementById("roadCanvas");
     const nodes = document.querySelectorAll(".road-milestone-landmark");
-    const progressFill = document.getElementById("journeyProgressFill");
-    const progressPercent = document.getElementById("journeyProgressPercent");
 
     if (!targetSection || !timelineContainer || !nodes.length) return;
 
     let ticking = false;
-    let mobileObserver;
+    let mobileObserver = null;
 
     const isMobileLayout = () => window.innerWidth <= 1024;
 
@@ -126,38 +181,12 @@
       path.style.strokeDashoffset = pathLength;
     }
 
-    // Allocate runway height space and activate sticky pinning setup parameters
-    if (!isMobileLayout()) {
-      targetSection.style.position = "relative";
-      targetSection.style.height = "1020px"; 
-      timelineContainer.style.position = "sticky";
-      timelineContainer.style.top = "0"; 
-    }
-
-    function setupMobileObserver() {
-      if (mobileObserver) mobileObserver.disconnect();
-      
-      const triggerBottom = window.innerHeight * 0.85;
-      mobileObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("node-activated");
-          } else {
-            // Optional: remove class when scrolling up
-            // entry.target.classList.remove("node-activated");
-          }
-        });
-      }, { rootMargin: `0px 0px -${window.innerHeight - triggerBottom}px 0px` });
-
-      nodes.forEach(node => mobileObserver.observe(node));
-    }
-
     function handleMobileLayout() {
       targetSection.style.height = "auto";
       timelineContainer.style.position = "relative";
       timelineContainer.style.top = "auto";
       if (arrow) arrow.style.opacity = "0";
-      setupMobileObserver();
+      mobileObserver = setupMobileObserver(nodes, mobileObserver);
     }
 
     function updateTimelineForDesktop() {
@@ -165,65 +194,38 @@
         handleMobileLayout();
         return;
       }
+
       if (mobileObserver) mobileObserver.disconnect();
 
-      // Calculations relative to the overall runway section
+      targetSection.style.position = "relative";
+      targetSection.style.height = "1020px";
+      timelineContainer.style.position = "sticky";
+      timelineContainer.style.top = "0";
+
       const sectionRect = targetSection.getBoundingClientRect();
       const totalScrollRunway = targetSection.offsetHeight - timelineContainer.offsetHeight;
-      
+
       let progress = -sectionRect.top / totalScrollRunway;
       progress = Math.max(0, Math.min(1, progress));
-
-      // Update progress indicator
-      if (progressFill) {
-        progressFill.style.width = (progress * 100) + "%";
-      }
-      if (progressPercent) {
-        progressPercent.textContent = Math.round(progress * 100) + "%";
-      }
 
       if (path) {
         const currentLength = progress * pathLength;
         path.style.strokeDashoffset = pathLength - currentLength;
 
-        if (arrow) {
-          if (progress > 0.001) {
-            arrow.style.opacity = "1";
-            const point = path.getPointAtLength(currentLength);
-            const lookAheadLength = Math.min(pathLength, currentLength + 2);
-            const aheadPoint = path.getPointAtLength(lookAheadLength);
-            
-            const deltaX = aheadPoint.x - point.x;
-            const deltaY = aheadPoint.y - point.y;
-            const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-            
-            arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
-          } else {
-            arrow.style.opacity = "1";
-            const startPoint = path.getPointAtLength(0);
-            const nextPoint = path.getPointAtLength(2);
-            const angle = Math.atan2(nextPoint.y - startPoint.y, nextPoint.x - startPoint.x) * (180 / Math.PI);
-            arrow.setAttribute("transform", `translate(${startPoint.x}, ${startPoint.y}) rotate(${angle})`);
-          }
+        if (arrow && progress > 0.001) {
+          updateArrowRotation(arrow, path, currentLength, pathLength);
+        } else if (arrow) {
+          arrow.style.opacity = "0";
         }
       }
 
-      // Activate nodes systematically as the vector stroke moves through their index segment
-      nodes.forEach((node, index) => {
-        const activateThreshold = (index / nodes.length) - 0.04;
-        
-        if (progress >= Math.max(0, activateThreshold)) {
-          node.classList.add("node-activated");
-        } else {
-          node.classList.remove("node-activated");
-        }
-      });
+      updateNodeActivation(nodes, progress);
     }
 
     function onScroll() {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          updateTimelineForDesktop();
+          if (!isMobileLayout()) updateTimelineForDesktop();
           ticking = false;
         });
         ticking = true;
@@ -232,32 +234,31 @@
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", () => {
-      if (!isMobileLayout()) {
-        targetSection.style.height = "1000px";
-        timelineContainer.style.position = "sticky";
-        timelineContainer.style.top = "0";
-        if (mobileObserver) mobileObserver.disconnect();
+      if (isMobileLayout()) {
+        handleMobileLayout();
+      } else {
+        updateTimelineForDesktop();
       }
-      // Recalculate on resize
-      updateTimelineForDesktop();
     });
-    updateTimelineForDesktop(); // Initial check
+
+    if (isMobileLayout()) {
+      handleMobileLayout();
+    } else {
+      updateTimelineForDesktop();
+    }
   }
 
   /**
-   * Core orchestrator entry point
+   * System Initializations
    */
   const runSystemInitializations = () => {
     initPerspectiveController();
     initMarqueeInteractions();
     initScrollTimelineEngine();
-    initCountersOnScroll(); // Initialize counters on scroll instead of immediately
+    initCountersOnScroll();
   };
 
-  if (
-    document.readyState === "complete" ||
-    document.readyState === "interactive"
-  ) {
+  if (document.readyState === "complete" || document.readyState === "interactive") {
     runSystemInitializations();
   } else {
     document.addEventListener("DOMContentLoaded", runSystemInitializations);

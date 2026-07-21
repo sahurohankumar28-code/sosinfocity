@@ -272,7 +272,7 @@
 
 .feature-card i {
   font-size: 1.5rem;
-  color: #2563eb;
+  color: var(--primary);
 }
 
 .feature-card p {

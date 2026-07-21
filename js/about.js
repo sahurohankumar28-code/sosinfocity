@@ -97,7 +97,7 @@
           }
         });
       },
-      { root: null, threshold: 0.18, rootMargin: "0px 0px -50px 0px" }
+      { root: null, threshold: 0.18, rootMargin: "0px 0px -50px 0px" },
     );
 
     nodes.forEach((node) => {
@@ -119,7 +119,10 @@
       const deltaY = aheadPoint.y - point.y;
       const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
 
-      arrow.setAttribute("transform", `translate(${point.x}, ${point.y}) rotate(${angle})`);
+      arrow.setAttribute(
+        "transform",
+        `translate(${point.x}, ${point.y}) rotate(${angle})`,
+      );
     } else {
       arrow.style.opacity = "0";
     }
@@ -179,7 +182,8 @@
       timelineContainer.style.top = "0";
 
       const sectionRect = targetSection.getBoundingClientRect();
-      const totalScrollRunway = targetSection.offsetHeight - timelineContainer.offsetHeight;
+      const totalScrollRunway =
+        targetSection.offsetHeight - timelineContainer.offsetHeight;
 
       let progress = -sectionRect.top / totalScrollRunway;
       progress = Math.max(0, Math.min(1, progress));
@@ -231,7 +235,10 @@
     initCountersOnScroll();
   };
 
-  if (document.readyState === "complete" || document.readyState === "interactive") {
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
     runSystemInitializations();
   } else {
     document.addEventListener("DOMContentLoaded", runSystemInitializations);

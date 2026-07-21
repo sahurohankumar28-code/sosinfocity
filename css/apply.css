@@ -396,13 +396,12 @@
   }
 }
 
-
 @media (max-width: 1024px) {
   .split-form-layout {
     grid-template-columns: 1fr;
   }
   .form-visual-pane {
-    display: none; 
+    display: none;
   }
   .form-card-container {
     padding: 40px 24px;
@@ -414,7 +413,7 @@
     font-size: 1.5rem;
   }
   .form-action-row {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     gap: 12px;
   }
   .btn-form-nav {

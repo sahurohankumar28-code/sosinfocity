@@ -10,18 +10,19 @@
   window.scrollTo(0, 0);
 
   function initProductStacking() {
-    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined")
+      return;
 
     gsap.registerPlugin(ScrollTrigger);
-    
+
     const cards = gsap.utils.toArray(".c-card");
     if (cards.length === 0) return;
 
     ScrollTrigger.matchMedia({
-      "(min-width: 769px)": function() {
+      "(min-width: 769px)": function () {
         cards.forEach((card, index) => {
-          const scaleValue = 1 - (cards.length - 1 - index) * 0.05; 
-          
+          const scaleValue = 1 - (cards.length - 1 - index) * 0.05;
+
           ScrollTrigger.create({
             trigger: card,
             start: "top 12%",
@@ -33,17 +34,17 @@
             invalidateOnRefresh: true,
             animation: gsap.to(card, {
               scale: scaleValue,
-              opacity: 1, 
-              ease: "none"
-            })
+              opacity: 1,
+              ease: "none",
+            }),
           });
         });
       },
-      "(max-width: 768px)": function() {
-        ScrollTrigger.getAll().forEach(t => {
-          if(t.trigger && t.trigger.classList.contains('c-card')) t.kill(true);
+      "(max-width: 768px)": function () {
+        ScrollTrigger.getAll().forEach((t) => {
+          if (t.trigger && t.trigger.classList.contains("c-card")) t.kill(true);
         });
-      }
+      },
     });
   }
 
@@ -95,11 +96,17 @@
 
     requestAnimationFrame(() => {
       const stage = document.getElementById("industriesStage");
-      if (!stage) { ticking = false; return; }
+      if (!stage) {
+        ticking = false;
+        return;
+      }
 
       coverflowCards = Array.from(stage.children);
       const totalCards = coverflowCards.length;
-      if (totalCards === 0) { ticking = false; return; }
+      if (totalCards === 0) {
+        ticking = false;
+        return;
+      }
 
       const isMobile = window.innerWidth <= 768;
       const xOffsetDelta = isMobile ? 40 : 160;
@@ -193,19 +200,43 @@
   }
 
   const partnerLogos = [
-    "images/allied.png", "images/SonicWall.png", "images/aruba.png", "images/Microsoft.png",
-    "images/Cambium.png", "images/Cisco.png", "images/D-Link.png", "images/Jio.png",
-    "images/Digisol.png", "images/HPE.png", "images/juniper.png", "images/Red_Hat.png",
-    "images/SE.png", "images/Ruckus.png", "images/Honeywell.png", "images/Airtel.png",
-    "images/LG.png", "images/NETGEAR.png", "images/AWS.png", "images/Peplink.png",
-    "images/Railtel.png", "images/Mikrotik.png", "images/Bosch.png", "images/Dell_EMC.png",
-    "images/IBM.png", "images/sophos.png"
+    "images/allied.png",
+    "images/SonicWall.png",
+    "images/aruba.png",
+    "images/Microsoft.png",
+    "images/Cambium.png",
+    "images/Cisco.png",
+    "images/D-Link.png",
+    "images/Jio.png",
+    "images/Digisol.png",
+    "images/HPE.png",
+    "images/juniper.png",
+    "images/Red_Hat.png",
+    "images/SE.png",
+    "images/Ruckus.png",
+    "images/Honeywell.png",
+    "images/Airtel.png",
+    "images/LG.png",
+    "images/NETGEAR.png",
+    "images/AWS.png",
+    "images/Peplink.png",
+    "images/Railtel.png",
+    "images/Mikrotik.png",
+    "images/Bosch.png",
+    "images/Dell_EMC.png",
+    "images/IBM.png",
+    "images/sophos.png",
   ];
 
   function getLogoPath(filename) {
     return [
-      `images/${filename}`, `assets/images/${filename}`, `assets/${filename}`,
-      `img/${filename}`, `partner-logos/${filename}`, `logos/${filename}`, `${filename}`
+      `images/${filename}`,
+      `assets/images/${filename}`,
+      `assets/${filename}`,
+      `img/${filename}`,
+      `partner-logos/${filename}`,
+      `logos/${filename}`,
+      `${filename}`,
     ];
   }
 
@@ -219,7 +250,8 @@
     doubledLogos.forEach((logo, index) => {
       const item = document.createElement("div");
       item.className = "partner-item";
-      if (index >= partnerLogos.length) item.setAttribute("aria-hidden", "true");
+      if (index >= partnerLogos.length)
+        item.setAttribute("aria-hidden", "true");
 
       const img = document.createElement("img");
       img.className = "partner-logo";
@@ -283,10 +315,14 @@
     });
 
     const heroVideo = document.querySelector(".hero-video");
-    if (heroVideo) heroVideo.play().catch(() => console.log("Autoplay blocked"));
+    if (heroVideo)
+      heroVideo.play().catch(() => console.log("Autoplay blocked"));
   }
 
-  if (document.readyState === "complete" || document.readyState === "interactive") {
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
     initializeAllComponents();
   } else {
     window.addEventListener("DOMContentLoaded", initializeAllComponents);

@@ -1,4 +1,3 @@
-
 const openBtn = document.getElementById("mobileMenuBtn");
 const closeBtn = document.getElementById("closeMobileBtn");
 const overlay = document.getElementById("mobileNavOverlay");

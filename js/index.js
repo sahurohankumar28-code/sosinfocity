@@ -13,34 +13,34 @@
     "images/Software Products_1.jpg",
     "images/Software Products_2.jpg",
     "images/Software Products_3.jpg",
-    "images/Software Products_4.jpg"
+    "images/Software Products_4.jpg",
   ];
 
   function switchProductTab(index) {
-    const buttons = document.querySelectorAll('.tab-btn');
-    const panels = document.querySelectorAll('.tab-panel');
-    const dynamicImg = document.getElementById('tab-dynamic-img');
+    const buttons = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".tab-panel");
+    const dynamicImg = document.getElementById("tab-dynamic-img");
 
     if (!buttons.length || !panels.length) return;
 
     buttons.forEach((btn, i) => {
-      btn.classList.toggle('active', i === index);
+      btn.classList.toggle("active", i === index);
     });
 
     if (dynamicImg) {
-      dynamicImg.style.opacity = '0.2';
-      dynamicImg.style.transform = 'scale(0.98)';
+      dynamicImg.style.opacity = "0.2";
+      dynamicImg.style.transform = "scale(0.98)";
     }
 
     setTimeout(() => {
       panels.forEach((panel, i) => {
-        panel.classList.toggle('active', i === index);
+        panel.classList.toggle("active", i === index);
       });
 
       if (dynamicImg && productImages[index]) {
         dynamicImg.src = productImages[index];
-        dynamicImg.style.opacity = '1';
-        dynamicImg.style.transform = 'scale(1)';
+        dynamicImg.style.opacity = "1";
+        dynamicImg.style.transform = "scale(1)";
       }
     }, 200);
   }
@@ -78,7 +78,7 @@
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
     observer.observe(statsRow);
   }
@@ -187,19 +187,43 @@
   }
 
   const partnerLogos = [
-    "images/allied.png", "images/SonicWall.png", "images/aruba.png", "images/Microsoft.png",
-    "images/Cambium.png", "images/Cisco.png", "images/D-Link.png", "images/Jio.png",
-    "images/Digisol.png", "images/HPE.png", "images/juniper.png", "images/Red_Hat.png",
-    "images/SE.png", "images/Ruckus.png", "images/Honeywell.png", "images/Airtel.png",
-    "images/LG.png", "images/NETGEAR.png", "images/AWS.png", "images/Peplink.png",
-    "images/Railtel.png", "images/Mikrotik.png", "images/Bosch.png", "images/Dell_EMC.png",
-    "images/IBM.png", "images/sophos.png"
+    "images/allied.png",
+    "images/SonicWall.png",
+    "images/aruba.png",
+    "images/Microsoft.png",
+    "images/Cambium.png",
+    "images/Cisco.png",
+    "images/D-Link.png",
+    "images/Jio.png",
+    "images/Digisol.png",
+    "images/HPE.png",
+    "images/juniper.png",
+    "images/Red_Hat.png",
+    "images/SE.png",
+    "images/Ruckus.png",
+    "images/Honeywell.png",
+    "images/Airtel.png",
+    "images/LG.png",
+    "images/NETGEAR.png",
+    "images/AWS.png",
+    "images/Peplink.png",
+    "images/Railtel.png",
+    "images/Mikrotik.png",
+    "images/Bosch.png",
+    "images/Dell_EMC.png",
+    "images/IBM.png",
+    "images/sophos.png",
   ];
 
   function getLogoPath(filename) {
     return [
-      `images/${filename}`, `assets/images/${filename}`, `assets/${filename}`,
-      `img/${filename}`, `partner-logos/${filename}`, `logos/${filename}`, `${filename}`
+      `images/${filename}`,
+      `assets/images/${filename}`,
+      `assets/${filename}`,
+      `img/${filename}`,
+      `partner-logos/${filename}`,
+      `logos/${filename}`,
+      `${filename}`,
     ];
   }
 
@@ -213,7 +237,8 @@
     doubledLogos.forEach((logo, index) => {
       const item = document.createElement("div");
       item.className = "partner-item";
-      if (index >= partnerLogos.length) item.setAttribute("aria-hidden", "true");
+      if (index >= partnerLogos.length)
+        item.setAttribute("aria-hidden", "true");
 
       const img = document.createElement("img");
       img.className = "partner-logo";
@@ -274,10 +299,14 @@
     });
 
     const heroVideo = document.querySelector(".hero-video");
-    if (heroVideo) heroVideo.play().catch(() => console.log("Autoplay blocked"));
+    if (heroVideo)
+      heroVideo.play().catch(() => console.log("Autoplay blocked"));
   }
 
-  if (document.readyState === "complete" || document.readyState === "interactive") {
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
     initializeAllComponents();
   } else {
     window.addEventListener("DOMContentLoaded", initializeAllComponents);

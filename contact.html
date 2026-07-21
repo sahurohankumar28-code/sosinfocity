@@ -1,114 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>SOS Infocity</title>
-    <link rel="icon" href="images/Logo.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-
-    
-<div id="splash-screen">
-  <div class="splash-content">
-    <video id="splash-video" autoplay muted playsinline>
-      <source src="videos/sos.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
+    <link rel="icon" href="images/Logo.png" type="image/png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div id="splash-screen">
+      <div class="splash-content">
+        <video id="splash-video" autoplay muted playsinline>
+          <source src="videos/sos.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
 
     <div class="hero-header">
+      <div class="container">
+        <div id="header-placeholder"></div>
+        <h1>Let's Connect</h1>
+        <p>
+          Have a project in mind? Reach out to us — we're ready to build
+          intelligent, secure, and future-ready systems for your enterprise.
+        </p>
+      </div>
+    </div>
 
-        <div class="container">
-            
-            <div id="header-placeholder"></div>
-                <h1>Let's Connect</h1>
-                <p>Have a project in mind? Reach out to us — we're ready to build intelligent, secure, and future-ready
-                    systems for your enterprise.</p>
-            </div>
-
-        </div>
-
-
-        
     <section class="contact-section">
-        <div class="container">
-            <div class="contact-container">
-                
-                <div class="contact-form-side">
-                    <div class="contact-intro">
-                        <span class="section-tag">Get in Touch</span>
-                        <h2>Discuss Your <span>Security & Infrastructure</span> Needs</h2>
-                    </div>
-
-                    <div id="formAlert" class="alert-message"></div>
-
-                    <form id="contactForm">
-                        <div class="input-group">
-                            <input type="text" name="name" id="name" placeholder=" " required>
-                            <label for="name">Full Name</label>
-                        </div>
-
-                        <div class="input-group">
-                            <input type="email" name="email" id="email" placeholder=" " required>
-                            <label for="email">Email Address</label>
-                        </div>
-
-                        <div class="input-group">
-                            <input type="text" name="subject" id="subject" placeholder=" " required>
-                            <label for="subject">Subject</label>
-                        </div>
-
-                        <div class="input-group">
-                            <textarea name="message" id="message" rows="4" placeholder=" " required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-
-                        <button type="submit" class="btn-submit">
-                            Send Message <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
-
-                
-                <div class="contact-map-side">
-
-                    <iframe
-                        src="https://www.google.com/maps/embed/v1/place?q=Plot%20No%3A%206%2F1939%2F1973%2C%20Sailashree%20Vihar%2C%20Near%20Westend%20Apartment%20%26%20Hotel%20Abhiruchi%2C%20Bhubaneswar%2C%20Odisha%20%E2%80%93%20751024&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                        width="600" height="750" allowfullscreen loading="lazy"></iframe>
-
-                    <div class="map-overlay">
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="info-text">Plot No: 6/1939/1973, Sailashree Vihar, Near Westend Apartment &
-                                Hotel Abhiruchi, Bhubaneswar, Odisha – 751024</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div class="info-text">+91 98765 43210</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="info-text">contact@sosinfocity.com</div>
-                        </div>
-                    </div>
-                </div>
-
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-form-side">
+            <div class="contact-intro">
+              <span class="section-tag">Get in Touch</span>
+              <h2>Discuss Your <span>Security & Infrastructure</span> Needs</h2>
             </div>
+
+            <div id="formAlert" class="alert-message"></div>
+
+            <form id="contactForm">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  required
+                />
+                <label for="name">Full Name</label>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email">Email Address</label>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder=" "
+                  required
+                />
+                <label for="subject">Subject</label>
+              </div>
+
+              <div class="input-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder=" "
+                  required
+                ></textarea>
+                <label for="message">Your Message</label>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                Send Message <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-map-side">
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=Plot%20No%3A%206%2F1939%2F1973%2C%20Sailashree%20Vihar%2C%20Near%20Westend%20Apartment%20%26%20Hotel%20Abhiruchi%2C%20Bhubaneswar%2C%20Odisha%20%E2%80%93%20751024&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              width="600"
+              height="750"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+
+            <div class="map-overlay">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-text">
+                  Plot No: 6/1939/1973, Sailashree Vihar, Near Westend Apartment
+                  & Hotel Abhiruchi, Bhubaneswar, Odisha – 751024
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="info-text">+91 98765 43210</div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <div class="info-text">contact@sosinfocity.com</div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <div id="footer-placeholder"></div>
-    
-    
+
     <script src="js/header-footer.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/active.js"></script>
-
-</body>
-
+  </body>
 </html>

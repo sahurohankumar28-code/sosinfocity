@@ -80,7 +80,6 @@
   transition: all 0.3s ease;
 }
 
-/* --- Vector Ring System Layout --- */
 .vector-ring-system {
   position: absolute;
   inset: 0;
@@ -102,7 +101,6 @@
 .ring.r2 { width: 450px; height: 450px; }
 .ring.r3 { width: 540px; height: 540px; }
 
-/* --- Stationary Floating Icon Badges --- */
 .orbit-badge {
   position: absolute;
   width: 40px;
@@ -119,7 +117,6 @@
   z-index: 5;
 }
 
-/* --- Isolated Bobbing Keyframe Animations --- */
 @keyframes stationary-float-y {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
@@ -132,7 +129,6 @@
   100% { transform: translateX(0px); }
 }
 
-/* --- Inner Ring Positions (r1) --- */
 .ring.r1 .orbit-badge:nth-child(1) {
   top: -20px;
   left: calc(50% - 20px);
@@ -144,7 +140,6 @@
   animation: stationary-float-y 4.6s ease-in-out infinite 0.4s;
 }
 
-/* --- Middle Ring Positions (r2) --- */
 .ring.r2 .orbit-badge:nth-child(1) {
   left: -20px;
   top: calc(50% - 20px);
@@ -156,7 +151,6 @@
   animation: stationary-float-x 4.4s ease-in-out infinite 0.2s;
 }
 
-/* --- Outer Ring Positions (r3) --- */
 .ring.r3 .orbit-badge:nth-child(1) {
   top: 15%;
   left: 15%;
@@ -168,7 +162,6 @@
   animation: stationary-float-y 4.8s ease-in-out infinite 0.1s;
 }
 
-/* --- Workplace Culture Section --- */
 .careers-culture-section {
   padding: 120px 0;
   background: #ffffff;
@@ -275,7 +268,6 @@
   pointer-events: none;
 }
 
-/* --- Active Operations / Job Section --- */
 .openings-section {
   padding: 10px 0 120px;
   background: #ffffff;
@@ -390,7 +382,6 @@
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
 }
 
-/* --- Tablet / Laptop Responsive Framework --- */
 @media (max-width: 1024px) {
   .hero-content-split {
     grid-template-columns: 1fr;
@@ -404,7 +395,6 @@
     margin-right: auto;
   }
   
-  /* Scale down the entire graphic wrapper evenly for medium viewports */
   .hero-graphic-side {
     height: 380px;
   }
@@ -425,7 +415,6 @@
   }
 }
 
-/* --- Mobile Responsive Rules (Up to 768px) --- */
 @media (max-width: 768px) {
   .positions-grid-container {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -436,12 +425,10 @@
   }
 }
 
-/* --- Compact Smartphone Viewport Rules (Up to 480px) --- */
 @media (max-width: 480px) {
   .hero-graphic-side {
     height: 300px;
   }
-  /* Compresses track circles and badges seamlessly to prevent screen overflow */
   .vector-ring-system {
     transform: scale(0.62);
   }

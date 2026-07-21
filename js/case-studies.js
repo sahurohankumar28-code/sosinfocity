@@ -1,4 +1,3 @@
-// Mobile Menu
 const openBtn = document.getElementById("mobileMenuBtn");
 const closeBtn = document.getElementById("closeMobileBtn");
 const overlay = document.getElementById("mobileNavOverlay");
@@ -16,7 +15,6 @@ window.addEventListener("beforeunload", () => {
 });
 window.scrollTo(0, 0);
 
-// Case Studies Data
 const caseStudiesData = [
   {
     id: 1,
@@ -105,11 +103,9 @@ const caseStudiesData = [
   }
 ];
 
-// State management
-let currentView = 'grid'; // 'grid' or 'detail'
+let currentView = 'grid';
 let currentCaseId = null;
 
-// DOM Elements
 const heroHeader = document.getElementById('heroHeader');
 const heroContent = document.getElementById('heroContent');
 const gridSection = document.getElementById('caseStudiesSection');
@@ -118,7 +114,6 @@ const detailWrapper = document.getElementById('detailWrapper');
 const blogGridTrack = document.getElementById('blogGridTrack');
 const backButton = document.getElementById('backToCases');
 
-// Render grid
 function renderGrid() {
   if (!blogGridTrack) return;
   
@@ -150,7 +145,6 @@ function renderGrid() {
   });
 }
 
-// Show detail view
 function showDetail(id) {
   const caseData = caseStudiesData.find(item => item.id === id);
   if (!caseData) return;
@@ -165,12 +159,10 @@ function showDetail(id) {
     <p>${caseData.subtitle}</p>
   `;
 
-  // Hide grid, show detail
   gridSection.classList.add('hidden');
   detailSection.classList.add('visible');
   detailSection.style.display = 'block';
 
-  // Render detail
   detailWrapper.innerHTML = `
     <div class="cs-detail-grid">
       <div class="cs-detail-main">
@@ -207,16 +199,12 @@ function showDetail(id) {
     </div>
   `;
 
-  // Update URL without reload
   const url = new URL(window.location);
   url.searchParams.set('id', id);
   window.history.pushState({ id: id, view: 'detail' }, '', url);
-
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Show grid view
 function showGrid() {
   currentView = 'grid';
   currentCaseId = null;
@@ -231,26 +219,21 @@ function showGrid() {
     </p>
   `;
 
-  // Show grid, hide detail
   gridSection.classList.remove('hidden');
   detailSection.classList.remove('visible');
   detailSection.style.display = 'none';
 
-  // Update URL
   const url = new URL(window.location);
   url.searchParams.delete('id');
   window.history.pushState({ view: 'grid' }, '', url);
 
-  // Scroll to grid
   gridSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// Back button handler
 if (backButton) {
   backButton.addEventListener('click', showGrid);
 }
 
-// Share functions
 window.shareCase = function(platform, title) {
   const url = window.location.href;
   const shareData = {
@@ -265,7 +248,6 @@ window.shareCase = function(platform, title) {
   }
 };
 
-// Handle browser back/forward
 window.addEventListener('popstate', function(event) {
   if (event.state && event.state.view === 'detail' && event.state.id) {
     showDetail(event.state.id);
@@ -274,7 +256,6 @@ window.addEventListener('popstate', function(event) {
   }
 });
 
-// Check URL params on load
 function checkUrlParams() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
@@ -289,7 +270,6 @@ function checkUrlParams() {
   showGrid();
 }
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
   renderGrid();
   checkUrlParams();

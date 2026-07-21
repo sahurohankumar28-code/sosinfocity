@@ -9,9 +9,6 @@
   });
   window.scrollTo(0, 0);
 
-  /**
-   * Initialize GSAP Stacking Cards Effect
-   */
   function initProductStacking() {
     if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
 

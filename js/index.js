@@ -9,9 +9,6 @@
   });
   window.scrollTo(0, 0);
 
-  /**
-   * Software Products Tab-Switching Logic
-   */
   const productImages = [
     "images/Software Products_1.jpg",
     "images/Software Products_2.jpg",
@@ -26,24 +23,20 @@
 
     if (!buttons.length || !panels.length) return;
 
-    // Update active state on tab buttons
     buttons.forEach((btn, i) => {
       btn.classList.toggle('active', i === index);
     });
 
-    // Animate image transition
     if (dynamicImg) {
       dynamicImg.style.opacity = '0.2';
       dynamicImg.style.transform = 'scale(0.98)';
     }
 
     setTimeout(() => {
-      // Toggle active panel
       panels.forEach((panel, i) => {
         panel.classList.toggle('active', i === index);
       });
 
-      // Swap image source and fade back in
       if (dynamicImg && productImages[index]) {
         dynamicImg.src = productImages[index];
         dynamicImg.style.opacity = '1';
@@ -52,7 +45,6 @@
     }, 200);
   }
 
-  // Expose tab switcher to global context for HTML onclick attributes
   window.switchProductTab = switchProductTab;
 
   function animateCounter(elementId, targetValue, duration = 2800) {
@@ -194,7 +186,6 @@
     startCoverflowPlaybackLoop();
   }
 
-  /* Partner Logo Carousel Setup */
   const partnerLogos = [
     "images/allied.png", "images/SonicWall.png", "images/aruba.png", "images/Microsoft.png",
     "images/Cambium.png", "images/Cisco.png", "images/D-Link.png", "images/Jio.png",

@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  /**
-   * Smoothly animates numerical statistic nodes from zero up to target values
-   */
   function animateCounter(elementId, targetValue, duration = 2800) {
     const element = document.getElementById(elementId);
     if (!element) return;
@@ -23,9 +20,6 @@
     }, stepTime);
   }
 
-  /**
-   * Triggers counter animations when stats section comes into view
-   */
   function initCountersOnScroll() {
     const statsSection = document.querySelector(".stats-row-fullwidth");
     if (!statsSection) return;
@@ -50,9 +44,6 @@
     checkVisibility();
   }
 
-  /**
-   * Drives mouse-tracking physics on workspace gallery pane for desktop
-   */
   function initPerspectiveController() {
     const stage = document.querySelector(".marquee-display-pane");
     const display = document.querySelector(".led-tv-display-curve");
@@ -82,9 +73,6 @@
     });
   }
 
-  /**
-   * Manages state interruptions when hovering over testimonial track
-   */
   function initMarqueeInteractions() {
     const track = document.getElementById("testimonialMarqueeTrack");
     if (!track) return;
@@ -98,9 +86,6 @@
     });
   }
 
-  /**
-   * Sets up IntersectionObserver for scroll animations on mobile
-   */
   function setupMobileObserver(nodes, mobileObserver) {
     if (mobileObserver) mobileObserver.disconnect();
 
@@ -123,9 +108,6 @@
     return mobileObserver;
   }
 
-  /**
-   * Updates arrow rotation based on path progress
-   */
   function updateArrowRotation(arrow, path, currentLength, pathLength) {
     if (currentLength > 0) {
       arrow.style.opacity = "1";
@@ -143,9 +125,6 @@
     }
   }
 
-  /**
-   * Updates node activation states based on scroll progress
-   */
   function updateNodeActivation(nodes, progress) {
     nodes.forEach((node, index) => {
       const activateThreshold = index / nodes.length - 0.04;
@@ -157,9 +136,6 @@
     });
   }
 
-  /**
-   * SCROLL-DRIVEN HIGHWAY & MOBILE ANIMATION TIMELINE ENGINE
-   */
   function initScrollTimelineEngine() {
     const path = document.getElementById("roadProgressOverlay");
     const arrow = document.getElementById("roadArrow");
@@ -248,9 +224,6 @@
     }
   }
 
-  /**
-   * System Initializations
-   */
   const runSystemInitializations = () => {
     initPerspectiveController();
     initMarqueeInteractions();

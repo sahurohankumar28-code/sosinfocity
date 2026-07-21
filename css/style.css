@@ -1,6 +1,3 @@
-/* ==========================================
-   Font Definition
-   ========================================== */
 @font-face {
   font-family: 'Aria Text G2';
   src: url('../fonts/AriaTextG2-SemiBold.woff2') format('woff2'),
@@ -10,9 +7,6 @@
   font-display: swap;
 }
 
-/* ==========================================
-   Global Reset & Root Variables
-   ========================================== */
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +28,6 @@
   --shadow-glow: 0 18px 40px -12px rgba(247, 89, 16, 0.25);
 }
 
-/* Base Body Styles */
 body {
   font-family: 'Aria Text G2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 600;
@@ -50,17 +43,13 @@ body {
   padding: 0 32px;
 }
 
-/* ==========================================
-   Splash Screen / Preloader Styles
-   ========================================== */
-
 #splash-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff; /* Match your brand background */
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,14 +59,12 @@ body {
   transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
 }
 
-/* Class added via JS to trigger fade-out */
 #splash-screen.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-/* Splash Container */
 .splash-content {
   text-align: center;
   display: flex;
@@ -85,7 +72,6 @@ body {
   align-items: center;
 }
 
-/* Video Styling */
 #splash-video {
   width: 180px;
   max-width: 80vw;
@@ -104,9 +90,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ==========================================
-   Buttons & Section Tags
-   ========================================== */
 .btn-primary {
   background: var(--primary);
   border: 1.5px solid var(--primary);
@@ -162,9 +145,6 @@ body {
   margin-bottom: -1px;
 }
 
-/* ==========================================
-   Navigation
-   ========================================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -299,7 +279,6 @@ body {
   color: white;
 }
 
-/* Mobile Nav */
 .mobile-menu-btn {
   display: none;
   color: white;
@@ -378,9 +357,6 @@ body {
   padding-left: 8px;
 }
 
-/* ==========================================
-   Footer
-   ========================================== */
 .footer {
   position: relative;
   background-color: #0a0f16;
@@ -465,9 +441,6 @@ body {
   margin: 0 0 20px 0;
 }
 
-/* ==========================================
-   Media Queries
-   ========================================== */
 @media (max-width: 1024px) {
   .container {
     padding: 0 24px;

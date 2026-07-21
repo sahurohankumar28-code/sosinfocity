@@ -102,8 +102,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-
-  // ==============================================
-  // NO FORM SUBMIT HANDLER - Form submits to PHP
-  // ==============================================
 });

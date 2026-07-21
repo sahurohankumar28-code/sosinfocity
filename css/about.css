@@ -1,6 +1,4 @@
-/* ==========================================================================
-   GLOBAL STYLES, VARIABLES & HERO HEADER
-   ========================================================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -62,9 +60,6 @@ body {
   text-align: center;
 }
 
-/* ==========================================================================
-   ABOUT HERO SECTION (OUR STORY WITH TEXT WRAPPING GRAPHICS)
-   ========================================================================== */
 .about-hero-section {
   background: #ffffff;
   padding: 90px 0;
@@ -110,9 +105,6 @@ body {
   text-align: justify;
 }
 
-/* ==========================================================================
-   PREMIUM CENTERED COUNTER STRIP LAYOUT
-   ========================================================================== */
 .stats-row-fullwidth {
   display: flex;
   width: 100%;
@@ -155,9 +147,6 @@ body {
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.08) 20%, rgba(0, 0, 0, 0.08) 80%, transparent);
 }
 
-/* ==========================================================================
-   MISSION & VALUES SECTION
-   ========================================================================== */
 .mv-section {
   padding: 40px 0;
   background: #f9fafb;
@@ -241,9 +230,6 @@ body {
   box-shadow: 0 0 0 4px rgba(247, 89, 16, 0.15);
 }
 
-/* ==========================================================================
-   ROAD TIMELINE / JOURNEY SECTION (BASE DESKTOP STYLES)
-   ========================================================================== */
 .journey-section {
   padding: 40px 0;
   background: #f8fafc;
@@ -368,7 +354,6 @@ body {
   opacity: 1;
 }
 
-/* GEO-LOCATION BALLOON PIN STRUCTURE */
 .geo-balloon-pin {
   position: relative;
   width: 64px;
@@ -424,7 +409,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* PIN COLORS */
 .milestone-gold .geo-balloon-pin svg .balloon-body { fill: #eab308; }
 .milestone-gold .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 .milestone-yellow .geo-balloon-pin svg .balloon-body { fill: #d97706; }
@@ -448,7 +432,6 @@ body {
 .milestone-purple .geo-balloon-pin svg .balloon-body { fill: #7c3aed; }
 .milestone-purple .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
-/* DESKTOP SNAKING COORDINATES */
 @media (min-width: 1025px) {
   .node-1 { left: 15%; top: 548px; }
   .node-2 { left: 34%; top: 548px; }
@@ -463,9 +446,6 @@ body {
   .node-11 { left: 76%; top: 148px; }
 }
 
-/* ==========================================================================
-   EDITORIAL BOARD STYLES ("The Brain Trust")
-   ========================================================================== */
 .editorial-board-section {
   padding: 30px 0;
   background: linear-gradient(180deg, #fdfefe 0%, #f4f7fb 100%);
@@ -587,9 +567,6 @@ body {
   .profile-offset-up:hover { transform: translateY(-33px); }
 }
 
-/* ==========================================================================
-   TESTIMONIALS SECTION (MARQUEE HORIZONTAL)
-   ========================================================================== */
 .las-testimonials-section {
   padding: 60px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
@@ -703,9 +680,7 @@ body {
   100% { transform: translate3d(-50%, 0, 0); }
 }
 
-/* ==========================================================================
-   MEDIA QUERIES (RESPONSIVE ADAPTATIONS & MOBILE TIMELINE TRANSITION)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   /* About Section Adjustments */
   .about-img-floating {
@@ -731,9 +706,6 @@ body {
     flex-direction: column;
   }
 
-  /* ---------------------------------------------------------------------
-     MOBILE VERTICAL TIMELINE STYLES & ANIMATIONS
-     --------------------------------------------------------------------- */
   .journey-section {
     padding: 50px 0 !important;
     height: auto !important;
@@ -750,12 +722,10 @@ body {
     margin-left: 10px;
   }
 
-  /* Hide Desktop SVG Path Canvas */
   .road-svg-canvas {
     display: none !important;
   }
 
-  /* Gradient Vertical Timeline Line */
   .road-timeline-container::before {
     content: "";
     position: absolute;
@@ -768,7 +738,6 @@ body {
     z-index: 1;
   }
 
-  /* Milestone Items Layout for Vertical Flow */
   .road-milestone-landmark {
     position: relative !important;
     left: 0 !important;
@@ -778,20 +747,16 @@ body {
     align-items: flex-start !important;
     gap: 16px;
     text-align: left !important;
-    
-    /* Pre-animated Initial State */
     opacity: 0;
     transform: translateY(35px) scale(0.97) !important;
     transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  /* Scroll Triggered Active Animation State */
   .road-milestone-landmark.node-activated {
     opacity: 1;
     transform: translateY(0) scale(1) !important;
   }
 
-  /* Pin Assembly on Mobile Line */
   .road-milestone-landmark .pin-marker-assembly {
     order: 1 !important;
     flex-shrink: 0;
@@ -820,7 +785,6 @@ body {
     display: none;
   }
 
-  /* Mobile Milestone Card Block */
   .road-milestone-landmark .milestone-text-block {
     order: 2 !important;
     margin: 0 !important;
@@ -857,7 +821,6 @@ body {
     margin-right: 4px;
   }
 
-  /* Testimonial & Leader Cards */
   .las-ts-viewport {
     mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);

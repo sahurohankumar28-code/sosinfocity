@@ -1,6 +1,3 @@
-/* ==========================================================================
-   SOS INFOTECH & TELECOM - TRANSPARENT COMPONENT SOLUTIONS ARCHITECTURE
-   ========================================================================== */
 .hero-header {
   position: relative;
   min-height: 20vh;
@@ -46,9 +43,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-/* --------------------------------------------------------------------------
-   ASYMMETRIC LEAD HEADER BLOCK SETUP
-   -------------------------------------------------------------------------- */
 .solutions-hero-intro {
   max-width: 900px;
   margin: 0 auto 100px auto;
@@ -77,9 +71,6 @@ body.modal-open {
   margin-bottom: 0;
 }
 
-/* --------------------------------------------------------------------------
-   TYPOGRAPHIC ECOSYSTEM INTERFACE ROWS
-   -------------------------------------------------------------------------- */
 .typo-row {
   display: flex;
   align-items: center;
@@ -91,8 +82,6 @@ body.modal-open {
   border-radius: 28px;
   cursor: pointer;
   background: transparent;
-  
-  /* Acceleration Initialization Configuration */
   opacity: 0;
   transform: translate3d(0, 60px, 0);
   will-change: transform, opacity, background-color, border-color, box-shadow;
@@ -113,7 +102,6 @@ body.modal-open {
   opacity: 1;
 }
 
-/* Fluid Hover Environment Layer */
 .typo-row:hover {
   background-color: var(--glass-bg);
   backdrop-filter: blur(var(--blur-radius));
@@ -167,7 +155,6 @@ body.modal-open {
   gap: 14px;
 }
 
-/* Image Text-Mask Clip Node Processing */
 .typo-number-mask {
   font-family: 'Archivo Black', sans-serif;
   font-size: clamp(8rem, 16vw, 15rem);
@@ -193,9 +180,6 @@ body.modal-open {
   opacity: 1;
 }
 
-/* --------------------------------------------------------------------------
-   PREMIUM ASYMMETRICAL "WHY SOS" SHOWCASE GRID
-   -------------------------------------------------------------------------- */
 .why-sos-showcase-v2 {
   margin-top: 100px;
   padding-top: 80px;
@@ -266,9 +250,6 @@ body.modal-open {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* --------------------------------------------------------------------------
-   GLASSMORPHIC OVERLAY MODAL ENVIRONMENT
-   -------------------------------------------------------------------------- */
 .details-modal-overlay {
   position: fixed;
   inset: 0;
@@ -387,9 +368,6 @@ body.modal-open {
   margin-bottom: 16px;
 }
 
-/* --------------------------------------------------------------------------
-   COMPREHENSIVE RESPONSIVE DESIGN ARRAYS
-   -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .master-container { padding: 60px 24px; }
   .why-sos-showcase-v2 { gap: 40px; }

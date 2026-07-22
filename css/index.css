@@ -111,6 +111,13 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 28px;
 }
+
+a.service-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .service-card {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 28px;
@@ -273,7 +280,6 @@
   line-height: 1.4;
 }
 
-/* Dynamic Image Display Frame */
 .tabbed-image-wrapper {
   width: 100%;
   height: 480px;

@@ -1,6 +1,5 @@
 (function () {
   "use strict";
-
   if (history.scrollRestoration) {
     history.scrollRestoration = "manual";
   }
@@ -47,21 +46,37 @@
 
   window.switchProductTab = switchProductTab;
 
-  function animateCounter(elementId, targetValue, duration = 2800) {
+  function setupServiceCards() {
+    const cards = document.querySelectorAll(".services-section .service-card");
+    cards.forEach((card) => {
+      card.style.cursor = "pointer";
+      card.addEventListener("click", (e) => {
+        // Redirect to solutions page on card click
+        window.location.href = "solutions.html";
+      });
+    });
+  }
+
+  function animateCounter(elementId, targetValue, duration = 2500) {
     const element = document.getElementById(elementId);
     if (!element) return;
-    let current = 0;
-    const stepTime = 16;
-    const increments = targetValue / (duration / stepTime);
-    const timer = setInterval(() => {
-      current += increments;
-      if (current >= targetValue) {
-        element.innerText = targetValue;
-        clearInterval(timer);
+    let startTimestamp = null;
+
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      // Easing function for smooth deceleration
+      const easeOutQuad = 1 - (1 - progress) * (1 - progress);
+      element.innerText = Math.floor(easeOutQuad * targetValue);
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
       } else {
-        element.innerText = Math.floor(current);
+        element.innerText = targetValue;
       }
-    }, stepTime);
+    };
+
+    window.requestAnimationFrame(step);
   }
 
   function setupScrollTriggeredCounters() {
@@ -72,18 +87,17 @@
       (entries, observerInstance) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            animateCounter("projectsCount", 185, 2500);
-            animateCounter("clientsCount", 340, 2500);
+            animateCounter("projectsCount", 185, 2200);
+            animateCounter("clientsCount", 340, 2200);
             observerInstance.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 },
+      { threshold: 0.15 }
     );
     observer.observe(statsRow);
   }
 
-  /* Industry Coverflow Dynamics */
   let currentCoverflowIndex = 0;
   let coverflowCards = [];
   let coverflowAutoTimer = null;
@@ -98,38 +112,41 @@
     if (totalCards === 0) return;
 
     const isMobile = window.innerWidth <= 768;
-    const xOffsetDelta = isMobile ? 40 : 160;
+    const xOffsetDelta = isMobile ? 45 : 160;
     const zOffsetDelta = isMobile ? 60 : 120;
 
-    coverflowCards.forEach((card, index) => {
-      card.classList.remove("active-center");
+    window.requestAnimationFrame(() => {
+      coverflowCards.forEach((card, index) => {
+        card.classList.remove("active-center");
 
-      let offset = index - currentCoverflowIndex;
-      if (offset > totalCards / 2) offset -= totalCards;
-      if (offset < -totalCards / 2) offset += totalCards;
+        let offset = index - currentCoverflowIndex;
+        if (offset > totalCards / 2) offset -= totalCards;
+        if (offset < -totalCards / 2) offset += totalCards;
 
-      let absOffset = Math.abs(offset);
+        let absOffset = Math.abs(offset);
 
-      if (offset === 0) {
-        card.classList.add("active-center");
-        card.style.transform = `translate3d(0px, 0px, 150px) rotateY(0deg)`;
-        card.style.zIndex = 40;
-        card.style.opacity = 1;
-        card.style.pointerEvents = "auto";
-      } else {
-        let direction = offset > 0 ? 1 : -1;
-        let translateX = direction * xOffsetDelta + offset * 20;
-        let scale = 1 - absOffset * 0.12;
-        let translateZ = 0 - absOffset * zOffsetDelta;
-        let rotateY = direction * -25;
-        let opacity = 0.8 - absOffset * 0.25;
+        if (offset === 0) {
+          card.classList.add("active-center");
+          card.style.transform = `translate3d(0px, 0px, 150px) rotateY(0deg)`;
+          card.style.zIndex = 40;
+          card.style.opacity = "1";
+          card.style.pointerEvents = "auto";
+        } else {
+          let direction = offset > 0 ? 1 : -1;
+          let translateX = direction * xOffsetDelta + offset * 20;
+          let scale = 1 - absOffset * 0.12;
+          let translateZ = 0 - absOffset * zOffsetDelta;
+          let rotateY = direction * -25;
+          let opacity = 0.8 - absOffset * 0.25;
 
-        card.style.transform = `translate3d(${translateX}px, 0px, ${translateZ}px) scale(${scale}) rotateY(${rotateY}deg)`;
-        card.style.zIndex = 40 - absOffset;
-        card.style.opacity = Math.max(opacity, 0);
-        card.style.pointerEvents = absOffset <= 1 ? "auto" : "none";
-      }
+          card.style.transform = `translate3d(${translateX}px, 0px, ${translateZ}px) scale(${scale}) rotateY(${rotateY}deg)`;
+          card.style.zIndex = 40 - absOffset;
+          card.style.opacity = Math.max(opacity, 0).toString();
+          card.style.pointerEvents = absOffset <= 1 ? "auto" : "none";
+        }
+      });
     });
+
     updateCoverflowDots(totalCards);
   }
 
@@ -176,10 +193,17 @@
   };
 
   function startCoverflowPlaybackLoop() {
-    if (coverflowAutoTimer) clearInterval(coverflowAutoTimer);
+    stopCoverflowPlaybackLoop();
     coverflowAutoTimer = setInterval(() => {
       shiftCoverflow(1);
     }, autoCycleInterval);
+  }
+
+  function stopCoverflowPlaybackLoop() {
+    if (coverflowAutoTimer) {
+      clearInterval(coverflowAutoTimer);
+      coverflowAutoTimer = null;
+    }
   }
 
   function restartCoverflowPlaybackLoop() {
@@ -234,6 +258,8 @@
     partnerTrack.innerHTML = "";
     const doubledLogos = [...partnerLogos, ...partnerLogos];
 
+    const fragment = document.createDocumentFragment();
+
     doubledLogos.forEach((logo, index) => {
       const item = document.createElement("div");
       item.className = "partner-item";
@@ -256,9 +282,7 @@
           img.style.display = "none";
           const fallback = document.createElement("span");
           fallback.className = "partner-fallback";
-          fallback.style.color = "#475569";
-          fallback.style.fontWeight = "600";
-          fallback.style.fontSize = "0.85rem";
+          fallback.style.cssText = "color:#475569; font-weight:600; font-size:0.85rem;";
           fallback.textContent = img.alt.toUpperCase();
           item.appendChild(fallback);
         }
@@ -267,11 +291,15 @@
       img.onerror = tryNextPath;
       tryNextPath();
       item.appendChild(img);
-      partnerTrack.appendChild(item);
+      fragment.appendChild(item);
     });
+
+    partnerTrack.appendChild(fragment);
   }
 
   function initializeAllComponents() {
+    setupServiceCards();
+
     try {
       renderPartners();
     } catch (err) {
@@ -281,6 +309,8 @@
     setupScrollTriggeredCounters();
 
     const stage = document.getElementById("industriesStage");
+    const viewport = document.querySelector(".industries-coverflow-viewport");
+
     if (stage) {
       buildCoverflowDots(stage.children.length);
       Array.from(stage.children).forEach((card, index) => {
@@ -290,17 +320,28 @@
           restartCoverflowPlaybackLoop();
         });
       });
+
+      if (viewport) {
+        viewport.addEventListener("mouseenter", stopCoverflowPlaybackLoop);
+        viewport.addEventListener("mouseleave", startCoverflowPlaybackLoop);
+      }
+
       updateCoverflowLayout();
       startCoverflowPlaybackLoop();
     }
 
+    let resizeTimer;
     window.addEventListener("resize", () => {
-      updateCoverflowLayout();
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        updateCoverflowLayout();
+      }, 100);
     });
 
     const heroVideo = document.querySelector(".hero-video");
-    if (heroVideo)
-      heroVideo.play().catch(() => console.log("Autoplay blocked"));
+    if (heroVideo) {
+      heroVideo.play().catch(() => console.log("Autoplay blocked or waiting for interaction"));
+    }
   }
 
   if (

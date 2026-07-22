@@ -330,13 +330,11 @@
   font-weight: 700;
   color: #171717;
   margin-bottom: 12px;
-  line-height: 1.3;
 }
 
 .cs-detail-body .detail-subtitle {
   font-size: 1.05rem;
   color: #4b5563;
-  line-height: 1.7;
   margin-bottom: 30px;
 }
 
@@ -354,7 +352,6 @@
 .cs-detail-body .detail-text {
   font-size: 1rem;
   color: #4b5563;
-  line-height: 1.8;
   margin-bottom: 20px;
 }
 

@@ -24,9 +24,19 @@
   text-align: center;
 }
 
+/* Background Scroll Lock & Shift Prevention */
+html.modal-open,
 body.modal-open {
   overflow: hidden !important;
   touch-action: none;
+  scrollbar-gutter: stable;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+html.modal-open::-webkit-scrollbar,
+body.modal-open::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .master-container {
@@ -55,15 +65,13 @@ body.modal-open {
   font-size: clamp(2.5rem, 6vw, 4.2rem);
   text-transform: uppercase;
   margin-bottom: 24px;
-  letter-spacing: -0.03em;
-  line-height: 0.95;
 }
 
 .solutions-hero-intro p {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
-  line-height: 1.8;
   margin-bottom: 24px;
   opacity: 0.85;
+  text-align: justify;
 }
 
 .solutions-hero-intro p:last-child {
@@ -129,12 +137,10 @@ body.modal-open {
   font-size: clamp(1.6rem, 3.5vw, 2.3rem);
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1.15;
 }
 
 .typo-text-pane p {
   font-size: 1.05rem;
-  line-height: 1.7;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -163,9 +169,7 @@ body.modal-open {
 .typo-number-mask {
   font-family: "Archivo Black", sans-serif;
   font-size: clamp(8rem, 16vw, 15rem);
-  line-height: 1;
   font-weight: 900;
-  letter-spacing: -0.05em;
   user-select: none;
   background-size: cover;
   background-position: center;
@@ -280,6 +284,7 @@ body.modal-open {
   backdrop-filter: blur(20px);
 }
 
+/* Modal View - Functional scrolling with hidden scrollbar */
 .modal-card-view {
   background: #ffffff;
   width: 100%;
@@ -292,6 +297,18 @@ body.modal-open {
   transform: translate3d(0, 50px, 0) scale(0.96);
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+  /* Hide scrollbar for IE / Edge */
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for WebKit (Chrome, Safari, Opera) */
+.modal-card-view::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .details-modal-overlay.active .modal-card-view {
@@ -375,7 +392,6 @@ body.modal-open {
 
 .popup-content-pane p {
   font-size: 1.05rem;
-  line-height: 1.7;
   color: #4b5563 !important;
   margin-bottom: 16px;
 }

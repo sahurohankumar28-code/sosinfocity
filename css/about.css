@@ -20,7 +20,6 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
   background: var(--bg-white);
   color: var(--text-primary);
   line-height: 1.5;
@@ -98,7 +97,6 @@ body {
 
 .about-text-content p {
   color: var(--text-secondary);
-  line-height: 1.8;
   margin-bottom: 22px;
   font-size: 1.05rem;
   text-align: justify;
@@ -215,7 +213,6 @@ body {
   position: relative;
   padding-left: 28px;
   color: var(--text-secondary);
-  line-height: 1.75;
   font-size: 1.02rem;
   margin-bottom: 18px;
   text-align: justify;
@@ -570,7 +567,6 @@ body {
 .editorial-title-card p {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.05rem;
-  line-height: 1.65;
 }
 
 .geometric-decor {

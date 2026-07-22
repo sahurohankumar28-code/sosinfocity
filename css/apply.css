@@ -24,6 +24,35 @@
   text-align: center;
 }
 
+.back-to-career {
+  
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #4b5563;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+.back-to-career:hover {
+  color: var(--primary);
+}
+
+.back-to-career i {
+  transition: transform 0.3s ease;
+}
+
+.back-to-career:hover i {
+  transform: translateX(-4px);
+}
+
 .application-form-section {
   padding: 60px 0 100px;
   background: #f8fafc;

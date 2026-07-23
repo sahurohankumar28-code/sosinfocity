@@ -86,7 +86,6 @@ body {
   color: var(--text-secondary);
   margin-bottom: 22px;
   font-size: 1.05rem;
-  text-align: justify;
 }
 
 .stats-row-fullwidth {
@@ -202,7 +201,6 @@ body {
   color: var(--text-secondary);
   font-size: 1.02rem;
   margin-bottom: 18px;
-  text-align: justify;
 }
 
 .mv-bullet-list li:last-child {

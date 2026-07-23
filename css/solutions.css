@@ -353,7 +353,7 @@ body.modal-open::-webkit-scrollbar {
 .why-sos-lead-p {
   font-size: 1.02rem;
   line-height: 1.7;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
   opacity: 0.85;
 }
 
@@ -361,7 +361,7 @@ body.modal-open::-webkit-scrollbar {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 28px;
-  align-items: center;
+  align-items: start; 
 }
 
 .why-sos-secondary-text {
@@ -373,6 +373,7 @@ body.modal-open::-webkit-scrollbar {
 .why-sos-secondary-text p {
   opacity: 0.8;
   font-size: 0.92rem;
+  margin-bottom: 2px;
 }
 
 .brand-tagline {

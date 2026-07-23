@@ -1,10 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   background: var(--bg-white);
@@ -45,6 +43,9 @@ body {
   text-align: center;
 }
 
+/* --------------------------------------------------
+ * HERO / ABOUT STORY SECTION
+ * -------------------------------------------------- */
 .about-hero-section {
   background: #ffffff;
   padding: 90px 0;
@@ -84,8 +85,8 @@ body {
 
 .about-text-content p {
   color: var(--text-secondary);
-  margin-bottom: 22px;
   font-size: 1.05rem;
+  margin-bottom: 0.5rem;
 }
 
 .stats-row-fullwidth {
@@ -136,6 +137,127 @@ body {
   );
 }
 
+/* --------------------------------------------------
+ * ARCHITECTS OF DIGITAL INFRASTRUCTURE SECTION (NEW DESIGN)
+ * -------------------------------------------------- */
+.editorial-board-section {
+  padding: 90px 0;
+  background: #f4f6f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-section-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Bright Cyan/Blue Accent Shape in Background */
+.bg-shape-accent {
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  width: 360px;
+  height: 105%;
+  min-height: 420px;
+  background: linear-gradient(135deg, #ff8a3d 0%,#f75910 100%);
+  border-radius: 50% 40% 60% 40% / 50% 50% 50% 50%;
+  z-index: 1;
+}
+
+/* Left Photo Box */
+.welcome-photo-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 320px;
+  height: 380px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.welcome-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Right Content Box */
+.welcome-content-card {
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 48px 48px 40px 56px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-subtitle {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f75910;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #22252a;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.welcome-title .highlight-blue {
+  color:  #f75910;
+}
+
+.welcome-message-block h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #333a45;
+  margin-bottom: 8px;
+}
+
+.welcome-message-block p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.welcome-signoff {
+  border-top: 1px solid #edf2f7;
+  padding-top: 16px;
+}
+
+.signoff-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.signoff-role {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------
+ * MISSION / VISION & CAPABILITIES
+ * -------------------------------------------------- */
 .mv-section {
   padding: 40px 0;
   background: #f9fafb;
@@ -165,9 +287,7 @@ body {
   padding: 50px 40px;
   border: 1px solid var(--border-light);
   box-shadow: 0 10px 30px -10px rgba(10, 15, 22, 0.04);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mv-card-reset:hover {
@@ -219,6 +339,9 @@ body {
   box-shadow: 0 0 0 4px rgba(247, 89, 16, 0.15);
 }
 
+/* --------------------------------------------------
+ * TIMELINE / JOURNEY SECTION
+ * -------------------------------------------------- */
 .journey-section {
   padding: 40px 0;
   background: #f8fafc;
@@ -277,10 +400,12 @@ body {
   --y-shift: -192px;
   --y-drift-start: 15px;
 }
+
 .road-milestone-landmark.position-above .milestone-text-block {
   order: 1;
   margin-bottom: 15px;
 }
+
 .road-milestone-landmark.position-above .pin-marker-assembly {
   order: 2;
 }
@@ -289,10 +414,12 @@ body {
   --y-shift: -24px;
   --y-drift-start: -15px;
 }
+
 .road-milestone-landmark.position-below .milestone-text-block {
   order: 3;
   margin-top: 15px;
 }
+
 .road-milestone-landmark.position-below .pin-marker-assembly {
   order: 1;
 }
@@ -304,9 +431,7 @@ body {
   align-items: center;
   transform: scale(0);
   opacity: 0;
-  transition:
-    transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
-    opacity 0.4s ease;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
   z-index: 10;
   width: 80px;
   height: 80px;
@@ -328,16 +453,15 @@ body {
     opacity: 0 !important;
     visibility: hidden;
     transform: translateY(var(--y-drift-start)) scale(0.95);
-    transition:
-      opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-      transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-      visibility 0.4s;
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.4s;
   }
+  
   .road-milestone-landmark.node-activated:hover .milestone-text-block {
     opacity: 1 !important;
     visibility: visible;
     transform: translateY(0) scale(1) !important;
   }
+  
   .road-milestone-landmark.node-activated .pin-marker-assembly:hover {
     cursor: pointer;
   }
@@ -403,250 +527,56 @@ body {
   transition: transform 0.3s ease;
 }
 
-.milestone-gold .geo-balloon-pin svg .balloon-body {
-  fill: #eab308;
-}
-.milestone-gold .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-yellow .geo-balloon-pin svg .balloon-body {
-  fill: #d97706;
-}
-.milestone-yellow .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-green .geo-balloon-pin svg .balloon-body {
-  fill: #22c55e;
-}
-.milestone-green .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-teal .geo-balloon-pin svg .balloon-body {
-  fill: #0d9488;
-}
-.milestone-teal .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-blue .geo-balloon-pin svg .balloon-body {
-  fill: #2563eb;
-}
-.milestone-blue .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-cyan .geo-balloon-pin svg .balloon-body {
-  fill: #06b6d4;
-}
-.milestone-cyan .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-magenta .geo-balloon-pin svg .balloon-body {
-  fill: #ec4899;
-}
-.milestone-magenta .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-red .geo-balloon-pin svg .balloon-body {
-  fill: #ef4444;
-}
-.milestone-red .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-orange .geo-balloon-pin svg .balloon-body {
-  fill: #f97316;
-}
-.milestone-orange .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-indigo .geo-balloon-pin svg .balloon-body {
-  fill: #4f46e5;
-}
-.milestone-indigo .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
-.milestone-purple .geo-balloon-pin svg .balloon-body {
-  fill: #7c3aed;
-}
-.milestone-purple .geo-balloon-pin svg .balloon-shine {
-  fill: rgba(255, 255, 255, 0.25);
-}
+.milestone-gold .geo-balloon-pin svg .balloon-body { fill: #eab308; }
+.milestone-gold .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-yellow .geo-balloon-pin svg .balloon-body { fill: #d97706; }
+.milestone-yellow .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-green .geo-balloon-pin svg .balloon-body { fill: #22c55e; }
+.milestone-green .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-teal .geo-balloon-pin svg .balloon-body { fill: #0d9488; }
+.milestone-teal .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-blue .geo-balloon-pin svg .balloon-body { fill: #2563eb; }
+.milestone-blue .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-cyan .geo-balloon-pin svg .balloon-body { fill: #06b6d4; }
+.milestone-cyan .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-magenta .geo-balloon-pin svg .balloon-body { fill: #ec4899; }
+.milestone-magenta .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-red .geo-balloon-pin svg .balloon-body { fill: #ef4444; }
+.milestone-red .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-orange .geo-balloon-pin svg .balloon-body { fill: #f97316; }
+.milestone-orange .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-indigo .geo-balloon-pin svg .balloon-body { fill: #4f46e5; }
+.milestone-indigo .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
+
+.milestone-purple .geo-balloon-pin svg .balloon-body { fill: #7c3aed; }
+.milestone-purple .geo-balloon-pin svg .balloon-shine { fill: rgba(255, 255, 255, 0.25); }
 
 @media (min-width: 1025px) {
-  .node-1 {
-    left: 15%;
-    top: 548px;
-  }
-  .node-2 {
-    left: 34%;
-    top: 548px;
-  }
-  .node-3 {
-    left: 52%;
-    top: 548px;
-  }
-  .node-4 {
-    left: 70%;
-    top: 548px;
-  }
-  .node-5 {
-    left: 68%;
-    top: 348px;
-  }
-  .node-6 {
-    left: 48%;
-    top: 348px;
-  }
-  .node-7 {
-    left: 28%;
-    top: 348px;
-  }
-  .node-8 {
-    left: 20%;
-    top: 148px;
-  }
-  .node-9 {
-    left: 38%;
-    top: 148px;
-  }
-  .node-10 {
-    left: 58%;
-    top: 148px;
-  }
-  .node-11 {
-    left: 76%;
-    top: 148px;
-  }
+  .node-1 { left: 15%; top: 548px; }
+  .node-2 { left: 34%; top: 548px; }
+  .node-3 { left: 52%; top: 548px; }
+  .node-4 { left: 70%; top: 548px; }
+  .node-5 { left: 68%; top: 348px; }
+  .node-6 { left: 48%; top: 348px; }
+  .node-7 { left: 28%; top: 348px; }
+  .node-8 { left: 20%; top: 148px; }
+  .node-9 { left: 38%; top: 148px; }
+  .node-10 { left: 58%; top: 148px; }
+  .node-11 { left: 76%; top: 148px; }
 }
 
-.editorial-board-section {
-  padding: 30px 0;
-  background: linear-gradient(180deg, #fdfefe 0%, #f4f7fb 100%);
-}
-
-.editorial-board-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 60px;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.editorial-title-card {
-  background: #0a0f16;
-  padding: 50px 40px;
-  border-radius: 32px;
-  color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 25px 50px -12px rgba(10, 15, 22, 0.15);
-}
-
-.editorial-title-card h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  letter-spacing: -0.02em;
-}
-
-.editorial-title-card p {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-}
-
-.geometric-decor {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 120px;
-  height: 120px;
-  background: var(--primary);
-  opacity: 0.15;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-}
-
-.editorial-profiles-wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.premium-leader-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-radius: 28px;
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
-  transition:
-    transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-    box-shadow 0.4s ease;
-}
-
-.leader-image-wrapper {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #111622;
-  height: 240px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.leader-image-wrapper img {
-  height: 90%;
-  width: auto;
-  object-fit: contain;
-  filter: brightness(1.1) contrast(1.05);
-  transition: transform 0.4s ease;
-}
-
-.leader-details {
-  padding-top: 24px;
-}
-
-.leader-details h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.leader-quote {
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  font-style: italic;
-  border-left: 2px solid var(--primary);
-  padding-left: 12px;
-  margin: 0;
-}
-
-.premium-leader-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-glow);
-  border-color: rgba(247, 89, 16, 0.2);
-}
-
-.premium-leader-card:hover .leader-image-wrapper img {
-  transform: scale(1.05);
-}
-
-@media (min-width: 1025px) {
-  .profile-offset-down {
-    transform: translateY(35px);
-  }
-  .profile-offset-up {
-    transform: translateY(-25px);
-  }
-  .profile-offset-down:hover {
-    transform: translateY(27px);
-  }
-  .profile-offset-up:hover {
-    transform: translateY(-33px);
-  }
-}
-
+/* --------------------------------------------------
+ * TESTIMONIALS / MARQUEE SECTION
+ * -------------------------------------------------- */
 .las-testimonials-section {
   padding: 60px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
@@ -661,20 +591,8 @@ body {
   position: relative;
   padding: 20px 0;
   user-select: none;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 12%,
-    #000 88%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 12%,
-    #000 88%,
-    transparent
-  );
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
 }
 
 .las-ts-track {
@@ -698,10 +616,7 @@ body {
   flex-direction: column;
   text-align: left;
   flex-shrink: 0;
-  transition:
-    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.4s ease,
-    box-shadow 0.4s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .ts-quote-mark {
@@ -771,16 +686,14 @@ body {
 }
 
 @keyframes smoothTestimonialMarquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
+/* --------------------------------------------------
+ * MEDIA QUERIES (RESPONSIVE)
+ * -------------------------------------------------- */
 @media (max-width: 1024px) {
-  /* About Section Adjustments */
   .about-img-floating {
     float: none;
     width: 100%;
@@ -847,9 +760,7 @@ body {
     text-align: left !important;
     opacity: 0;
     transform: translateY(35px) scale(0.97) !important;
-    transition:
-      opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .road-milestone-landmark.node-activated {
@@ -897,9 +808,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(10, 15, 22, 0.06);
     flex-grow: 1;
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .road-milestone-landmark.node-activated .milestone-text-block:active,
@@ -924,20 +833,8 @@ body {
   }
 
   .las-ts-viewport {
-    mask-image: linear-gradient(
-      to right,
-      transparent,
-      #000 4%,
-      #000 96%,
-      transparent
-    );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent,
-      #000 4%,
-      #000 96%,
-      transparent
-    );
+    mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
   }
 
   .las-ts-card {
@@ -950,32 +847,33 @@ body {
     right: 20px;
   }
 
-  .editorial-board-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  /* Responsive for Architects section */
+  .welcome-section-card {
+    flex-direction: column;
+    gap: 24px;
   }
 
-  .editorial-profiles-wrap {
-    grid-template-columns: 1fr 1fr;
+  .bg-shape-accent {
+    width: 100%;
+    max-width: 320px;
+    height: 300px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .profile-offset-down,
-  .profile-offset-up {
-    transform: none !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .editorial-profiles-wrap {
-    grid-template-columns: 1fr;
+  .welcome-photo-wrapper {
+    width: 280px;
+    height: 320px;
   }
 
-  .editorial-title-card {
-    padding: 30px 24px;
+  .welcome-content-card {
+    padding: 32px 24px;
+    width: 100%;
   }
 
-  .editorial-title-card h2 {
-    font-size: 1.8rem;
+  .welcome-title {
+    font-size: 1.75rem;
   }
 }
 

@@ -1,8 +1,6 @@
 <?php
-// Set response header to JSON
 header('Content-Type: application/json');
 
-// Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo json_encode([
@@ -12,10 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// Recipient email address
 $toEmail = 'sahurohankumar7596@gmail.com';
 
-// Fetch input data (handles both standard POST & JSON fetch requests)
 $inputRaw = file_get_contents('php://input');
 $data = json_decode($inputRaw, true);
 
@@ -31,7 +27,6 @@ if (is_array($data)) {
     $message = isset($_POST['message']) ? trim($_POST['message']) : '';
 }
 
-// Backend Validation
 if (empty($name) || empty($email) || empty($subject) || empty($message)) {
     http_response_code(400);
     echo json_encode([
@@ -50,13 +45,11 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// Sanitize inputs to prevent header injection & XSS
 $name = htmlspecialchars(strip_tags($name));
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 $subject = htmlspecialchars(strip_tags($subject));
 $message = htmlspecialchars(strip_tags($message));
 
-// Build Email Headers & Body
 $emailSubject = "New Contact Form Submission: " . $subject;
 
 $emailBody  = "You have received a new contact message from SOS Infocity:\n\n";
@@ -72,7 +65,6 @@ $headers  = "From: SOS Infocity Form <noreply@" . $_SERVER['SERVER_NAME'] . ">\r
 $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
-// Send Email
 if (mail($toEmail, $emailSubject, $emailBody, $headers)) {
     echo json_encode([
         'status' => 'success',

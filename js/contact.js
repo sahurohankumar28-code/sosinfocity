@@ -5,13 +5,11 @@ if (contactForm) {
   contactForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    // 1. Gather Form Data
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // 2. Client-Side Validation
     if (!name || !email || !subject || !message) {
       showAlert("Please fill in all fields.", "error");
       return;
@@ -22,13 +20,11 @@ if (contactForm) {
       return;
     }
 
-    // 3. UI Loading State
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
     submitBtn.disabled = true;
 
-    // 4. Send AJAX Request to mailer.php
     try {
       const response = await fetch("mailer.php", {
         method: "POST",
@@ -55,14 +51,12 @@ if (contactForm) {
         "error"
       );
     } finally {
-      // Restore Button State
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
     }
   });
 }
 
-// Function to handle alert notifications
 function showAlert(message, type) {
   if (!formAlert) return;
   formAlert.textContent = message;

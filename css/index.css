@@ -1,7 +1,4 @@
 
-/* ==========================================================================
-   4. HERO HEADER
-   ========================================================================== */
 .hero-header {
   position: relative;
   min-height: 100vh;
@@ -84,9 +81,6 @@
   margin-top: 40px;
 }
 
-/* ==========================================================================
-   5. SERVICES & CORE CAPABILITIES (UNIFIED CARDS)
-   ========================================================================== */
 .services-section {
   padding: 80px 0;
   background: linear-gradient(125deg, #fef9f5 0%, #ffffff 40%, #fff5ed 100%);
@@ -103,7 +97,6 @@
   color: var(--text-primary);
 }
 
-/* Grid forces equal column heights */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -118,7 +111,6 @@ a.service-card-link {
   height: 100%;
 }
 
-/* Standardized Card Layout */
 .service-card {
   display: flex;
   flex-direction: column;
@@ -161,9 +153,6 @@ a.service-card-link {
   flex-grow: 1; /* Pushes content evenly */
 }
 
-/* ==========================================================================
-   6. TABBED PRODUCTS
-   ========================================================================== */
 .tabbed-products-section {
   padding: 80px 0;
   background: #ffffff;
@@ -310,9 +299,6 @@ a.service-card-link {
     transform 0.3s ease;
 }
 
-/* ==========================================================================
-   7. INDUSTRIES COVERFLOW SLIDER
-   ========================================================================== */
 .industries-section {
   position: relative;
   background: var(--bg-light);
@@ -451,9 +437,6 @@ a.service-card-link {
   border-radius: 6px;
 }
 
-/* ==========================================================================
-   8. PARTNERS MARQUEE
-   ========================================================================== */
 .partners {
   padding: 40px 0;
 }
@@ -509,9 +492,6 @@ a.service-card-link {
   }
 }
 
-/* ==========================================================================
-   9. RESPONSIVE BREAKPOINTS
-   ========================================================================== */
 @media (max-width: 1160px) {
   .industries-slider-stage .industry-card {
     width: 580px;

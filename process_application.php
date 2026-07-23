@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $toEmail = 'hr@sosinfocity.in';
 
-// 1. Inputs Sanitization
 $appliedRole       = htmlspecialchars(strip_tags($_POST['appliedRole'] ?? 'General Application'));
 $candidateName     = htmlspecialchars(strip_tags($_POST['candidateName'] ?? ''));
 $candidateEmail    = filter_var($_POST['candidateEmail'] ?? '', FILTER_SANITIZE_EMAIL);
@@ -20,7 +19,6 @@ $hasExperience     = htmlspecialchars(strip_tags($_POST['hasExperience'] ?? 'No'
 $experienceDetails = htmlspecialchars(strip_tags($_POST['experienceDetails'] ?? 'N/A'));
 $linkedinUrl       = htmlspecialchars(strip_tags($_POST['linkedinUrl'] ?? 'N/A'));
 
-// 2. Server-side Validation
 if (empty($candidateName) || empty($candidateEmail) || empty($callNumber) || empty($whatsappNumber) || empty($addressDetails)) {
     http_response_code(400);
     echo json_encode(['status' => 'error', 'message' => 'Please fill in all required fields.']);
@@ -33,7 +31,6 @@ if (!filter_var($candidateEmail, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// 3. Handle File Upload Validation
 if (!isset($_FILES['resumeFile']) || $_FILES['resumeFile']['error'] !== UPLOAD_ERR_OK) {
     http_response_code(400);
     echo json_encode(['status' => 'error', 'message' => 'Please upload a valid resume file (PDF or DOCX).']);
@@ -54,14 +51,12 @@ if (!in_array($ext, $allowedExts)) {
     exit;
 }
 
-// 5MB Max File Size limit
 if ($fileSize > 5 * 1024 * 1024) {
     http_response_code(400);
     echo json_encode(['status' => 'error', 'message' => 'Resume file size must be less than 5MB.']);
     exit;
 }
 
-// 4. Build Multipart Email with Resume Attachment
 $boundary = md5(time());
 
 $subject = "New Job Application: " . $candidateName . " - " . $appliedRole;
@@ -71,7 +66,6 @@ $headers .= "Reply-To: " . $candidateName . " <" . $candidateEmail . ">\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: multipart/mixed; boundary=\"" . $boundary . "\"\r\n";
 
-// Text Message Body
 $bodyText  = "New Candidate Application Submitted:\n\n";
 $bodyText .= "--------------------------------------------------\n";
 $bodyText .= "Target Role:       " . $appliedRole . "\n";
@@ -94,7 +88,6 @@ $body .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
 $body .= $bodyText . "\r\n";
 
-// Attach File
 $fileContent = chunk_split(base64_encode(file_get_contents($fileTmpPath)));
 
 $body .= "--" . $boundary . "\r\n";
@@ -104,7 +97,6 @@ $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
 $body .= $fileContent . "\r\n";
 $body .= "--" . $boundary . "--";
 
-// 5. Send Mail
 if (mail($toEmail, $subject, $body, $headers)) {
     echo json_encode([
         'status'  => 'success',

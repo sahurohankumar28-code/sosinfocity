@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     currentStepIndex = targetIndex;
   }
 
-  // Validate step controls before moving next
   function validateCurrentStepInputs() {
     const activePanel = steps[currentStepIndex];
     const fields = activePanel.querySelectorAll(
@@ -89,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (response.ok && result.status === "success") {
           alert(result.message);
           applicationForm.reset();
-          syncWizardView(0); // Reset back to step 1
+          syncWizardView(0);
 
           // Reset upload box UI
           const dropZone = document.getElementById("dropZone");
@@ -110,7 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Conditional Experience Field Handler
   const experienceRadios = document.querySelectorAll(
     'input[name="hasExperience"]'
   );
@@ -130,7 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Resume Drag & Drop Asset Handler
   const fileInput = document.getElementById("resumeFile");
   const dropZone = document.getElementById("dropZone");
   const fileBadgeRow = document.getElementById("fileBadgeRow");

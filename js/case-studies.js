@@ -167,7 +167,6 @@ function showDetail(id) {
   currentCaseId = id;
   currentView = "detail";
 
-  // Update hero
   heroHeader.classList.add("detail-mode");
   heroContent.innerHTML = `
     <h1>${caseData.title}</h1>
@@ -224,7 +223,6 @@ function showGrid() {
   currentView = "grid";
   currentCaseId = null;
 
-  // Reset hero
   heroHeader.classList.remove("detail-mode");
   heroContent.innerHTML = `
     <h1>Enterprise Case Studies</h1>

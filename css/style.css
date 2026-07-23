@@ -1,5 +1,4 @@
-/* 1. Define the Averta Font Family */
-/* Averta Regular */
+
 @font-face {
   font-family: 'Averta';
   src: url('../fonts/Averta-Regular.woff2') format('woff2'),
@@ -9,10 +8,6 @@
   font-display: swap;
 }
 
-/* ==========================================================================
-   2. GLOBAL TYPOGRAPHY & ICON PROTECTION
-   ========================================================================== */
-/* Set Averta on typography elements without overriding font-based icons */
 body, h1, h2, h3, h4, h5, h6, p, span, a, li, button, input, textarea, select {
   font-family: 'Averta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -21,7 +16,6 @@ em, i, cite, address, dfn {
   font-style: italic;
 }
 
-/* Ensure Icon Libraries preserve their font-family */
 .fa, .fas, .far, .fab, .fal, .fad,
 [class^="ri-"], [class*=" ri-"],
 .material-icons, .bi, .icon {

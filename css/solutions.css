@@ -355,7 +355,6 @@ body.modal-open::-webkit-scrollbar {
   line-height: 1.7;
   margin-bottom: 28px;
   opacity: 0.85;
-  text-align: justify;
 }
 
 .why-sos-split-footer {
@@ -374,7 +373,6 @@ body.modal-open::-webkit-scrollbar {
 .why-sos-secondary-text p {
   opacity: 0.8;
   font-size: 0.92rem;
-  text-align: justify;
 }
 
 .brand-tagline {

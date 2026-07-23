@@ -197,13 +197,13 @@ function showDetail(id) {
         <div class="sidebar-card">
           <h4>Key Results</h4>
           <ul>
-            ${caseData.results.map((result) => `<li>${result}</li>`).join("")}
+            ${caseData.results.map((result) => `<li><i class="far fa-circle-dot"></i> ${result}</li>`).join("")}
           </ul>
         </div>
         
         <div class="sidebar-card">
           <h4>Need a Similar Solution?</h4>
-          <p style="color: #4b5563; font-size: 0.95rem; margin-bottom: 16px;">
+          <p style="color:#1d2128; font-size: 0.95rem; margin-bottom: 16px;">
             Contact our team to discuss how we can help your organization.
           </p>
           <a href="contact.html" class="cta-btn">

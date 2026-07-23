@@ -1,23 +1,10 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --primary: #f75910;
-  --primary-light: #ff8a3d;
-  --primary-dark: #d64507;
-  --dark-bg: #0a0f16;
-  --text-primary: #171717;
-  --text-secondary: #4b5563;
-  --border-light: #eef2f6;
-  --bg-light: #fafcff;
-  --bg-white: #ffffff;
-  --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 18px 40px -12px rgba(247, 89, 16, 0.25);
-}
 
 body {
   background: var(--bg-white);

@@ -1,3 +1,4 @@
+
 .hero-header {
   position: relative;
   min-height: 50vh;
@@ -169,7 +170,7 @@
 
 .cs-card-body p {
   font-size: 0.92rem;
-  color: #4b5563;
+  color:#1d2128;
   line-height: 1.65;
   margin-bottom: 26px;
   flex-grow: 1;
@@ -246,7 +247,7 @@
   gap: 10px;
   background: transparent;
   border: none;
-  color: #4b5563;
+  color: #1d2128;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -269,7 +270,6 @@
 
 .cs-detail-wrapper {
   animation: fadeInUp 0.5s ease;
-  text-align: justify;
 }
 
 @keyframes fadeInUp {
@@ -310,7 +310,7 @@
 }
 
 .cs-detail-body {
-  padding: 40px;
+  padding: 20px;
 }
 
 .cs-detail-body .detail-category {
@@ -322,20 +322,17 @@
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
 }
 
 .cs-detail-body h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #171717;
-  margin-bottom: 12px;
 }
 
 .cs-detail-body .detail-subtitle {
   font-size: 1.05rem;
-  color: #4b5563;
+  color: #1d2128;
   margin-bottom: 30px;
 }
 
@@ -343,7 +340,6 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: #171717;
-  margin: 30px 0 12px;
 }
 
 .cs-detail-body h3:first-of-type {
@@ -352,7 +348,7 @@
 
 .cs-detail-body .detail-text {
   font-size: 1rem;
-  color: #4b5563;
+  color: #1d2128;
   margin-bottom: 20px;
 }
 
@@ -385,7 +381,7 @@
 .cs-detail-sidebar .sidebar-card ul li {
   padding: 10px 0 10px 32px;
   position: relative;
-  color: #4b5563;
+  color: #1d2128;
   line-height: 1.5;
   border-bottom: 1px solid #f0f2f5;
 }
@@ -396,7 +392,6 @@
 
 .cs-detail-sidebar .sidebar-card ul li::before {
   content: "\f00c";
-  font-family: "Font Awesome 6 Free", sans-serif;
   font-weight: 900;
   color: var(--primary);
   position: absolute;

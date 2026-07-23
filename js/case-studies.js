@@ -196,7 +196,7 @@ function showDetail(id) {
         <div class="sidebar-card">
           <h4>Key Results</h4>
           <ul>
-            ${caseData.results.map((result) => `<li><i class="far fa-circle-dot"></i> ${result}</li>`).join("")}
+            ${caseData.results.map((result) => `<li> ${result}</li>`).join("")}
           </ul>
         </div>
         

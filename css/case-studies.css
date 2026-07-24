@@ -392,6 +392,7 @@
 
 .cs-detail-sidebar .sidebar-card ul li::before {
   content: "\f00c";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: var(--primary);
   position: absolute;

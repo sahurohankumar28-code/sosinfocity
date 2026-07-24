@@ -8,50 +8,11 @@
   });
   window.scrollTo(0, 0);
 
-  const productImages = [
-    "images/Software Products_1.jpg",
-    "images/Software Products_2.jpg",
-    "images/Software Products_3.jpg",
-    "images/Software Products_4.jpg",
-  ];
-
-  function switchProductTab(index) {
-    const buttons = document.querySelectorAll(".tab-btn");
-    const panels = document.querySelectorAll(".tab-panel");
-    const dynamicImg = document.getElementById("tab-dynamic-img");
-
-    if (!buttons.length || !panels.length) return;
-
-    buttons.forEach((btn, i) => {
-      btn.classList.toggle("active", i === index);
-    });
-
-    if (dynamicImg) {
-      dynamicImg.style.opacity = "0.2";
-      dynamicImg.style.transform = "scale(0.98)";
-    }
-
-    setTimeout(() => {
-      panels.forEach((panel, i) => {
-        panel.classList.toggle("active", i === index);
-      });
-
-      if (dynamicImg && productImages[index]) {
-        dynamicImg.src = productImages[index];
-        dynamicImg.style.opacity = "1";
-        dynamicImg.style.transform = "scale(1)";
-      }
-    }, 200);
-  }
-
-  window.switchProductTab = switchProductTab;
-
   function setupServiceCards() {
     const cards = document.querySelectorAll(".services-section .service-card");
     cards.forEach((card) => {
       card.style.cursor = "pointer";
-      card.addEventListener("click", (e) => {
-        // Redirect to solutions page on card click
+      card.addEventListener("click", () => {
         window.location.href = "solutions.html";
       });
     });
@@ -65,7 +26,6 @@
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      // Easing function for smooth deceleration
       const easeOutQuad = 1 - (1 - progress) * (1 - progress);
       element.innerText = Math.floor(easeOutQuad * targetValue);
 

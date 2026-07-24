@@ -1,4 +1,3 @@
-
 .hero-header {
   position: relative;
   min-height: 100vh;
@@ -150,7 +149,7 @@ a.service-card-link {
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
-  flex-grow: 1; /* Pushes content evenly */
+  flex-grow: 1;
 }
 
 .tabbed-products-section {
@@ -178,6 +177,10 @@ a.service-card-link {
   align-items: center;
 }
 
+.tab-radio {
+  display: none;
+}
+
 .tab-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -198,18 +201,12 @@ a.service-card-link {
   align-items: center;
   gap: 8px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
 }
 
 .tab-btn:hover {
   background: #f1f5f9;
   color: var(--primary);
-}
-
-.tab-btn.active {
-  background: var(--primary);
-  color: #ffffff;
-  border-color: var(--primary);
-  box-shadow: 0 10px 20px rgba(247, 89, 16, 0.25);
 }
 
 .tab-panels {
@@ -221,15 +218,7 @@ a.service-card-link {
   display: none;
   opacity: 0;
   transform: translateY(10px);
-  transition:
-    opacity 0.4s ease,
-    transform 0.4s ease;
-}
-
-.tab-panel.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .tab-title {
@@ -260,9 +249,7 @@ a.service-card-link {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .feature-card:hover {
@@ -288,16 +275,60 @@ a.service-card-link {
   border-radius: 32px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #0a0f16;
 }
 
-.tabbed-image-wrapper img {
-  width: 100%;
+.tabbed-slider-track {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-img {
+  width: 25%;
   height: 100%;
   object-fit: cover;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+  flex-shrink: 0;
 }
+
+#tab-1:checked ~ .tabbed-container .label-tab-1,
+#tab-2:checked ~ .tabbed-container .label-tab-2,
+#tab-3:checked ~ .tabbed-container .label-tab-3,
+#tab-4:checked ~ .tabbed-container .label-tab-4 {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 10px 20px rgba(247, 89, 16, 0.25);
+}
+
+#tab-1:checked ~ .tabbed-container .panel-1,
+#tab-2:checked ~ .tabbed-container .panel-2,
+#tab-3:checked ~ .tabbed-container .panel-3,
+#tab-4:checked ~ .tabbed-container .panel-4 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#tab-1:checked ~ .tabbed-container .tabbed-slider-track {
+  transform: translate3d(0%, 0, 0);
+}
+
+#tab-2:checked ~ .tabbed-container .tabbed-slider-track {
+  transform: translate3d(-25%, 0, 0);
+}
+
+#tab-3:checked ~ .tabbed-container .tabbed-slider-track {
+  transform: translate3d(-50%, 0, 0);
+}
+
+#tab-4:checked ~ .tabbed-container .tabbed-slider-track {
+  transform: translate3d(-75%, 0, 0);
+}
+
 
 .industries-section {
   position: relative;

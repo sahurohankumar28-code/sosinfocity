@@ -2,7 +2,7 @@ const contactForm = document.getElementById("contactForm");
 const formAlert = document.getElementById("formAlert");
 
 if (contactForm) {
-  contactForm.addEventListener("submit", async function (e) {
+  contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -10,6 +10,7 @@ if (contactForm) {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
+    // 1. Validation
     if (!name || !email || !subject || !message) {
       showAlert("Please fill in all fields.", "error");
       return;
@@ -20,40 +21,39 @@ if (contactForm) {
       return;
     }
 
+    // 2. UI Feedback
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+    submitBtn.innerHTML = 'Opening Email App... <i class="fas fa-spinner fa-spin"></i>';
     submitBtn.disabled = true;
 
-    try {
-      const response = await fetch("mailer.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, subject, message }),
-      });
+    // 3. Prepare Mailto Payload
+    const recipient = "sahurohankumar7596@gmail.com";
+    const emailSubject = encodeURIComponent(`Contact Form: ${subject}`);
+    const emailBody = encodeURIComponent(
+      `You have received a new contact submission:\n\n` +
+      `--------------------------------------------------\n` +
+      `Name:    ${name}\n` +
+      `Email:   ${email}\n` +
+      `Subject: ${subject}\n` +
+      `--------------------------------------------------\n\n` +
+      `Message:\n${message}\n\n` +
+      `--------------------------------------------------`
+    );
 
-      const result = await response.json();
+    // 4. Trigger Email Client & Notify User
+    setTimeout(() => {
+      window.location.href = `mailto:${recipient}?subject=${emailSubject}&body=${emailBody}`;
 
-      if (response.ok && result.status === "success") {
-        showAlert(result.message, "success");
-        contactForm.reset();
-      } else {
-        showAlert(
-          result.message || "An error occurred while sending. Please try again.",
-          "error"
-        );
-      }
-    } catch (error) {
       showAlert(
-        "Network error. Please check your connection and try again.",
-        "error"
+        "Opening your email app! Please click send inside your email application.",
+        "success"
       );
-    } finally {
+
+      contactForm.reset();
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
-    }
+    }, 500);
   });
 }
 

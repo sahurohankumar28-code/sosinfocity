@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <title>SOS Infocity</title>
-    <link rel="icon" href="images/Logo.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -40,63 +40,37 @@
       <div class="container">
         <div class="contact-container">
           <div class="contact-form-side">
-            <div class="contact-intro">
-              <span class="section-tag">Get in Touch</span>
-              <h2>Discuss Your <span>Security & Infrastructure</span> Needs</h2>
-            </div>
+  <div class="contact-intro">
+    <span class="section-tag">Get in Touch</span>
+    <h2>Discuss Your <span>Security & Infrastructure</span> Needs</h2>
+  </div>
 
-            <div id="formAlert" class="alert-message"></div>
+  <form id="contactForm">
+    <div class="input-group">
+      <input type="text" id="name" placeholder=" " required />
+      <label for="name">Full Name</label>
+    </div>
 
-            <form id="contactForm">
-              <div class="input-group">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder=" "
-                  required
-                />
-                <label for="name">Full Name</label>
-              </div>
+    <div class="input-group">
+      <input type="email" id="email" placeholder=" " required />
+      <label for="email">Email Address</label>
+    </div>
 
-              <div class="input-group">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder=" "
-                  required
-                />
-                <label for="email">Email Address</label>
-              </div>
+    <div class="input-group">
+      <input type="text" id="subject" placeholder=" " required />
+      <label for="subject">Subject</label>
+    </div>
 
-              <div class="input-group">
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder=" "
-                  required
-                />
-                <label for="subject">Subject</label>
-              </div>
+    <div class="input-group">
+      <textarea id="message" rows="4" placeholder=" " required></textarea>
+      <label for="message">Your Message</label>
+    </div>
 
-              <div class="input-group">
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="4"
-                  placeholder=" "
-                  required
-                ></textarea>
-                <label for="message">Your Message</label>
-              </div>
-
-              <button type="submit" class="btn-submit">
-                Send Message <i class="fas fa-arrow-right"></i>
-              </button>
-            </form>
-          </div>
+    <button type="submit" class="btn-submit">
+      Send Message via Email App <i class="fas fa-paper-plane"></i>
+    </button>
+  </form>
+</div>
 
           <div class="contact-map-side">
             <iframe

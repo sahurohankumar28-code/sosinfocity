@@ -12,11 +12,14 @@ const galleryData = {
       "events/photo_1.jpeg",
       "events/photo_2.jpeg",
       "events/photo_3.jpeg",
-      "events/photo_18.jpeg"
+      "events/photo_18.jpeg",
+      "events/photo_16.jpeg",
+      "events/photo_6.jpeg",
+      "events/photo_7.jpeg"
     ]
   },
   meetings: {
-    title: "Meetings & Conferences",
+    title: "Meetings & Planning",
     images: [
       "events/photo_21.jpeg",
       "events/photo_22.jpeg",
@@ -24,7 +27,7 @@ const galleryData = {
     ]
   },
   celebration: {
-    title: "Celebrations & Events",
+    title: "Celebrations & Festivals",
     images: [
 
     ]

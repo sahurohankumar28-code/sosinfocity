@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div id="splash-screen">
+   <div id="splash-screen">
       <div class="splash-content">
         <video id="splash-video" autoplay muted playsinline>
           <source src="videos/sos.mp4" type="video/mp4">
@@ -30,32 +30,107 @@
     </div>
 
     <main class="gallery-container">
-      <div class="unified-grid">
-        <div class="grid-item"><img src="events/photo_1.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_2.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_3.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_4.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_5.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_6.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_7.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_8.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_9.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_10.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_11.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_12.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_13.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_14.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_15.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_16.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_17.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_18.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_19.jpeg" alt="Gallery Photo" loading="lazy"></div>
-        <div class="grid-item"><img src="events/photo_20.jpeg" alt="Gallery Photo" loading="lazy"></div>
+      <div class="sections-wrapper">
+
+        <!-- ROW 1: Content Left | Departments & Teams Right -->
+        <div class="gallery-row">
+          <div class="row-content">
+            <h2>Departments & Teams</h2>
+            <p>Our cross-functional teams drive innovation and collaborative excellence every day. Explore photos capturing our working atmosphere and team synergy.</p>
+            <button class="btn-view-gallery" onclick="openGallery('departments')">
+              <i class="fa-solid fa-images"></i> View All Images
+            </button>
+          </div>
+          <div class="category-card" onclick="openGallery('departments')">
+            <div class="card-image">
+              <img src="events/photo_1.jpeg" alt="Departments and Teams">
+              <span class="badge">5 Photos</span>
+              <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2: Training & Development Left | Content Right -->
+        <div class="gallery-row reverse">
+          <div class="category-card" onclick="openGallery('training')">
+            <div class="card-image">
+              <img src="events/photo_6.jpeg" alt="Training & Development">
+              <span class="badge">5 Photos</span>
+              <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
+            </div>
+          </div>
+          <div class="row-content">
+            <h2>Training & Development</h2>
+            <p>Continuous learning is core to our culture. From technical bootcamps to leadership workshops, see how we invest in growing our people.</p>
+            <button class="btn-view-gallery" onclick="openGallery('training')">
+              <i class="fa-solid fa-images"></i> View All Images
+            </button>
+          </div>
+        </div>
+
+        <!-- ROW 3: Content Left | Meetings Right -->
+        <div class="gallery-row">
+          <div class="row-content">
+            <h2>Meetings & Planning</h2>
+            <p>Brainstorming, sprint planning, and strategic alignment sessions where big ideas turn into actionable solutions.</p>
+            <button class="btn-view-gallery" onclick="openGallery('meetings')">
+              <i class="fa-solid fa-images"></i> View All Images
+            </button>
+          </div>
+          <div class="category-card" onclick="openGallery('meetings')">
+            <div class="card-image">
+              <img src="events/photo_11.jpeg" alt="Meetings">
+              <span class="badge">5 Photos</span>
+              <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 4: Celebrations Left | Content Right -->
+        <div class="gallery-row reverse">
+          <div class="category-card" onclick="openGallery('celebration')">
+            <div class="card-image">
+              <img src="events/photo_16.jpeg" alt="Celebrations">
+              <span class="badge">5 Photos</span>
+              <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
+            </div>
+          </div>
+          <div class="row-content">
+            <h2>Celebrations & Festivals</h2>
+            <p>We work hard and celebrate harder! Catch a glimpse of our festival celebrations, team outings, and milestone achievements.</p>
+            <button class="btn-view-gallery" onclick="openGallery('celebration')">
+              <i class="fa-solid fa-images"></i> View All Images
+            </button>
+          </div>
+        </div>
+
       </div>
     </main>
+
+    <!-- Popup Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+      <span class="modal-close" onclick="closeGallery()">&times;</span>
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">Event</h2>
+        </div>
+
+        <div class="modal-body">
+          <button class="nav-btn prev-btn" onclick="changeImage(-1)">&#10094;</button>
+          <div class="main-image-container">
+            <img id="modal-active-img" src="" alt="Gallery Image">
+          </div>
+          <button class="nav-btn next-btn" onclick="changeImage(1)">&#10095;</button>
+        </div>
+
+        <div class="thumbnail-strip" id="modal-thumbnails"></div>
+      </div>
+    </div>
 
     <div id="footer-placeholder"></div>
 
     <script src="js/header-footer.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>

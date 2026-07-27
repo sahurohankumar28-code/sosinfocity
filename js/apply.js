@@ -134,10 +134,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadedFileName = document.getElementById("loadedFileName");
   const removeFileAsset = document.getElementById("removeFileAsset");
 
+  // Max size set to 1 MB (1,048,576 Bytes)
+  const MAX_FILE_SIZE = 1 * 1024 * 1024;
+
   if (fileInput && dropZone) {
     fileInput.addEventListener("change", () => {
       if (fileInput.files.length > 0) {
-        loadedFileName.textContent = fileInput.files[0].name;
+        const selectedFile = fileInput.files[0];
+
+        // Check file size limit
+        if (selectedFile.size > MAX_FILE_SIZE) {
+          alert("File size exceeds 1 MB. Please upload a smaller file.");
+          fileInput.value = ""; // Clear file input
+          return;
+        }
+
+        loadedFileName.textContent = selectedFile.name;
         dropZone.style.display = "none";
         fileBadgeRow.style.display = "flex";
       }

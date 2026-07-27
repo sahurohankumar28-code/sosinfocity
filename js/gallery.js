@@ -27,7 +27,7 @@ const galleryData = {
     ]
   },
   celebration: {
-    title: "Celebrations & Festivals",
+    title: "Celebrations",
     images: [
 
     ]

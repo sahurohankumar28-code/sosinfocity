@@ -29,7 +29,18 @@ const galleryData = {
   celebration: {
     title: "Celebrations",
     images: [
-
+         "events/photo_24.jpeg",
+         "events/photo_25.jpeg",
+         "events/photo_26.jpeg",
+         "events/photo_27.jpeg",
+         "events/photo_28.jpeg",
+         "events/photo_29.jpeg",
+         "events/photo_30.jpeg",
+         "events/photo_31.jpeg",
+         "events/photo_32.jpeg",
+         "events/photo_33.jpeg",
+         "events/photo_34.jpeg",
+         "events/photo_35.png"
     ]
   },
   awards: {

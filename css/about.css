@@ -84,7 +84,7 @@ body {
 }
 
 .about-text-content p {
-  color: var(--text-secondary);
+  color: #4a515a;
   font-size: 1.05rem;
   margin-bottom: 0.5rem;
 }
@@ -234,7 +234,7 @@ body {
 .welcome-message-block p {
   font-size: 0.95rem;
   line-height: 1.75;
-  color: #64748b;
+  color:  #4a515a;
   margin-bottom: 10px;
 }
 

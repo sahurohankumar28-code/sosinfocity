@@ -21,7 +21,7 @@ const caseStudiesData = [
     num: "01",
     title: "Intelligent Enforcement Management Systems (IEMS)",
     subtitle:
-      "Machine learning integration targeting early mechanical fault diagnosis, successfully dropping enterprise system downtime by 35%.",
+      "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
     img: "images/case_study_1.jpg",
     challenge:
       "The enterprise experienced frequent and costly system downtime due to unanticipated mechanical failures. The lack of predictive maintenance capabilities resulted in reactive problem-solving, causing significant operational disruptions. Maintenance costs were escalating, and the organization needed a proactive approach to equipment management.",
@@ -192,13 +192,7 @@ function showDetail(id) {
           <p class="detail-text">${caseData.solution}</p>
         </div>
       </div>
-      <div class="cs-detail-sidebar">
-        <div class="sidebar-card">
-          <h4>Key Results</h4>
-          <ul>
-            ${caseData.results.map((result) => `<li> ${result}</li>`).join("")}
-          </ul>
-        </div>
+      
         
         <div class="sidebar-card">
           <h4>Need a Similar Solution?</h4>

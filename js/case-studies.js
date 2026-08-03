@@ -4,7 +4,7 @@ const caseStudiesData = [
     title: "Intelligent Enforcement Management Systems (IEMS)",
     subtitle:
       "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
-    img: "images/case_study_1.jpg",
+    img: "images/IEMS.jpeg",
   },
 ];
 

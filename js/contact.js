@@ -28,7 +28,7 @@ if (contactForm) {
     submitBtn.disabled = true;
 
     // 3. Prepare Mailto Payload
-    const recipient = "sahurohankumar7596@gmail.com";
+    const recipient = "hr@sosinfocity.in";
     const emailSubject = encodeURIComponent(`Contact Form: ${subject}`);
     const emailBody = encodeURIComponent(
       `You have received a new contact submission:\n\n` +

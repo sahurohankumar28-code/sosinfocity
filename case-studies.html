@@ -2,33 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>SOS Infocity - Case Studies</title>
     <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- FIXED CSS LINK BELOW -->
     <link rel="stylesheet" href="css/case-studies.css" />
   </head>
   <body>
-    <div id="splash-screen">
-      <div class="splash-content">
-        <video id="splash-video" autoplay muted playsinline>
-          <source src="videos/sos.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
 
+    <!-- Hero Header -->
     <div class="hero-header" id="heroHeader">
       <div class="container">
         <div id="header-placeholder"></div>
-
         <div class="hero-content" id="heroContent">
           <h1>Enterprise Case Studies</h1>
           <p>
@@ -40,21 +27,15 @@
       </div>
     </div>
 
-    <section
-      class="cs-blog-section"
-      id="caseStudiesSection"
-      style="background: #fafcff; padding: 100px 0"
-    >
+    <!-- Case Studies Card Grid -->
+    <section class="cs-blog-section" id="caseStudiesSection" style="background: #fafcff; padding: 80px 0">
       <div class="container">
         <div class="cs-cards-blog-grid" id="blogGridTrack"></div>
       </div>
     </section>
 
-    <section
-      class="cs-detail-section"
-      id="detailSection"
-      style="display: none; background: #fafcff; padding: 60px 0"
-    >
+    <!-- Case Study Detailed View Container -->
+    <section class="cs-detail-section" id="detailSection" style="display: none; background: #fafcff; padding: 60px 0">
       <div class="container">
         <button class="back-to-cases" id="backToCases">
           <i class="fas fa-arrow-left"></i> Back to Case Studies
@@ -62,6 +43,339 @@
         <div class="cs-detail-wrapper" id="detailWrapper"></div>
       </div>
     </section>
+
+   <template id="iems-case-study-template">
+  <div class="cs-detail-fullwidth">
+    <!-- Main Full-Width Article Content -->
+    <article class="cs-detail-main">
+      
+      <!-- Article Header -->
+      <header class="cs-article-header">
+        <h2>Intelligent Enforcement Management Systems (IEMS)</h2>
+        <p class="detail-subtitle">
+          AI-Powered Intelligent Transportation Systems for Safer, Smarter & Digitally Connected Highways
+        </p>
+        <p class="lead-text">
+          SOS Infocity designs, engineers, integrates, operates and maintains next-generation Intelligent Enforcement Management Systems (IEMS), delivering AI-driven traffic enforcement, advanced roadside infrastructure, Unified Command & Control Centres and intelligent mobility solutions that enhance road safety and strengthen digital governance.
+        </p>
+        <div class="hero-image-box">
+          <img src="images/case_study_1.jpg" alt="Full Width Drone View of U-Shape Gantry with Cameras, Radar, Solar Panel & Highway" />
+        </div>
+      </header>
+
+      <div class="cs-detail-body">
+        
+        <!-- SECTION: 4 MAJOR PILLARS -->
+        <div class="four-pillars-wrapper">
+          
+          <!-- Pillar 1 -->
+          <section class="cs-content-block pillar-block">
+            <div class="pillar-badge">Pillar 01</div>
+            <h3>What is IEMS & Its Relevance in the Modern World</h3>
+            <p>
+              An <strong>Intelligent Enforcement Management System (IEMS)</strong> is an automated, AI-driven traffic management ecosystem that monitors highways, detects traffic violations, and streamlines enforcement without requiring direct human intervention.
+            </p>
+            <div class="highlight-note">
+              <strong>Modern Relevance:</strong> With rapidly increasing vehicle density on highways, manual traffic policing is no longer scalable or safe. IEMS provides 24×7 real-time monitoring, drastically reduces fatal road accidents, encourages disciplined driving, and establishes data-driven digital governance across transportation networks.
+            </div>
+          </section>
+
+          <!-- Pillar 2 -->
+          <section class="cs-content-block pillar-block">
+            <div class="pillar-badge">Pillar 02</div>
+            <h3>Major Components in IEMS & How They Integrate</h3>
+            <p>IEMS achieves high enforcement accuracy through a connected, multi-layer infrastructure:</p>
+            
+            <div class="feature-box">
+              <h4>1. Intelligent Field Infrastructure</h4>
+              <p>Heavy-Duty U-Shape & Cantilever Gantries equipped with ANPR Cameras, Multi-Lane Speed Radars, High-Resolution Evidence Cameras, Solar Power Systems, and Industrial UPS Units.</p>
+            </div>
+
+            <div class="feature-box">
+              <h4>2. Centralized Processing & Unified Command Centre</h4>
+              <p>Real-time AI video analytics engines parse stream data for violation detection, live monitoring, incident tracking, and automated reporting.</p>
+            </div>
+
+            <div class="feature-box">
+              <h4>3. Smart Ecosystem Integration</h4>
+              <p>Direct system-level integration with official databases ensuring end-to-end operational success:</p>
+              <div class="tag-cloud ecosystem-tags">
+                <span>e-Challan</span>
+                <span>VAHAN</span>
+                <span>SARATHI</span>
+                <span>CCTNS</span>
+                <span>ERSS</span>
+                <span>Highway Patrol Systems</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Pillar 3 -->
+          <section class="cs-content-block pillar-block">
+            <div class="pillar-badge">Pillar 03</div>
+            <h3>Successful Implementation & Feedback</h3>
+            <p>
+              SOS Infocity successfully deployed an advanced IEMS for the <strong>State Transport Authority, Government of Odisha</strong> across strategic highway corridors.
+            </p>
+            
+            <div class="impact-grid">
+              <div class="impact-card">
+                <h4>Enforcement Point of View</h4>
+                <ul>
+                  <li><strong>Automated Evidence:</strong> Eliminates manual verification delays.</li>
+                  <li><strong>Zero Leakage:</strong> Accurate OCR and ANPR ensure tamper-proof evidence.</li>
+                  <li><strong>Scalable Operations:</strong> Centralized dashboard manages multiple highway stretches simultaneously.</li>
+                </ul>
+              </div>
+              
+              <div class="impact-card">
+                <h4>Safety & Public Point of View</h4>
+                <ul>
+                  <li><strong>Higher Regulation Compliance:</strong> Significant drop in helmet, seatbelt, and speeding violations.</li>
+                  <li><strong>Accident Reduction:</strong> Measurable decrease in severe highway accidents and road fatalities.</li>
+                  <li><strong>Deterrence Factor:</strong> Visible gantry infrastructure promotes self-disciplined driving.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Pillar 4 -->
+          <section class="cs-content-block pillar-block">
+            <div class="pillar-badge">Pillar 04</div>
+            <h3>Executed Project List</h3>
+            <div class="project-list-wrapper">
+              <div class="project-item">
+                <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="project-info">
+                  <h4>Statewide Intelligent Enforcement Management System (IEMS)</h4>
+                  <p><strong>Client:</strong> State Transport Authority, Government of Odisha</p>
+                  <p>Turn-key execution of roadside enforcement gantries, multi-lane radar installation, ANPR cameras, and Command & Control Centre integration.</p>
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="project-info">
+                  <h4>Unified Command & Control Centre (UCCC) & SLA Operations</h4>
+                  <p>24×7 mission-critical operations, SLA monitoring, automated fault detection, and maintenance across strategic highway corridors.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+
+        <hr class="section-divider" />
+
+        
+
+        <!-- Project Overview -->
+        <section class="cs-content-block">
+          <h3>Project Overview</h3>
+          <p>
+            SOS Infocity successfully executed an advanced Intelligent Enforcement Management System (IEMS) for the State Transport Authority, Government of Odisha, delivering an integrated AI-powered traffic enforcement ecosystem that combines intelligent roadside infrastructure, real-time analytics, automated violation detection and centralized command & control.
+          </p>
+          <p>
+            Designed to improve road safety and strengthen enforcement capabilities, the solution enables authorities to automate traffic violation detection, generate evidence-based enforcement, monitor field infrastructure in real time and support data-driven decision making across strategic highway corridors.
+          </p>
+        </section>
+
+        <!-- Project Challenges -->
+        <section class="cs-content-block">
+          <h3>Project Challenges</h3>
+          <p>Rapid growth in traffic volume demanded a scalable and future-ready enforcement platform capable of:</p>
+          <ul class="styled-list">
+            <li>Detecting multiple traffic violations in real time</li>
+            <li>Automating evidence generation and enforcement</li>
+            <li>Integrating with existing Government applications</li>
+            <li>Reducing manual intervention</li>
+            <li>Enabling centralized monitoring across multiple locations</li>
+            <li>Supporting AI-driven analytics and future expansion</li>
+          </ul>
+        </section>
+
+        <!-- SOS Infocity Solution -->
+        <section class="cs-content-block">
+          <h3>SOS Infocity Solution</h3>
+          <p>
+            SOS Infocity delivered an end-to-end Intelligent Enforcement Management System comprising intelligent field infrastructure, AI-powered analytics, centralized monitoring and Government system integration.
+          </p>
+          
+          <div class="feature-box">
+            <h4>AI-Based Traffic Enforcement</h4>
+            <ul class="styled-grid">
+              <li><i class="fas fa-check-circle"></i> Automatic Number Plate Recognition (ANPR)</li>
+              <li><i class="fas fa-check-circle"></i> Multi-Lane Speed Violation Detection Radar</li>
+              <li><i class="fas fa-check-circle"></i> AI Video Analytics</li>
+              <li><i class="fas fa-check-circle"></i> High-Resolution Evidence Capture Cameras</li>
+              <li><i class="fas fa-check-circle"></i> Vehicle Classification</li>
+              <li><i class="fas fa-check-circle"></i> Real-Time Traffic Analytics</li>
+            </ul>
+          </div>
+
+          <div class="feature-box">
+            <h4>Automated Traffic Violation Detection</h4>
+            <p>The deployed solution automatically detects:</p>
+            <div class="tag-cloud">
+              <span>Over Speeding</span>
+              <span>Helmet Violations</span>
+              <span>Triple Riding</span>
+              <span>Seat Belt Violations</span>
+              <span>Wrong Direction Driving</span>
+              <span>Mobile Phone Usage while Driving</span>
+              <span>Abandoned Vehicles</span>
+              <span>Future AI-enabled traffic violations</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Engineering Excellence -->
+        <section class="cs-content-block">
+          <h3>Engineering Excellence</h3>
+          <p>SOS Infocity executed complete roadside enforcement infrastructure including:</p>
+          <ul class="styled-grid">
+            <li><i class="fas fa-circle-dot"></i> Heavy-Duty U-Shape Gantries</li>
+            <li><i class="fas fa-circle-dot"></i> Cantilever Structures</li>
+            <li><i class="fas fa-circle-dot"></i> ANPR Camera Installation</li>
+            <li><i class="fas fa-circle-dot"></i> Multi-Lane Radar Installation</li>
+            <li><i class="fas fa-circle-dot"></i> Solar Power Systems</li>
+            <li><i class="fas fa-circle-dot"></i> Industrial UPS Systems</li>
+            <li><i class="fas fa-circle-dot"></i> Intelligent Junction Boxes</li>
+            <li><i class="fas fa-circle-dot"></i> Pole Security Cameras</li>
+            <li><i class="fas fa-circle-dot"></i> Underground OFC & Power Cabling</li>
+            <li><i class="fas fa-circle-dot"></i> Civil Foundations and Structural Engineering</li>
+          </ul>
+          <p class="highlight-note">
+            Engineered to withstand challenging highway environments and high coastal wind conditions, the infrastructure delivers long-term structural reliability and uninterrupted field operations.
+          </p>
+        </section>
+
+        <!-- Unified Command & Control Centre -->
+        <section class="cs-content-block">
+          <h3>Unified Command & Control Centre</h3>
+          <p>A centralized monitoring platform was established to enable:</p>
+          <ul class="styled-list">
+            <li>Live Video Monitoring & AI-Based Traffic Analytics</li>
+            <li>Incident Management & Device Health Monitoring</li>
+            <li>Performance Dashboards & Video Evidence Management</li>
+            <li>Automated Reporting & User Activity Monitoring</li>
+            <li>Centralized Enforcement Operations</li>
+          </ul>
+        </section>
+
+        <!-- Integrated Smart Ecosystem -->
+        <section class="cs-content-block">
+          <h3>Integrated Smart Ecosystem</h3>
+          <p>The Intelligent Enforcement Management System seamlessly integrates with Government platforms including e-Challan, VAHAN, SARATHI, CCTNS, ERSS, and Highway Patrol Systems, creating a unified and scalable digital enforcement ecosystem.</p>
+        </section>
+
+        <!-- 24x7 Operations & SLA Excellence -->
+        <section class="cs-content-block">
+          <h3>Delivering 24×7 Mission-Critical Operations</h3>
+          <p>SOS Infocity's responsibility extended beyond implementation to ensuring uninterrupted operation through a structured Operations & Maintenance framework.</p>
+          
+          <div class="impact-grid">
+            <div class="impact-card">
+              <h4>24×7 Operations & Maintenance</h4>
+              <ul>
+                <li>Preventive & Corrective Maintenance</li>
+                <li>Remote Technical Support & On-Site Field Support</li>
+                <li>Scheduled Health Checks & Asset Lifecycle Management</li>
+              </ul>
+            </div>
+            <div class="impact-card">
+              <h4>Centralized SLA Monitoring</h4>
+              <ul>
+                <li>Camera Availability & Network Health</li>
+                <li>Device Status & Server Performance</li>
+                <li>Recording Status, Storage Utilization & Solar Power Systems</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Business Impact -->
+        <section class="cs-content-block">
+          <h3>Business Impact</h3>
+          <div class="impact-grid">
+            <div class="impact-card">
+              <h4>Enhanced Road Safety</h4>
+              <ul>
+                <li>Improved traffic discipline</li>
+                <li>Increased compliance with traffic regulations</li>
+                <li>Reduction in dangerous driving behaviour</li>
+              </ul>
+            </div>
+            <div class="impact-card">
+              <h4>Operational Efficiency</h4>
+              <ul>
+                <li>Automated traffic enforcement</li>
+                <li>Faster violation processing</li>
+                <li>Reduced manual verification</li>
+              </ul>
+            </div>
+            <div class="impact-card">
+              <h4>Digital Governance</h4>
+              <ul>
+                <li>Transparent enforcement</li>
+                <li>Evidence-based decision making</li>
+                <li>Data-driven traffic management</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="cs-content-block">
+          <h3>Why Government Agencies Trust SOS Infocity</h3>
+          <ul class="styled-grid">
+            <li><i class="fas fa-check"></i> Engineering Excellence</li>
+            <li><i class="fas fa-check"></i> AI-Powered IEMS Solutions</li>
+            <li><i class="fas fa-check"></i> End-To-End System Integration</li>
+            <li><i class="fas fa-check"></i> Intelligent Highway Enforcement</li>
+            <li><i class="fas fa-check"></i> Unified Command & Control Centres</li>
+            <li><i class="fas fa-check"></i> Government Platform Integration</li>
+            <li><i class="fas fa-check"></i> 24×7 Operations & Maintenance</li>
+            <li><i class="fas fa-check"></i> Future-Ready Smart Mobility Solutions</li>
+          </ul>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- BOTTOM SECTIONS: TECHNOLOGY HIGHLIGHTS & CORE EXPERTISE -->
+        <div class="bottom-highlights-grid">
+          <section class="bottom-card">
+            <h3>Technology Highlights</h3>
+            <ul class="styled-grid">
+              <li><i class="fas fa-arrow-right"></i> Artificial Intelligence (AI)</li>
+              <li><i class="fas fa-arrow-right"></i> Deep Learning Analytics</li>
+              <li><i class="fas fa-arrow-right"></i> ANPR & OCR Engines</li>
+              <li><i class="fas fa-arrow-right"></i> Multi-Lane Radar Technology</li>
+              <li><i class="fas fa-arrow-right"></i> Cloud Enabled Architecture</li>
+              <li><i class="fas fa-arrow-right"></i> Live Video Streaming</li>
+              <li><i class="fas fa-arrow-right"></i> Traffic Flow Analytics</li>
+              <li><i class="fas fa-arrow-right"></i> Business Intelligence Dashboard</li>
+            </ul>
+          </section>
+
+          <section class="bottom-card">
+            <h3>Core Expertise</h3>
+            <ul class="styled-grid">
+              <li><i class="fas fa-arrow-right"></i> Intelligent Enforcement Management Systems (IEMS)</li>
+              <li><i class="fas fa-arrow-right"></i> Unified Command & Control Centres</li>
+              <li><i class="fas fa-arrow-right"></i> AI-Based Video Analytics</li>
+              <li><i class="fas fa-arrow-right"></i> Automatic Number Plate Recognition</li>
+              <li><i class="fas fa-arrow-right"></i> Speed Enforcement Solutions</li>
+              <li><i class="fas fa-arrow-right"></i> Highway Surveillance Infrastructure</li>
+              <li><i class="fas fa-arrow-right"></i> Gantry & Cantilever Design & Installation</li>
+              <li><i class="fas fa-arrow-right"></i> Civil & Structural Engineering</li>
+            </ul>
+          </section>
+        </div>
+
+      </div>
+    </article>
+  </div>
+</template>
 
     <div id="footer-placeholder"></div>
 

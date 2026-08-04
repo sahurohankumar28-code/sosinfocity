@@ -316,17 +316,90 @@
   margin-top: 16px;
 }
 
-.hero-image-box {
+/* ==========================================================================
+   5. INFINITE HERO IMAGE SLIDER STYLES
+   ========================================================================== */
+.hero-image-box.slider-container {
+  position: relative;
   width: 100%;
   margin-top: 25px;
   border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.hero-image-box img {
+.slider-track {
+  display: flex;
   width: 100%;
-  height: auto;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
   display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(10, 15, 22, 0.6);
+  color: #ffffff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: var(--primary, #f75910);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.prev-btn {
+  left: 16px;
+}
+
+.next-btn {
+  right: 16px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--primary, #f75910);
+  width: 28px;
+  border-radius: 10px;
 }
 
 .cs-detail-body {
@@ -353,7 +426,7 @@
 }
 
 /* ==========================================================================
-   5. THE 4 MAJOR PILLARS STYLING
+   6. THE 4 MAJOR PILLARS STYLING
    ========================================================================== */
 .pillar-block {
   position: relative;
@@ -430,7 +503,7 @@
 }
 
 /* ==========================================================================
-   6. FEATURE BOXES, LISTS & GALLERY GRID
+   7. FEATURE BOXES, LISTS & GALLERY GRID
    ========================================================================== */
 .styled-list {
   padding-left: 20px;
@@ -578,7 +651,7 @@
 }
 
 /* ==========================================================================
-   7. BOTTOM HIGHLIGHTS & EXPERTISE GRID
+   8. BOTTOM HIGHLIGHTS & EXPERTISE GRID
    ========================================================================== */
 .bottom-highlights-grid {
   display: grid;
@@ -603,7 +676,7 @@
 }
 
 /* ==========================================================================
-   8. MEDIA QUERIES (RESPONSIVE ALIGNMENT)
+   9. MEDIA QUERIES (RESPONSIVE ALIGNMENT)
    ========================================================================== */
 @media (max-width: 1100px) {
   .cs-cards-blog-grid {
@@ -638,6 +711,14 @@
   }
   .bottom-highlights-grid {
     grid-template-columns: 1fr;
+  }
+  .slide img {
+    height: 260px;
+  }
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
   }
 }
 

@@ -10,6 +10,7 @@ const caseStudiesData = [
 
 let currentView = "grid";
 let currentCaseId = null;
+let sliderInterval = null;
 
 const heroHeader = document.getElementById("heroHeader");
 const heroContent = document.getElementById("heroContent");
@@ -50,6 +51,111 @@ function renderGrid() {
   });
 }
 
+// Initialize Truly Infinite Hero Slider
+function initHeroSlider() {
+  const track = document.getElementById("heroSliderTrack");
+  const prevBtn = document.getElementById("sliderPrevBtn");
+  const nextBtn = document.getElementById("sliderNextBtn");
+  const dotsContainer = document.getElementById("sliderDots");
+
+  if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+  // Prevent multiple initializations on re-renders
+  if (track.dataset.initialized === "true") return;
+
+  let originalSlides = Array.from(track.querySelectorAll(".slide"));
+  const originalLength = originalSlides.length;
+  if (originalLength <= 1) return;
+
+  // Clone first and last slides for infinite loop trick
+  const firstClone = originalSlides[0].cloneNode(true);
+  const lastClone = originalSlides[originalLength - 1].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, originalSlides[0]);
+
+  let currentIndex = 1; // Starts at index 1 due to prepended clone
+  let isTransitioning = false;
+  const dots = dotsContainer.querySelectorAll(".dot");
+
+  // Initial placement without transition
+  track.style.transition = "none";
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  function updateDots(activeIdx) {
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle("active", idx === activeIdx);
+    });
+  }
+
+  function moveSlider(index, animated = true) {
+    if (animated) {
+      track.style.transition = "transform 0.5s ease-in-out";
+      isTransitioning = true;
+    } else {
+      track.style.transition = "none";
+    }
+    currentIndex = index;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // Map current index to original dot range
+    let dotIdx = (currentIndex - 1 + originalLength) % originalLength;
+    updateDots(dotIdx);
+  }
+
+  // Handle seamless jump when reaching cloned ends
+  track.addEventListener("transitionend", () => {
+    isTransitioning = false;
+    if (currentIndex === 0) {
+      moveSlider(originalLength, false);
+    } else if (currentIndex === originalLength + 1) {
+      moveSlider(1, false);
+    }
+  });
+
+  function nextSlide() {
+    if (isTransitioning) return;
+    moveSlider(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    if (isTransitioning) return;
+    moveSlider(currentIndex - 1);
+  }
+
+  function startAutoSlide() {
+    if (sliderInterval) clearInterval(sliderInterval);
+    sliderInterval = setInterval(nextSlide, 4000);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(sliderInterval);
+    startAutoSlide();
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  dots.forEach((dot) => {
+    dot.addEventListener("click", function () {
+      if (isTransitioning) return;
+      const targetDotIdx = parseInt(this.getAttribute("data-slide"));
+      moveSlider(targetDotIdx + 1);
+      resetAutoSlide();
+    });
+  });
+
+  track.dataset.initialized = "true";
+  startAutoSlide();
+}
+
 // Show Case Study Article View
 function showDetail(id) {
   const caseData = caseStudiesData.find((item) => item.id === id);
@@ -63,15 +169,14 @@ function showDetail(id) {
   detailSection.classList.add("visible");
   detailSection.style.display = "block";
 
-  // If case study ID is 1, insert the full HTML structure
   if (id === 1) {
     const caseStudyTemplate = document.getElementById("iems-case-study-template");
     if (caseStudyTemplate) {
       detailWrapper.innerHTML = caseStudyTemplate.innerHTML;
+      initHeroSlider();
     }
   }
 
-  // Update URL history state
   const url = new URL(window.location);
   url.searchParams.set("id", id);
   window.history.pushState({ id: id, view: "detail" }, "", url);
@@ -80,6 +185,8 @@ function showDetail(id) {
 
 // Return back to Case Studies Grid View
 function showGrid() {
+  if (sliderInterval) clearInterval(sliderInterval);
+
   currentView = "grid";
   currentCaseId = null;
 

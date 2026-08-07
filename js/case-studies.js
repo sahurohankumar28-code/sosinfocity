@@ -5,7 +5,40 @@ const caseStudiesData = [
     subtitle:
       "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
     img: "images/IEMS.png",
+    templateId: "template-cs-1"
   },
+  {
+    id: 2,
+    title: "City Surveillance & Monitoring Integration",
+    subtitle:
+      "Integrated urban security networks, high-speed fiber backbones, and Unified Command & Control Centres (UCCC) providing automated threat detection and real-time operational visibility.",
+    img: "images/IEMS2.png",
+    templateId: "template-cs-2"
+  },
+  {
+    id: 3,
+    title: "State Network Infrastructure (SWAN)",
+    subtitle:
+      "High-speed, carrier-grade digital backbone linking state headquarters, district offices, and rural administrative nodes with redundant fiber connectivity.",
+    img: "images/IEMS4.jpeg",
+    templateId: "template-cs-3"
+  },
+  {
+    id: 4,
+    title: "Cloud & Data Platform Modernisation",
+    subtitle:
+      "Scalable cloud migration, containerized microservices architecture, automated disaster recovery, and enterprise big data analytics platforms.",
+    img: "images/IEMS.png",
+    templateId: "template-cs-4"
+  },
+  {
+    id: 5,
+    title: "Multi-Department Digital Rollout",
+    subtitle:
+      "Unified service delivery portals, digital workflow automation, and single-sign-on integration across multi-department public services.",
+    img: "images/IEMS3.jpeg",
+    templateId: "template-cs-5"
+  }
 ];
 
 let currentView = "grid";
@@ -51,7 +84,7 @@ function renderGrid() {
   });
 }
 
-// Initialize Truly Infinite Hero Slider
+// Initialize Hero Slider (Gracefully checks if slider elements exist inside the target template)
 function initHeroSlider() {
   const track = document.getElementById("heroSliderTrack");
   const prevBtn = document.getElementById("sliderPrevBtn");
@@ -60,25 +93,22 @@ function initHeroSlider() {
 
   if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
 
-  // Prevent multiple initializations on re-renders
   if (track.dataset.initialized === "true") return;
 
   let originalSlides = Array.from(track.querySelectorAll(".slide"));
   const originalLength = originalSlides.length;
   if (originalLength <= 1) return;
 
-  // Clone first and last slides for infinite loop trick
   const firstClone = originalSlides[0].cloneNode(true);
   const lastClone = originalSlides[originalLength - 1].cloneNode(true);
 
   track.appendChild(firstClone);
   track.insertBefore(lastClone, originalSlides[0]);
 
-  let currentIndex = 1; // Starts at index 1 due to prepended clone
+  let currentIndex = 1;
   let isTransitioning = false;
   const dots = dotsContainer.querySelectorAll(".dot");
 
-  // Initial placement without transition
   track.style.transition = "none";
   track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
@@ -98,12 +128,10 @@ function initHeroSlider() {
     currentIndex = index;
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    // Map current index to original dot range
     let dotIdx = (currentIndex - 1 + originalLength) % originalLength;
     updateDots(dotIdx);
   }
 
-  // Handle seamless jump when reaching cloned ends
   track.addEventListener("transitionend", () => {
     isTransitioning = false;
     if (currentIndex === 0) {
@@ -156,7 +184,7 @@ function initHeroSlider() {
   startAutoSlide();
 }
 
-// Show Case Study Article View
+// Show Case Study Detail View
 function showDetail(id) {
   const caseData = caseStudiesData.find((item) => item.id === id);
   if (!caseData) return;
@@ -164,17 +192,14 @@ function showDetail(id) {
   currentCaseId = id;
   currentView = "detail";
 
-  // Hide Grid & Show Detail Section
   gridSection.classList.add("hidden");
   detailSection.classList.add("visible");
   detailSection.style.display = "block";
 
-  if (id === 1) {
-    const caseStudyTemplate = document.getElementById("iems-case-study-template");
-    if (caseStudyTemplate) {
-      detailWrapper.innerHTML = caseStudyTemplate.innerHTML;
-      initHeroSlider();
-    }
+  const caseStudyTemplate = document.getElementById(caseData.templateId);
+  if (caseStudyTemplate) {
+    detailWrapper.innerHTML = caseStudyTemplate.innerHTML;
+    initHeroSlider();
   }
 
   const url = new URL(window.location);
@@ -183,7 +208,7 @@ function showDetail(id) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// Return back to Case Studies Grid View
+// Return to Grid View
 function showGrid() {
   if (sliderInterval) clearInterval(sliderInterval);
 

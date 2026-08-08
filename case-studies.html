@@ -1,49 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>SOS Infocity - Case Studies</title>
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/case-studies.css" />
-  </head>
-  <body>
 
-    <!-- Hero Header -->
-    <div id="splash-screen">
-      <div class="splash-content">
-        <video id="splash-video" autoplay muted playsinline>
-          <source src="videos/sos.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>SOS Infocity - Enterprise Case Studies</title>
+  <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/case-studies.css" />
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <video id="splash-video" autoplay muted playsinline>
+        <source src="videos/sos.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <!-- Hero Header Banner -->
+  <header class="hero-header">
+    <div class="container">
+      <div id="header-placeholder"></div>
+      <div class="hero-content" id="heroContent">
+        <h1>Enterprise Case Studies</h1>
+        <p>Real-world intelligence fields showcasing network optimization, AI surveillance, and smart governance.</p>
       </div>
     </div>
-    
-    <div class="hero-header" id="heroHeader">
-      <div class="container">
-        <div id="header-placeholder"></div>
-        <div class="hero-content" id="heroContent">
-          <h1>Enterprise Case Studies</h1>
-          <p>
-            Real-world intelligence fields showcasing network optimization, deep
-            machine learning integration, and hardened zero-trust data
-            architectures.
-          </p>
-        </div>
-      </div>
-    </div>
+  </header>
 
-    <!-- Case Studies Card Grid -->
-    <section class="cs-blog-section" id="caseStudiesSection" style="background: #fafcff; padding: 80px 0">
+  <!-- Main Case Studies Grid Section -->
+  <main>
+    <section class="cs-blog-section" id="caseStudiesSection">
       <div class="container">
         <div class="cs-cards-blog-grid" id="blogGridTrack"></div>
       </div>
     </section>
 
     <!-- Case Study Detailed View Container -->
-    <section class="cs-detail-section" id="detailSection" style="display: none; background: #fafcff; padding: 60px 0">
+    <section class="cs-detail-section" id="detailSection" style="display: none;">
       <div class="container">
         <button class="back-to-cases" id="backToCases">
           <i class="fas fa-arrow-left"></i> Back to Case Studies
@@ -51,379 +50,464 @@
         <div class="cs-detail-wrapper" id="detailWrapper"></div>
       </div>
     </section>
+  </main>
 
-    <!-- ==========================================================================
-         TEMPLATE 1: INTELLIGENT ENFORCEMENT MANAGEMENT SYSTEM (IEMS)
-         ========================================================================== -->
-    <template id="template-cs-1">
-      <div class="cs-detail-fullwidth">
-        <!-- Main Full-Width Article Content -->
-        <article class="cs-detail-main">
-          
-          <!-- Article Header -->
-          <header class="cs-article-header">
-            <h2>Intelligent Enforcement Management Systems (IEMS)</h2>
-            <p class="detail-subtitle">
-              AI-Powered Intelligent Transportation Systems for Safer, Smarter & Digitally Connected Highways
-            </p>
-            <p class="lead-text">
-              SOS Infocity designs, engineers, integrates, operates and maintains next-generation Intelligent Enforcement Management Systems (IEMS), delivering AI-driven traffic enforcement, advanced roadside infrastructure, Unified Command & Control Centres and intelligent mobility solutions that enhance road safety and strengthen digital governance.
-            </p>
+  <!-- TEMPLATES CONTAINER -->
 
-            <!-- Infinite Hero Image Slider Container -->
-            <div class="hero-image-box slider-container">
-              <div class="slider-track" id="heroSliderTrack">
-                <div class="slide">
-                  <img src="images/IEMS.png" alt="IEMS BLOG" />
-                </div>
-                <div class="slide">
-                 <img src="images/IEMS2.png" alt="IEMS BLOG" />
-                </div>
-                <div class="slide">
-                  <img src="images/IEMS3.jpeg" alt="IEMS BLOG" />
-                </div>
-                 <div class="slide">
-                  <img src="images/IEMS4.jpeg" alt="IEMS BLOG" />
-                </div>
-                 <div class="slide">
-                  <img src="images/IEMS5.jpeg" alt="IEMS BLOG" />
-                </div>
-              </div>
+  <!-- ==========================================================================
+       TEMPLATE 1: INTELLIGENT ENFORCEMENT MANAGEMENT SYSTEM (IEMS)
+       ========================================================================== -->
+  <template id="template-cs-1">
+    <div class="cs-detail-fullwidth">
+      <article class="cs-detail-main">
 
-              <!-- Slider Navigation Arrows -->
-              <button class="slider-btn prev-btn" id="sliderPrevBtn" aria-label="Previous Slide">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button class="slider-btn next-btn" id="sliderNextBtn" aria-label="Next Slide">
-                <i class="fas fa-chevron-right"></i>
-              </button>
+        <!-- Header -->
+        <header class="cs-article-header text-center">
+          <h2>Intelligent Enforcement Management System (IEMS)</h2>
+          <p class="detail-subtitle">Building Smarter Roads. Saving Lives.</p>
 
-              <!-- Slider Indicators -->
-              <div class="slider-dots" id="sliderDots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-              </div>
-            </div>
-          </header>
-
-          <div class="cs-detail-body">
-            
-            <!-- SECTION: 4 MAJOR PILLARS -->
-            <div class="four-pillars-wrapper">
-              
-              <!-- Pillar 1 -->
-              <section class="cs-content-block pillar-block">
-                <div class="pillar-badge">Pillar 01</div>
-                <h3>What is IEMS & Its Relevance in the Modern World</h3>
-                <p>
-                  An <strong>Intelligent Enforcement Management System (IEMS)</strong> is an automated, AI-driven traffic management ecosystem that monitors highways, detects traffic violations, and streamlines enforcement without requiring direct human intervention.
-                </p>
-                <div class="highlight-note">
-                  <strong>Modern Relevance:</strong> With rapidly increasing vehicle density on highways, manual traffic policing is no longer scalable or safe. IEMS provides 24×7 real-time monitoring, drastically reduces fatal road accidents, encourages disciplined driving, and establishes data-driven digital governance across transportation networks.
-                </div>
-              </section>
-
-              <!-- Pillar 2 -->
-              <section class="cs-content-block pillar-block">
-                <div class="pillar-badge">Pillar 02</div>
-                <h3>Major Components in IEMS & How They Integrate</h3>
-                <p>IEMS achieves high enforcement accuracy through a connected, multi-layer infrastructure:</p>
-                
-                <div class="feature-box">
-                  <h4>1. Intelligent Field Infrastructure</h4>
-                  <p>Heavy-Duty U-Shape & Cantilever Gantries equipped with ANPR Cameras, Multi-Lane Speed Radars, High-Resolution Evidence Cameras, Solar Power Systems, and Industrial UPS Units.</p>
-                </div>
-
-                <div class="feature-box">
-                  <h4>2. Centralized Processing & Unified Command Centre</h4>
-                  <p>Real-time AI video analytics engines parse stream data for violation detection, live monitoring, incident tracking, and automated reporting.</p>
-                </div>
-
-                <div class="feature-box">
-                  <h4>3. Smart Ecosystem Integration</h4>
-                  <p>Direct system-level integration with official databases ensuring end-to-end operational success:</p>
-                  <div class="tag-cloud ecosystem-tags">
-                    <span>e-Challan</span>
-                    <span>VAHAN</span>
-                    <span>SARATHI</span>
-                    <span>CCTNS</span>
-                    <span>ERSS</span>
-                    <span>Highway Patrol Systems</span>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Pillar 3 -->
-              <section class="cs-content-block pillar-block">
-                <div class="pillar-badge">Pillar 03</div>
-                <h3>Successful Implementation & Feedback</h3>
-                <p>
-                  SOS Infocity successfully deployed an advanced IEMS for the <strong>State Transport Authority, Government of Odisha</strong> across strategic highway corridors.
-                </p>
-                
-                <div class="impact-grid">
-                  <div class="impact-card">
-                    <h4>Enforcement Point of View</h4>
-                    <ul>
-                      <li><strong>Automated Evidence:</strong> Eliminates manual verification delays.</li>
-                      <li><strong>Zero Leakage:</strong> Accurate OCR and ANPR ensure tamper-proof evidence.</li>
-                      <li><strong>Scalable Operations:</strong> Centralized dashboard manages multiple highway stretches simultaneously.</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="impact-card">
-                    <h4>Safety & Public Point of View</h4>
-                    <ul>
-                      <li><strong>Higher Regulation Compliance:</strong> Significant drop in helmet, seatbelt, and speeding violations.</li>
-                      <li><strong>Accident Reduction:</strong> Measurable decrease in severe highway accidents and road fatalities.</li>
-                      <li><strong>Deterrence Factor:</strong> Visible gantry infrastructure promotes self-disciplined driving.</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Pillar 4 -->
-              <section class="cs-content-block pillar-block">
-                <div class="pillar-badge">Pillar 04</div>
-                <h3>Executed Project List</h3>
-                <div class="project-list-wrapper">
-                  <div class="project-item">
-                    <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
-                    <div class="project-info">
-                      <h4>Statewide Intelligent Enforcement Management System (IEMS)</h4>
-                      <p><strong>Client:</strong> State Transport Authority, Government of Odisha</p>
-                      <p>Turn-key execution of roadside enforcement gantries, multi-lane radar installation, ANPR cameras, and Command & Control Centre integration.</p>
-                    </div>
-                  </div>
-                  <div class="project-item">
-                    <div class="project-icon"><i class="fas fa-network-wired"></i></div>
-                    <div class="project-info">
-                      <h4>Unified Command & Control Centre (UCCC) & SLA Operations</h4>
-                      <p>24×7 mission-critical operations, SLA monitoring, automated fault detection, and maintenance across strategic highway corridors.</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              
-            </div>
-
-            <hr class="section-divider" />
-
-            <!-- Project Overview -->
-            <section class="cs-content-block">
-              <h3>Project Overview</h3>
-              <p>
-                SOS Infocity successfully executed an advanced Intelligent Enforcement Management System (IEMS) for the State Transport Authority, Government of Odisha, delivering an integrated AI-powered traffic enforcement ecosystem that combines intelligent roadside infrastructure, real-time analytics, automated violation detection and centralized command & control.
-              </p>
-              <p>
-                Designed to improve road safety and strengthen enforcement capabilities, the solution enables authorities to automate traffic violation detection, generate evidence-based enforcement, monitor field infrastructure in real time and support data-driven decision making across strategic highway corridors.
-              </p>
-            </section>
-
-            <!-- Project Challenges -->
-            <section class="cs-content-block">
-              <h3>Project Challenges</h3>
-              <p>Rapid growth in traffic volume demanded a scalable and future-ready enforcement platform capable of:</p>
-              <ul class="styled-list">
-                <li>Detecting multiple traffic violations in real time</li>
-                <li>Automating evidence generation and enforcement</li>
-                <li>Integrating with existing Government applications</li>
-                <li>Reducing manual intervention</li>
-                <li>Enabling centralized monitoring across multiple locations</li>
-                <li>Supporting AI-driven analytics and future expansion</li>
-              </ul>
-            </section>
-
-            <!-- SOS Infocity Solution -->
-            <section class="cs-content-block">
-              <h3>SOS Infocity Solution</h3>
-              <p>
-                SOS Infocity delivered an end-to-end Intelligent Enforcement Management System comprising intelligent field infrastructure, AI-powered analytics, centralized monitoring and Government system integration.
-              </p>
-              
-              <div class="feature-box">
-                <h4>AI-Based Traffic Enforcement</h4>
-                <ul class="styled-grid">
-                  <li><i class="fas fa-check-circle"></i> Automatic Number Plate Recognition (ANPR)</li>
-                  <li><i class="fas fa-check-circle"></i> Multi-Lane Speed Violation Detection Radar</li>
-                  <li><i class="fas fa-check-circle"></i> AI Video Analytics</li>
-                  <li><i class="fas fa-check-circle"></i> High-Resolution Evidence Capture Cameras</li>
-                  <li><i class="fas fa-check-circle"></i> Vehicle Classification</li>
-                  <li><i class="fas fa-check-circle"></i> Real-Time Traffic Analytics</li>
-                </ul>
-              </div>
-
-              <div class="feature-box">
-                <h4>Automated Traffic Violation Detection</h4>
-                <p>The deployed solution automatically detects:</p>
-                <div class="tag-cloud">
-                  <span>Over Speeding</span>
-                  <span>Helmet Violations</span>
-                  <span>Triple Riding</span>
-                  <span>Seat Belt Violations</span>
-                  <span>Wrong Direction Driving</span>
-                  <span>Mobile Phone Usage while Driving</span>
-                  <span>Abandoned Vehicles</span>
-                  <span>Future AI-enabled traffic violations</span>
-                </div>
-              </div>
-            </section>
-
-            <!-- Engineering Excellence -->
-            <section class="cs-content-block">
-              <h3>Engineering Excellence</h3>
-              <p>SOS Infocity executed complete roadside enforcement infrastructure including:</p>
-              <ul class="styled-grid">
-                <li><i class="fas fa-circle-dot"></i> Heavy-Duty U-Shape Gantries</li>
-                <li><i class="fas fa-circle-dot"></i> Cantilever Structures</li>
-                <li><i class="fas fa-circle-dot"></i> ANPR Camera Installation</li>
-                <li><i class="fas fa-circle-dot"></i> Multi-Lane Radar Installation</li>
-                <li><i class="fas fa-circle-dot"></i> Solar Power Systems</li>
-                <li><i class="fas fa-circle-dot"></i> Industrial UPS Systems</li>
-                <li><i class="fas fa-circle-dot"></i> Intelligent Junction Boxes</li>
-                <li><i class="fas fa-circle-dot"></i> Pole Security Cameras</li>
-                <li><i class="fas fa-circle-dot"></i> Underground OFC & Power Cabling</li>
-                <li><i class="fas fa-circle-dot"></i> Civil Foundations and Structural Engineering</li>
-              </ul>
-              <p class="highlight-note">
-                Engineered to withstand challenging highway environments and high coastal wind conditions, the infrastructure delivers long-term structural reliability and uninterrupted field operations.
-              </p>
-            </section>
-
-            <!-- Unified Command & Control Centre -->
-            <section class="cs-content-block">
-              <h3>Unified Command & Control Centre</h3>
-              <p>A centralized monitoring platform was established to enable:</p>
-              <ul class="styled-list">
-                <li>Live Video Monitoring & AI-Based Traffic Analytics</li>
-                <li>Incident Management & Device Health Monitoring</li>
-                <li>Performance Dashboards & Video Evidence Management</li>
-                <li>Automated Reporting & User Activity Monitoring</li>
-                <li>Centralized Enforcement Operations</li>
-              </ul>
-            </section>
-
-            <!-- Integrated Smart Ecosystem -->
-            <section class="cs-content-block">
-              <h3>Integrated Smart Ecosystem</h3>
-              <p>The Intelligent Enforcement Management System seamlessly integrates with Government platforms including e-Challan, VAHAN, SARATHI, CCTNS, ERSS, and Highway Patrol Systems, creating a unified and scalable digital enforcement ecosystem.</p>
-            </section>
-
-            <!-- 24x7 Operations & SLA Excellence -->
-            <section class="cs-content-block">
-              <h3>Delivering 24×7 Mission-Critical Operations</h3>
-              <p>SOS Infocity's responsibility extended beyond implementation to ensuring uninterrupted operation through a structured Operations & Maintenance framework.</p>
-              
-              <div class="impact-grid">
-                <div class="impact-card">
-                  <h4>24×7 Operations & Maintenance</h4>
-                  <ul>
-                    <li>Preventive & Corrective Maintenance</li>
-                    <li>Remote Technical Support & On-Site Field Support</li>
-                    <li>Scheduled Health Checks & Asset Lifecycle Management</li>
-                  </ul>
-                </div>
-                <div class="impact-card">
-                  <h4>Centralized SLA Monitoring</h4>
-                  <ul>
-                    <li>Camera Availability & Network Health</li>
-                    <li>Device Status & Server Performance</li>
-                    <li>Recording Status, Storage Utilization & Solar Power Systems</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <!-- Business Impact -->
-            <section class="cs-content-block">
-              <h3>Business Impact</h3>
-              <div class="impact-grid">
-                <div class="impact-card">
-                  <h4>Enhanced Road Safety</h4>
-                  <ul>
-                    <li>Improved traffic discipline</li>
-                    <li>Increased compliance with traffic regulations</li>
-                    <li>Reduction in dangerous driving behaviour</li>
-                  </ul>
-                </div>
-                <div class="impact-card">
-                  <h4>Operational Efficiency</h4>
-                  <ul>
-                    <li>Automated traffic enforcement</li>
-                    <li>Faster violation processing</li>
-                    <li>Reduced manual verification</li>
-                  </ul>
-                </div>
-                <div class="impact-card">
-                  <h4>Digital Governance</h4>
-                  <ul>
-                    <li>Transparent enforcement</li>
-                    <li>Evidence-based decision making</li>
-                    <li>Data-driven traffic management</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <!-- Why Choose Section -->
-            <section class="cs-content-block">
-              <h3>Why Government Agencies Trust SOS Infocity</h3>
-              <ul class="styled-grid">
-                <li><i class="fas fa-check"></i> Engineering Excellence</li>
-                <li><i class="fas fa-check"></i> AI-Powered IEMS Solutions</li>
-                <li><i class="fas fa-check"></i> End-To-End System Integration</li>
-                <li><i class="fas fa-check"></i> Intelligent Highway Enforcement</li>
-                <li><i class="fas fa-check"></i> Unified Command & Control Centres</li>
-                <li><i class="fas fa-check"></i> Government Platform Integration</li>
-                <li><i class="fas fa-check"></i> 24×7 Operations & Maintenance</li>
-                <li><i class="fas fa-check"></i> Future-Ready Smart Mobility Solutions</li>
-              </ul>
-            </section>
-
-            <hr class="section-divider" />
-
-            <!-- BOTTOM SECTIONS: TECHNOLOGY HIGHLIGHTS & CORE EXPERTISE -->
-            <div class="bottom-highlights-grid">
-              <section class="bottom-card">
-                <h3>Technology Highlights</h3>
-                <ul class="styled-grid">
-                  <li><i class="fas fa-arrow-right"></i> Artificial Intelligence (AI)</li>
-                  <li><i class="fas fa-arrow-right"></i> Deep Learning Analytics</li>
-                  <li><i class="fas fa-arrow-right"></i> ANPR & OCR Engines</li>
-                  <li><i class="fas fa-arrow-right"></i> Multi-Lane Radar Technology</li>
-                  <li><i class="fas fa-arrow-right"></i> Cloud Enabled Architecture</li>
-                  <li><i class="fas fa-arrow-right"></i> Live Video Streaming</li>
-                  <li><i class="fas fa-arrow-right"></i> Traffic Flow Analytics</li>
-                  <li><i class="fas fa-arrow-right"></i> Business Intelligence Dashboard</li>
-                </ul>
-              </section>
-
-              <section class="bottom-card">
-                <h3>Core Expertise</h3>
-                <ul class="styled-grid">
-                  <li><i class="fas fa-arrow-right"></i> Intelligent Enforcement Management Systems (IEMS)</li>
-                  <li><i class="fas fa-arrow-right"></i> Unified Command & Control Centres</li>
-                  <li><i class="fas fa-arrow-right"></i> AI-Based Video Analytics</li>
-                  <li><i class="fas fa-arrow-right"></i> Automatic Number Plate Recognition</li>
-                  <li><i class="fas fa-arrow-right"></i> Speed Enforcement Solutions</li>
-                  <li><i class="fas fa-arrow-right"></i> Highway Surveillance Infrastructure</li>
-                  <li><i class="fas fa-arrow-right"></i> Gantry & Cantilever Design & Installation</li>
-                  <li><i class="fas fa-arrow-right"></i> Civil & Structural Engineering</li>
-                </ul>
-              </section>
-            </div>
-
+          <div class="badge-group justify-center my-10">
+            <span class="tech-pill"><i class="fas fa-brain"></i> AI Traffic Enforcement</span>
+            <span class="tech-pill"><i class="fas fa-video"></i> Intelligent Surveillance</span>
+            <span class="tech-pill"><i class="fas fa-desktop"></i> Command Centres</span>
           </div>
-        </article>
-      </div>
-    </template>
 
-    
+          <!-- Hero Image Slider -->
+          <div class="hero-image-box slider-container">
+            <div class="slider-track" id="heroSliderTrack">
+              <div class="slide"><img src="images/IEMS4.jpeg" alt="Radar Systems" /></div>
+              <div class="slide"><img src="images/IEMS5.jpeg" alt="Roadside Field Units" /></div>
+              <div class="slide"><img src="images/IEMS.png" alt="IEMS Gantries" /></div>
+              <div class="slide"><img src="images/IEMS2.png" alt="AI Analytics" /></div>
+            </div>
+            <button class="slider-btn prev-btn" id="sliderPrevBtn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="sliderNextBtn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="sliderDots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+          </div>
+        </header>
 
-    <div id="footer-placeholder"></div>
+        <div class="cs-detail-body">
 
-    <script src="js/header-footer.js"></script>
-    <script src="js/case-studies.js"></script>
-  </body>
+          <!-- 1. Project At a Glance -->
+          <section class="cs-content-block">
+            <h3>PROJECT AT A GLANCE</h3>
+            <div class="glance-grid">
+              <div class="glance-card"><i class="fas fa-car-side"></i><span>AI Enforcement</span></div>
+              <div class="glance-card"><i class="fas fa-video"></i><span>ANPR & Radar</span></div>
+              <div class="glance-card"><i class="fas fa-desktop"></i><span>Unified Command</span></div>
+              <div class="glance-card"><i class="fas fa-archway"></i><span>U-Gantries</span></div>
+              <div class="glance-card"><i class="fas fa-network-wired"></i><span>Secure Fiber</span></div>
+              <div class="glance-card"><i class="fas fa-headset"></i><span>24×7 SLA</span></div>
+            </div>
+          </section>
+
+          <!-- 2. Solution Pillars -->
+          <section class="cs-content-block">
+            <h3>THE SOS INFOCITY SOLUTION</h3>
+            <div class="solution-pillars-grid">
+              <div class="feature-box">
+                <h4>🚦 Roadside Infrastructure</h4>
+                <div class="badge-group">
+                  <span class="badge">U-Shape Gantries</span>
+                  <span class="badge">ANPR & Radar</span>
+                  <span class="badge">Solar Power</span>
+                  <span class="badge">Junction Boxes</span>
+                </div>
+              </div>
+              <div class="feature-box">
+                <h4>🤖 AI-Based Enforcement</h4>
+                <div class="badge-group">
+                  <span class="badge">Speed Detection</span>
+                  <span class="badge">Helmet & Seatbelt</span>
+                  <span class="badge">Wrong-Way Driving</span>
+                  <span class="badge">Triple Riding</span>
+                </div>
+              </div>
+              <div class="feature-box">
+                <h4>🖥 Command & Control</h4>
+                <div class="badge-group">
+                  <span class="badge">Live Analytics</span>
+                  <span class="badge">Evidence Vault</span>
+                  <span class="badge">e-Challan / VAHAN</span>
+                  <span class="badge">Auto-Reporting</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3. Solution Architecture Flow -->
+          <section class="cs-content-block">
+            <h3>SOLUTION ARCHITECTURE</h3>
+            <div class="arch-flow-wrapper">
+              <div class="arch-card">
+                <div class="arch-card-header"><span class="arch-step">STEP 01</span><i class="fas fa-video"></i></div>
+                <h4>Roadside Capture</h4>
+                <p>AI Cameras & Multi-Lane Speed Radars</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card">
+                <div class="arch-card-header"><span class="arch-step">STEP 02</span><i class="fas fa-archway"></i></div>
+                <h4>Field Infrastructure</h4>
+                <p>U-Shape Gantries & Junction Boxes</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card">
+                <div class="arch-card-header"><span class="arch-step">STEP 03</span><i class="fas fa-network-wired"></i></div>
+                <h4>Network Backbone</h4>
+                <p>Underground Fiber & Encrypted Link</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card arch-card-primary">
+                <div class="arch-card-header"><span class="arch-step">STEP 04</span><i class="fas fa-desktop"></i></div>
+                <h4>Command Center (UCCC)</h4>
+                <p>AI Analytics & Verification Consoles</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card arch-card-success">
+                <div class="arch-card-header"><span class="arch-step">STEP 05</span><i class="fas fa-shield-halved"></i></div>
+                <h4>Gov Ecosystem</h4>
+                <p>Sync with VAHAN & e-Challan</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4. Engineering Excellence (Alternating Rows) -->
+          <section class="cs-content-block">
+            <h3>ENGINEERING EXCELLENCE</h3>
+            <div class="eng-excellence-wrapper">
+              <div class="eng-row">
+                <div class="eng-img-col"><img src="images/IEMS3.jpeg" alt="Heavy-Duty Gantries & Cantilevers" /></div>
+                <div class="eng-content-col">
+                  <span class="eng-step-badge">01 / INFRASTRUCTURE</span>
+                  <h4>Heavy-Duty Gantries & Structural Engineering</h4>
+                  <p>Heavy-duty structural gantries designed for extreme weather calibration and structural safety.</p>
+                </div>
+              </div>
+
+              <div class="eng-row reverse-row">
+                <div class="eng-content-col">
+                  <span class="eng-step-badge">02 / DISPLAY & MESSAGING</span>
+                  <h4>VMD Vehicle Messaging Systems</h4>
+                  <p>Real-time Variable Message Displays (VMD) delivering live speed advisories and automated traffic warnings.</p>
+                </div>
+                <div class="eng-img-col"><img src="images/IEMS2.png" alt="VMD Vehicle Messaging Systems" /></div>
+              </div>
+
+              <div class="eng-row">
+                <div class="eng-img-col"><img src="images/IEMS.png" alt="Power & Fiber Network Integration" /></div>
+                <div class="eng-content-col">
+                  <span class="eng-step-badge">03 / NETWORK & POWER</span>
+                  <h4>Power Resilience & Network Integration</h4>
+                  <p>Solar-powered field units backed by industrial UPS systems and dedicated OFC lines.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5. 24x7 SLA Operations -->
+          <section class="cs-content-block">
+            <h3>24×7 OPERATIONS & SLA MANAGEMENT</h3>
+            <div class="status-cards-grid">
+              <div class="glow-card">🟢 Preventive Maintenance</div>
+              <div class="glow-card">🟢 Corrective Maintenance</div>
+              <div class="glow-card">🟢 Health Monitoring</div>
+              <div class="glow-card">🟢 SLA Compliance</div>
+            </div>
+          </section>
+
+          <!-- 6. UCCC Section -->
+          <section class="cs-content-block">
+            <h3>UNIFIED COMMAND & CONTROL CENTRE (UCCC)</h3>
+            <div class="uccc-gallery-grid">
+              <div class="uccc-card">
+                <div class="uccc-img-box"><img src="images/1.jpg" alt="Command Center Full View" /></div>
+                <div class="uccc-card-content">
+                  <span class="uccc-tag"><i class="fas fa-building"></i>COMMAND CENTER</span>
+                  <h4>Command Center Facility</h4>
+                  <p>State-of-the-art facility featuring operator consoles and video wall integration.</p>
+                </div>
+              </div>
+
+              <div class="uccc-card">
+                <div class="uccc-img-box"><img src="images/dashboard.jpg" alt="Dashboard Screen" /></div>
+                <div class="uccc-card-content">
+                  <span class="uccc-tag"><i class="fas fa-chart-line"></i> DASHBOARD SCREEN</span>
+                  <h4>Real-Time Analytics & BI Dashboard</h4>
+                  <p>Centralized executive dashboard displaying traffic metrics and e-Challan stats.</p>
+                </div>
+              </div>
+
+              <div class="uccc-card">
+                <div class="uccc-img-box"><img src="images/monitor.jpg" alt="Monitoring Screen" /></div>
+                <div class="uccc-card-content">
+                  <span class="uccc-tag"><i class="fas fa-desktop"></i> MONITORING SCREEN</span>
+                  <h4>24×7 Live Surveillance Screen</h4>
+                  <p>High-resolution live monitoring feeds powered by AI video analytics engines.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 7. Contact CTA -->
+          <section class="cs-content-block">
+            <div class="smart-mobility-cta">
+              <h3 class="sm-title">BUILDING THE FUTURE OF SMART MOBILITY</h3>
+              <p class="sm-description">
+                Delivering integrated roadside infrastructure and AI enforcement to build safer, smarter roads.
+              </p>
+              <div class="sm-contact-box">
+                <p class="sm-headset-text"><i class="fas fa-headset"></i> Let's Build Safer Roads Together</p>
+                <a href="contact.html" class="sm-orange-btn">
+                  <i class="fas fa-paper-plane"></i> Contact SOS Infocity Experts
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <!-- ==========================================================================
+       TEMPLATE 3: STATE NETWORK INFRASTRUCTURE (SWAN) - VISUAL & MINIMAL
+       ========================================================================== -->
+  <template id="template-cs-3">
+    <div class="cs-detail-fullwidth">
+      <article class="cs-detail-main">
+
+        <!-- HERO HEADER -->
+        <header class="cs-article-header text-center">
+          <h2>STATE NETWORK INFRASTRUCTURE</h2>
+          <p class="detail-subtitle">Connecting Governments. Empowering Digital India.</p>
+
+          <div class="badge-group justify-center my-10">
+            <span class="tech-pill"><i class="fas fa-shield-halved"></i> Secure</span>
+            <span class="tech-pill"><i class="fas fa-signal"></i> Resilient</span>
+            <span class="tech-pill"><i class="fas fa-expand"></i> Scalable</span>
+            <span class="tech-pill"><i class="fas fa-link"></i> Always Connected</span>
+          </div>
+
+          <!-- HERO SLIDER -->
+          <div class="hero-image-box slider-container">
+            <div class="slider-track" id="heroSliderTrack">
+              <div class="slide"><img src="images/oswan1.jpg" alt="State Network NOC" /></div>
+              <div class="slide"><img src="images/oswan2.jpg" alt="Data Centre Racks" /></div>
+            </div>
+            <button class="slider-btn prev-btn" id="sliderPrevBtn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="sliderNextBtn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="sliderDots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+          </div>
+        </header>
+
+        <div class="cs-detail-body">
+
+          <!-- 1. IMPACT AT A GLANCE -->
+          <section class="cs-content-block">
+            <h3>AT A GLANCE</h3>
+            <div class="glance-grid">
+              <div class="glance-card"><i class="fas fa-globe"></i><span>Statewide Fiber</span></div>
+              <div class="glance-card"><i class="fas fa-desktop"></i><span>24×7 NOC</span></div>
+              <div class="glance-card"><i class="fas fa-cloud"></i><span>Cloud Sync</span></div>
+              <div class="glance-card"><i class="fas fa-lock"></i><span>Cyber Security</span></div>
+              <div class="glance-card"><i class="fas fa-signal"></i><span>High Uptime</span></div>
+              <div class="glance-card"><i class="fas fa-cogs"></i><span>SLA Managed</span></div>
+            </div>
+          </section>
+
+          <!-- 2. THE CHALLENGE -->
+          <section class="cs-content-block">
+            <h3>THE CHALLENGE</h3>
+            <div class="swan-challenge-grid">
+              <div class="swan-chk-card">
+                <div class="swan-chk-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="swan-chk-text">
+                  <h4>Statewide Reach</h4>
+                  <p>Connecting state offices down to local panchayats seamlessly.</p>
+                </div>
+              </div>
+              <div class="swan-chk-card">
+                <div class="swan-chk-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="swan-chk-text">
+                  <h4>Data Protection</h4>
+                  <p>Securing sensitive public data with enterprise-grade firewalls.</p>
+                </div>
+              </div>
+              <div class="swan-chk-card">
+                <div class="swan-chk-icon"><i class="fas fa-bolt"></i></div>
+                <div class="swan-chk-text">
+                  <h4>Zero Downtime</h4>
+                  <p>Ensuring 24×7 continuous availability for citizen services.</p>
+                </div>
+              </div>
+              <div class="swan-chk-card">
+                <div class="swan-chk-icon"><i class="fas fa-expand"></i></div>
+                <div class="swan-chk-text">
+                  <h4>Scalable Capacity</h4>
+                  <p>Future-proofing network capabilities for Smart Governance initiatives.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3. SOLUTION ARCHITECTURE -->
+          <section class="cs-content-block">
+            <h3>SOLUTION ARCHITECTURE</h3>
+            <div class="arch-flow-wrapper">
+              <div class="arch-card">
+                <div class="arch-card-header"><span class="arch-step">STEP 01</span><i class="fas fa-cloud"></i></div>
+                <h4>Gov Cloud</h4>
+                <p>Central Data Centre & Disaster Recovery</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card arch-card-primary">
+                <div class="arch-card-header"><span class="arch-step">STEP 02</span><i class="fas fa-desktop"></i></div>
+                <h4>NOC Core</h4>
+                <p>24×7 Monitoring & Security Firewalls</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card">
+                <div class="arch-card-header"><span class="arch-step">STEP 03</span><i class="fas fa-building-columns"></i></div>
+                <h4>HQ Backbone</h4>
+                <p>State & District High-Speed Fiber Lines</p>
+              </div>
+              <div class="arch-connector"><i class="fas fa-arrow-right"></i></div>
+
+              <div class="arch-card arch-card-success">
+                <div class="arch-card-header"><span class="arch-step">STEP 04</span><i class="fas fa-users"></i></div>
+                <h4>Public Endpoints</h4>
+                <p>Gram Panchayats & Citizen Service Centers</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4. ENGINEERING HIGHLIGHTS -->
+          <section class="cs-content-block">
+            <h3>INFRASTRUCTURE HIGHLIGHTS</h3>
+            <div class="eng-excellence-wrapper">
+              <div class="eng-row">
+                <div class="eng-img-col"><img src="images/oswan3.jpeg" alt="NOC Room" /></div>
+                <div class="eng-content-col">
+                  <span class="eng-step-badge">01 / MONITORING</span>
+                  <h4>24×7 Network Operations Centre</h4>
+                  <p>Centralized monitoring wall tracking link health, bandwidth usage, and diagnostic alerts live in real time.</p>
+                </div>
+              </div>
+
+              <div class="eng-row reverse-row">
+                <div class="eng-content-col">
+                  <span class="eng-step-badge">02 / CONNECTIVITY</span>
+                  <h4>High-Speed Fiber & MPLS Backbone</h4>
+                  <p>Underground optical fiber ring with auto-failover protection to guarantee zero-downtime operations.</p>
+                </div>
+                <div class="eng-img-col"><img src="images/oswan2.jpg" alt="Fiber Deployment" /></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5. DELIVERY TIMELINE -->
+          <section class="cs-content-block">
+            <h3>HOW WE DELIVER</h3>
+            <div class="swan-timeline-wrapper">
+              <div class="swan-timeline-step">
+                <div class="swan-step-num">01</div>
+                <h4>Discover</h4>
+                <p>Survey & Network Assessment</p>
+              </div>
+              <div class="swan-timeline-step">
+                <div class="swan-step-num">02</div>
+                <h4>Design</h4>
+                <p>Architecture & Bandwidth Plan</p>
+              </div>
+              <div class="swan-timeline-step">
+                <div class="swan-step-num">03</div>
+                <h4>Deploy</h4>
+                <p>Fiber & Core Network Setup</p>
+              </div>
+              <div class="swan-timeline-step">
+                <div class="swan-step-num">04</div>
+                <h4>Operate</h4>
+                <p>24×7 SLA-Driven Support</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 6. WHY GOVERNMENTS TRUST US -->
+          <section class="cs-content-block">
+            <h3>WHY GOVERNMENTS TRUST US</h3>
+            <div class="gov-cards-grid">
+              <div class="gov-feature-card">
+                <div class="gov-card-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="gov-card-info">
+                  <h4>MPLS & Fiber Core</h4>
+                  <p>Redundant ring architecture for maximum availability.</p>
+                </div>
+              </div>
+              <div class="gov-feature-card">
+                <div class="gov-card-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="gov-card-info">
+                  <h4>Cyber Security</h4>
+                  <p>Next-Gen firewalls & encrypted IPsec VPN tunnels.</p>
+                </div>
+              </div>
+              <div class="gov-feature-card">
+                <div class="gov-card-icon"><i class="fas fa-signal"></i></div>
+                <div class="gov-card-info">
+                  <h4>High Availability</h4>
+                  <p>Dual-path redundancy with automated link failover guarantees maximum network uptime.</p>
+                </div>
+              </div>
+              <div class="gov-feature-card">
+                <div class="gov-card-icon"><i class="fas fa-headset"></i></div>
+                <div class="gov-card-info">
+                  <h4>24×7 Managed O&M</h4>
+                  <p>Proactive monitoring & automated incident ticketing.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 7. MINIMAL CTA BANNER -->
+          <section class="cs-content-block">
+            <div class="smart-mobility-cta">
+              <h3 class="sm-title">BUILDING THE DIGITAL BACKBONE</h3>
+              <p class="sm-description">
+                Connecting people, platforms, and public services through secure, resilient, and future-ready state network infrastructure.
+              </p>
+              <div class="sm-contact-box">
+                <p class="sm-headset-text"><i class="fas fa-headset"></i> Let's Build the Next Digital State</p>
+                <a href="contact.html" class="sm-orange-btn">
+                  <i class="fas fa-paper-plane"></i> Contact SOS Infocity Experts
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="js/header-footer.js"></script>
+  <script src="js/case-studies.js"></script>
+</body>
+
 </html>

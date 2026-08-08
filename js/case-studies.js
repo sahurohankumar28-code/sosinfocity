@@ -17,7 +17,7 @@ const caseStudiesData = [
   },
   {
     id: 3,
-    title: "State Network Infrastructure (SWAN)",
+    title: "State Network Infrastructure",
     subtitle:
       "High-speed, carrier-grade digital backbone linking state headquarters, district offices, and rural administrative nodes with redundant fiber connectivity.",
     img: "images/oswan1.jpg",

@@ -550,3 +550,22 @@ body {
 
   .smart-mobility-cta { padding: 35px 16px; }
 }
+
+.mission-control-section,
+.dark-banner-closing {
+  background: linear-gradient(135deg, #0a0f16 0%, #17212b 100%);
+  color: #ffffff;
+  padding: 35px 20px;
+  border-radius: 16px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.mission-statement {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--primary, #f75910);
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+}

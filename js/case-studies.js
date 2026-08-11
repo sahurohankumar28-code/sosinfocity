@@ -9,14 +9,6 @@ const caseStudiesData = [
   },
   {
     id: 2,
-    title: "City Surveillance & Monitoring Integration",
-    subtitle:
-      "Integrated urban security networks, high-speed fiber backbones, and Unified Command & Control Centres (UCCC) providing automated threat detection and real-time operational visibility.",
-    img: "images",
-    templateId: "template-cs-2"
-  },
-  {
-    id: 3,
     title: "State Network Infrastructure",
     subtitle:
       "High-speed, carrier-grade digital backbone linking state headquarters, district offices, and rural administrative nodes with redundant fiber connectivity.",
@@ -24,11 +16,20 @@ const caseStudiesData = [
     templateId: "template-cs-3"
   },
   {
+    id: 3,
+    title: "City Surveillance & Monitoring Integration",
+    subtitle:
+      "Integrated urban security networks, high-speed fiber backbones, and Unified Command & Control Centres (UCCC) providing automated threat detection and real-time operational visibility.",
+    img: "images/cloud_1.png",
+    templateId: "template-cs-2"
+  },
+  
+  {
     id: 4,
     title: "Cloud & Data Platform Modernisation",
     subtitle:
       "Scalable cloud migration, containerized microservices architecture, automated disaster recovery, and enterprise big data analytics platforms.",
-    img: "images",
+    img: "images/Cloud.png",
     templateId: "template-cs-4"
   },
   {
@@ -36,7 +37,7 @@ const caseStudiesData = [
     title: "Multi-Department Digital Rollout",
     subtitle:
       "Unified service delivery portals, digital workflow automation, and single-sign-on integration across multi-department public services.",
-    img: "images",
+    img: "images/multi1.jpg",
     templateId: "template-cs-5"
   }
 ];

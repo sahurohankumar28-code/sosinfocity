@@ -1,56 +1,10 @@
-/* ==========================================================================
-   1. UTILITIES & BASE TYPOGRAPHY
-   ========================================================================== */
-@font-face {
-  font-family: 'Averta';
-  src: url('../fonts/Averta-Regular.woff2') format('woff2'),
-       url('../fonts/Averta-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, span, a, li, button, input, textarea, select {
-  font-family: 'Averta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-:root {
-  --primary: #f75910;
-  --primary-light: #ff8a3d;
-  --primary-dark: #d64507;
-  --dark-bg: #0a0f16;
-  --text-primary: #171717;
-  --text-secondary: #1d2128;
-  --border-light: #eef2f6;
-  --bg-light: #fafcff;
-  --bg-white: #ffffff;
-  --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-weight: 600;
-  background: var(--bg-white);
-  color: var(--text-primary);
-  line-height: 1.5;
-  scroll-behavior: smooth;
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-
 .text-center { text-align: center !important; }
 .justify-center { justify-content: center !important; }
 .my-10 { margin-top: 10px !important; margin-bottom: 10px !important; }
 .mb-20 { margin-bottom: 20px !important; }
 
 /* ==========================================================================
-   2. HERO HEADER & SLIDER
+   2. HERO HEADER & SLIDER COMPONENTS
    ========================================================================== */
 .hero-header {
   position: relative;
@@ -120,7 +74,7 @@ body {
 .dot.active { background: var(--primary, #f75910); width: 22px; border-radius: 10px; }
 
 /* ==========================================================================
-   3. MAIN CASE STUDY GRID & ARTICLE WRAPPER
+   3. CASE STUDIES GRID & ARTICLE WRAPPER
    ========================================================================== */
 .cs-blog-section { padding: 60px 0; background: #fafcff; }
 .cs-blog-section.hidden { display: none; }
@@ -198,7 +152,7 @@ body {
 .cs-content-block h3 { font-size: 1.25rem; color: #0a0f16; border-bottom: 2px solid rgba(247, 89, 16, 0.15); padding-bottom: 6px; }
 
 /* ==========================================================================
-   4. SHARED COMPONENTS (GLANCE, PILLS, PILLARS)
+   4. SHARED COMPONENTS (GLANCE, PILLS, PILLARS & TRANSFORMATION PANELS)
    ========================================================================== */
 .glance-grid {
   display: grid;
@@ -250,8 +204,18 @@ body {
   border-left: 4px solid var(--primary, #f75910);
 }
 
+/* Transformation Panel (Before vs After) */
+.transform-comparison { display: flex; align-items: center; gap: 16px; margin-top: 15px; }
+.trans-box { flex: 1; padding: 18px; border-radius: 10px; }
+.before-box { background: #fff5f5; border: 1px solid #fed7d7; color: #9b2c2c; }
+.after-box { background: #f0fff4; border: 1px solid #c6f6d5; color: #22543d; }
+.trans-arrow { font-size: 1.2rem; color: #a0aec0; }
+
+.before-box .eng-bullet-list li i.fa-circle-xmark { color: #e53e3e; }
+.after-box .eng-bullet-list li i.fa-circle-check { color: #38a169; }
+
 /* ==========================================================================
-   5. SOLUTION ARCHITECTURE FLOW (BOTH CASE STUDIES)
+   5. SOLUTION ARCHITECTURE FLOW NODES
    ========================================================================== */
 .arch-flow-wrapper {
   display: flex;
@@ -306,7 +270,7 @@ body {
 }
 
 /* ==========================================================================
-   6. ALTERNATING FEATURE ROWS (ENGINEERING & INFRASTRUCTURE)
+   6. ALTERNATING FEATURE ROWS
    ========================================================================== */
 .eng-excellence-wrapper { display: flex; flex-direction: column; gap: 24px; margin-top: 20px; }
 .eng-row {
@@ -360,7 +324,7 @@ body {
 .glow-card:hover { border-color: #38a169; }
 
 /* ==========================================================================
-   7. UCCC & GALLERY GRID (CASE STUDY 01)
+   7. UCCC & GALLERY CARDS
    ========================================================================== */
 .uccc-gallery-grid {
   display: grid;
@@ -408,8 +372,30 @@ body {
 .uccc-card-content h4 { font-size: 1.05rem; color: #0a0f16; margin-bottom: 6px; font-weight: 700; }
 .uccc-card-content p { font-size: 0.88rem; color: #4a5568; line-height: 1.5; margin: 0; }
 
+.uccc-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.uccc-hl-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1a202c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uccc-hl-card i { color: #38a169; }
+
 /* ==========================================================================
-   8. SWAN CHALLENGE, TIMELINE & GOV TRUST (CASE STUDY 03)
+   8. SWAN CHALLENGE, TIMELINE & GOV TRUST CARDS
    ========================================================================== */
 .swan-challenge-grid,
 .gov-cards-grid {
@@ -479,7 +465,7 @@ body {
 .swan-timeline-step p { font-size: 0.82rem; color: #4a5568; margin: 0; }
 
 /* ==========================================================================
-   9. MINIMAL SMART MOBILITY CTA BANNER
+   9. MINIMAL SMART MOBILITY CTA & MISSION CONTROL
    ========================================================================== */
 .smart-mobility-cta {
   background: #f8fafc;
@@ -529,28 +515,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   10. RESPONSIVE RULES
-   ========================================================================== */
-@media (max-width: 768px) {
-  .slide img { height: 240px; }
-  .arch-flow-wrapper { flex-direction: column; }
-  .arch-connector { transform: rotate(90deg); padding: 6px 0; }
-  
-  .eng-row { grid-template-columns: 1fr; }
-  .reverse-row .eng-content-col { order: 2; }
-  .reverse-row .eng-img-col { order: 1; }
-  
-  .uccc-gallery-grid, 
-  .gov-cards-grid, 
-  .swan-challenge-grid, 
-  .swan-timeline-wrapper { 
-    grid-template-columns: 1fr; 
-  }
-
-  .smart-mobility-cta { padding: 35px 16px; }
-}
-
 .mission-control-section,
 .dark-banner-closing {
   background: linear-gradient(135deg, #0a0f16 0%, #17212b 100%);
@@ -561,6 +525,9 @@ body {
   text-align: center;
 }
 
+.mission-tiles { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 15px 0; }
+.mission-tiles .tile { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; }
+
 .mission-statement {
   font-size: 1.05rem;
   font-style: italic;
@@ -568,4 +535,29 @@ body {
   max-width: 850px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* ==========================================================================
+   10. MEDIA QUERIES (MOBILE RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .slide img { height: 240px; }
+  .arch-flow-wrapper { flex-direction: column; }
+  .arch-connector { transform: rotate(90deg); padding: 6px 0; }
+  
+  .eng-row { grid-template-columns: 1fr; }
+  .reverse-row .eng-content-col { order: 2; }
+  .reverse-row .eng-img-col { order: 1; }
+  
+  .transform-comparison { flex-direction: column; }
+  .trans-arrow { display: none; }
+
+  .uccc-gallery-grid, 
+  .gov-cards-grid, 
+  .swan-challenge-grid, 
+  .swan-timeline-wrapper { 
+    grid-template-columns: 1fr; 
+  }
+
+  .smart-mobility-cta { padding: 35px 16px; }
 }

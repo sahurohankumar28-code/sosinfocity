@@ -55,7 +55,25 @@ const galleryData = {
       "events/photo_12.jpeg",
       "events/photo_13.jpeg",
       "events/photo_14.jpeg",
-      "events/photo_15.jpeg"
+      "events/photo_15.jpeg",
+      "events/photo_38.jpeg",
+      "events/photo_39.jpeg"
+    ]
+  },
+  funGames: {
+    title: "Fun & Games",
+    images: [
+      "events/ff.jpeg",
+      "events/ff1.jpeg",
+      "events/ff2.jpeg",
+      "events/ff3.jpeg",
+      "events/ff4.jpeg",
+      "events/ff5.jpeg",
+      "events/ff6.jpeg",
+      "events/ff7.jpeg",
+      "events/ff8.jpeg",
+      "events/ff9.jpeg",
+      "events/ff10.jpeg"
     ]
   }
 };

@@ -20,7 +20,7 @@ const caseStudiesData = [
     title: "City Surveillance & Monitoring Integration",
     subtitle:
       "Integrated urban security networks, high-speed fiber backbones, and Unified Command & Control Centres (UCCC) providing automated threat detection and real-time operational visibility.",
-    img: "images/cloud_1.png",
+    img: "images/Cloud_1.png",
     templateId: "template-cs-2"
   },
   

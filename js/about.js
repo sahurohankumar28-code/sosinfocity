@@ -130,8 +130,8 @@
 
   function updateNodeActivation(nodes, progress) {
     nodes.forEach((node, index) => {
-      const activateThreshold = index / nodes.length - 0.04;
-      if (progress >= Math.max(0, activateThreshold)) {
+      const activateThreshold = (index / (nodes.length - 1)) * 0.9;
+      if (progress >= activateThreshold) {
         node.classList.add("node-activated");
       } else {
         node.classList.remove("node-activated");
@@ -177,13 +177,13 @@
       if (mobileObserver) mobileObserver.disconnect();
 
       targetSection.style.position = "relative";
-      targetSection.style.height = "1020px";
+      targetSection.style.height = "950px";
       timelineContainer.style.position = "sticky";
-      timelineContainer.style.top = "0";
+      timelineContainer.style.top = "80px";
 
       const sectionRect = targetSection.getBoundingClientRect();
       const totalScrollRunway =
-        targetSection.offsetHeight - timelineContainer.offsetHeight;
+        targetSection.offsetHeight - window.innerHeight;
 
       let progress = -sectionRect.top / totalScrollRunway;
       progress = Math.max(0, Math.min(1, progress));

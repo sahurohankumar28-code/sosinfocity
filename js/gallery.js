@@ -55,10 +55,12 @@ const galleryData = {
          "events/pic10.jpeg",
          "events/pic11.jpeg",
          "events/pic12.jpeg",
-         "events/pic13.jpeg",
-         "events/pic14.jpeg",
+         "events/pic13.JPG",
+         "events/pic14.JPG",
          "events/pic15.jpeg",
-         "events/pic16.jpeg"
+         "events/pic16.jpeg",
+         "events/pic17.jpeg",
+         "events/pic18.jpeg"
     ]
   },
   awards: {

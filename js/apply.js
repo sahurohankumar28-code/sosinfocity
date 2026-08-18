@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (selectedJob) {
     const decodedRole = decodeURIComponent(selectedJob);
-    // Find matching role profile
     const matchedKey = Object.keys(jobProfiles).find(
       (key) => decodedRole.toLowerCase().includes(key.toLowerCase()) || key.toLowerCase().includes(decodedRole.toLowerCase())
     );
@@ -115,7 +114,10 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.classList.toggle("active", idx === targetIndex)
     );
     currentStepIndex = targetIndex;
-    window.scrollTo({ top: document.querySelector(".application-form-section").offsetTop - 40, behavior: "smooth" });
+    const formSection = document.querySelector(".application-form-section");
+    if (formSection) {
+      window.scrollTo({ top: formSection.offsetTop - 40, behavior: "smooth" });
+    }
   }
 
   function validateCurrentStepInputs() {
@@ -148,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // AJAX Submission
+    // Form Submit via Web3Forms API
     applicationForm.addEventListener("submit", async (e) => {
       e.preventDefault();
 
@@ -164,15 +166,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = new FormData(applicationForm);
 
       try {
-        const response = await fetch("submit-application.php", {
+        const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           body: formData,
         });
 
         const result = await response.json();
 
-        if (response.ok && result.status === "success") {
-          alert(result.message || "Application submitted successfully!");
+        if (response.ok && result.success) {
+          alert("Application submitted successfully! Our team will contact you soon.");
           applicationForm.reset();
           syncWizardView(0);
 
@@ -184,10 +186,10 @@ document.addEventListener("DOMContentLoaded", () => {
             dropZone.style.display = "block";
           }
         } else {
-          alert(result.message || "Form submission failed. Please try again.");
+          alert(result.message || "Form submission failed. Please check your details and try again.");
         }
       } catch (err) {
-        alert("An error occurred during submission. Please try again.");
+        alert("A network error occurred. Please try again.");
       } finally {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;

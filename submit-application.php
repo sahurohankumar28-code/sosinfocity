@@ -1,28 +1,17 @@
 <?php
-// Set JSON response header
 header('Content-Type: application/json');
 
-// Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Invalid request method.'
-    ]);
+    echo json_encode(['status' => 'error', 'message' => 'Invalid request method.']);
     exit;
 }
 
 // -------------------------------------------------------------
 // CONFIGURATION
 // -------------------------------------------------------------
-// 1. Where you want to RECEIVE the job applications:
-$toEmail = "hr@sosinfocity.in"; // e.g. hr@sosinfocity.com or your_personal@gmail.com
+$toEmail   = "rohankumar.sahu@sosinfocity.in"; // Receiver email
+$fromEmail = "info@sosinfocity.com";                    // Domain sender email
 
-// 2. Sender address on your GoDaddy domain (avoids spam filters):
-$fromEmail = "noreply@sosinfocity.com";
-
-// -------------------------------------------------------------
-// FORM DATA SANITIZATION
-// -------------------------------------------------------------
 $candidateName     = htmlspecialchars(trim($_POST['candidateName'] ?? ''));
 $candidateEmail    = filter_var(trim($_POST['candidateEmail'] ?? ''), FILTER_SANITIZE_EMAIL);
 $callNumber        = htmlspecialchars(trim($_POST['callNumber'] ?? ''));
@@ -30,109 +19,103 @@ $whatsappNumber    = htmlspecialchars(trim($_POST['whatsappNumber'] ?? ''));
 $addressDetails    = htmlspecialchars(trim($_POST['addressDetails'] ?? ''));
 $appliedRole       = htmlspecialchars(trim($_POST['appliedRole'] ?? 'General Application'));
 $hasExperience     = htmlspecialchars(trim($_POST['hasExperience'] ?? 'No'));
-$experienceDetails = htmlspecialchars(trim($_POST['experienceDetails'] ?? 'None provided'));
+$experienceDetails = htmlspecialchars(trim($_POST['experienceDetails'] ?? 'None'));
 $linkedinUrl       = htmlspecialchars(trim($_POST['linkedinUrl'] ?? ''));
 
-// Validate required fields
 if (empty($candidateName) || empty($candidateEmail) || empty($callNumber) || empty($addressDetails)) {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Please fill in all required fields.'
-    ]);
+    echo json_encode(['status' => 'error', 'message' => 'Please fill in all required fields.']);
     exit;
 }
 
-// -------------------------------------------------------------
-// EMAIL CONTENT & HEADERS
-// -------------------------------------------------------------
-$subject = "New Job Application: " . $appliedRole . " - " . $candidateName;
+$subject = "New Application: " . $appliedRole . " - " . $candidateName;
 
 $messageHtml = "
 <html>
-<head>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-    .container { max-width: 600px; margin: auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-    .header { background: #0f172a; color: #fff; padding: 16px 20px; }
-    .content { padding: 20px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    td { padding: 8px 12px; border-bottom: 1px solid #f1f5f9; }
-    .label { font-weight: bold; width: 35%; color: #64748b; }
-  </style>
-</head>
-<body>
-  <div class='container'>
-    <div class='header'>
-      <h2 style='margin:0;'>New Job Application</h2>
-      <p style='margin:4px 0 0 0; font-size:14px;'>Role: {$appliedRole}</p>
-    </div>
-    <div class='content'>
-      <table>
-        <tr><td class='label'>Full Name</td><td>{$candidateName}</td></tr>
-        <tr><td class='label'>Email</td><td><a href='mailto:{$candidateEmail}'>{$candidateEmail}</a></td></tr>
-        <tr><td class='label'>Contact Number</td><td>{$callNumber}</td></tr>
-        <tr><td class='label'>WhatsApp</td><td>{$whatsappNumber}</td></tr>
-        <tr><td class='label'>Residential Address</td><td>{$addressDetails}</td></tr>
-        <tr><td class='label'>Prior Experience?</td><td>{$hasExperience}</td></tr>
-        <tr><td class='label'>Experience Details</td><td>" . nl2br($experienceDetails) . "</td></tr>
-        <tr><td class='label'>LinkedIn Profile</td><td>" . (!empty($linkedinUrl) ? "<a href='https://linkedin.com/in/{$linkedinUrl}' target='_blank'>linkedin.com/in/{$linkedinUrl}</a>" : "N/A") . "</td></tr>
-      </table>
-    </div>
-  </div>
+<body style='font-family:Arial,sans-serif;'>
+  <h2>New Job Application</h2>
+  <p><strong>Role:</strong> {$appliedRole}</p>
+  <table cellpadding='6' cellspacing='0' style='width:100%; border:1px solid #ccc;'>
+    <tr><td><strong>Candidate Name:</strong></td><td>{$candidateName}</td></tr>
+    <tr><td><strong>Email:</strong></td><td>{$candidateEmail}</td></tr>
+    <tr><td><strong>Phone:</strong></td><td>{$callNumber}</td></tr>
+    <tr><td><strong>WhatsApp:</strong></td><td>{$whatsappNumber}</td></tr>
+    <tr><td><strong>Address:</strong></td><td>{$addressDetails}</td></tr>
+    <tr><td><strong>Experience:</strong></td><td>{$hasExperience}</td></tr>
+    <tr><td><strong>Details:</strong></td><td>" . nl2br($experienceDetails) . "</td></tr>
+    <tr><td><strong>LinkedIn:</strong></td><td>{$linkedinUrl}</td></tr>
+  </table>
 </body>
-</html>
-";
+</html>";
 
 $boundary = md5(uniqid(time()));
 
-// Mail headers
-$headers = "From: SOS Infocity Applications <{$fromEmail}>\r\n";
-$headers .= "Reply-To: {$candidateName} <{$candidateEmail}>\r\n"; // Clicking reply responds directly to the candidate
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
+// Build full MIME message
+$data = "From: SOS Infocity <{$fromEmail}>\r\n";
+$data .= "To: {$toEmail}\r\n";
+$data .= "Reply-To: {$candidateEmail}\r\n";
+$data .= "Subject: {$subject}\r\n";
+$data .= "MIME-Version: 1.0\r\n";
+$data .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n\r\n";
 
-// Multipart body
-$body = "--{$boundary}\r\n";
-$body .= "Content-Type: text/html; charset=UTF-8\r\n";
-$body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-$body .= $messageHtml . "\r\n";
+// HTML part
+$data .= "--{$boundary}\r\n";
+$data .= "Content-Type: text/html; charset=UTF-8\r\n";
+$data .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+$data .= $messageHtml . "\r\n\r\n";
 
-// -------------------------------------------------------------
-// RESUME ATTACHMENT PROCESSING
-// -------------------------------------------------------------
+// Attachment
 if (isset($_FILES['resumeFile']) && $_FILES['resumeFile']['error'] === UPLOAD_ERR_OK) {
-    $fileTmpPath  = $_FILES['resumeFile']['tmp_name'];
-    $fileName     = basename($_FILES['resumeFile']['name']);
-    $fileSize     = $_FILES['resumeFile']['size'];
-    $fileMimeType = mime_content_type($fileTmpPath);
+    $fileName = basename($_FILES['resumeFile']['name']);
+    $fileMime = mime_content_type($_FILES['resumeFile']['tmp_name']);
+    $fileContent = chunk_split(base64_encode(file_get_contents($_FILES['resumeFile']['tmp_name'])));
 
-    // Max 1MB (1,048,576 bytes)
-    if ($fileSize <= 1048576) {
-        $fileContent = file_get_contents($fileTmpPath);
-        $encodedFile = chunk_split(base64_encode($fileContent));
+    $data .= "--{$boundary}\r\n";
+    $data .= "Content-Type: {$fileMime}; name=\"{$fileName}\"\r\n";
+    $data .= "Content-Disposition: attachment; filename=\"{$fileName}\"\r\n";
+    $data .= "Content-Transfer-Encoding: base64\r\n\r\n";
+    $data .= $fileContent . "\r\n\r\n";
+}
+$data .= "--{$boundary}--\r\n";
 
-        $body .= "--{$boundary}\r\n";
-        $body .= "Content-Type: {$fileMimeType}; name=\"{$fileName}\"\r\n";
-        $body .= "Content-Disposition: attachment; filename=\"{$fileName}\"\r\n";
-        $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
-        $body .= $encodedFile . "\r\n";
+// -------------------------------------------------------------
+// SEND VIA GODADDY INTERNAL RELAY (PORT 25)
+// -------------------------------------------------------------
+$smtpServer = "relay-hosting.secureserver.net";
+$port       = 25;
+$timeout    = 15;
+
+$socket = @fsockopen($smtpServer, $port, $errno, $errstr, $timeout);
+
+if (!$socket) {
+    // Fallback to standard mail
+    $headers = "From: {$fromEmail}\r\nReply-To: {$candidateEmail}\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"{$boundary}\"";
+    mail($toEmail, $subject, $messageHtml, $headers, "-f" . $fromEmail);
+    echo json_encode(['status' => 'success', 'message' => 'Application submitted successfully!']);
+    exit;
+}
+
+function get_response($socket) {
+    $res = "";
+    while ($str = fgets($socket, 515)) {
+        $res .= $str;
+        if (substr($str, 3, 1) == " ") break;
     }
+    return $res;
 }
 
-$body .= "--{$boundary}--";
+get_response($socket);
+fputs($socket, "HELO " . $_SERVER['SERVER_NAME'] . "\r\n");
+get_response($socket);
+fputs($socket, "MAIL FROM: <{$fromEmail}>\r\n");
+get_response($socket);
+fputs($socket, "RCPT TO: <{$toEmail}>\r\n");
+get_response($socket);
+fputs($socket, "DATA\r\n");
+get_response($socket);
+fputs($socket, $data . "\r\n.\r\n");
+get_response($socket);
+fputs($socket, "QUIT\r\n");
+fclose($socket);
 
-// -------------------------------------------------------------
-// SEND VIA GODADDY MAIL
-// -------------------------------------------------------------
-if (@mail($toEmail, $subject, $body, $headers)) {
-    echo json_encode([
-        'status' => 'success',
-        'message' => 'Application submitted successfully! Our team will contact you soon.'
-    ]);
-} else {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Failed to send application. Please check your connection or try again later.'
-    ]);
-}
+echo json_encode(['status' => 'success', 'message' => 'Application submitted successfully! Our team will contact you soon.']);
 ?>

@@ -241,7 +241,7 @@ body {
 .hero-header {
   position: relative;
   min-height: 40vh;
-  background: radial-gradient(circle at 50% 20%, #1a253a 0%, #0a0f16 75%);
+  background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
 }
 
 .hero-header h1 {

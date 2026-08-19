@@ -42,7 +42,25 @@ const galleryData = {
          "events/photo_34.jpeg",
          "events/photo_35.png",
          "events/photo_36.jpeg",
-         "events/photo_37.jpeg"
+         "events/photo_37.jpeg",
+         "events/pic1.jpeg",
+         "events/pic2.jpeg",
+         "events/pic3.jpeg",
+         "events/pic4.jpeg",
+         "events/pic5.jpeg",
+         "events/pic6.jpeg",
+         "events/pic7.jpeg",
+         "events/pic8.jpeg",
+         "events/pic9.jpeg",
+         "events/pic10.jpeg",
+         "events/pic11.jpeg",
+         "events/pic12.jpeg",
+         "events/pic13.JPG",
+         "events/pic14.JPG",
+         "events/pic15.jpeg",
+         "events/pic16.jpeg",
+         "events/pic17.jpeg",
+         "events/pic18.jpeg"
     ]
   },
   awards: {
@@ -55,7 +73,25 @@ const galleryData = {
       "events/photo_12.jpeg",
       "events/photo_13.jpeg",
       "events/photo_14.jpeg",
-      "events/photo_15.jpeg"
+      "events/photo_15.jpeg",
+      "events/photo_38.jpeg",
+      "events/photo_39.jpeg"
+    ]
+  },
+  funGames: {
+    title: "Fun & Games",
+    images: [
+      "events/ff.jpeg",
+      "events/ff1.jpeg",
+      "events/ff2.jpeg",
+      "events/ff3.jpeg",
+      "events/ff4.jpeg",
+      "events/ff5.jpeg",
+      "events/ff6.jpeg",
+      "events/ff7.jpeg",
+      "events/ff8.jpeg",
+      "events/ff9.jpeg",
+      "events/ff10.jpeg"
     ]
   }
 };

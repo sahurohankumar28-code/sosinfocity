@@ -25,6 +25,8 @@
       </div>
     </div>
 
+    
+
     <div class="hero-header">
       <div class="container">
         <div id="header-placeholder"></div>
@@ -37,77 +39,30 @@
         </div>
       </div>
     </div>
-
+    
+    
+   
     <section class="application-form-section">
-      <div class="container">
-        <a href="careers.html" class="back-to-career" id="backToCareer">
-          <i class="fas fa-arrow-left"></i> Back to Careers
-        </a>
-      </div>
-      
+       <div class="container">
+        <button class="back-to-career" id="backToCareer">
+          <a href="careers.html"><i class="fas fa-arrow-left"></i> Back
+        </button>
+      </div></a>
       <div class="container split-form-layout">
         <div class="form-card-container">
-          <form id="applicationForm">
-            <!-- ============================================ -->
-            <!-- WEB3FORMS CONFIGURATION (PASTE YOUR KEY HERE) -->
-            <!-- ============================================ -->
-            <input type="hidden" name="access_key" value="31e5a4c0-2f5b-40e7-954c-b5dd79640905E" />
-            <input type="hidden" name="subject" value="New Job Application - SOS Infocity" />
-            <input type="hidden" name="from_name" value="SOS Infocity Career Portal" />
-
+          <form
+            id="applicationForm"
+            class="premium-interactive-form"
+            action="process_application.php"
+            method="POST"
+            enctype="multipart/form-data"
+          >
             <div class="form-header-tracking">
-              <span class="section-tag" style="font-size: 1rem;">Application Gateway</span>
+              <span class="section-tag">Application Gateway</span>
               <h2 id="activeRoleHeader">General Application Pipeline</h2>
             </div>
 
-            <!-- STEP 1: POSITION OVERVIEW & AGREEMENT -->
             <div class="form-step-panel active" data-step="1">
-              <div class="job-overview-card" id="jobOverviewCard">
-                <div class="job-meta-badges" id="jobMetaBadges">
-                  <span class="meta-pill"><i class="fas fa-briefcase"></i> 0-3 Years Exp</span>
-                  <span class="meta-pill"><i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha</span>
-                  <span class="meta-pill"><i class="fas fa-clock"></i> Full-Time</span>
-                </div>
-
-                <div class="job-description-content">
-                  <h4 class="overview-title">Role Overview & Key Requirements</h4>
-                  <ul class="job-points-list" id="jobPointsList">
-                    <!-- Populated dynamically via apply.js -->
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Agree Checkbox -->
-              <div class="agreement-box">
-                <label class="custom-checkbox-container">
-                  <input type="checkbox" id="agreeTerms" required />
-                  <span class="checkmark"></span>
-                  <span class="agreement-text">
-                    I have read and understood the role overview, responsibilities, and eligibility criteria, and agree to proceed.
-                  </span>
-                </label>
-              </div>
-
-              <input
-                type="hidden"
-                id="appliedRole"
-                name="appliedRole"
-                value=""
-              />
-
-              <div class="form-action-row">
-                <button
-                  type="button"
-                  class="btn-form-nav primary next-step-btn"
-                  id="agreeNextBtn"
-                >
-                  Agree & Next <i class="fas fa-arrow-right" style="margin-left: 6px;"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- STEP 2: PERSONAL INFORMATION -->
-            <div class="form-step-panel" data-step="2">
               <div class="form-group">
                 <label for="candidateName">Name *</label>
                 <div class="input-with-icon">
@@ -173,13 +128,14 @@
                 </div>
               </div>
 
+              <input
+                type="hidden"
+                id="appliedRole"
+                name="appliedRole"
+                value=""
+              />
+
               <div class="form-action-row">
-                <button
-                  type="button"
-                  class="btn-form-nav secondary prev-step-btn"
-                >
-                  Back to Overview
-                </button>
                 <button
                   type="button"
                   class="btn-form-nav primary next-step-btn"
@@ -189,8 +145,7 @@
               </div>
             </div>
 
-            <!-- STEP 3: EXPERIENCE DETAILS -->
-            <div class="form-step-panel" data-step="3">
+            <div class="form-step-panel" data-step="2">
               <div class="form-group">
                 <label style="margin-bottom: 12px; display: block"
                   >Do you have prior job experience? *</label
@@ -222,7 +177,7 @@
                     id="experienceDetails"
                     name="experienceDetails"
                     rows="4"
-                    placeholder="List your previous roles, metrics, and timelines..."
+                    placeholder="List your previous roles, roles metrics, and timelines..."
                   ></textarea>
                 </div>
               </div>
@@ -238,13 +193,12 @@
                   type="button"
                   class="btn-form-nav primary next-step-btn"
                 >
-                  Continue to Links & Resume
+                  Continue to Links
                 </button>
               </div>
             </div>
 
-            <!-- STEP 4: LINKS & RESUME UPLOAD -->
-            <div class="form-step-panel" data-step="4">
+            <div class="form-step-panel" data-step="3">
               <div class="form-group">
                 <label for="linkedinUrl">LinkedIn Profile (If any)</label>
                 <div class="input-prefix-group">
@@ -290,7 +244,16 @@
                         margin-top: 4px;
                       "
                     >
-                      Supported Formats: PDF, DOCX (Max Size: 1MB)
+                      Supported Formats: PDF, DOCX
+                    </p>
+                    <p
+                      style="
+                        font-size: 0.75rem;
+                        color: #64748b;
+                        margin-top: 4px;
+                      "
+                    >
+                      Max Size : 1MB
                     </p>
                   </div>
                 </div>
@@ -328,17 +291,15 @@
             </div>
           </form>
 
-          <!-- 4-STEP INDICATOR DOTS -->
           <div class="step-indicator-dots">
-            <span class="step-dot active" data-indicator="1" title="Job Overview"></span>
-            <span class="step-dot" data-indicator="2" title="Personal Details"></span>
-            <span class="step-dot" data-indicator="3" title="Experience"></span>
-            <span class="step-dot" data-indicator="4" title="Resume Upload"></span>
+            <span class="step-dot active" data-indicator="1"></span>
+            <span class="step-dot" data-indicator="2"></span>
+            <span class="step-dot" data-indicator="3"></span>
           </div>
         </div>
 
         <div class="form-visual-pane">
-          <img src="images/apply.jpg" alt="Careers at SOS Infocity" loading="lazy" />
+          <img src="images/apply.jpg" alt="Scalability" loading="lazy" />
         </div>
       </div>
     </section>

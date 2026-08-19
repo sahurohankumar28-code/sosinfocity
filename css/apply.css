@@ -2,7 +2,7 @@
 .hero-header {
   position: relative;
   min-height: 50vh;
-  background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
+  background: radial-gradient(circle at 50% 20%, #1a253a 0%, #0a0f16 75%);
 }
 
 .hero-header h1 {
@@ -116,111 +116,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* =========================================
-   JOB OVERVIEW & BRIEF POINTS STYLING
-========================================= */
-.job-overview-card {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 24px;
-}
-
-.job-meta-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.meta-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #eff6ff;
-  color: #2563eb;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.82rem;
-  font-weight: 600;
-}
-
-.meta-pill i {
-  font-size: 0.8rem;
-}
-
-.overview-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 14px;
-}
-
-.job-points-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 0;
-  margin: 0;
-}
-
-.job-points-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 0.92rem;
-  color: #475569;
-  line-height: 1.5;
-}
-
-.point-icon {
-  color: var(--primary, #f75910);
-  margin-top: 3px;
-  font-size: 0.95rem;
-  flex-shrink: 0;
-}
-
-/* Agreement Checkbox */
-.agreement-box {
-  background: #ffffff;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 12px;
-  transition: border-color 0.2s ease;
-}
-
-.agreement-box:focus-within,
-.agreement-box:hover {
-  border-color: var(--primary, #f75910);
-}
-
-.custom-checkbox-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.custom-checkbox-container input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--primary, #f75910);
-  cursor: pointer;
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-
-.agreement-text {
-  font-size: 0.88rem;
-  color: #334155;
-  font-weight: 500;
-  line-height: 1.45;
 }
 
 .form-group {

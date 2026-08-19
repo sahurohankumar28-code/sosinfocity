@@ -1,0 +1,163 @@
+[
+  {
+    "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
+    "link": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
+    "pubDate": "Wed, 19 Aug 2026 16:55:28 +0530",
+    "contentSnippet": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The operation doesn't rely on a single piece of malware, but on a whole toolkit of criminal software",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft fixes known issue causing Windows Defender crashes",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-known-issue-causing-windows-defender-crashes/",
+    "pubDate": "Wed, 19 Aug 2026 07:14:28 -0400",
+    "contentSnippet": "Microsoft has resolved a bug that caused Windows Defender to crash after a recent security update, resulting in 0xc0000005 access violation errors on some affected systems. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+    "link": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+    "pubDate": "Wed, 19 Aug 2026 16:31:48 +0530",
+    "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS score: 9.8) - An improper authentication vulnerability impacting Apple macOS that could allow an",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Unlock greater intelligence and innovation in OSS/BSS with a unified cloud, data and AI platform",
+    "link": "https://www.ericsson.com/en/oss-bss/forms/analysys-mason-report?utm_medium=advertorial&utm_source=RCR-Wireless&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel-",
+    "pubDate": "Wed, 19 Aug 2026 10:51:45 +0000",
+    "contentSnippet": "Discover how a unified cloud, data, and AI platform can unlock greater intelligence, operational agility, and innovative 5G services for your business. Accelerate your OSS/BSS transformation today. Download the report…",
+    "source": "Telecom"
+  },
+  {
+    "title": "Democratising AI in production next major challenge for Indian industry: SUSE’s Marshal Correia",
+    "link": "https://telecom.economictimes.indiatimes.com/news/enterprise-services/democratising-ai-in-production-next-major-challenge-for-indian-industry-suses-marshal-correia/133345149",
+    "pubDate": "Wed, 19 Aug 2026 16:01:13 +0530",
+    "contentSnippet": "Correia said enterprises are prioritising visibility, traceability, and security of their data as they adopt artificial intelligence, with private AI emerging as an alternative for the complete stack.",
+    "source": "Telecom"
+  },
+  {
+    "title": "Critical RCE flaw in Windows IKE Extension now actively exploited",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
+    "pubDate": "Wed, 19 Aug 2026 06:12:24 -0400",
+    "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are exploiting a critical-severity remote code execution (RCE) flaw in the Windows Internet Key Exchange (IKE) Service Extensions component. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Windows 11 24H2 Home and Pro reach end of support in 2 months",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-2-months/",
+    "pubDate": "Wed, 19 Aug 2026 05:10:20 -0400",
+    "contentSnippet": "Microsoft has reminded customers that systems running Home and Pro editions of Windows 11 24H2 will stop receiving updates in two months. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/",
+    "pubDate": "Wed, 19 Aug 2026 04:00:48 -0400",
+    "contentSnippet": "The FBI said Tuesday that the Medusa ransomware gang has breached more than 500 critical infrastructure organizations in the United States since June 2021. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft Links 30+ Rotating Domains to MacSync Stealer Infrastructure",
+    "link": "https://thehackernews.com/2026/08/microsoft-links-30-rotating-domains-to.html",
+    "pubDate": "Wed, 19 Aug 2026 11:31:53 +0530",
+    "contentSnippet": "Microsoft Defender Experts have linked more than 30 web domains to MacSync Stealer, a macOS-focused information stealer, after correlating recurring endpoint and network behaviors across changing infrastructure, tracing the malware from payload retrieval through data collection, staging, and exfiltration.\n\nThe tech giant said it required multiple endpoint and network behaviors to align before",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Clop-Linked Windchill Web Shell Decrypts Credentials and Maps Engineering Data",
+    "link": "https://thehackernews.com/2026/08/clop-linked-windchill-web-shell.html",
+    "pubDate": "Wed, 19 Aug 2026 11:09:25 +0530",
+    "contentSnippet": "A JavaServer Pages (JSP) web shell deployed following the exploitation of a critical security flaw in PTC Windchill and FlexPLM servers is specifically designed for the enterprise Product Lifecycle Management (PLM) software, according to new findings from ReliaQuest.\n\nThe cybersecurity company characterized the web shell as a fully equipped extortion platform capable of mapping sensitive vault",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "SC to decide telecom firms’ plea for release of ₹3,300 crore bank guarantees",
+    "link": "https://telecom.economictimes.indiatimes.com/news/industry/sc-to-decide-telecom-firms-plea-for-release-of-3300-crore-bank-guarantees/133335150",
+    "pubDate": "Wed, 19 Aug 2026 07:23:22 +0530",
+    "contentSnippet": "The SC while issuing notice to the telecom companies last week had refused to stay a June 8 Bombay HC order that set aside the Centre's one-time spectrum charge (OTSC) demands raised against Airtel, Vi, and others for the 2008-2012 period. The high court held that the government was unable to justify its action of levying OTSC retrospectively.",
+    "source": "Telecom"
+  },
+  {
+    "title": "ChatGPT Ads expands across Europe",
+    "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+    "pubDate": "Tue, 18 Aug 2026 22:00:00 GMT",
+    "contentSnippet": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions.",
+    "source": "AI"
+  },
+  {
+    "title": "Comcast turns your Xfinity WiFi into a home motion detector",
+    "link": "https://www.bleepingcomputer.com/news/security/comcast-turns-your-xfinity-wifi-into-a-home-motion-detector/",
+    "pubDate": "Tue, 18 Aug 2026 16:14:58 -0400",
+    "contentSnippet": "Comcast is promoting WiFi-based motion detection as a part of its new Xfinity Shield home protection platform, allowing routers and wireless devices to detect people moving through a home without cameras or motion sensors. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Strengthening democratic oversight in national security",
+    "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "pubDate": "Tue, 18 Aug 2026 19:00:00 GMT",
+    "contentSnippet": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.",
+    "source": "AI"
+  },
+  {
+    "title": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
+    "link": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
+    "pubDate": "Tue, 18 Aug 2026 23:17:22 +0530",
+    "contentSnippet": "Varonis Threat Labs has disclosed three vulnerabilities in Microsoft Copilot Personal that it said could allow a single click on a crafted link to silently pull data from connected apps and other information available to the victim's Copilot session.\n\nThe flaws, which the researchers collectively named CoSnitch, turn in part on an undocumented URL parameter that the assistant itself surfaced",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
+    "link": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
+    "pubDate": "Tue, 18 Aug 2026 23:14:05 +0530",
+    "contentSnippet": "Two critical vulnerabilities impacting MLflow, an open-source artificial intelligence (AI) platform, and FUXA, an open-source, web-based SCADA / HMI software built for operational technology (OT) and industrial automation, are witnessing malicious scanning and exploitation efforts.\n\nAccording to independent reports from watchTowr and VulnCheck, the vulnerabilities in question are as follows -",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Clop created custom web shell for Windchill data theft attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/clop-created-custom-web-shell-for-windchill-data-theft-attacks/",
+    "pubDate": "Tue, 18 Aug 2026 13:29:51 -0400",
+    "contentSnippet": "A custom Java web shell likely linked to the Clop ransomware gang was designed specifically for PTC Windchill and FlexPLM servers, with built-in features to decrypt credentials, enumerate file repositories, and steal files. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Omdia: Mission critical networks demand more: Rethink your OSS and BSS",
+    "link": "https://www.ericsson.com/en/oss-bss/forms/omdia-mission-critical-networks-demand-more?utm_medium=advertorial&utm_source=RCR-Wireless&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel-",
+    "pubDate": "Tue, 18 Aug 2026 17:25:45 +0000",
+    "contentSnippet": "“The next billion dollar growth engine for Communications Service Providers (CSPs) is the digitalization of mission critical verticals, and a modern OSS and BSS solution is the key to unlock…",
+    "source": "Telecom"
+  },
+  {
+    "title": "TM Forum report – IT with intent: the interconnected future of telco operations",
+    "link": "https://www.ericsson.com/en/oss-bss/forms/tm-forum-it-with-intent-report?utm_medium=advertorial&utm_source=RCR-Wireless-&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel",
+    "pubDate": "Tue, 18 Aug 2026 17:16:45 +0000",
+    "contentSnippet": "Discover how the telecom industry is undergoing a dual paradigm shift from traditional IT operating models to intent-based autonomous operations, all powered by 5G programmability and AI-driven networks, and the…",
+    "source": "Telecom"
+  },
+  {
+    "title": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
+    "link": "https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html",
+    "pubDate": "Tue, 18 Aug 2026 22:28:16 +0530",
+    "contentSnippet": "A ransomware affiliate calling itself Ransom Busters has been spotted proactively sending emails to victim organizations and claims to delete stolen data from ransomware groups' servers in exchange for a fee ranging from $20,000 to $60,000.\n\n\"In these messages, the third-party offers to help the victim recover from ransomware attack. This immediately stands out as anomalous,\" GuidePoint Research",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Business Value Pathways",
+    "link": "https://www.ericsson.com/en/oss-bss/forms/business-value-pathways?utm_medium=advertorial&utm_source=RCR-Wireless-&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel",
+    "pubDate": "Tue, 18 Aug 2026 16:55:48 +0000",
+    "contentSnippet": "Outcomes are what matter, everything else is how you get there. In a noisy market, CSPs still struggle to turn domain-level automation and growing data into end-to-end, closed-loop impact. Business…",
+    "source": "Telecom"
+  },
+  {
+    "title": "Your Controls Block Known Attacks. What About the Behavior?",
+    "link": "https://www.bleepingcomputer.com/news/security/your-controls-block-known-attacks-what-about-the-behavior/",
+    "pubDate": "Tue, 18 Aug 2026 10:01:11 -0400",
+    "contentSnippet": "Security controls can block a familiar attack method while missing quieter ways to achieve the same objective. Picus Security's Blue Report 2026 shows how prevention rates can vary dramatically by technique and why behavioral testing is needed to uncover those gaps. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Preparing base station antenna sites for the 5G-Advanced and AI era (Analyst Angle) ",
+    "link": "https://rcrwireless.com/20260818/analyst-angle/antenna-sites-5g-advanced-ai-era-abi",
+    "pubDate": "Tue, 18 Aug 2026 12:44:14 +0000",
+    "contentSnippet": "Passive antennas are becoming strategic infrastructure for 5G-Advanced, as operators tackle capacity, uplink demand, energy costs, and site constraints while preparing physical networks for AI-assisted RAN operations. ABI Research has…",
+    "source": "Telecom"
+  }
+]

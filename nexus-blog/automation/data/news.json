@@ -1,9 +1,65 @@
 [
   {
+    "title": "How MSPs can catch phishing attacks email filters miss",
+    "link": "https://www.bleepingcomputer.com/news/security/how-msps-can-catch-phishing-attacks-email-filters-miss/",
+    "pubDate": "Thu, 20 Aug 2026 10:01:11 -0400",
+    "contentSnippet": "AI is making phishing attacks more personalized, convincing, and difficult for traditional email filters to detect. Kaseya explains how MSPs can monitor identity, email, and endpoint activity to detect and contain attacks that make it past the inbox. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE",
+    "link": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
+    "pubDate": "Thu, 20 Aug 2026 19:18:24 +0530",
+    "contentSnippet": "Cybersecurity researchers have disclosed a critical security flaw in isolated-vm, a popular open-source sandbox with more than 2,900 stars and 190 forks on GitHub, that could allow attackers to escape the confines of the isolated environment.\n\nThe vulnerability (\"GHSA-864f-rcv7-6rh4\"), which has yet to be assigned a CVE identifier, impacts all versions of the library before and including 7.0.0.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
+    "link": "https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html",
+    "pubDate": "Thu, 20 Aug 2026 19:05:13 +0530",
+    "contentSnippet": "Citrix has released updates to address two security flaws impacting NetScaler ADC and NetScaler Gateway deployments, including a critical-severity authentication bypass vulnerability.\n\nAccording to the cloud computing and virtualization technology company, the issues affect customer-managed NetScaler ADC and NetScaler Gateway, including certain FIPS and NDcPP builds, as well as SecurAccess",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+    "link": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
+    "pubDate": "Thu, 20 Aug 2026 18:54:28 +0530",
+    "contentSnippet": "A now-patched security flaw impacting Zimbra Collaboration (ZCS) has come under active exploitation in the wild, according to the Polish Computer Emergency Response Team (CERT Polska).\n\nThe vulnerability in question is CVE-2026-73570 (CVSS score: 8.9), which refers to a case of command injection that can lead to remote code execution.\n\n\"A remote code execution vulnerability exists in Zimbra",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Citrix urges admins to patch new NetScaler flaws as soon as possible",
     "link": "https://www.bleepingcomputer.com/news/security/citrix-urges-admins-to-patch-new-netscaler-flaws-as-soon-as-possible/",
     "pubDate": "Thu, 20 Aug 2026 08:14:38 -0400",
     "contentSnippet": "Citrix has warned customers to immediately secure their systems against two vulnerabilities affecting NetScaler Gateway secure remote access solutions and NetScaler ADC networking appliances. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Zombie Card Attack Can Revive Expired Visa Cards for Contactless Payments",
+    "link": "https://thehackernews.com/2026/08/zombie-card-attack-can-revive-expired.html",
+    "pubDate": "Thu, 20 Aug 2026 17:31:24 +0530",
+    "contentSnippet": "Researchers at the University of Massachusetts Amherst have demonstrated an attack that revives expired Visa contactless credit cards for real in-store purchases by rewriting the expiration date a point-of-sale (POS) terminal reads over near-field communication (NFC), without breaking any of the card's cryptography.\n\nThe attack, which the researchers named \"Zombie Card,\" requires physical",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Why \"Shady AI\" is Security's Next Big Governance Problem",
+    "link": "https://thehackernews.com/2026/08/why-shady-ai-is-securitys-next-big.html",
+    "pubDate": "Thu, 20 Aug 2026 17:15:00 +0530",
+    "contentSnippet": "In March 2026, an internal AI agent at Meta triggered a “Sev 1” incident after sensitive company and user data was exposed to employees who weren’t authorized to access it. \n\nThe incident began when a Meta employee posted a technical question on an internal forum. An engineer used an approved AI agent to analyze it, but the agent posted its response publicly without approval. The employee",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "CDN Tsunami Attack Abuses HTTP/3 Translation for Up to 350x DoS Amplification",
+    "link": "https://thehackernews.com/2026/08/cdn-tsunami-attack-abuses-http3.html",
+    "pubDate": "Thu, 20 Aug 2026 17:09:35 +0530",
+    "contentSnippet": "Cybersecurity researchers have disclosed two denial-of-service (DoS) attacks that exploit how major content delivery networks (CDNs) convert client-facing HTTP/3 traffic into HTTP/1.1 requests to the websites they front, amplifying a low-bandwidth request stream by up to 350x against the origin server.\n\nThe attacks, collectively named \"CDN Tsunami,\" were evaluated against Alibaba, Baidu,",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Manic Android Malware Exfiltrates Data From Offline Phones via Nearby Infected Devices",
+    "link": "https://thehackernews.com/2026/08/manic-android-malware-exfiltrates-data.html",
+    "pubDate": "Thu, 20 Aug 2026 16:56:08 +0530",
+    "contentSnippet": "A new Android threat codenamed Manic has been observed actively targeting Ukrainian banks, government and identity services, and messaging applications, as well as Russian and European financial institutions, global fintech and cryptocurrency services, and military-focused communications.\n\n\"Manic sits at the intersection of Android banking malware and mobile spyware, combining financial-fraud",
     "source": "Cybersecurity"
   },
   {
@@ -151,55 +207,6 @@
     "link": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
     "pubDate": "Wed, 19 Aug 2026 23:36:44 +0530",
     "contentSnippet": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capable, the risks associated with developing and testing them internally also grow,\" the AI company",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "US warns of AI-powered attacks on Siemens PLCs in critical infrastructure",
-    "link": "https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/",
-    "pubDate": "Wed, 19 Aug 2026 13:50:01 -0400",
-    "contentSnippet": "U.S. cybersecurity agencies warn that threat actors are using AI-generated scripts to exploit Siemens S7 Series programmable logic controllers (PLCs) in U.S. critical infrastructure. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "US charges Iranian hackers over $3.4 billion intellectual property theft",
-    "link": "https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/",
-    "pubDate": "Wed, 19 Aug 2026 11:56:09 -0400",
-    "contentSnippet": "The U.S. has charged 17 Iranians, alleged members of a hacking-for-hire company called Mabna Institute, involved in years-long operations that stole data from American organizations. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "DoT starts process to disband Digital Communication Commission",
-    "link": "https://telecom.economictimes.indiatimes.com/news/policy/dot-starts-process-to-disband-digital-communication-commission/133352014",
-    "pubDate": "Wed, 19 Aug 2026 20:38:44 +0530",
-    "contentSnippet": "Among the ex-officio secretaries, the post of member (technology) and member (services) are lying vacant and the government has no plans to fill them. Member (Finance) Manish Sinha will superannuate in February 2027.",
-    "source": "Telecom"
-  },
-  {
-    "title": "Industry perspective: From automation to autonomy",
-    "link": "https://www.ericsson.com/assets/local/oss-bss/doc/industry-perspective-from-automation-to-autonomy.pdf?utm_medium=advertorial&utm_source=RCR-Wireless&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel",
-    "pubDate": "Wed, 19 Aug 2026 14:49:20 +0000",
-    "contentSnippet": "Intent and knowledge as the foundation for decision-safe network operations This paper aims to advance industry discourse on Level-4+ autonomous networks by challenging a persistent assumption: that autonomy can be…",
-    "source": "Telecom"
-  },
-  {
-    "title": "Password spraying attacks surge 155x as hackers exploit MFA gaps",
-    "link": "https://www.bleepingcomputer.com/news/security/password-spraying-attacks-surge-155x-as-hackers-exploit-mfa-gaps/",
-    "pubDate": "Wed, 19 Aug 2026 10:00:10 -0400",
-    "contentSnippet": "Huntress observed a 155x increase in password spraying attacks in H1 2026, including a campaign that generated more than 81 million login attempts in two weeks. The attacks exploited legacy authentication and gaps in MFA policies that left some login flows unprotected. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Omdia sees RAN growth outside China despite weak global market",
-    "link": "https://rcrwireless.com/20260819/5g/omdia-ran-china",
-    "pubDate": "Wed, 19 Aug 2026 13:19:03 +0000",
-    "contentSnippet": "Speaking to RCR Wireless News, Rémy Pascal, practice leader, mobile infrastructure and RAN lead analyst at Omdia, said the main regional contributors to growth in the first half of the…",
-    "source": "Telecom"
-  },
-  {
-    "title": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
-    "link": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
-    "pubDate": "Wed, 19 Aug 2026 18:42:17 +0530",
-    "contentSnippet": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, GoginRAT, and NodeEdgeRAT. SilkParasite, first discovered in late 2025, is assessed to be a",
     "source": "Cybersecurity"
   }
 ]

@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Microsoft says August Windows updates may cause gaming issues",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-windows-updates-may-cause-gaming-issues-reboots/",
+    "pubDate": "Thu, 20 Aug 2026 02:51:03 -0400",
+    "contentSnippet": "Microsoft is investigating a potential issue with the August 2026 updates that may prevent some games from launching or cause them to crash on affected Windows 11 systems. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
+    "link": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
+    "pubDate": "Thu, 20 Aug 2026 11:34:34 +0530",
+    "contentSnippet": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.\n\nThe vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of unrestricted upload of a file with a dangerous type.\n\n\"The flaw lives in the Forms module's File",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "SC rejects GST department review plea, telecom firms get relief on tower tax credit",
+    "link": "https://telecom.economictimes.indiatimes.com/news/industry/sc-rejects-gst-department-review-plea-telecom-firms-get-relief-on-tower-tax-credit/133361762",
+    "pubDate": "Thu, 20 Aug 2026 07:26:02 +0530",
+    "contentSnippet": "The Supreme Court had on August 8 last year upheld a Delhi High Court’s December 12, 2024 ruling that favoured Bharti Airtel and Indus Tower, holding that telecom towers fall within the scope of plant and machinery and do not fall within the ambit of Section 17(5)(d) of the Central Goods and Services Tax Act, 2017, and therefore, were eligible for ITC. The apex court had also upheld the quashing of the department's demand and show-cause notices issued to Bharti Airtel and Indus Towers.",
+    "source": "Telecom"
+  },
+  {
+    "title": "Elon Musk&#039;s Starlink reapplies for India approval of satellite network with direct-to-device tech",
+    "link": "https://telecom.economictimes.indiatimes.com/news/portal-in-portal/satcom/elon-musks-starlink-reapplies-for-india-approval-of-satellite-network-with-direct-to-device-tech/133361738",
+    "pubDate": "Thu, 20 Aug 2026 07:22:56 +0530",
+    "contentSnippet": "Starlink has reapplied to India’s space regulator for approval of its Gen 2 satellite constellation, seeking authorisation for nearly 30,000 satellites in low Earth orbit. The application includes newer capabilities such as direct-to-device connectivity, as India considers expanding satcom spectrum access and finalising rules for satellite-based mobile services.",
+    "source": "Telecom"
+  },
+  {
+    "title": "OpenAI confirms ChatGPT is down as logins and signups fail",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-as-logins-and-signups-fail/",
+    "pubDate": "Wed, 19 Aug 2026 20:20:55 -0400",
+    "contentSnippet": "ChatGPT is experiencing a major outage, and users are unable to sign in, create accounts, or load chats, including previous conversations. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Rogue ransomware affiliate poses as recovery firm to steal payments",
+    "link": "https://www.bleepingcomputer.com/news/security/rogue-ransomware-affiliate-ransom-busters-poses-as-recovery-firm/",
+    "pubDate": "Wed, 19 Aug 2026 16:59:58 -0400",
+    "contentSnippet": "A suspected ransomware affiliate is posing as a ransomware recovery service called \"Ransom Busters,\" contacting the victims before the attacks become public and claiming to be able to provide decryption keys and delete stolen data for a fee. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Sakura Internet hack exposes data of up to 1.36 million accounts",
+    "link": "https://www.bleepingcomputer.com/news/security/sakura-internet-hack-exposes-data-of-up-to-136-million-accounts/",
+    "pubDate": "Wed, 19 Aug 2026 16:53:38 -0400",
+    "contentSnippet": "Japanese cloud and data center service provider Sakura Internet disclosed that hackers accessed its sales management system, where customer contract and membership information is stored. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Healthtech firm CareCloud data breach impacts 3.7 million patients",
+    "link": "https://www.bleepingcomputer.com/news/security/healthtech-firm-carecloud-data-breach-impacts-37-million-patients/",
+    "pubDate": "Wed, 19 Aug 2026 16:07:12 -0400",
+    "contentSnippet": "U.S. healthcare IT company CareCloud disclosed that the data breach incident it suffered earlier this year has impacted more than 3.7 million individuals. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Telecom AI ambition far outpaces execution, HCLTech pulse survey finds",
+    "link": "https://rcrwireless.com/20260819/ai/hcltech-pulse-survey-telecom-ai",
+    "pubDate": "Wed, 19 Aug 2026 19:09:48 +0000",
+    "contentSnippet": "Only a quarter of operators are ready to scale telecom AI In sum – what we know: HCLTech and Mobile World Live have released their “Telecom Pulse Survey Report” for 2026,…",
+    "source": "Telecom"
+  },
+  {
+    "title": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
+    "link": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
+    "pubDate": "Thu, 20 Aug 2026 00:32:40 +0530",
+    "contentSnippet": "Cybersecurity researchers have disclosed details of a remote Spectre attack against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe end-to-end experiment used an attacker Worker and a victim Worker controlled by the researchers,",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Offering Zero Data Retention for frontier models",
+    "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "pubDate": "Wed, 19 Aug 2026 19:00:00 GMT",
+    "contentSnippet": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+    "source": "AI"
+  },
+  {
+    "title": "Hackers compromise 14,500 Dahua web cameras in 35-day campaign",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-14-500-dahua-web-cameras-in-35-day-campaign/",
+    "pubDate": "Wed, 19 Aug 2026 14:09:13 -0400",
+    "contentSnippet": "In a large-scale campaign that researchers dubbed CameraSwarm, hackers compromised more than 14,500 Dahua IP cameras mostly in Ukraine and Russia. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
+    "link": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
+    "pubDate": "Wed, 19 Aug 2026 23:36:44 +0530",
+    "contentSnippet": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capable, the risks associated with developing and testing them internally also grow,\" the AI company",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "US warns of AI-powered attacks on Siemens PLCs in critical infrastructure",
+    "link": "https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/",
+    "pubDate": "Wed, 19 Aug 2026 13:50:01 -0400",
+    "contentSnippet": "U.S. cybersecurity agencies warn that threat actors are using AI-generated scripts to exploit Siemens S7 Series programmable logic controllers (PLCs) in U.S. critical infrastructure. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "US charges Iranian hackers over $3.4 billion intellectual property theft",
+    "link": "https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/",
+    "pubDate": "Wed, 19 Aug 2026 11:56:09 -0400",
+    "contentSnippet": "The U.S. has charged 17 Iranians, alleged members of a hacking-for-hire company called Mabna Institute, involved in years-long operations that stole data from American organizations. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "DoT starts process to disband Digital Communication Commission",
+    "link": "https://telecom.economictimes.indiatimes.com/news/policy/dot-starts-process-to-disband-digital-communication-commission/133352014",
+    "pubDate": "Wed, 19 Aug 2026 20:38:44 +0530",
+    "contentSnippet": "Among the ex-officio secretaries, the post of member (technology) and member (services) are lying vacant and the government has no plans to fill them. Member (Finance) Manish Sinha will superannuate in February 2027.",
+    "source": "Telecom"
+  },
+  {
+    "title": "Industry perspective: From automation to autonomy",
+    "link": "https://www.ericsson.com/assets/local/oss-bss/doc/industry-perspective-from-automation-to-autonomy.pdf?utm_medium=advertorial&utm_source=RCR-Wireless&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel",
+    "pubDate": "Wed, 19 Aug 2026 14:49:20 +0000",
+    "contentSnippet": "Intent and knowledge as the foundation for decision-safe network operations This paper aims to advance industry discourse on Level-4+ autonomous networks by challenging a persistent assumption: that autonomy can be…",
+    "source": "Telecom"
+  },
+  {
+    "title": "Password spraying attacks surge 155x as hackers exploit MFA gaps",
+    "link": "https://www.bleepingcomputer.com/news/security/password-spraying-attacks-surge-155x-as-hackers-exploit-mfa-gaps/",
+    "pubDate": "Wed, 19 Aug 2026 10:00:10 -0400",
+    "contentSnippet": "Huntress observed a 155x increase in password spraying attacks in H1 2026, including a campaign that generated more than 81 million login attempts in two weeks. The attacks exploited legacy authentication and gaps in MFA policies that left some login flows unprotected. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Omdia sees RAN growth outside China despite weak global market",
+    "link": "https://rcrwireless.com/20260819/5g/omdia-ran-china",
+    "pubDate": "Wed, 19 Aug 2026 13:19:03 +0000",
+    "contentSnippet": "Speaking to RCR Wireless News, Rémy Pascal, practice leader, mobile infrastructure and RAN lead analyst at Omdia, said the main regional contributors to growth in the first half of the…",
+    "source": "Telecom"
+  },
+  {
+    "title": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
+    "link": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
+    "pubDate": "Wed, 19 Aug 2026 18:42:17 +0530",
+    "contentSnippet": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, GoginRAT, and NodeEdgeRAT. SilkParasite, first discovered in late 2025, is assessed to be a",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Hackers Compromised 14,500+ Dahua Devices Using Credential Attacks, Auth Bypasses, and P2P",
+    "link": "https://thehackernews.com/2026/08/hackers-compromised-14500-dahua-devices.html",
+    "pubDate": "Wed, 19 Aug 2026 17:04:28 +0530",
+    "contentSnippet": "Cybersecurity researchers at Hunt.io have disclosed details of a campaign that they say compromised more than 14,530 Dahua devices between June 17 and July 22, 2026, using credential attacks, two authentication-bypass flaws, and a peer-to-peer (P2P) relay technique.\n\nThe activity, codenamed Operation CameraSwarm, was reconstructed from a 407 MB exposed working directory containing 2,616 files",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Phishing 3.0: The Fight Moves to Agent Versus Agent",
+    "link": "https://thehackernews.com/2026/08/phishing-30-fight-moves-to-agent-versus.html",
+    "pubDate": "Wed, 19 Aug 2026 17:00:00 +0530",
+    "contentSnippet": "Most email defenses still do the job they did a decade ago. Scan the message, look for something malicious, block it. That worked when the danger sat in the payload, a bad link or an attachment. It stopped working when the danger moved into the message's intent, and it is failing now that the sender is no longer a person.\n\nFrom Bad Content to Bad Intent to AI on Both Sides\n\nPhishing 1.0 was bad",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
+    "link": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
+    "pubDate": "Wed, 19 Aug 2026 16:55:28 +0530",
+    "contentSnippet": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The operation doesn't rely on a single piece of malware, but on a whole toolkit of criminal software",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft fixes known issue causing Windows Defender crashes",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-known-issue-causing-windows-defender-crashes/",
+    "pubDate": "Wed, 19 Aug 2026 07:14:28 -0400",
+    "contentSnippet": "Microsoft has resolved a bug that caused Windows Defender to crash after a recent security update, resulting in 0xc0000005 access violation errors on some affected systems. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+    "link": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+    "pubDate": "Wed, 19 Aug 2026 16:31:48 +0530",
+    "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS score: 9.8) - An improper authentication vulnerability impacting Apple macOS that could allow an",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Unlock greater intelligence and innovation in OSS/BSS with a unified cloud, data and AI platform",
+    "link": "https://www.ericsson.com/en/oss-bss/forms/analysys-mason-report?utm_medium=advertorial&utm_source=RCR-Wireless&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel-",
+    "pubDate": "Wed, 19 Aug 2026 10:51:45 +0000",
+    "contentSnippet": "Discover how a unified cloud, data, and AI platform can unlock greater intelligence, operational agility, and innovative 5G services for your business. Accelerate your OSS/BSS transformation today. Download the report…",
+    "source": "Telecom"
+  },
+  {
+    "title": "Democratising AI in production next major challenge for Indian industry: SUSE’s Marshal Correia",
+    "link": "https://telecom.economictimes.indiatimes.com/news/enterprise-services/democratising-ai-in-production-next-major-challenge-for-indian-industry-suses-marshal-correia/133345149",
+    "pubDate": "Wed, 19 Aug 2026 16:01:13 +0530",
+    "contentSnippet": "Correia said enterprises are prioritising visibility, traceability, and security of their data as they adopt artificial intelligence, with private AI emerging as an alternative for the complete stack.",
+    "source": "Telecom"
+  },
+  {
+    "title": "Critical RCE flaw in Windows IKE Extension now actively exploited",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
+    "pubDate": "Wed, 19 Aug 2026 06:12:24 -0400",
+    "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are exploiting a critical-severity remote code execution (RCE) flaw in the Windows Internet Key Exchange (IKE) Service Extensions component. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Windows 11 24H2 Home and Pro reach end of support in 2 months",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-2-months/",
+    "pubDate": "Wed, 19 Aug 2026 05:10:20 -0400",
+    "contentSnippet": "Microsoft has reminded customers that systems running Home and Pro editions of Windows 11 24H2 will stop receiving updates in two months. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/",
+    "pubDate": "Wed, 19 Aug 2026 04:00:48 -0400",
+    "contentSnippet": "The FBI said Tuesday that the Medusa ransomware gang has breached more than 500 critical infrastructure organizations in the United States since June 2021. [...]",
+    "source": "Cybersecurity"
+  }
+]

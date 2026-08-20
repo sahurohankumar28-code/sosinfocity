@@ -1,40 +1,11 @@
-/* ==========================================================================
-   1. UTILITIES & DESIGN TOKENS
-   ========================================================================== */
-
-.text-center {
-  text-align: center !important;
-}
-
-.justify-center {
-  justify-content: center !important;
-}
-
-.my-10 {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-}
-
-.mb-20 {
-  margin-bottom: 20px !important;
-}
-
-.max-w-900 {
-  max-width: 900px;
-}
-
-.auto-center {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* ==========================================================================
-   2. HERO HEADER & SLIDER COMPONENTS
+   1. HERO HEADER & SLIDER COMPONENTS
    ========================================================================== */
 .hero-header {
   position: relative;
   min-height: 45vh;
-  background: linear-gradient(135deg, #0a0f16 0%, #141b2b 100%);
+  background: radial-gradient(circle at 50% 20%, #1a253a 0%, #0a0f16 75%);
 }
 
 .hero-header h1 {
@@ -139,7 +110,7 @@
 }
 
 /* ==========================================================================
-   3. CASE STUDIES GRID & ARTICLE WRAPPER
+   2. CASE STUDIES GRID & ARTICLE WRAPPER
    ========================================================================== */
 .cs-blog-section {
   padding: 60px 0;
@@ -299,7 +270,7 @@
 }
 
 /* ==========================================================================
-   4. SHARED COMPONENTS (GRIDS, BADGES, STATS & HIGHLIGHT CARDS)
+   3. SHARED COMPONENTS (GRIDS, BADGES, STATS & HIGHLIGHT CARDS)
    ========================================================================== */
 .glance-grid {
   display: grid;
@@ -517,7 +488,7 @@
 }
 
 /* ==========================================================================
-   5. SOLUTION ARCHITECTURE FLOW NODES
+   4. SOLUTION ARCHITECTURE FLOW NODES
    ========================================================================== */
 .arch-flow-wrapper {
   display: flex;
@@ -644,7 +615,7 @@
 }
 
 /* ==========================================================================
-   6. ALTERNATING FEATURE ROWS & TIMELINES
+   5. ALTERNATING FEATURE ROWS & TIMELINES
    ========================================================================== */
 .eng-excellence-wrapper {
   display: flex;
@@ -769,7 +740,7 @@
 }
 
 /* ==========================================================================
-   7. UCCC, CHALLENGE & GOV CARDS
+   6. UCCC, CHALLENGE & GOV CARDS
    ========================================================================== */
 .uccc-gallery-grid {
   display: grid;
@@ -941,7 +912,7 @@
 }
 
 /* ==========================================================================
-   8. BANNER & CTA COMPONENTS
+   7. BANNER & CTA COMPONENTS
    ========================================================================== */
 .mission-control-section,
 .dark-banner-closing {
@@ -1033,7 +1004,7 @@
 }
 
 /* ==========================================================================
-   9. MEDIA QUERIES (RESPONSIVENESS)
+   8. MEDIA QUERIES (RESPONSIVENESS)
    ========================================================================== */
 @media (max-width: 768px) {
   .slide img {
@@ -1087,7 +1058,7 @@
 }
 
 /* ==========================================================================
-   10. CASE STUDY STORYTELLING & NARRATIVE MODULES
+   9. CASE STUDY STORYTELLING & NARRATIVE MODULES
    ========================================================================== */
 
 .story-intro-block {

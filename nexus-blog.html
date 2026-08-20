@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>SOS Infocity - Nexus Blog</title>
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nexus-blog.css" />
+  </head>
+  <body>
+    <div id="splash-screen">
+      <div class="splash-content">
+        <video id="splash-video" autoplay muted playsinline>
+          <source src="videos/sos.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <header class="hero-header">
+      <div class="container">
+        <div id="header-placeholder"></div>
+        <div class="hero-content">
+          <h1>Nexus Tech Pulse & Insights</h1>
+          <p>
+            Curated daily intelligence covering telecom, cybersecurity, AI infrastructure, and enterprise networking.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- LIVE BLOG FEED -->
+    <main class="feed-section">
+      <div class="container">
+        <div class="feed-controls">
+          <div class="filter-pills" id="feedFilters">
+            <button class="pill active" data-filter="all">All Posts</button>
+          </div>
+          <span class="live-indicator"><span class="pulse-dot"></span> Live Updates</span>
+        </div>
+
+        <div id="blogGrid" class="blog-feed-grid">
+          <!-- Skeleton Loaders -->
+          <div class="blog-card skeleton-card">
+            <div class="skeleton line short"></div>
+            <div class="skeleton line title"></div>
+            <div class="skeleton line title short"></div>
+            <div class="skeleton line text"></div>
+            <div class="skeleton line text"></div>
+          </div>
+          <div class="blog-card skeleton-card">
+            <div class="skeleton line short"></div>
+            <div class="skeleton line title"></div>
+            <div class="skeleton line title short"></div>
+            <div class="skeleton line text"></div>
+            <div class="skeleton line text"></div>
+          </div>
+          <div class="blog-card skeleton-card">
+            <div class="skeleton line short"></div>
+            <div class="skeleton line title"></div>
+            <div class="skeleton line title short"></div>
+            <div class="skeleton line text"></div>
+            <div class="skeleton line text"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/header-footer.js"></script>
+    <script src="js/nexus-blog.js"></script>
+  </body>
+</html>

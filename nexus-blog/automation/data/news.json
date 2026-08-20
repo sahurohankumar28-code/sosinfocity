@@ -1,5 +1,26 @@
 [
   {
+    "title": "Debates over AI consciousness are a trap",
+    "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
+    "pubDate": "Thu, 20 Aug 2026 15:42:39 +0000",
+    "contentSnippet": "“Runaway” AI, “rogue” agents, and “autonomous” actors—the current rhetoric would have you believe that AI agents are not only awake and aware, but angry at their creators. Prominent tech leaders such as Demis Hassabis, Dario Amodei, and Sam Altman push for regulation of these seemingly “superhuman” systems, while a separate faction, led by policy organizations…",
+    "source": "AI"
+  },
+  {
+    "title": "Critical Elementor Pro bug exposes WordPress sites to RCE attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-bug-exposes-wordpress-sites-to-rce-attacks/",
+    "pubDate": "Thu, 20 Aug 2026 10:39:48 -0400",
+    "contentSnippet": "A critical vulnerability in the Elementor Pro WordPress plugin could allow attackers to upload executable files for remote code execution on the server. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "New Cryptographic Context Injection Attack Could Let Web Pages Steal Grok Chat Data",
+    "link": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
+    "pubDate": "Thu, 20 Aug 2026 20:06:27 +0530",
+    "contentSnippet": "Adversa AI has disclosed an attack technique that it says can cause xAI's Grok chatbot to send a user's name, approximate location, subscription tier, and the prompts from the ongoing conversation to an attacker-controlled server after the user asks it to summarize an ordinary web page.\n\nThe AI security company, which has codenamed the technique \"Cryptographic Context Injection,\" said the",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "How MSPs can catch phishing attacks email filters miss",
     "link": "https://www.bleepingcomputer.com/news/security/how-msps-can-catch-phishing-attacks-email-filters-miss/",
     "pubDate": "Thu, 20 Aug 2026 10:01:11 -0400",
@@ -154,6 +175,13 @@
     "source": "Cybersecurity"
   },
   {
+    "title": "How ChatGPT Work helps Stampli move ideas to market",
+    "link": "https://openai.com/index/stampli",
+    "pubDate": "Thu, 20 Aug 2026 00:00:00 GMT",
+    "contentSnippet": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
+    "source": "AI"
+  },
+  {
     "title": "Rogue ransomware affiliate poses as recovery firm to steal payments",
     "link": "https://www.bleepingcomputer.com/news/security/rogue-ransomware-affiliate-ransom-busters-poses-as-recovery-firm/",
     "pubDate": "Wed, 19 Aug 2026 16:59:58 -0400",
@@ -180,33 +208,5 @@
     "pubDate": "Wed, 19 Aug 2026 19:09:48 +0000",
     "contentSnippet": "Only a quarter of operators are ready to scale telecom AI In sum – what we know: HCLTech and Mobile World Live have released their “Telecom Pulse Survey Report” for 2026,…",
     "source": "Telecom"
-  },
-  {
-    "title": "Cloudflare Workers Spectre Attack Leaks JWT From Co-Located Worker at 12 Bits/Second",
-    "link": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
-    "pubDate": "Thu, 20 Aug 2026 00:32:40 +0530",
-    "contentSnippet": "Cybersecurity researchers have disclosed details of a remote Spectre attack against Cloudflare Workers that leaked a JSON Web Token (JWT) from a co-located Worker in the production environment at up to 12 bits per second, 360 times the rate of an earlier attack demonstrated in 2021.\n\nThe end-to-end experiment used an attacker Worker and a victim Worker controlled by the researchers,",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Offering Zero Data Retention for frontier models",
-    "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-    "pubDate": "Wed, 19 Aug 2026 19:00:00 GMT",
-    "contentSnippet": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
-    "source": "AI"
-  },
-  {
-    "title": "Hackers compromise 14,500 Dahua web cameras in 35-day campaign",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-14-500-dahua-web-cameras-in-35-day-campaign/",
-    "pubDate": "Wed, 19 Aug 2026 14:09:13 -0400",
-    "contentSnippet": "In a large-scale campaign that researchers dubbed CameraSwarm, hackers compromised more than 14,500 Dahua IP cameras mostly in Ukraine and Russia. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior",
-    "link": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
-    "pubDate": "Wed, 19 Aug 2026 23:36:44 +0530",
-    "contentSnippet": "OpenAI on Tuesday revealed that it paused reinforcement learning (RL) training for its latest artificial intelligence (AI) models for two weeks while it shored up additional defenses and increased the scope of its monitoring to avert another Hugging Face-like incident.\n\n\"As models become more capable, the risks associated with developing and testing them internally also grow,\" the AI company",
-    "source": "Cybersecurity"
   }
 ]

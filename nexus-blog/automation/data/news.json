@@ -1,5 +1,33 @@
 [
   {
+    "title": "New Manic Android malware can exfiltrate data through nearby devices",
+    "link": "https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/",
+    "pubDate": "Thu, 20 Aug 2026 06:02:02 -0400",
+    "contentSnippet": "A new Android malware named Manic targeting users in multiple European countries has a fallback data exfiltration mechanism that uses nearby infected devices. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Unlocking hidden revenue streams with market models",
+    "link": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
+    "pubDate": "Thu, 20 Aug 2026 09:47:22 +0000",
+    "contentSnippet": "Each day, an airline transports tens of thousands of passengers on hundreds of flights. Often these are not straightforward point-to-point routes, with passengers requiring multiple connections. The airline can consider potentially hundreds of variables to price each of these journeys: demand, season, time of day, current events, global markets, and competitor airline activity to name…",
+    "source": "AI"
+  },
+  {
+    "title": "Critical Zimbra RCE flaw now actively exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/",
+    "pubDate": "Thu, 20 Aug 2026 05:46:54 -0400",
+    "contentSnippet": "CERT Polska, the Polish Computer Emergency Response Team (CERT), warned that attackers have begun exploiting a critical vulnerability in Zimbra Collaboration Suite (ZCS). [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "India seeks to share DPI frameworks, train workers with BRICS nations: Pemmasani",
+    "link": "https://telecom.economictimes.indiatimes.com/news/policy/india-seeks-to-share-dpi-frameworks-train-workers-with-brics-nations-chandra-sekhar-pemmasani/133372438",
+    "pubDate": "Thu, 20 Aug 2026 14:50:33 +0530",
+    "contentSnippet": "India’s DPI stack comprises Aadhaar as the foundational identity layer, Unified Payments Interface (UPI), direct benefit transfer (DBT) to citizens’ accounts, and DigiLocker. Other components include the Open Network for Digital Commerce (ONDC), Government e-Marketplace (GeM), and the account aggregator portal.",
+    "source": "Telecom"
+  },
+  {
     "title": "Microsoft says August Windows updates may cause gaming issues",
     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-windows-updates-may-cause-gaming-issues-reboots/",
     "pubDate": "Thu, 20 Aug 2026 02:51:03 -0400",
@@ -180,19 +208,5 @@
     "pubDate": "Wed, 19 Aug 2026 10:51:45 +0000",
     "contentSnippet": "Discover how a unified cloud, data, and AI platform can unlock greater intelligence, operational agility, and innovative 5G services for your business. Accelerate your OSS/BSS transformation today. Download the report…",
     "source": "Telecom"
-  },
-  {
-    "title": "Democratising AI in production next major challenge for Indian industry: SUSE’s Marshal Correia",
-    "link": "https://telecom.economictimes.indiatimes.com/news/enterprise-services/democratising-ai-in-production-next-major-challenge-for-indian-industry-suses-marshal-correia/133345149",
-    "pubDate": "Wed, 19 Aug 2026 16:01:13 +0530",
-    "contentSnippet": "Correia said enterprises are prioritising visibility, traceability, and security of their data as they adopt artificial intelligence, with private AI emerging as an alternative for the complete stack.",
-    "source": "Telecom"
-  },
-  {
-    "title": "Critical RCE flaw in Windows IKE Extension now actively exploited",
-    "link": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
-    "pubDate": "Wed, 19 Aug 2026 06:12:24 -0400",
-    "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are exploiting a critical-severity remote code execution (RCE) flaw in the Windows Internet Key Exchange (IKE) Service Extensions component. [...]",
-    "source": "Cybersecurity"
   }
 ]

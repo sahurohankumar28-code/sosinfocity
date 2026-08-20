@@ -194,19 +194,5 @@
     "pubDate": "Wed, 19 Aug 2026 06:12:24 -0400",
     "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are exploiting a critical-severity remote code execution (RCE) flaw in the Windows Internet Key Exchange (IKE) Service Extensions component. [...]",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Windows 11 24H2 Home and Pro reach end of support in 2 months",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-2-months/",
-    "pubDate": "Wed, 19 Aug 2026 05:10:20 -0400",
-    "contentSnippet": "Microsoft has reminded customers that systems running Home and Pro editions of Windows 11 24H2 will stop receiving updates in two months. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
-    "link": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/",
-    "pubDate": "Wed, 19 Aug 2026 04:00:48 -0400",
-    "contentSnippet": "The FBI said Tuesday that the Medusa ransomware gang has breached more than 500 critical infrastructure organizations in the United States since June 2021. [...]",
-    "source": "Cybersecurity"
   }
 ]

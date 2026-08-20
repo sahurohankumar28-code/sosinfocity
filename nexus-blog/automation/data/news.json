@@ -1,9 +1,23 @@
 [
   {
+    "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
+    "link": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
+    "pubDate": "Fri, 21 Aug 2026 01:29:19 +0530",
+    "contentSnippet": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S.\n\nThese clusters include UNC6293, UNC7005, and UNC5976.\n\n\"These clusters engage in persistent, adaptive",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Hackers poison arrayref Rust crate to push infostealer malware",
     "link": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
     "pubDate": "Thu, 20 Aug 2026 13:53:52 -0400",
     "contentSnippet": "Hackers compromised the maintainer account behind the widely used Rust crate arrayref to introduce malware that executed on developers' systems during compilation. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit and More",
+    "link": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
+    "pubDate": "Thu, 20 Aug 2026 22:53:48 +0530",
+    "contentSnippet": "A lot of this week’s trouble starts with something trusted doing exactly what it was allowed to do.\n\nSigned drivers get turned against defenses. Legitimate apps help malware blend in. A weak header check opens a path to code execution. Elsewhere, exposed systems, old bugs, odd hiding tricks, and AI-assisted exploit research keep lowering the effort needed to cause damage.\n\nNothing here needs",
     "source": "Cybersecurity"
   },
   {
@@ -154,6 +168,13 @@
     "source": "Cybersecurity"
   },
   {
+    "title": "Introducing AI Futures",
+    "link": "https://openai.com/index/introducing-ai-futures",
+    "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+    "contentSnippet": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+    "source": "AI"
+  },
+  {
     "title": "Microsoft says August Windows updates may cause gaming issues",
     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-windows-updates-may-cause-gaming-issues-reboots/",
     "pubDate": "Thu, 20 Aug 2026 02:51:03 -0400",
@@ -186,27 +207,6 @@
     "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-as-logins-and-signups-fail/",
     "pubDate": "Wed, 19 Aug 2026 20:20:55 -0400",
     "contentSnippet": "ChatGPT is experiencing a major outage, and users are unable to sign in, create accounts, or load chats, including previous conversations. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "How ChatGPT Work helps Stampli move ideas to market",
-    "link": "https://openai.com/index/stampli",
-    "pubDate": "Thu, 20 Aug 2026 00:00:00 GMT",
-    "contentSnippet": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
-    "source": "AI"
-  },
-  {
-    "title": "Rogue ransomware affiliate poses as recovery firm to steal payments",
-    "link": "https://www.bleepingcomputer.com/news/security/rogue-ransomware-affiliate-ransom-busters-poses-as-recovery-firm/",
-    "pubDate": "Wed, 19 Aug 2026 16:59:58 -0400",
-    "contentSnippet": "A suspected ransomware affiliate is posing as a ransomware recovery service called \"Ransom Busters,\" contacting the victims before the attacks become public and claiming to be able to provide decryption keys and delete stolen data for a fee. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Sakura Internet hack exposes data of up to 1.36 million accounts",
-    "link": "https://www.bleepingcomputer.com/news/security/sakura-internet-hack-exposes-data-of-up-to-136-million-accounts/",
-    "pubDate": "Wed, 19 Aug 2026 16:53:38 -0400",
-    "contentSnippet": "Japanese cloud and data center service provider Sakura Internet disclosed that hackers accessed its sales management system, where customer contract and membership information is stored. [...]",
     "source": "Cybersecurity"
   }
 ]

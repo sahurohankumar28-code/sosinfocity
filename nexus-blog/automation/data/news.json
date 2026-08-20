@@ -1,5 +1,33 @@
 [
   {
+    "title": "Citrix urges admins to patch new NetScaler flaws as soon as possible",
+    "link": "https://www.bleepingcomputer.com/news/security/citrix-urges-admins-to-patch-new-netscaler-flaws-as-soon-as-possible/",
+    "pubDate": "Thu, 20 Aug 2026 08:14:38 -0400",
+    "contentSnippet": "Citrix has warned customers to immediately secure their systems against two vulnerabilities affecting NetScaler Gateway secure remote access solutions and NetScaler ADC networking appliances. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "CISA warns of hackers exploiting critical MLflow vulnerability",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/",
+    "pubDate": "Thu, 20 Aug 2026 07:06:14 -0400",
+    "contentSnippet": "The Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that threat actors are now exploiting a critical vulnerability in the MLflow open-source AI engineering platform. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands",
+    "link": "https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html",
+    "pubDate": "Thu, 20 Aug 2026 16:35:11 +0530",
+    "contentSnippet": "Security researchers at Cycode have disclosed a chain of flaws in AIT-GUI, the browser-based operator console for NASA/JPL's open-source AMMOS Instrument Toolkit, that allow an unauthenticated attacker to issue arbitrary commands to the software's spacecraft and instrument command bus.\n\nThe chain, tracked as GHSA-p9r8-2q67-fp86 and rated 9.4 on the CVSS v3.1 scoring system, impacts AIT-GUI",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud",
+    "link": "https://thehackernews.com/2026/08/toxicpanda-20-and-golddigger-expand.html",
+    "pubDate": "Thu, 20 Aug 2026 16:08:28 +0530",
+    "contentSnippet": "Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with \"significant enhancements,\" including a set of 167 remote commands and expands its targeting footprint globally.\n\nZimperium zLabs, in a Wednesday report, said the Android malware also features a PIN harvesting workflow targeting more than 140 banking and cryptocurrency applications.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "New Manic Android malware can exfiltrate data through nearby devices",
     "link": "https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/",
     "pubDate": "Thu, 20 Aug 2026 06:02:02 -0400",
@@ -26,6 +54,13 @@
     "pubDate": "Thu, 20 Aug 2026 14:50:33 +0530",
     "contentSnippet": "India’s DPI stack comprises Aadhaar as the foundational identity layer, Unified Payments Interface (UPI), direct benefit transfer (DBT) to citizens’ accounts, and DigiLocker. Other components include the Open Network for Digital Commerce (ONDC), Government e-Marketplace (GeM), and the account aggregator portal.",
     "source": "Telecom"
+  },
+  {
+    "title": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
+    "link": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
+    "pubDate": "Thu, 20 Aug 2026 14:12:03 +0530",
+    "contentSnippet": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code and infrastructure overlaps. The campaign, dubbed Offside Wallet Theft Factory, is believed to",
+    "source": "Cybersecurity"
   },
   {
     "title": "Microsoft says August Windows updates may cause gaming issues",
@@ -166,47 +201,5 @@
     "pubDate": "Wed, 19 Aug 2026 18:42:17 +0530",
     "contentSnippet": "A previously unreported cyber espionage operation dubbed SilkParasite has been observed targeting government bodies in Central Asia.\n\nThe intrusion set makes use of seven remote access tool (RAT) families, five of which have never been previously documented: DriveSilkRAT, CookiETagRAT, NomadRAT, GoginRAT, and NodeEdgeRAT. SilkParasite, first discovered in late 2025, is assessed to be a",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Hackers Compromised 14,500+ Dahua Devices Using Credential Attacks, Auth Bypasses, and P2P",
-    "link": "https://thehackernews.com/2026/08/hackers-compromised-14500-dahua-devices.html",
-    "pubDate": "Wed, 19 Aug 2026 17:04:28 +0530",
-    "contentSnippet": "Cybersecurity researchers at Hunt.io have disclosed details of a campaign that they say compromised more than 14,530 Dahua devices between June 17 and July 22, 2026, using credential attacks, two authentication-bypass flaws, and a peer-to-peer (P2P) relay technique.\n\nThe activity, codenamed Operation CameraSwarm, was reconstructed from a 407 MB exposed working directory containing 2,616 files",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Phishing 3.0: The Fight Moves to Agent Versus Agent",
-    "link": "https://thehackernews.com/2026/08/phishing-30-fight-moves-to-agent-versus.html",
-    "pubDate": "Wed, 19 Aug 2026 17:00:00 +0530",
-    "contentSnippet": "Most email defenses still do the job they did a decade ago. Scan the message, look for something malicious, block it. That worked when the danger sat in the payload, a bad link or an attachment. It stopped working when the danger moved into the message's intent, and it is failing now that the sender is no longer a person.\n\nFrom Bad Content to Bad Intent to AI on Both Sides\n\nPhishing 1.0 was bad",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data",
-    "link": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
-    "pubDate": "Wed, 19 Aug 2026 16:55:28 +0530",
-    "contentSnippet": "Cybersecurity researchers have flagged a global cybercrime operation that abuses thousands of hacked WordPress websites as infrastructure to disseminate malware, commandeer infected hosts, store stolen documents, screenshots, and activity logs created to track the status of the activity.\n\n\"The operation doesn't rely on a single piece of malware, but on a whole toolkit of criminal software",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Microsoft fixes known issue causing Windows Defender crashes",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-known-issue-causing-windows-defender-crashes/",
-    "pubDate": "Wed, 19 Aug 2026 07:14:28 -0400",
-    "contentSnippet": "Microsoft has resolved a bug that caused Windows Defender to crash after a recent security update, resulting in 0xc0000005 access violation errors on some affected systems. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
-    "link": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
-    "pubDate": "Wed, 19 Aug 2026 16:31:48 +0530",
-    "contentSnippet": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, stating they are being exploited in the wild.\n\nThe shortcomings added to the KEV catalog are listed below -\n\n\n  CVE-2026-65400 (CVSS score: 9.8) - An improper authentication vulnerability impacting Apple macOS that could allow an",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Unlock greater intelligence and innovation in OSS/BSS with a unified cloud, data and AI platform",
-    "link": "https://www.ericsson.com/en/oss-bss/forms/analysys-mason-report?utm_medium=advertorial&utm_source=RCR-Wireless&utm_campaign=bcss_Athena2026D1-_bss-oss_23072026_awareness&utm_content=RCR-Wireless-Channel-",
-    "pubDate": "Wed, 19 Aug 2026 10:51:45 +0000",
-    "contentSnippet": "Discover how a unified cloud, data, and AI platform can unlock greater intelligence, operational agility, and innovative 5G services for your business. Accelerate your OSS/BSS transformation today. Download the report…",
-    "source": "Telecom"
   }
 ]

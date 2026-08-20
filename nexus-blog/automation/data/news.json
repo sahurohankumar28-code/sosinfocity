@@ -1,5 +1,12 @@
 [
   {
+    "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
+    "link": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+    "pubDate": "Fri, 21 Aug 2026 01:52:35 +0530",
+    "contentSnippet": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.\n\nThe affected releases are arrayref 0.3.10, internment 0.8.7, and append-only-vec 0.1.9, all published from the same owner",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
     "link": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
     "pubDate": "Fri, 21 Aug 2026 01:29:19 +0530",
@@ -201,12 +208,5 @@
     "pubDate": "Thu, 20 Aug 2026 07:22:56 +0530",
     "contentSnippet": "Starlink has reapplied to India’s space regulator for approval of its Gen 2 satellite constellation, seeking authorisation for nearly 30,000 satellites in low Earth orbit. The application includes newer capabilities such as direct-to-device connectivity, as India considers expanding satcom spectrum access and finalising rules for satellite-based mobile services.",
     "source": "Telecom"
-  },
-  {
-    "title": "OpenAI confirms ChatGPT is down as logins and signups fail",
-    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-as-logins-and-signups-fail/",
-    "pubDate": "Wed, 19 Aug 2026 20:20:55 -0400",
-    "contentSnippet": "ChatGPT is experiencing a major outage, and users are unable to sign in, create accounts, or load chats, including previous conversations. [...]",
-    "source": "Cybersecurity"
   }
 ]

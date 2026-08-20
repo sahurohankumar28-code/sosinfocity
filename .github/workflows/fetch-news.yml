@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Fetch and Purge Script
         working-directory: ./nexus-blog/automation
-        run: node fetch-news.js
+        run: node fetch_news.js
 
       - name: Commit and push updated news.json
         run: |

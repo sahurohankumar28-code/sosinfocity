@@ -2,9 +2,9 @@
   "name": "nexus-blog-automation",
   "version": "1.0.0",
   "description": "Automated 2-hour RSS news aggregator and 24-hour blog cleanup for SOS Infotech",
-  "main": "fetch-news.js",
+  "main": "fetch_news.js",
   "scripts": {
-    "fetch": "node fetch-news.js",
+    "fetch": "node fetch_news.js",
     "start": "node scheduler.js"
   },
   "dependencies": {

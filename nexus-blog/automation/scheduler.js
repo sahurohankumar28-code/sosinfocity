@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const { exec } = require('child_process');
 const path = require('path');
 
-const fetchScriptPath = path.join(__dirname, 'fetch-news.js');
+const fetchScriptPath = path.join(__dirname, 'fetch_news.js');
 
 function runFetch() {
   exec(`node "${fetchScriptPath}"`, (error, stdout, stderr) => {

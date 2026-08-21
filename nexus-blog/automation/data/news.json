@@ -1,5 +1,12 @@
 [
   {
+    "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+    "link": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+    "pubDate": "Fri, 21 Aug 2026 12:34:25 +0530",
+    "contentSnippet": "A newly disclosed security flaw in GitLab has come under active exploitation within days of public disclosure, according to watchTowr.\n\nThe vulnerability in question is CVE-2026-19478 (CVSS score: 9.4), a case of code injection that allows an unauthenticated attacker to modify or delete publicly accessible GitLab projects and rewrite their data under certain conditions without requiring",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
     "link": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
     "pubDate": "Fri, 21 Aug 2026 11:36:11 +0530",
@@ -186,20 +193,6 @@
     "link": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
     "pubDate": "Thu, 20 Aug 2026 14:12:03 +0530",
     "contentSnippet": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code and infrastructure overlaps. The campaign, dubbed Offside Wallet Theft Factory, is believed to",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Introducing AI Futures",
-    "link": "https://openai.com/index/introducing-ai-futures",
-    "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
-    "contentSnippet": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
-    "source": "AI"
-  },
-  {
-    "title": "Microsoft says August Windows updates may cause gaming issues",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-windows-updates-may-cause-gaming-issues-reboots/",
-    "pubDate": "Thu, 20 Aug 2026 02:51:03 -0400",
-    "contentSnippet": "Microsoft is investigating a potential issue with the August 2026 updates that may prevent some games from launching or cause them to crash on affected Windows 11 systems. [...]",
     "source": "Cybersecurity"
   }
 ]

@@ -1,5 +1,19 @@
 [
   {
+    "title": "Is Online Privacy Possible? How Digital Identities Can Help",
+    "link": "https://www.bleepingcomputer.com/news/security/is-online-privacy-possible-how-digital-identities-can-help/",
+    "pubDate": "Fri, 21 Aug 2026 10:00:10 -0400",
+    "contentSnippet": "Using the same email, phone number, payment method, and other identifiers makes it easier for data brokers and attackers to profile your activity. Anonyome Labs explains how separate digital personas can reduce correlation and limit the impact of breaches, spam, and identity theft. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft rolls out Classic Outlook theme for New Outlook users",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/",
+    "pubDate": "Fri, 21 Aug 2026 09:39:35 -0400",
+    "contentSnippet": "Microsoft has started rolling out a Classic Outlook theme for users of Outlook on the web and the New Outlook for Windows. [...]",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "CISA orders feds to patch actively exploited TrueConf Server flaws",
     "link": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/",
     "pubDate": "Fri, 21 Aug 2026 08:25:33 -0400",
@@ -123,34 +137,6 @@
     "link": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
     "pubDate": "Thu, 20 Aug 2026 20:06:27 +0530",
     "contentSnippet": "Adversa AI has disclosed an attack technique that it says can cause xAI's Grok chatbot to send a user's name, approximate location, subscription tier, and the prompts from the ongoing conversation to an attacker-controlled server after the user asks it to summarize an ordinary web page.\n\nThe AI security company, which has codenamed the technique \"Cryptographic Context Injection,\" said the",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "How MSPs can catch phishing attacks email filters miss",
-    "link": "https://www.bleepingcomputer.com/news/security/how-msps-can-catch-phishing-attacks-email-filters-miss/",
-    "pubDate": "Thu, 20 Aug 2026 10:01:11 -0400",
-    "contentSnippet": "AI is making phishing attacks more personalized, convincing, and difficult for traditional email filters to detect. Kaseya explains how MSPs can monitor identity, email, and endpoint activity to detect and contain attacks that make it past the inbox. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE",
-    "link": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
-    "pubDate": "Thu, 20 Aug 2026 19:18:24 +0530",
-    "contentSnippet": "Cybersecurity researchers have disclosed a critical security flaw in isolated-vm, a popular open-source sandbox with more than 2,900 stars and 190 forks on GitHub, that could allow attackers to escape the confines of the isolated environment.\n\nThe vulnerability (\"GHSA-864f-rcv7-6rh4\"), which has yet to be assigned a CVE identifier, impacts all versions of the library before and including 7.0.0.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
-    "link": "https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html",
-    "pubDate": "Thu, 20 Aug 2026 19:05:13 +0530",
-    "contentSnippet": "Citrix has released updates to address two security flaws impacting NetScaler ADC and NetScaler Gateway deployments, including a critical-severity authentication bypass vulnerability.\n\nAccording to the cloud computing and virtualization technology company, the issues affect customer-managed NetScaler ADC and NetScaler Gateway, including certain FIPS and NDcPP builds, as well as SecurAccess",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
-    "link": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
-    "pubDate": "Thu, 20 Aug 2026 18:54:28 +0530",
-    "contentSnippet": "A now-patched security flaw impacting Zimbra Collaboration (ZCS) has come under active exploitation in the wild, according to the Polish Computer Emergency Response Team (CERT Polska).\n\nThe vulnerability in question is CVE-2026-73570 (CVSS score: 8.9), which refers to a case of command injection that can lead to remote code execution.\n\n\"A remote code execution vulnerability exists in Zimbra",
     "source": "Cybersecurity"
   }
 ]

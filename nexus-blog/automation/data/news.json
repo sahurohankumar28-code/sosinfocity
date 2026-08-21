@@ -1,5 +1,19 @@
 [
   {
+    "title": "SickKids data breach exposes employee and job applicant info",
+    "link": "https://www.bleepingcomputer.com/news/security/sickkids-data-breach-exposes-employee-and-job-applicant-info/",
+    "pubDate": "Fri, 21 Aug 2026 06:10:42 -0400",
+    "contentSnippet": "Toronto's Hospital for Sick Children (SickKids) says a cybersecurity incident exposed the personal information of some current and former employees and job applicants, stemming from a flaw in third-party software. Clinical systems and patient records were not affected. (264) [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Equipment, talent availability likely challenges to India’s semiconductor fab ambitions: IEEE",
+    "link": "https://telecom.economictimes.indiatimes.com/news/devices/equipment-talent-availability-likely-challenges-to-indias-semiconductor-fab-ambitions-ieee/133396752",
+    "pubDate": "Fri, 21 Aug 2026 12:49:02 +0530",
+    "contentSnippet": "India’s semiconductor journey has started with 28nm to 110nm as the node, with the government now aspiring to develop more advanced nodes in collaboration with homegrown and multinational innovation centres.",
+    "source": "Telecom"
+  },
+  {
     "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
     "link": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
     "pubDate": "Fri, 21 Aug 2026 12:34:25 +0530",
@@ -158,41 +172,6 @@
     "link": "https://thehackernews.com/2026/08/toxicpanda-20-and-golddigger-expand.html",
     "pubDate": "Thu, 20 Aug 2026 16:08:28 +0530",
     "contentSnippet": "Cybersecurity researchers have shed light on an updated version of ToxicPanda (aka TgToxic) that comes with \"significant enhancements,\" including a set of 167 remote commands and expands its targeting footprint globally.\n\nZimperium zLabs, in a Wednesday report, said the Android malware also features a PIN harvesting workflow targeting more than 140 banking and cryptocurrency applications.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "New Manic Android malware can exfiltrate data through nearby devices",
-    "link": "https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/",
-    "pubDate": "Thu, 20 Aug 2026 06:02:02 -0400",
-    "contentSnippet": "A new Android malware named Manic targeting users in multiple European countries has a fallback data exfiltration mechanism that uses nearby infected devices. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Unlocking hidden revenue streams with market models",
-    "link": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
-    "pubDate": "Thu, 20 Aug 2026 09:47:22 +0000",
-    "contentSnippet": "Each day, an airline transports tens of thousands of passengers on hundreds of flights. Often these are not straightforward point-to-point routes, with passengers requiring multiple connections. The airline can consider potentially hundreds of variables to price each of these journeys: demand, season, time of day, current events, global markets, and competitor airline activity to name…",
-    "source": "AI"
-  },
-  {
-    "title": "Critical Zimbra RCE flaw now actively exploited in attacks",
-    "link": "https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/",
-    "pubDate": "Thu, 20 Aug 2026 05:46:54 -0400",
-    "contentSnippet": "CERT Polska, the Polish Computer Emergency Response Team (CERT), warned that attackers have begun exploiting a critical vulnerability in Zimbra Collaboration Suite (ZCS). [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "India seeks to share DPI frameworks, train workers with BRICS nations: Pemmasani",
-    "link": "https://telecom.economictimes.indiatimes.com/news/policy/india-seeks-to-share-dpi-frameworks-train-workers-with-brics-nations-chandra-sekhar-pemmasani/133372438",
-    "pubDate": "Thu, 20 Aug 2026 14:50:33 +0530",
-    "contentSnippet": "India’s DPI stack comprises Aadhaar as the foundational identity layer, Unified Payments Interface (UPI), direct benefit transfer (DBT) to citizens’ accounts, and DigiLocker. Other components include the Open Network for Digital Commerce (ONDC), Government e-Marketplace (GeM), and the account aggregator portal.",
-    "source": "Telecom"
-  },
-  {
-    "title": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
-    "link": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
-    "pubDate": "Thu, 20 Aug 2026 14:12:03 +0530",
-    "contentSnippet": "A set of 40 Mozilla Firefox extensions has been found to engage in cryptocurrency wallet theft by masquerading as OKX, Rabby Wallet, TronLink, and other Web3 products.\n\nAccording to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code and infrastructure overlaps. The campaign, dubbed Offside Wallet Theft Factory, is believed to",
     "source": "Cybersecurity"
   }
 ]

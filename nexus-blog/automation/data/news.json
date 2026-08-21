@@ -131,12 +131,5 @@
     "pubDate": "Fri, 21 Aug 2026 01:52:35 +0530",
     "contentSnippet": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.\n\nThe affected releases are arrayref 0.3.10, internment 0.8.7, and append-only-vec 0.1.9, all published from the same owner",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
-    "link": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
-    "pubDate": "Fri, 21 Aug 2026 01:29:19 +0530",
-    "contentSnippet": "Three distinct suspected Russian cyber espionage threat clusters have been observed leveraging legitimate authentication flows to single out individuals working in academia, aerospace and defense, governments, and think tanks across Europe, as well as academia and think tanks within the U.S.\n\nThese clusters include UNC6293, UNC7005, and UNC5976.\n\n\"These clusters engage in persistent, adaptive",
-    "source": "Cybersecurity"
   }
 ]

@@ -194,19 +194,5 @@
     "pubDate": "Thu, 20 Aug 2026 11:34:34 +0530",
     "contentSnippet": "Cybersecurity researchers have disclosed details of a critical flaw in the Elementor Pro WordPress plugin that, if successfully exploited, could lead to remote code execution.\n\nThe vulnerability, tracked as CVE-2026-32475, carries a CVSS score of 9.0 out of 10.0. It has been described as a case of unrestricted upload of a file with a dangerous type.\n\n\"The flaw lives in the Forms module's File",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "SC rejects GST department review plea, telecom firms get relief on tower tax credit",
-    "link": "https://telecom.economictimes.indiatimes.com/news/industry/sc-rejects-gst-department-review-plea-telecom-firms-get-relief-on-tower-tax-credit/133361762",
-    "pubDate": "Thu, 20 Aug 2026 07:26:02 +0530",
-    "contentSnippet": "The Supreme Court had on August 8 last year upheld a Delhi High Court’s December 12, 2024 ruling that favoured Bharti Airtel and Indus Tower, holding that telecom towers fall within the scope of plant and machinery and do not fall within the ambit of Section 17(5)(d) of the Central Goods and Services Tax Act, 2017, and therefore, were eligible for ITC. The apex court had also upheld the quashing of the department's demand and show-cause notices issued to Bharti Airtel and Indus Towers.",
-    "source": "Telecom"
-  },
-  {
-    "title": "Elon Musk&#039;s Starlink reapplies for India approval of satellite network with direct-to-device tech",
-    "link": "https://telecom.economictimes.indiatimes.com/news/portal-in-portal/satcom/elon-musks-starlink-reapplies-for-india-approval-of-satellite-network-with-direct-to-device-tech/133361738",
-    "pubDate": "Thu, 20 Aug 2026 07:22:56 +0530",
-    "contentSnippet": "Starlink has reapplied to India’s space regulator for approval of its Gen 2 satellite constellation, seeking authorisation for nearly 30,000 satellites in low Earth orbit. The application includes newer capabilities such as direct-to-device connectivity, as India considers expanding satcom spectrum access and finalising rules for satellite-based mobile services.",
-    "source": "Telecom"
   }
 ]

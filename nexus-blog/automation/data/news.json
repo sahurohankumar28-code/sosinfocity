@@ -1,10 +1,45 @@
 [
   {
+    "title": "Hundreds of leaked AWS keys give full control over corporate accounts",
+    "link": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+    "pubDate": "Fri, 21 Aug 2026 11:55:15 -0400",
+    "contentSnippet": "More than 9,300 Amazon Web Services (AWS) access keys publicly exposed between August 2022 and August 2026 are still active and valid. [...]",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
+    "link": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
+    "pubDate": "Fri, 21 Aug 2026 21:22:10 +0530",
+    "contentSnippet": "Check Point Research has disclosed a technique that uses Microsoft Defender's own legitimately signed boot-time remediation driver to perform arbitrary kernel-level file and registry operations on Windows systems ranging from Windows 7 through Windows 11 25H2, with no software flaw exploited and no driver imported from outside the machine.\n\nThe driver, BTR.sys (Boot Time Removal Tool), is a",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+    "link": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+    "pubDate": "Fri, 21 Aug 2026 21:11:44 +0530",
+    "contentSnippet": "Cybersecurity researchers have flagged a new malware family that's specifically designed to infect Android-based vehicle head unit firmware developed by DoFun.\n\nKaspersky, which discovered the threat in June 2026, said the end goal of the malware is to serve a multi-stage downloader to enable ad fraud and creation of a proxy botnet.\n\n\"The malware spread through the built-in updaters of",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft blames Windows gaming issues on RGB lighting devices",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/",
+    "pubDate": "Fri, 21 Aug 2026 10:54:49 -0400",
+    "contentSnippet": "Microsoft says ongoing issues causing games to crash or fail to launch after installing the August 2026 Windows updates may be caused by peripherals with RGB lighting. [...]",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Is Online Privacy Possible? How Digital Identities Can Help",
     "link": "https://www.bleepingcomputer.com/news/security/is-online-privacy-possible-how-digital-identities-can-help/",
     "pubDate": "Fri, 21 Aug 2026 10:00:10 -0400",
     "contentSnippet": "Using the same email, phone number, payment method, and other identifiers makes it easier for data brokers and attackers to profile your activity. Anonyome Labs explains how separate digital personas can reduce correlation and limit the impact of breaches, spam, and identity theft. [...]",
     "source": "Cybersecurity"
+  },
+  {
+    "title": "Mobile phone makers with turnover of ₹10,000 crore in FY26 eligible for MPMS: MeitY",
+    "link": "https://telecom.economictimes.indiatimes.com/news/policy/mobile-phone-makers-with-turnover-of-10000-crore-in-fy26-eligible-for-mpms-meity/133406343",
+    "pubDate": "Fri, 21 Aug 2026 19:18:26 +0530",
+    "contentSnippet": "The tenure of the scheme will be of five years starting from the current fiscal year. Applicants with majority Indian ownership can be granted a gestation period of one year, according to the Ministry of Electronics and IT.",
+    "source": "Telecom"
   },
   {
     "title": "Microsoft rolls out Classic Outlook theme for New Outlook users",
@@ -116,27 +151,6 @@
     "link": "https://thehackernews.com/2026/08/ai-generated-exploit-scripts-target.html",
     "pubDate": "Thu, 20 Aug 2026 22:29:44 +0530",
     "contentSnippet": "The U.S. government on Wednesday warned of an \"active threat\" targeting critical infrastructure organizations in the country using artificial intelligence (AI)-generated exploit scripts.\n\nThe activity is targeting Siemens S7 SeriesProgrammable Logic Controllers (PLCs) to conduct reconnaissance and capability development using AI-generated scripts disguised as legitimate monitoring tools. That",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Debates over AI consciousness are a trap",
-    "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
-    "pubDate": "Thu, 20 Aug 2026 15:42:39 +0000",
-    "contentSnippet": "“Runaway” AI, “rogue” agents, and “autonomous” actors—the current rhetoric would have you believe that AI agents are not only awake and aware, but angry at their creators. Prominent tech leaders such as Demis Hassabis, Dario Amodei, and Sam Altman push for regulation of these seemingly “superhuman” systems, while a separate faction, led by policy organizations…",
-    "source": "AI"
-  },
-  {
-    "title": "Critical Elementor Pro bug exposes WordPress sites to RCE attacks",
-    "link": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-bug-exposes-wordpress-sites-to-rce-attacks/",
-    "pubDate": "Thu, 20 Aug 2026 10:39:48 -0400",
-    "contentSnippet": "A critical vulnerability in the Elementor Pro WordPress plugin could allow attackers to upload executable files for remote code execution on the server. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "New Cryptographic Context Injection Attack Could Let Web Pages Steal Grok Chat Data",
-    "link": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
-    "pubDate": "Thu, 20 Aug 2026 20:06:27 +0530",
-    "contentSnippet": "Adversa AI has disclosed an attack technique that it says can cause xAI's Grok chatbot to send a user's name, approximate location, subscription tier, and the prompts from the ongoing conversation to an attacker-controlled server after the user asks it to summarize an ordinary web page.\n\nThe AI security company, which has codenamed the technique \"Cryptographic Context Injection,\" said the",
     "source": "Cybersecurity"
   }
 ]

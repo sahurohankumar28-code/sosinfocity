@@ -1,5 +1,12 @@
 [
   {
+    "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+    "link": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+    "pubDate": "Sat, 22 Aug 2026 00:23:00 +0530",
+    "contentSnippet": "Cybersecurity researchers have discovered a set of trojanized npm packages that masquerade as working calendar and streak utilities but are engineered to stealthily deliver an artificial intelligence (AI)-powered Linux implant dubbed RedC2 4.0.\n\n\"When the module loads, it locates the bundled binary, marks it executable, and launches it as a detached background process,\" TrendAI, Trend Micro's",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "New SynkLoader malware pushed in Microsoft Teams phishing campaign",
     "link": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
     "pubDate": "Fri, 21 Aug 2026 14:01:30 -0400",
@@ -124,12 +131,5 @@
     "pubDate": "Fri, 21 Aug 2026 11:17:34 +0530",
     "contentSnippet": "“These industrial units have seen an investment of ₹850 crore. Through this, more than 30,000 youth will gain employment,” said Madhya Pradesh Chief Minister Mohan Yadav on microblogging platform X Thursday.",
     "source": "Telecom"
-  },
-  {
-    "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
-    "link": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
-    "pubDate": "Fri, 21 Aug 2026 01:52:35 +0530",
-    "contentSnippet": "The Rust Project has deleted malicious versions of three widely used Rust crates from crates.io after a compromised maintainer account published releases that added a typosquatted dependency whose build script downloaded and executed a remote payload during compilation.\n\nThe affected releases are arrayref 0.3.10, internment 0.8.7, and append-only-vec 0.1.9, all published from the same owner",
-    "source": "Cybersecurity"
   }
 ]

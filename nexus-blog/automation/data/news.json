@@ -124,19 +124,5 @@
     "pubDate": "Fri, 21 Aug 2026 12:34:25 +0530",
     "contentSnippet": "A newly disclosed security flaw in GitLab has come under active exploitation within days of public disclosure, according to watchTowr.\n\nThe vulnerability in question is CVE-2026-19478 (CVSS score: 9.4), a case of code injection that allows an unauthenticated attacker to modify or delete publicly accessible GitLab projects and rewrite their data under certain conditions without requiring",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
-    "link": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
-    "pubDate": "Fri, 21 Aug 2026 11:36:11 +0530",
-    "contentSnippet": "Microsoft on Thursday warned of a maximum-severity security flaw in Entra ID that it said has been exploited in the wild, but noted that no customer action is required.\n\nThe vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's cloud-based identity and access management service. It was previously called Azure Active Directory",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Pratap Group invests ₹850 crore to open optical fibre, BESS manufacturing units in Madhya Pradesh",
-    "link": "https://telecom.economictimes.indiatimes.com/news/telecom-equipment/pratap-group-invests-850-crore-to-open-optical-fibre-bess-manufacturing-units-in-madhya-pradesh/133394408",
-    "pubDate": "Fri, 21 Aug 2026 11:17:34 +0530",
-    "contentSnippet": "“These industrial units have seen an investment of ₹850 crore. Through this, more than 30,000 youth will gain employment,” said Madhya Pradesh Chief Minister Mohan Yadav on microblogging platform X Thursday.",
-    "source": "Telecom"
   }
 ]

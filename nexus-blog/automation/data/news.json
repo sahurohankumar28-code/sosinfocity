@@ -110,19 +110,5 @@
     "pubDate": "Fri, 21 Aug 2026 15:33:11 +0530",
     "contentSnippet": "Cisco has published another round of security updates for Crosswork platforms and Secure Workload Software as part of a continued comprehensive internal security review.\n\nFour of the security vulnerabilities affect Crosswork Data Gateway, Crosswork Network Controller, and Crosswork Planning, regardless of the device configuration. A brief description of each of the flaws is below -",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Equipment, talent availability likely challenges to India’s semiconductor fab ambitions: IEEE",
-    "link": "https://telecom.economictimes.indiatimes.com/news/devices/equipment-talent-availability-likely-challenges-to-indias-semiconductor-fab-ambitions-ieee/133396752",
-    "pubDate": "Fri, 21 Aug 2026 12:49:02 +0530",
-    "contentSnippet": "India’s semiconductor journey has started with 28nm to 110nm as the node, with the government now aspiring to develop more advanced nodes in collaboration with homegrown and multinational innovation centres.",
-    "source": "Telecom"
-  },
-  {
-    "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
-    "link": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
-    "pubDate": "Fri, 21 Aug 2026 12:34:25 +0530",
-    "contentSnippet": "A newly disclosed security flaw in GitLab has come under active exploitation within days of public disclosure, according to watchTowr.\n\nThe vulnerability in question is CVE-2026-19478 (CVSS score: 9.4), a case of code injection that allows an unauthenticated attacker to modify or delete publicly accessible GitLab projects and rewrite their data under certain conditions without requiring",
-    "source": "Cybersecurity"
   }
 ]

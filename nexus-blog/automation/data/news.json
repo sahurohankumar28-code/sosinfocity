@@ -1,5 +1,12 @@
 [
   {
+    "title": "Named Pipes Under Attack: Securing Windows Interprocess Communication",
+    "link": "https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/",
+    "pubDate": "Sat, 22 Aug 2026 09:00:09 -0400",
+    "contentSnippet": "Windows named pipes provide fast interprocess communication, but weak access controls can expose privileged services to untrusted processes. ThreatLocker explains how endpoint verification, command authorization, strict input validation, and narrowly scoped privileges can help secure named-pipe communication. [...]",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "India-designed mobile phones likely in 10-14 months under MPMS; no place for copycats: Ashwini Vaishnaw",
     "link": "https://telecom.economictimes.indiatimes.com/news/policy/india-designed-mobile-phones-likely-in-10-14-months-under-mpms-no-place-for-copycats-ashwini-vaishnaw/133416114",
     "pubDate": "Sat, 22 Aug 2026 08:00:29 +0530",
@@ -46,27 +53,6 @@
     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/",
     "pubDate": "Fri, 21 Aug 2026 10:54:49 -0400",
     "contentSnippet": "Microsoft says ongoing issues causing games to crash or fail to launch after installing the August 2026 Windows updates may be caused by peripherals with RGB lighting. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Is Online Privacy Possible? How Digital Identities Can Help",
-    "link": "https://www.bleepingcomputer.com/news/security/is-online-privacy-possible-how-digital-identities-can-help/",
-    "pubDate": "Fri, 21 Aug 2026 10:00:10 -0400",
-    "contentSnippet": "Using the same email, phone number, payment method, and other identifiers makes it easier for data brokers and attackers to profile your activity. Anonyome Labs explains how separate digital personas can reduce correlation and limit the impact of breaches, spam, and identity theft. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Mobile phone makers with turnover of ₹10,000 crore in FY26 eligible for MPMS: MeitY",
-    "link": "https://telecom.economictimes.indiatimes.com/news/policy/mobile-phone-makers-with-turnover-of-10000-crore-in-fy26-eligible-for-mpms-meity/133406343",
-    "pubDate": "Fri, 21 Aug 2026 19:18:26 +0530",
-    "contentSnippet": "The tenure of the scheme will be of five years starting from the current fiscal year. Applicants with majority Indian ownership can be granted a gestation period of one year, according to the Ministry of Electronics and IT.",
-    "source": "Telecom"
-  },
-  {
-    "title": "Microsoft rolls out Classic Outlook theme for New Outlook users",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/",
-    "pubDate": "Fri, 21 Aug 2026 09:39:35 -0400",
-    "contentSnippet": "Microsoft has started rolling out a Classic Outlook theme for users of Outlook on the web and the New Outlook for Windows. [...]",
     "source": "Cybersecurity"
   }
 ]

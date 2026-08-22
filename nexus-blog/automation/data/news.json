@@ -1,5 +1,19 @@
 [
   {
+    "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
+    "link": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
+    "pubDate": "Sat, 22 Aug 2026 20:02:41 +0530",
+    "contentSnippet": "The U.S. Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.\n\nAs part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Hackers infect Android car head units with proxy botnet malware",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-infect-android-car-head-units-with-proxy-botnet-malware/",
+    "pubDate": "Sat, 22 Aug 2026 10:14:24 -0400",
+    "contentSnippet": "A supply-chain attack targeting Android-based car head units is using a legitimate device-update app to spread malware that enlists compromised devices in a proxy botnet or uses them for ad fraud. [...]",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Named Pipes Under Attack: Securing Windows Interprocess Communication",
     "link": "https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/",
     "pubDate": "Sat, 22 Aug 2026 09:00:09 -0400",
@@ -25,34 +39,6 @@
     "link": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
     "pubDate": "Fri, 21 Aug 2026 14:01:30 -0400",
     "contentSnippet": "A previously unknown malware family dubbed SynkLoader is being distributed in Microsoft Teams phishing campaigns to steal credentials via a fake lock screen. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Hundreds of leaked AWS keys give full control over corporate accounts",
-    "link": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
-    "pubDate": "Fri, 21 Aug 2026 11:55:15 -0400",
-    "contentSnippet": "More than 9,300 Amazon Web Services (AWS) access keys publicly exposed between August 2022 and August 2026 are still active and valid. [...]",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
-    "link": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
-    "pubDate": "Fri, 21 Aug 2026 21:22:10 +0530",
-    "contentSnippet": "Check Point Research has disclosed a technique that uses Microsoft Defender's own legitimately signed boot-time remediation driver to perform arbitrary kernel-level file and registry operations on Windows systems ranging from Windows 7 through Windows 11 25H2, with no software flaw exploited and no driver imported from outside the machine.\n\nThe driver, BTR.sys (Boot Time Removal Tool), is a",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
-    "link": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
-    "pubDate": "Fri, 21 Aug 2026 21:11:44 +0530",
-    "contentSnippet": "Cybersecurity researchers have flagged a new malware family that's specifically designed to infect Android-based vehicle head unit firmware developed by DoFun.\n\nKaspersky, which discovered the threat in June 2026, said the end goal of the malware is to serve a multi-stage downloader to enable ad fraud and creation of a proxy botnet.\n\n\"The malware spread through the built-in updaters of",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Microsoft blames Windows gaming issues on RGB lighting devices",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/",
-    "pubDate": "Fri, 21 Aug 2026 10:54:49 -0400",
-    "contentSnippet": "Microsoft says ongoing issues causing games to crash or fail to launch after installing the August 2026 Windows updates may be caused by peripherals with RGB lighting. [...]",
     "source": "Cybersecurity"
   }
 ]

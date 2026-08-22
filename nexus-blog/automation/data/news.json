@@ -26,12 +26,5 @@
     "pubDate": "Sat, 22 Aug 2026 08:00:29 +0530",
     "contentSnippet": "\"In this target segment of developing Indian brands, we are very particular that the design has to be your own design. It cannot just be a copycat. They have to come up with the design and prove that the IP is their own. We see three players who have the potential of coming up in a time frame of, let us say, about 10-14 months from now,\" Vaishnaw said.",
     "source": "Telecom"
-  },
-  {
-    "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
-    "link": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
-    "pubDate": "Sat, 22 Aug 2026 00:23:00 +0530",
-    "contentSnippet": "Cybersecurity researchers have discovered a set of trojanized npm packages that masquerade as working calendar and streak utilities but are engineered to stealthily deliver an artificial intelligence (AI)-powered Linux implant dubbed RedC2 4.0.\n\n\"When the module loads, it locates the bundled binary, marks it executable, and launches it as a detached background process,\" TrendAI, Trend Micro's",
-    "source": "Cybersecurity"
   }
 ]

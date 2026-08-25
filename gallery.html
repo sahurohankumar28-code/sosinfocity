@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS Infocity - Gallery</title>
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/logo.webp" type="image/png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -44,7 +44,7 @@
           </div>
           <div class="category-card" onclick="openGallery('meetings')">
             <div class="card-image">
-              <img src="events/photo_21.jpeg" alt="Meetings">
+              <img src="events/photo_21.webp" alt="Meetings">
               <span class="badge">Meetings & Planning</span>
               <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
             </div>
@@ -55,7 +55,7 @@
         <div class="gallery-row reverse">
           <div class="category-card" onclick="openGallery('training')">
             <div class="card-image">
-              <img src="events/photo_5.jpeg" alt="Training & Development">
+              <img src="events/photo_5.webp" alt="Training & Development">
               <span class="badge">Training & Development</span>
               <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
             </div>
@@ -80,7 +80,7 @@
           </div>
           <div class="category-card" onclick="openGallery('awards')">
             <div class="card-image">
-              <img src="events/photo_8.jpeg" alt="Awards & Appreciation">
+              <img src="events/photo_8.webp" alt="Awards & Appreciation">
               <span class="badge">Awards & Appreciation</span>
               <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
             </div>
@@ -91,7 +91,7 @@
         <div class="gallery-row reverse">
           <div class="category-card" onclick="openGallery('celebration')">
             <div class="card-image">
-              <img src="events/photo_24.jpeg" alt="Celebrations">
+              <img src="events/photo_24.webp" alt="Celebrations">
               <span class="badge">Celebrations</span>
               <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
             </div>
@@ -105,15 +105,26 @@
           </div>
         </div>
 
-        <!-- ROW 5: Content Left | Departments & Teams Right -->
-        <!-- <div class="gallery-row">
+        <!-- ROW 5: Content Left | Fun & Games Right -->
+        <div class="gallery-row">
           <div class="row-content">
-            <h2>Departments & Teams</h2>
-            <p>Our cross-functional teams drive innovation and collaborative excellence every day. Explore photos capturing our working atmosphere and team synergy.</p>
-            <button class="btn-view-gallery" onclick="openGallery('departments')">
+            <h2>Fun & Games</h2>
+            <p>Unwinding, gaming sessions, and team-building activities that keep our energy high and work culture lively.</p>
+            <button class="btn-view-gallery" onclick="openGallery('funGames')">
               <i class="fa-solid fa-images"></i> View All Images
             </button>
           </div>
+          <div class="category-card" onclick="openGallery('funGames')">
+            <div class="card-image">
+              <img src="events/ff.webp" alt="Fun & Games">
+              <span class="badge">Fun & Games</span>
+              <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 6: Departments & Teams Left | Content Right -->
+        <!-- <div class="gallery-row reverse">
           <div class="category-card" onclick="openGallery('departments')">
             <div class="card-image">
               <img src="events" alt="Departments and Teams">
@@ -121,8 +132,14 @@
               <div class="overlay-hint"><i class="fa-solid fa-expand">&nbsp;</i> Click to Expand</div>
             </div>
           </div>
+          <div class="row-content">
+            <h2>Departments & Teams</h2>
+            <p>Our cross-functional teams drive innovation and collaborative excellence every day. Explore photos capturing our working atmosphere and team synergy.</p>
+            <button class="btn-view-gallery" onclick="openGallery('departments')">
+              <i class="fa-solid fa-images"></i> View All Images
+            </button>
+          </div>
         </div> -->
-
 
       </div>
     </main>
@@ -150,7 +167,7 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="js/header_footer.js"></script>
+    <script src="js/header-footer.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 </html>

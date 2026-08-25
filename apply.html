@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>SOS Infocity - Career Application Gateway</title>
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>SOS Infocity - Apply</title>
+    <link rel="icon" href="images/logo.webp" type="image/png" sizes="32x32" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,317 +16,332 @@
     <link rel="stylesheet" href="css/apply.css" />
   </head>
   <body>
-    <!-- Splash Screen -->
     <div id="splash-screen">
       <div class="splash-content">
         <video id="splash-video" autoplay muted playsinline>
           <source src="videos/sos.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
       </div>
     </div>
 
-    <!-- Hero Header -->
-    <header class="hero-header">
+    <div class="hero-header">
       <div class="container">
         <div id="header-placeholder"></div>
-        <div class="hero-header-content">
+
+        <div style="margin-top: 40px">
           <h1>Application Gateway</h1>
-          <p>Submit your credentials to sync with our core engineering matrix and infrastructure teams.</p>
+          <p>
+            Submit your credentials to sync with our core engineering matrix.
+          </p>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Application Form Section -->
     <section class="application-form-section">
       <div class="container">
         <a href="careers.html" class="back-to-career" id="backToCareer">
           <i class="fas fa-arrow-left"></i> Back to Careers
         </a>
+      </div>
+      
+      <div class="container split-form-layout">
+        <div class="form-card-container">
+          <form id="applicationForm">
+            <!-- Anti-Spam Honeypot Field (Traps Bots) -->
+            <input type="text" name="_hp_company" style="display:none !important;" tabindex="-1" autocomplete="off" />
 
-        <div class="split-form-layout">
-          <!-- Main Form Card -->
-          <main class="form-card-container">
-            <!-- Progress Tracker -->
-            <div class="step-progress-wrapper" aria-label="Application Progress">
-              <div class="progress-line-track">
-                <div class="progress-line-fill" id="progressLineFill"></div>
+            <div class="form-header-tracking">
+              <span class="section-tag" style="font-size: 1rem;">Application Gateway</span>
+              <h2 id="activeRoleHeader">General Application Pipeline</h2>
+            </div>
+
+            <!-- STEP 1: POSITION OVERVIEW & AGREEMENT -->
+            <div class="form-step-panel active" data-step="1">
+              <div class="job-overview-card" id="jobOverviewCard">
+                <div class="job-meta-badges" id="jobMetaBadges">
+                  <span class="meta-pill"><i class="fas fa-briefcase"></i> 0-3 Years Exp</span>
+                  <span class="meta-pill"><i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha</span>
+                  <span class="meta-pill"><i class="fas fa-clock"></i> Full-Time</span>
+                </div>
+
+                <div class="job-description-content">
+                  <h4 class="overview-title">Role Overview & Key Requirements</h4>
+                  <ul class="job-points-list" id="jobPointsList">
+                    <!-- Populated dynamically via apply.js -->
+                  </ul>
+                </div>
               </div>
-              <div class="step-indicator-dots">
-                <div class="step-dot-item active" data-indicator="1">
-                  <span class="step-dot-badge">1</span>
-                  <span class="step-label">Overview</span>
-                </div>
-                <div class="step-dot-item" data-indicator="2">
-                  <span class="step-dot-badge">2</span>
-                  <span class="step-label">Personal</span>
-                </div>
-                <div class="step-dot-item" data-indicator="3">
-                  <span class="step-dot-badge">3</span>
-                  <span class="step-label">Experience</span>
-                </div>
-                <div class="step-dot-item" data-indicator="4">
-                  <span class="step-dot-badge">4</span>
-                  <span class="step-label">Documents</span>
-                </div>
+
+              <!-- Agree Checkbox -->
+              <div class="agreement-box">
+                <label class="custom-checkbox-container">
+                  <input type="checkbox" id="agreeTerms" required />
+                  <span class="checkmark"></span>
+                  <span class="agreement-text">
+                    I have read and understood the role overview, responsibilities, and eligibility criteria, and agree to proceed.
+                  </span>
+                </label>
+              </div>
+
+              <input
+                type="hidden"
+                id="appliedRole"
+                name="appliedRole"
+                value=""
+              />
+
+              <div class="form-action-row">
+                <button
+                  type="button"
+                  class="btn-form-nav primary next-step-btn"
+                  id="agreeNextBtn"
+                >
+                  Agree & Next <i class="fas fa-arrow-right" style="margin-left: 6px;"></i>
+                </button>
               </div>
             </div>
 
-            <form id="applicationForm" novalidate>
-              <!-- Anti-Spam Honeypot Field -->
-              <input type="text" name="_hp_company" style="display:none !important;" tabindex="-1" autocomplete="off" />
-              <input type="hidden" id="appliedRole" name="appliedRole" value="" />
-
-              <div class="form-header-tracking">
-                <span class="form-tag-mini">Position Selected</span>
-                <h2 id="activeRoleHeader">General Application Pipeline</h2>
+            <!-- STEP 2: PERSONAL INFORMATION -->
+            <div class="form-step-panel" data-step="2">
+              <div class="form-group">
+                <label for="candidateName">Name *</label>
+                <div class="input-with-icon">
+                  <input
+                    type="text"
+                    id="candidateName"
+                    name="candidateName"
+                    placeholder="Enter Full Name"
+                    required
+                  />
+                </div>
               </div>
 
-              <!-- STEP 1: POSITION OVERVIEW & AGREEMENT -->
-              <div class="form-step-panel active" data-step="1">
-                <div class="job-overview-card" id="jobOverviewCard">
-                  <div class="job-meta-badges" id="jobMetaBadges">
-                    <span class="meta-pill"><i class="fas fa-briefcase"></i> 0-3 Years Exp</span>
-                    <span class="meta-pill"><i class="fas fa-location-dot"></i> Bhubaneswar, Odisha</span>
-                    <span class="meta-pill"><i class="fas fa-clock"></i> Full-Time</span>
-                  </div>
-
-                  <div class="job-description-content">
-                    <h4 class="overview-title">Role Overview & Core Responsibilities</h4>
-                    <ul class="job-points-list" id="jobPointsList">
-                      <!-- Populated dynamically via apply.js -->
-                    </ul>
-                  </div>
+              <div class="form-group">
+                <label for="candidateEmail">Email *</label>
+                <div class="input-with-icon">
+                  <input
+                    type="email"
+                    id="candidateEmail"
+                    name="candidateEmail"
+                    placeholder="name@domain.com"
+                    required
+                  />
                 </div>
+              </div>
 
-                <div class="agreement-box">
-                  <label class="custom-checkbox-container">
-                    <input type="checkbox" id="agreeTerms" required />
-                    <span class="checkmark"></span>
-                    <span class="agreement-text">
-                      I have reviewed the role requirements and acknowledge that all submitted data is accurate and verifiable.
-                    </span>
+              <div class="form-group">
+                <label for="callNumber">Contact Number *</label>
+                <div class="input-with-icon">
+                  <input
+                    type="tel"
+                    id="callNumber"
+                    name="callNumber"
+                    placeholder="Enter Contact Number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="whatsappNumber">WhatsApp Number *</label>
+                <div class="input-with-icon">
+                  <input
+                    type="tel"
+                    id="whatsappNumber"
+                    name="whatsappNumber"
+                    placeholder="Enter WhatsApp Number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="addressDetails">Address *</label>
+                <div class="input-with-icon">
+                  <input
+                    type="text"
+                    id="addressDetails"
+                    name="addressDetails"
+                    placeholder="Enter Residential Address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-action-row">
+                <button
+                  type="button"
+                  class="btn-form-nav secondary prev-step-btn"
+                >
+                  Back to Overview
+                </button>
+                <button
+                  type="button"
+                  class="btn-form-nav primary next-step-btn"
+                >
+                  Continue to Experience
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: EXPERIENCE DETAILS -->
+            <div class="form-step-panel" data-step="3">
+              <div class="form-group">
+                <label style="margin-bottom: 12px; display: block"
+                  >Do you have prior job experience? *</label
+                >
+                <div class="experience-toggle-container">
+                  <label class="toggle-option">
+                    <input
+                      type="radio"
+                      name="hasExperience"
+                      value="No"
+                      checked
+                    />
+                    <span class="toggle-pill">No</span>
+                  </label>
+                  <label class="toggle-option">
+                    <input type="radio" name="hasExperience" value="Yes" />
+                    <span class="toggle-pill">Yes</span>
                   </label>
                 </div>
+              </div>
 
-                <div class="form-action-row single">
-                  <button type="button" class="btn-form-nav primary next-step-btn" id="agreeNextBtn">
-                    Agree & Proceed <i class="fas fa-arrow-right"></i>
+              <div
+                class="form-group conditional-exp-field"
+                id="experienceDetailsBlock"
+              >
+                <label for="experienceDetails">Enter Experience Details</label>
+                <div class="input-with-icon">
+                  <textarea
+                    id="experienceDetails"
+                    name="experienceDetails"
+                    rows="4"
+                    placeholder="List your previous roles, metrics, and timelines..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-action-row">
+                <button
+                  type="button"
+                  class="btn-form-nav secondary prev-step-btn"
+                >
+                  Back
+                </button>
+                <button
+                  type="button"
+                  class="btn-form-nav primary next-step-btn"
+                >
+                  Continue to Links & Resume
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4: LINKS & RESUME UPLOAD -->
+            <div class="form-step-panel" data-step="4">
+              <div class="form-group">
+                <label for="linkedinUrl">LinkedIn Profile (If any)</label>
+                <div class="input-prefix-group">
+                  <span class="input-prefix">linkedin.com/in/</span>
+                  <input
+                    type="text"
+                    id="linkedinUrl"
+                    name="linkedinUrl"
+                    placeholder="username"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Upload Resume *</label>
+                <div class="file-drop-zone" id="dropZone">
+                  <input
+                    type="file"
+                    id="resumeFile"
+                    name="resumeFile"
+                    accept=".pdf,.docx"
+                    required
+                  />
+                  <div class="drop-zone-content">
+                    <i
+                      class="fas fa-cloud-arrow-up"
+                      style="
+                        font-size: 1.5rem;
+                        color: var(--primary);
+                        margin-bottom: 8px;
+                      "
+                    ></i>
+                    <p>
+                      <span style="color: var(--primary); font-weight: 600"
+                        >Click to upload</span
+                      >
+                      or drag and drop
+                    </p>
+                    <p
+                      style="
+                        font-size: 0.75rem;
+                        color: #64748b;
+                        margin-top: 4px;
+                      "
+                    >
+                      Supported Formats: PDF, DOCX (Max Size: 1MB)
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="loaded-file-badge"
+                  id="fileBadgeRow"
+                  style="display: none"
+                >
+                  <div class="file-meta-info">
+                    <i class="fas fa-file-pdf"></i>
+                    <span id="loadedFileName">resume.pdf</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="remove-file-btn"
+                    id="removeFileAsset"
+                  >
+                    <i class="fas fa-trash-can"></i>
                   </button>
                 </div>
               </div>
 
-              <!-- STEP 2: PERSONAL INFORMATION -->
-              <div class="form-step-panel" data-step="2">
-                <div class="form-group">
-                  <label for="candidateName">Full Name *</label>
-                  <div class="input-with-icon">
-                    <i class="fas fa-user field-icon"></i>
-                    <input type="text" id="candidateName" name="candidateName" placeholder="e.g., Alex Carter" required />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="candidateEmail">Email Address *</label>
-                  <div class="input-with-icon">
-                    <i class="fas fa-envelope field-icon"></i>
-                    <input type="email" id="candidateEmail" name="candidateEmail" placeholder="alex@domain.com" required />
-                  </div>
-                </div>
-
-                <div class="form-row-2col">
-                  <div class="form-group">
-                    <label for="callNumber">Contact Number *</label>
-                    <div class="input-with-icon">
-                      <i class="fas fa-phone field-icon"></i>
-                      <input type="tel" id="callNumber" name="callNumber" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="whatsappNumber">WhatsApp Number *</label>
-                    <div class="input-with-icon">
-                      <i class="fab fa-whatsapp field-icon"></i>
-                      <input type="tel" id="whatsappNumber" name="whatsappNumber" placeholder="10-digit WhatsApp number" pattern="[0-9]{10}" required />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="addressDetails">Current Residential Address *</label>
-                  <div class="input-with-icon">
-                    <i class="fas fa-map-pin field-icon"></i>
-                    <input type="text" id="addressDetails" name="addressDetails" placeholder="City, State, Country" required />
-                  </div>
-                </div>
-
-                <div class="form-action-row">
-                  <button type="button" class="btn-form-nav secondary prev-step-btn">
-                    <i class="fas fa-arrow-left"></i> Overview
-                  </button>
-                  <button type="button" class="btn-form-nav primary next-step-btn">
-                    Continue to Experience <i class="fas fa-arrow-right"></i>
-                  </button>
-                </div>
+              <div class="form-action-row">
+                <button
+                  type="button"
+                  class="btn-form-nav secondary prev-step-btn"
+                >
+                  Back
+                </button>
+                <button type="submit" class="btn-form-nav primary">
+                  Submit Application
+                </button>
               </div>
+            </div>
+          </form>
 
-              <!-- STEP 3: PROFESSIONAL EXPERIENCE DETAILS -->
-              <div class="form-step-panel" data-step="3">
-                <div class="form-group">
-                  <label>Do you have prior industry experience? *</label>
-                  <div class="experience-toggle-container">
-                    <label class="toggle-option">
-                      <input type="radio" name="hasExperience" value="No" checked />
-                      <span class="toggle-pill">No (Fresher)</span>
-                    </label>
-                    <label class="toggle-option">
-                      <input type="radio" name="hasExperience" value="Yes" />
-                      <span class="toggle-pill">Yes (Experienced)</span>
-                    </label>
-                  </div>
-                </div>
+          <!-- 4-STEP INDICATOR DOTS -->
+          <div class="step-indicator-dots">
+            <span class="step-dot active" data-indicator="1" title="Job Overview"></span>
+            <span class="step-dot" data-indicator="2" title="Personal Details"></span>
+            <span class="step-dot" data-indicator="3" title="Experience"></span>
+            <span class="step-dot" data-indicator="4" title="Resume Upload"></span>
+          </div>
+        </div>
 
-                <!-- Structured Professional Experience Block -->
-                <div class="conditional-exp-field" id="experienceDetailsBlock">
-                  <div class="form-row-2col">
-                    <div class="form-group">
-                      <label for="totalExperience">Total Years of Experience *</label>
-                      <div class="input-with-icon">
-                        <i class="fas fa-calendar-check field-icon"></i>
-                        <select id="totalExperience" name="totalExperience">
-                          <option value="" disabled selected>Select experience</option>
-                          <option value="Less than 1 Year">Less than 1 Year</option>
-                          <option value="1 - 2 Years">1 - 2 Years</option>
-                          <option value="2 - 3 Years">2 - 3 Years</option>
-                          <option value="3+ Years">3+ Years</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="noticePeriod">Notice Period *</label>
-                      <div class="input-with-icon">
-                        <i class="fas fa-hourglass-half field-icon"></i>
-                        <select id="noticePeriod" name="noticePeriod">
-                          <option value="" disabled selected>Select notice period</option>
-                          <option value="Immediate / Available">Immediate / 0 Days</option>
-                          <option value="15 Days">15 Days</option>
-                          <option value="30 Days">30 Days</option>
-                          <option value="45 - 60 Days">45 - 60 Days</option>
-                          <option value="90 Days">90 Days</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-row-2col">
-                    <div class="form-group">
-                      <label for="currentCompany">Current / Most Recent Employer *</label>
-                      <div class="input-with-icon">
-                        <i class="fas fa-building field-icon"></i>
-                        <input type="text" id="currentCompany" name="currentCompany" placeholder="e.g., ABC Tech Solutions" />
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="currentDesignation">Current Job Title / Designation *</label>
-                      <div class="input-with-icon">
-                        <i class="fas fa-id-badge field-icon"></i>
-                        <input type="text" id="currentDesignation" name="currentDesignation" placeholder="e.g., Junior Network Engineer" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="currentCTC">Current / Expected CTC (Optional)</label>
-                    <div class="input-with-icon">
-                      <i class="fas fa-indian-rupee-sign field-icon"></i>
-                      <input type="text" id="currentCTC" name="currentCTC" placeholder="e.g., 3.5 LPA / Negotiable" />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="experienceDetails">Key Responsibilities & Tech Stack Highlights *</label>
-                    <div class="input-with-icon">
-                      <textarea
-                        id="experienceDetails"
-                        name="experienceDetails"
-                        rows="3"
-                        placeholder="Briefly describe your day-to-day duties, technical tools used, key accomplishments..."
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-action-row">
-                  <button type="button" class="btn-form-nav secondary prev-step-btn">
-                    <i class="fas fa-arrow-left"></i> Personal Info
-                  </button>
-                  <button type="button" class="btn-form-nav primary next-step-btn">
-                    Continue to Documents <i class="fas fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-
-              <!-- STEP 4: LINKS & RESUME UPLOAD -->
-              <div class="form-step-panel" data-step="4">
-                <div class="form-group">
-                  <label for="linkedinUrl">LinkedIn Profile Handle</label>
-                  <div class="input-prefix-group">
-                    <span class="input-prefix"><i class="fab fa-linkedin"></i> linkedin.com/in/</span>
-                    <input type="text" id="linkedinUrl" name="linkedinUrl" placeholder="username" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Upload Resume / Curriculum Vitae *</label>
-                  <div class="file-drop-zone" id="dropZone">
-                    <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.docx" required />
-                    <div class="drop-zone-content">
-                      <div class="drop-icon-wrapper">
-                        <i class="fas fa-cloud-arrow-up"></i>
-                      </div>
-                      <p><span class="highlight">Click to browse</span> or drag and drop file here</p>
-                      <span class="file-hint">Supported formats: PDF, DOCX (Max size: 1 MB)</span>
-                    </div>
-                  </div>
-
-                  <div class="loaded-file-badge" id="fileBadgeRow" style="display: none;">
-                    <div class="file-meta-info">
-                      <i class="fas fa-file-pdf"></i>
-                      <div class="file-details">
-                        <span id="loadedFileName" class="file-name">resume.pdf</span>
-                        <span id="loadedFileSize" class="file-size">-- KB</span>
-                      </div>
-                    </div>
-                    <button type="button" class="remove-file-btn" id="removeFileAsset" title="Remove file">
-                      <i class="fas fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="form-action-row">
-                  <button type="button" class="btn-form-nav secondary prev-step-btn">
-                    <i class="fas fa-arrow-left"></i> Experience
-                  </button>
-                  <button type="submit" class="btn-form-nav primary submit-btn" id="submitAppBtn">
-                    <span>Submit Application</span> <i class="fas fa-paper-plane"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </main>
-
-          <!-- Sidebar Image Pane (Clean Image Only) -->
-          <aside class="form-visual-pane">
-            <img src="images/apply.jpg" alt="Careers at SOS Infocity" class="pane-side-img" loading="lazy" />
-          </aside>
+        <div class="form-visual-pane">
+          <img src="images/apply.webp" alt="Careers at SOS Infocity" loading="lazy" />
         </div>
       </div>
     </section>
 
     <div id="footer-placeholder"></div>
 
-    <script src="js/header_footer.js"></script>
+    <script src="js/header-footer.js"></script>
     <script src="js/apply.js"></script>
   </body>
 </html>

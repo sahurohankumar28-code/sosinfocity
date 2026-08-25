@@ -4,7 +4,7 @@ const caseStudiesData = [
     title: "Intelligent Enforcement Management Systems (IEMS)",
     subtitle:
       "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
-    img: "images/IEMS4.jpg",
+    img: "images/IEMS4.webp",
     templateId: "template-cs-1"
   },
   {
@@ -12,7 +12,7 @@ const caseStudiesData = [
     title: "State Network Infrastructure",
     subtitle:
       "High-speed, carrier-grade digital backbone linking state headquarters, district offices, and rural administrative nodes with redundant fiber connectivity.",
-    img: "images/oswan1.jpg",
+    img: "images/oswan1.webp",
     templateId: "template-cs-3"
   },
   {
@@ -20,7 +20,7 @@ const caseStudiesData = [
     title: "City Surveillance & Monitoring Integration",
     subtitle:
       "Integrated urban security networks, high-speed fiber backbones, and Unified Command & Control Centres (UCCC) providing automated threat detection and real-time operational visibility.",
-    img: "images/Cloud_1.png",
+    img: "images/Cloud_1.webp",
     templateId: "template-cs-2"
   },
   
@@ -29,7 +29,7 @@ const caseStudiesData = [
     title: "Cloud & Data Platform Modernisation",
     subtitle:
       "Scalable cloud migration, containerized microservices architecture, automated disaster recovery, and enterprise big data analytics platforms.",
-    img: "images/Cloud.png",
+    img: "images/Cloud.webp",
     templateId: "template-cs-4"
   },
   {
@@ -37,7 +37,7 @@ const caseStudiesData = [
     title: "Multi-Department Digital Rollout",
     subtitle:
       "Unified service delivery portals, digital workflow automation, and single-sign-on integration across multi-department public services.",
-    img: "images/multi1.jpg",
+    img: "images/multi1.webp",
     templateId: "template-cs-5"
   }
 ];

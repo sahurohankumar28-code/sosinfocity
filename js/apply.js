@@ -1,13 +1,5 @@
-if (history.scrollRestoration) {
-  history.scrollRestoration = "manual";
-}
-window.addEventListener("beforeunload", () => {
-  window.scrollTo(0, 0);
-});
-window.scrollTo(0, 0);
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Job descriptions database for dynamic brief points
+  // Job profiles data
   const jobProfiles = {
     "Field Engineer": {
       title: "Field Engineer",
@@ -19,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     "Network Engineer": {
-      title: "Network & SD-WAN Engineer",
+      title: "Network Engineer",
       points: [
         "Configure, monitor, and optimize SD-WAN overlays, enterprise routers, switches, and next-gen firewalls.",
         "Manage site-to-site VPNs, QoS traffic routing policies, bandwidth utilization, and network security protocols.",
@@ -82,11 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Populate Header and hidden input
+  // Populate Header and Hidden input
   if (headerTitleElement) headerTitleElement.textContent = currentProfile.title;
   if (appliedRoleInput) appliedRoleInput.value = currentProfile.title;
 
-  // Render Brief Points
+  // Render Role Highlights
   if (jobPointsList) {
     jobPointsList.innerHTML = currentProfile.points
       .map(
@@ -103,7 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Wizard Step Handling
   let currentStepIndex = 0;
   const steps = document.querySelectorAll(".form-step-panel");
-  const dots = document.querySelectorAll(".step-dot");
+  const dots = document.querySelectorAll(".step-dot-item");
+  const progressLineFill = document.getElementById("progressLineFill");
   const applicationForm = document.getElementById("applicationForm");
 
   function syncWizardView(targetIndex) {
@@ -113,28 +106,35 @@ document.addEventListener("DOMContentLoaded", () => {
       panel.classList.toggle("active", idx === targetIndex)
     );
     dots.forEach((dot, idx) =>
-      dot.classList.toggle("active", idx === targetIndex)
+      dot.classList.toggle("active", idx <= targetIndex)
     );
+
+    if (progressLineFill) {
+      const fillPercentage = (targetIndex / (steps.length - 1)) * 100;
+      progressLineFill.style.width = `${fillPercentage}%`;
+    }
+
     currentStepIndex = targetIndex;
     const formSection = document.querySelector(".application-form-section");
     if (formSection) {
-      window.scrollTo({ top: formSection.offsetTop - 40, behavior: "smooth" });
+      window.scrollTo({ top: formSection.offsetTop - 20, behavior: "smooth" });
     }
   }
 
   function validateCurrentStepInputs() {
     const activePanel = steps[currentStepIndex];
     const fields = activePanel.querySelectorAll(
-      "input[required], textarea[required]"
+      "input[required], select[required], textarea[required]"
     );
     let isValid = true;
 
-    fields.forEach((input) => {
+    for (const input of fields) {
       if (!input.checkValidity()) {
         input.reportValidity();
         isValid = false;
+        break;
       }
-    });
+    }
     return isValid;
   }
 
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Form Submit via PHP Backend
+    // Form Submit Handler
     applicationForm.addEventListener("submit", async (e) => {
       e.preventDefault();
 
@@ -160,9 +160,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      const submitBtn = applicationForm.querySelector('button[type="submit"]');
+      const submitBtn = document.getElementById("submitAppBtn");
       const originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = 'Submitting... <i class="fas fa-spinner fa-spin"></i>';
+      submitBtn.innerHTML = '<span>Submitting...</span> <i class="fas fa-spinner fa-spin"></i>';
       submitBtn.disabled = true;
 
       const formData = new FormData(applicationForm);
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
           applicationForm.reset();
           syncWizardView(0);
 
-          // Reset upload UI
+          // Reset Upload Badge
           const dropZone = document.getElementById("dropZone");
           const fileBadgeRow = document.getElementById("fileBadgeRow");
           if (dropZone && fileBadgeRow) {
@@ -188,10 +188,10 @@ document.addEventListener("DOMContentLoaded", () => {
             dropZone.style.display = "block";
           }
         } else {
-          alert(result.message || "Form submission failed. Please try again.");
+          alert(result.message || "Submission failed. Please try again.");
         }
       } catch (err) {
-        alert("An error occurred during submission. Please try again.");
+        alert("A network error occurred. Please try again.");
       } finally {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
@@ -199,47 +199,82 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Experience toggle handler
+  // Dynamic Experience Fields Logic
   const experienceRadios = document.querySelectorAll('input[name="hasExperience"]');
-  const expTextAreaBlock = document.getElementById("experienceDetailsBlock");
-  const expTextarea = document.getElementById("experienceDetails");
+  const expBlock = document.getElementById("experienceDetailsBlock");
+  const expInputs = expBlock.querySelectorAll("input, select, textarea");
 
   experienceRadios.forEach((radio) => {
     radio.addEventListener("change", (e) => {
       if (e.target.value === "Yes") {
-        expTextAreaBlock.classList.add("visible");
-        expTextarea.setAttribute("required", "true");
+        expBlock.classList.add("visible");
+        // Mark essential experience inputs as required
+        document.getElementById("totalExperience").setAttribute("required", "true");
+        document.getElementById("noticePeriod").setAttribute("required", "true");
+        document.getElementById("currentCompany").setAttribute("required", "true");
+        document.getElementById("currentDesignation").setAttribute("required", "true");
+        document.getElementById("experienceDetails").setAttribute("required", "true");
       } else {
-        expTextAreaBlock.classList.remove("visible");
-        expTextarea.removeAttribute("required");
-        expTextarea.value = "";
+        expBlock.classList.remove("visible");
+        // Remove requirements and clean up values
+        expInputs.forEach((input) => {
+          input.removeAttribute("required");
+          input.value = "";
+        });
       }
     });
   });
 
-  // Resume File Upload handler
+  // Resume Upload Handler (with Drag & Drop)
   const fileInput = document.getElementById("resumeFile");
   const dropZone = document.getElementById("dropZone");
   const fileBadgeRow = document.getElementById("fileBadgeRow");
   const loadedFileName = document.getElementById("loadedFileName");
+  const loadedFileSize = document.getElementById("loadedFileSize");
   const removeFileAsset = document.getElementById("removeFileAsset");
 
   const MAX_FILE_SIZE = 1 * 1024 * 1024; // 1MB
 
+  function handleFileUpload(file) {
+    if (!file) return;
+
+    if (file.size > MAX_FILE_SIZE) {
+      alert("File size exceeds 1 MB. Please upload a smaller file.");
+      fileInput.value = "";
+      return;
+    }
+
+    loadedFileName.textContent = file.name;
+    loadedFileSize.textContent = `${(file.size / 1024).toFixed(1)} KB`;
+    dropZone.style.display = "none";
+    fileBadgeRow.style.display = "flex";
+  }
+
   if (fileInput && dropZone) {
     fileInput.addEventListener("change", () => {
       if (fileInput.files.length > 0) {
-        const selectedFile = fileInput.files[0];
+        handleFileUpload(fileInput.files[0]);
+      }
+    });
 
-        if (selectedFile.size > MAX_FILE_SIZE) {
-          alert("File size exceeds 1 MB. Please upload a smaller file.");
-          fileInput.value = "";
-          return;
-        }
+    ["dragenter", "dragover"].forEach((eventName) => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.add("dragover");
+      });
+    });
 
-        loadedFileName.textContent = selectedFile.name;
-        dropZone.style.display = "none";
-        fileBadgeRow.style.display = "flex";
+    ["dragleave", "drop"].forEach((eventName) => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.remove("dragover");
+      });
+    });
+
+    dropZone.addEventListener("drop", (e) => {
+      if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        fileInput.files = e.dataTransfer.files;
+        handleFileUpload(e.dataTransfer.files[0]);
       }
     });
 

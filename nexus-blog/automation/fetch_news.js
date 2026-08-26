@@ -4,7 +4,7 @@ const Parser = require('rss-parser');
 
 const parser = new Parser();
 
-const DATA_FILE = path.join(__dirname, 'data', 'news.json');
+const DATA_FILE = path.join(__dirname, '..', 'news.json');
 
 const FEEDS = [
   { name: 'Telecom', url: 'https://telecoms.com/feed/' },

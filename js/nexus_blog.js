@@ -5,7 +5,7 @@ async function loadBlogs() {
   const filterContainer = document.getElementById('feedFilters');
 
   try {
-    const res = await fetch('nexus-blog/automation/news.json?t=' + Date.now());
+    const res = await fetch('nexus-blog/news.json?t=' + Date.now());
     if (!res.ok) throw new Error('Data not available');
     const rawData = await res.json();
 

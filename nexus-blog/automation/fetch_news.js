@@ -7,20 +7,43 @@ const parser = new Parser();
 const DATA_FILE = path.join(__dirname, '..', 'news.json');
 
 const FEEDS = [
-  { name: 'Telecom', url: 'https://telecoms.com/feed/' },
-  { name: 'Telecom', url: 'https://www.lightreading.com/rss.xml' },
+  // AI
+  {
+    name: 'AI',
+    url: 'https://openai.com/news/rss.xml'
+  },
 
-  { name: 'Cybersecurity', url: 'https://feeds.feedburner.com/TheHackersNews' },
-  { name: 'Cybersecurity', url: 'https://krebsonsecurity.com/feed/' },
+  // Cloud
+  {
+    name: 'Cloud',
+    url: 'https://aws.amazon.com/blogs/aws/feed/'
+  },
 
-  { name: 'AI', url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/' },
-  { name: 'AI', url: 'https://openai.com/news/rss.xml' },
-  { name: 'AI', url: 'https://blog.research.google/atom.xml' },
+  // Cybersecurity
+  {
+    name: 'Cybersecurity',
+    url: 'https://krebsonsecurity.com/feed/'
+  },
+  {
+    name: 'Cybersecurity',
+    url: 'https://www.microsoft.com/en-us/security/blog/feed/'
+  },
+  {
+    name: 'Cybersecurity',
+    url: 'https://security.googleblog.com/feeds/posts/default'
+  },
 
-  { name: 'Software', url: 'https://feed.infoq.com' },
+  // Networking / Security
+  {
+    name: 'Networking',
+    url: 'https://blog.cloudflare.com/rss/'
+  },
 
-  { name: 'Networking', url: 'https://www.networkworld.com/feed/' },
-  { name: 'Networking', url: 'https://packetpushers.net/feed/' }
+  // Development
+  {
+    name: 'Development',
+    url: 'https://github.blog/feed/'
+  }
 ];
 
 

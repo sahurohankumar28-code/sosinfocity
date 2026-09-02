@@ -18,7 +18,6 @@ const FEEDS = [
   { name: 'AI', url: 'https://blog.research.google/atom.xml' },
 
   { name: 'Software', url: 'https://feed.infoq.com' },
-  { name: 'Software', url: 'https://dev.to/feed' },
 
   { name: 'Networking', url: 'https://www.networkworld.com/feed/' },
   { name: 'Networking', url: 'https://packetpushers.net/feed/' }

@@ -5,7 +5,28 @@ const caseStudiesData = [
     subtitle: "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
     img: "images/IEMS4.webp",
     templateId: "template-cs-1"
-  }
+  },
+  {
+  id: 2,
+  title: "State Network Infrastructure",
+  subtitle: "High-availability enterprise SWAN backbone connecting State, District, and Block headquarters with carrier-grade MPLS routing, unified cyber defense, and 24×7 NOC monitoring to power seamless e-Governance.",
+  img: "images/oswan1.webp",
+  templateId: "template-cs-2"
+},
+{
+  id: 3,
+  title: "Cloud & Data Platform Modernisation",
+  subtitle: "Transforming legacy on-premise environments into scalable hybrid cloud architectures with zero-downtime migration, container orchestration, enterprise data lakes, and automated BCDR.",
+  img: "images/Cloud_1.webp",
+  templateId: "template-cs-3"
+},
+{
+  id: 4,
+  title: "Multi-Department Digital Rollout",
+  subtitle: "Unifying disparate administrative systems into a secure, single-pane digital platform with automated file workflows, SSO directory integration, Master Data Management, and real-time executive analytics.",
+  img: "images/Cloud.webp",
+  templateId: "template-cs-4"
+}
 ];
 
 let sliderInterval = null;

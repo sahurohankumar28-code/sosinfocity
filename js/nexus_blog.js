@@ -5,7 +5,8 @@ async function loadBlogs() {
   const filterContainer = document.getElementById('feedFilters');
 
   try {
-    const res = await fetch('nexus-blog/news.json?t=' + Date.now());
+    // Fixed path pointing to root news.json with cache buster
+    const res = await fetch('/news.json?t=' + Date.now());
     if (!res.ok) throw new Error('Data not available');
     const rawData = await res.json();
 

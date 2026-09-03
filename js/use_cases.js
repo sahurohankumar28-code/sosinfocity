@@ -1,46 +1,64 @@
 const caseStudiesData = [
   {
     id: 1,
-    title: "Intelligent Enforcement Management System (IEMS)",
-    subtitle: "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
+    title: "Intelligent Enforcement Management Systems (IEMS)",
+    subtitle:
+      "AI-powered enforcement and traffic analytics improve compliance, identify high-risk driving behaviour, and support faster incident response, contributing to a measurable reduction in road accidents and fatalities.",
     img: "images/IEMS4.webp",
     templateId: "template-cs-1"
   },
   {
-  id: 2,
-  title: "State Network Infrastructure",
-  subtitle: "High-availability enterprise SWAN backbone connecting State, District, and Block headquarters with carrier-grade MPLS routing, unified cyber defense, and 24×7 NOC monitoring to power seamless e-Governance.",
-  img: "images/oswan1.webp",
-  templateId: "template-cs-2"
-},
-{
-  id: 3,
-  title: "Cloud & Data Platform Modernisation",
-  subtitle: "Transforming legacy on-premise environments into scalable hybrid cloud architectures with zero-downtime migration, container orchestration, enterprise data lakes, and automated BCDR.",
-  img: "images/Cloud_1.webp",
-  templateId: "template-cs-3"
-},
-{
-  id: 4,
-  title: "Multi-Department Digital Rollout",
-  subtitle: "Unifying disparate administrative systems into a secure, single-pane digital platform with automated file workflows, SSO directory integration, Master Data Management, and real-time executive analytics.",
-  img: "images/Cloud.webp",
-  templateId: "template-cs-4"
-}
+    id: 2,
+    title: "State Network Infrastructure",
+    subtitle:
+      "High-speed, carrier-grade digital backbone linking state headquarters, district offices, and rural administrative nodes with redundant fiber connectivity.",
+    img: "images/oswan1.webp",
+    templateId: "template-cs-3"
+  },
+  {
+    id: 3,
+    title: "City Surveillance & Monitoring Integration",
+    subtitle:
+      "Integrated urban security networks, high-speed fiber backbones, and Unified Command & Control Centres (UCCC) providing automated threat detection and real-time operational visibility.",
+    img: "images/Cloud_1.webp",
+    templateId: "template-cs-2"
+  },
+  
+  {
+    id: 4,
+    title: "Cloud & Data Platform Modernisation",
+    subtitle:
+      "Scalable cloud migration, containerized microservices architecture, automated disaster recovery, and enterprise big data analytics platforms.",
+    img: "images/Cloud.webp",
+    templateId: "template-cs-4"
+  },
+  {
+    id: 5,
+    title: "Multi-Department Digital Rollout",
+    subtitle:
+      "Unified service delivery portals, digital workflow automation, and single-sign-on integration across multi-department public services.",
+    img: "images/multi1.webp",
+    templateId: "template-cs-5"
+  }
 ];
 
+let currentView = "grid";
+let currentCaseId = null;
 let sliderInterval = null;
 
+const heroHeader = document.getElementById("heroHeader");
+const heroContent = document.getElementById("heroContent");
 const gridSection = document.getElementById("caseStudiesSection");
 const detailSection = document.getElementById("detailSection");
 const detailWrapper = document.getElementById("detailWrapper");
 const blogGridTrack = document.getElementById("blogGridTrack");
 const backButton = document.getElementById("backToCases");
 
+// Render Grid Cards
 function renderGrid() {
   if (!blogGridTrack) return;
-  blogGridTrack.innerHTML = "";
 
+  blogGridTrack.innerHTML = "";
   caseStudiesData.forEach((data) => {
     const card = document.createElement("div");
     card.className = "cs-card";
@@ -67,6 +85,7 @@ function renderGrid() {
   });
 }
 
+// Initialize Hero Slider (Gracefully checks if slider elements exist inside the target template)
 function initHeroSlider() {
   const track = document.getElementById("heroSliderTrack");
   const prevBtn = document.getElementById("sliderPrevBtn");
@@ -74,9 +93,10 @@ function initHeroSlider() {
   const dotsContainer = document.getElementById("sliderDots");
 
   if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
   if (track.dataset.initialized === "true") return;
 
-  const originalSlides = Array.from(track.querySelectorAll(".slide"));
+  let originalSlides = Array.from(track.querySelectorAll(".slide"));
   const originalLength = originalSlides.length;
   if (originalLength <= 1) return;
 
@@ -109,7 +129,7 @@ function initHeroSlider() {
     currentIndex = index;
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    const dotIdx = (currentIndex - 1 + originalLength) % originalLength;
+    let dotIdx = (currentIndex - 1 + originalLength) % originalLength;
     updateDots(dotIdx);
   }
 
@@ -165,12 +185,17 @@ function initHeroSlider() {
   startAutoSlide();
 }
 
+// Show Case Study Detail View
 function showDetail(id) {
   const caseData = caseStudiesData.find((item) => item.id === id);
   if (!caseData) return;
 
+  currentCaseId = id;
+  currentView = "detail";
+
   gridSection.classList.add("hidden");
-  detailSection.classList.remove("hidden");
+  detailSection.classList.add("visible");
+  detailSection.style.display = "block";
 
   const caseStudyTemplate = document.getElementById(caseData.templateId);
   if (caseStudyTemplate) {
@@ -178,25 +203,57 @@ function showDetail(id) {
     initHeroSlider();
   }
 
+  const url = new URL(window.location);
+  url.searchParams.set("id", id);
+  window.history.pushState({ id: id, view: "detail" }, "", url);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+// Return to Grid View
 function showGrid() {
-  if (sliderInterval) {
-    clearInterval(sliderInterval);
-    sliderInterval = null;
-  }
+  if (sliderInterval) clearInterval(sliderInterval);
+
+  currentView = "grid";
+  currentCaseId = null;
 
   gridSection.classList.remove("hidden");
-  detailSection.classList.add("hidden");
-  detailWrapper.innerHTML = "";
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  detailSection.classList.remove("visible");
+  detailSection.style.display = "none";
+
+  const url = new URL(window.location);
+  url.searchParams.delete("id");
+  window.history.pushState({ view: "grid" }, "", url);
+
+  gridSection.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 if (backButton) {
   backButton.addEventListener("click", showGrid);
 }
 
+window.addEventListener("popstate", function (event) {
+  if (event.state && event.state.view === "detail" && event.state.id) {
+    showDetail(event.state.id);
+  } else {
+    showGrid();
+  }
+});
+
+function checkUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  if (id) {
+    const caseId = parseInt(id);
+    const exists = caseStudiesData.some((item) => item.id === caseId);
+    if (exists) {
+      showDetail(caseId);
+      return;
+    }
+  }
+  showGrid();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderGrid();
+  checkUrlParams();
 });

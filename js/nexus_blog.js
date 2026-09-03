@@ -5,7 +5,7 @@ async function loadBlogs() {
   const filterContainer = document.getElementById('feedFilters');
 
   try {
-    // Fixed path pointing to root news.json with cache buster
+    // Root path pointing to /news.json with cache-buster timestamp
     const res = await fetch('/news.json?t=' + Date.now());
     if (!res.ok) throw new Error('Data not available');
     const rawData = await res.json();

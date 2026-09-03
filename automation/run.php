@@ -83,7 +83,7 @@ function syncNews(array $feeds): void {
         }
     }
 
-    // Purge articles older than 24 hours
+    // Purge items older than 24 hours
     $activeArticles = array_values(array_filter($storedArticles, function ($item) use ($cutoff) {
         $dateStr = $item['pubDate'] ?? $item['date'] ?? $item['isoDate'] ?? null;
         if (!$dateStr) return false;

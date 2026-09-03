@@ -2,36 +2,31 @@ name: 2-Hour RSS News Sync and Cleanup
 
 on:
   schedule:
-    # Runs every 2 hours (minute 0 of every second hour)
     - cron: '0 */2 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
-
-permissions:
-  contents: write # Grants permission to commit updated news.json back to repo
+  workflow_dispatch:
 
 jobs:
-  update-feed:
+  update-news:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
         with:
-          node-version: 18
+          php-version: '8.2'
+          extensions: curl, libxml, simplexml, mbstring, json
 
-      - name: Install dependencies
-        working-directory: ./nexus-blog/automation
-        run: npm install
+      - name: Run news generator
+        run: php automation/run.php
 
-      - name: Run Fetch and Purge Script
-        working-directory: ./nexus-blog/automation
-        run: node fetch_news.js
-
-      - name: Commit and push updated news.json
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add nexus-blog/news.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync RSS news feed [skip ci]" && git push)
+          git add news.json
+          git diff --staged --quiet || (git commit -m "chore: update news feed [skip ci]" && git push)

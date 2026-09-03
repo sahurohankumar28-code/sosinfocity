@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access",
+        "link": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/",
+        "pubDate": "2026-09-02T22:51:18Z",
+        "contentSnippet": "Microsoft Threat Intelligence observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT support, gain remote access, and deploy a Node.js-based implant. Learn how attackers move from social engineering to lateral movement using legitimate tools, and how Microsoft Defender helps detect and disrupt the activity.\nThe post Impersonating IT support: how threat actors turn a remote session into enterprise-wide access appeared first on Microsoft Security Blog.",
+        "source": "Cybersecurity"
+    },
+    {
+        "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
+        "link": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+        "pubDate": "2026-09-02T21:00:00Z",
+        "contentSnippet": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations.\nThe post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing&#8230; oh my! appeared first on The GitHub Blog.",
+        "source": "Development"
+    },
+    {
+        "title": "How we make AI coding more cost efficient without sacrificing task quality",
+        "link": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+        "pubDate": "2026-09-02T18:00:00Z",
+        "contentSnippet": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task.\nThe post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog.",
+        "source": "Development"
+    }
+]

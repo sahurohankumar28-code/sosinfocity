@@ -1,23 +1,16 @@
 [
   {
+    "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+    "link": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+    "pubDate": "Fri, 04 Sep 2026 16:04:14 +0000",
+    "contentSnippet": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot.\nThe post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
     "link": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
     "pubDate": "Thu, 03 Sep 2026 21:03:02 GMT",
     "contentSnippet": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediation helps teams identify and patch the most critical threats first.",
     "source": "Networking"
-  },
-  {
-    "title": "ASCII smuggling crosses over from AI prompt injection to phishing evasion",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/",
-    "pubDate": "Thu, 03 Sep 2026 16:00:00 +0000",
-    "contentSnippet": "Invisible Unicode characters popularized for hiding instructions from AI models are now being used to obfuscate words before email filters parse them.\nThe post ASCII smuggling crosses over from AI prompt injection to phishing evasion appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "GitHub Copilot app for Beginners: Run several agents at once",
-    "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
-    "pubDate": "Thu, 03 Sep 2026 16:00:00 +0000",
-    "contentSnippet": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful.\nThe post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

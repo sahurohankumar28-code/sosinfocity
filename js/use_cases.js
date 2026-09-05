@@ -26,6 +26,13 @@ const caseStudiesData = [
   subtitle: "Unifying disparate administrative systems into a secure, single-pane digital platform with automated file workflows, SSO directory integration, Master Data Management, and real-time executive analytics.",
   img: "images/Cloud.webp",
   templateId: "template-cs-4"
+},
+{
+  id: 5,
+  title: "City Surveillance & Monitoring Integration",
+  subtitle: "Establishing an enterprise municipal surveillance ecosystem uniting HD optical edge cameras, fiber-optic ring backbones, a 24×7 Unified Command & Control Centre (UCCC), and an evidence-grade VMS platform.",
+  img: "images/case_study_1.webp",
+  templateId: "template-cs-5"
 }
 ];
 

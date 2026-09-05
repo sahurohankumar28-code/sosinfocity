@@ -5,12 +5,5 @@
     "pubDate": "Fri, 04 Sep 2026 19:10:10 +0000",
     "contentSnippet": "As AI moves into customer-owned environments, organizations need new ways to verify the systems, software, and AI assets they trust before releasing sensitive data, credentials, and models.\nThe post How to secure edge AI in customer-owned environments appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-    "link": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-    "pubDate": "Fri, 04 Sep 2026 16:04:14 +0000",
-    "contentSnippet": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot.\nThe post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

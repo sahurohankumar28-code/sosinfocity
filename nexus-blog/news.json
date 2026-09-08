@@ -1,5 +1,12 @@
 [
   {
+    "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+    "link": "https://openai.com/index/codex-quantum-computing-experiments",
+    "pubDate": "Tue, 08 Sep 2026 17:00:00 GMT",
+    "contentSnippet": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+    "source": "AI"
+  },
+  {
     "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
     "link": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
     "pubDate": "Tue, 08 Sep 2026 13:10:00 GMT",
@@ -14,6 +21,20 @@
     "source": "AI"
   },
   {
+    "title": "Introducing ChatGPT Images 2.5",
+    "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+    "pubDate": "Tue, 08 Sep 2026 11:30:00 GMT",
+    "contentSnippet": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+    "source": "AI"
+  },
+  {
+    "title": "On the Navier–Stokes Millennium Prize Problem",
+    "link": "https://openai.com/index/navier-stokes-solution",
+    "pubDate": "Tue, 08 Sep 2026 10:00:00 GMT",
+    "contentSnippet": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+    "source": "AI"
+  },
+  {
     "title": "Funding grants for new research into AI and teen development",
     "link": "https://openai.com/index/teen-development-research-grants",
     "pubDate": "Tue, 08 Sep 2026 09:00:00 GMT",
@@ -25,6 +46,13 @@
     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
     "pubDate": "Tue, 08 Sep 2026 00:00:00 GMT",
     "contentSnippet": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+    "source": "AI"
+  },
+  {
+    "title": "1Password increases engineering productivity 21% with Codex",
+    "link": "https://openai.com/index/1password",
+    "pubDate": "Tue, 08 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
     "source": "AI"
   }
 ]

@@ -1,9 +1,30 @@
 [
   {
-    "title": "AWS Weekly Roundup: Claude Fable 5.1 on AWS, Amazon Linux 2027 preview, AWS Certified AI Business Strategist, and more (September 7, 2026)",
-    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-fable-5-1-on-aws-amazon-linux-2027-preview-aws-certified-ai-business-strategist-and-more-september-7-2026/",
-    "pubDate": "Mon, 07 Sep 2026 14:24:08 +0000",
-    "contentSnippet": "Last week, Claude Fable 5.1 became available on AWS. According to Anthropic, Claude Fable 5.1 delivers frontier intelligence for ambitious tasks across coding, scientific research, and enterprise workflows. Claude Fable 5.1 is built for long-running, high-stakes work that runs for hours and spans many applications. It can own more of a software project on its […]",
-    "source": "Cloud"
+    "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
+    "link": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+    "pubDate": "Tue, 08 Sep 2026 13:10:00 GMT",
+    "contentSnippet": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections wherever the origin supports it.",
+    "source": "Networking"
+  },
+  {
+    "title": "The Work Now Within Reach",
+    "link": "https://openai.com/index/the-work-now-within-reach",
+    "pubDate": "Tue, 08 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+    "source": "AI"
+  },
+  {
+    "title": "Funding grants for new research into AI and teen development",
+    "link": "https://openai.com/index/teen-development-research-grants",
+    "pubDate": "Tue, 08 Sep 2026 09:00:00 GMT",
+    "contentSnippet": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+    "source": "AI"
+  },
+  {
+    "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+    "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+    "pubDate": "Tue, 08 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+    "source": "AI"
   }
 ]

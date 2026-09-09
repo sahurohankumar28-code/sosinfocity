@@ -1,5 +1,12 @@
 [
   {
+    "title": "Threat Matrix: Mapping threats across cloud web applications",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
+    "pubDate": "Wed, 09 Sep 2026 21:30:00 +0000",
+    "contentSnippet": "Microsoft introduces the Cloud Web Applications Threat Matrix, a MITRE ATT&CK-aligned framework that helps defenders understand, prioritize, and mitigate threats to cloud-hosted web apps and serverless platforms.\nThe post Threat Matrix: Mapping threats across cloud web applications appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "pubDate": "Wed, 09 Sep 2026 17:41:18 +0000",
@@ -21,10 +28,10 @@
     "source": "Networking"
   },
   {
-    "title": "Microsoft Plugs Nearly 1,000 Security Holes",
-    "link": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
-    "pubDate": "Tue, 08 Sep 2026 21:44:22 +0000",
-    "contentSnippet": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and deploying so many fixes each month.",
-    "source": "Cybersecurity"
+    "title": "GPT-6 Astra: The next generation in intelligence for work",
+    "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+    "pubDate": "Wed, 09 Sep 2026 11:00:00 GMT",
+    "contentSnippet": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+    "source": "AI"
   }
 ]

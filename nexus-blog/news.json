@@ -1,5 +1,19 @@
 [
   {
+    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "pubDate": "Wed, 09 Sep 2026 17:41:18 +0000",
+    "contentSnippet": "Passkey-themed social engineering is being used to compromise identities and enable broader cloud attacks. Learn how threat actors establish MFA persistence, abuse Microsoft Graph for reconnaissance, and access SharePoint, OneDrive, and email data, along with key detection and mitigation guidance.\nThe post Passkey-themed social engineering leads to identity and cloud compromise appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Paul Christiano joins OpenAI Foundation Board",
+    "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+    "pubDate": "Wed, 09 Sep 2026 17:00:00 GMT",
+    "contentSnippet": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+    "source": "AI"
+  },
+  {
     "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
     "link": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
     "pubDate": "Wed, 09 Sep 2026 13:00:00 GMT",

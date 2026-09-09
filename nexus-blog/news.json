@@ -1,30 +1,16 @@
 [
   {
+    "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+    "link": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+    "pubDate": "Wed, 09 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors.",
+    "source": "Networking"
+  },
+  {
     "title": "Microsoft Plugs Nearly 1,000 Security Holes",
     "link": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
     "pubDate": "Tue, 08 Sep 2026 21:44:22 +0000",
     "contentSnippet": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and deploying so many fixes each month.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-    "link": "https://openai.com/index/codex-quantum-computing-experiments",
-    "pubDate": "Tue, 08 Sep 2026 17:00:00 GMT",
-    "contentSnippet": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
-    "source": "AI"
-  },
-  {
-    "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
-    "link": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
-    "pubDate": "Tue, 08 Sep 2026 13:10:00 GMT",
-    "contentSnippet": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections wherever the origin supports it.",
-    "source": "Networking"
-  },
-  {
-    "title": "The Work Now Within Reach",
-    "link": "https://openai.com/index/the-work-now-within-reach",
-    "pubDate": "Tue, 08 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
-    "source": "AI"
   }
 ]

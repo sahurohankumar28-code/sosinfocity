@@ -1,10 +1,24 @@
 [
   {
+    "title": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
+    "pubDate": "Thu, 10 Sep 2026 17:23:05 +0000",
+    "contentSnippet": "Microsoft examines an AI-assisted business email compromise campaign that used executive impersonation and fake invoices to target finance teams with ACH payment fraud.\nThe post Protecting organizations from AI-assisted executive impersonation and invoice fraud appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
     "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
     "pubDate": "Thu, 10 Sep 2026 16:00:00 GMT",
     "contentSnippet": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
     "source": "AI"
+  },
+  {
+    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+    "pubDate": "Thu, 10 Sep 2026 16:00:00 +0000",
+    "contentSnippet": "See how Microsoft Defender detects and disrupts AI-themed phishing, malware, and multi-stage attacks across the attack chain.\nThe post Detect and disrupt AI-themed attacks with Microsoft Defender appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
   },
   {
     "title": "Now everyone can put data to work",
@@ -28,6 +42,13 @@
     "source": "AI"
   },
   {
+    "title": "Introducing ChatGPT for Financial Services",
+    "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+    "contentSnippet": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
+    "source": "AI"
+  },
+  {
     "title": "GitHub availability report: August 2026",
     "link": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
     "pubDate": "Thu, 10 Sep 2026 02:05:17 +0000",
@@ -42,6 +63,13 @@
     "source": "AI"
   },
   {
+    "title": "Introducing the Agents API",
+    "link": "https://openai.com/index/introducing-the-agents-api",
+    "pubDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
+    "source": "AI"
+  },
+  {
     "title": "Introducing Amazon EBS Volume Clones across AWS accounts",
     "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-ebs-volume-clones-across-aws-accounts/",
     "pubDate": "Wed, 09 Sep 2026 22:01:47 +0000",
@@ -53,13 +81,6 @@
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
     "pubDate": "Wed, 09 Sep 2026 21:30:00 +0000",
     "contentSnippet": "Microsoft introduces the Cloud Web Applications Threat Matrix, a MITRE ATT&CK-aligned framework that helps defenders understand, prioritize, and mitigate threats to cloud-hosted web apps and serverless platforms.\nThe post Threat Matrix: Mapping threats across cloud web applications appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
-    "pubDate": "Wed, 09 Sep 2026 17:41:18 +0000",
-    "contentSnippet": "Passkey-themed social engineering is being used to compromise identities and enable broader cloud attacks. Learn how threat actors establish MFA persistence, abuse Microsoft Graph for reconnaissance, and access SharePoint, OneDrive, and email data, along with key detection and mitigation guidance.\nThe post Passkey-themed social engineering leads to identity and cloud compromise appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
   }
 ]

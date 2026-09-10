@@ -1,10 +1,52 @@
 [
   {
+    "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "pubDate": "Thu, 10 Sep 2026 16:00:00 GMT",
+    "contentSnippet": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
+    "source": "AI"
+  },
+  {
+    "title": "Now everyone can put data to work",
+    "link": "https://openai.com/index/put-data-to-work",
+    "pubDate": "Thu, 10 Sep 2026 15:00:00 GMT",
+    "contentSnippet": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+    "source": "AI"
+  },
+  {
+    "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
+    "link": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+    "pubDate": "Thu, 10 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale.",
+    "source": "Networking"
+  },
+  {
+    "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+    "link": "https://openai.com/index/expanding-ai-access-us-government",
+    "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+    "contentSnippet": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.",
+    "source": "AI"
+  },
+  {
     "title": "GitHub availability report: August 2026",
     "link": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
     "pubDate": "Thu, 10 Sep 2026 02:05:17 +0000",
     "contentSnippet": "In August, we experienced five incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: August 2026 appeared first on The GitHub Blog.",
     "source": "Development"
+  },
+  {
+    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "pubDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
+    "source": "AI"
+  },
+  {
+    "title": "Introducing Amazon EBS Volume Clones across AWS accounts",
+    "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-ebs-volume-clones-across-aws-accounts/",
+    "pubDate": "Wed, 09 Sep 2026 22:01:47 +0000",
+    "contentSnippet": "AWS introduces Amazon EBS Volume Clones with cross-account copy, so you can create copies of your EBS volumes into other AWS accounts and optionally re-encrypt them with an AWS Key Management Service (AWS KMS) key in the target account.",
+    "source": "Cloud"
   },
   {
     "title": "Threat Matrix: Mapping threats across cloud web applications",
@@ -19,26 +61,5 @@
     "pubDate": "Wed, 09 Sep 2026 17:41:18 +0000",
     "contentSnippet": "Passkey-themed social engineering is being used to compromise identities and enable broader cloud attacks. Learn how threat actors establish MFA persistence, abuse Microsoft Graph for reconnaissance, and access SharePoint, OneDrive, and email data, along with key detection and mitigation guidance.\nThe post Passkey-themed social engineering leads to identity and cloud compromise appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Paul Christiano joins OpenAI Foundation Board",
-    "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-    "pubDate": "Wed, 09 Sep 2026 17:00:00 GMT",
-    "contentSnippet": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
-    "source": "AI"
-  },
-  {
-    "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
-    "link": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
-    "pubDate": "Wed, 09 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors.",
-    "source": "Networking"
-  },
-  {
-    "title": "The AI policy window is open. We need to act.",
-    "link": "https://openai.com/index/ai-policy-window",
-    "pubDate": "Wed, 09 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
-    "source": "AI"
   }
 ]

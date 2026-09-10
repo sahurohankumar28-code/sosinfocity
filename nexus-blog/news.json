@@ -1,5 +1,12 @@
 [
   {
+    "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+    "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
+    "pubDate": "Thu, 10 Sep 2026 21:31:19 +0000",
+    "contentSnippet": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app.\nThe post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
     "pubDate": "Thu, 10 Sep 2026 17:23:05 +0000",
@@ -68,19 +75,5 @@
     "pubDate": "Thu, 10 Sep 2026 00:00:00 GMT",
     "contentSnippet": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
     "source": "AI"
-  },
-  {
-    "title": "Introducing Amazon EBS Volume Clones across AWS accounts",
-    "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-ebs-volume-clones-across-aws-accounts/",
-    "pubDate": "Wed, 09 Sep 2026 22:01:47 +0000",
-    "contentSnippet": "AWS introduces Amazon EBS Volume Clones with cross-account copy, so you can create copies of your EBS volumes into other AWS accounts and optionally re-encrypt them with an AWS Key Management Service (AWS KMS) key in the target account.",
-    "source": "Cloud"
-  },
-  {
-    "title": "Threat Matrix: Mapping threats across cloud web applications",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
-    "pubDate": "Wed, 09 Sep 2026 21:30:00 +0000",
-    "contentSnippet": "Microsoft introduces the Cloud Web Applications Threat Matrix, a MITRE ATT&CK-aligned framework that helps defenders understand, prioritize, and mitigate threats to cloud-hosted web apps and serverless platforms.\nThe post Threat Matrix: Mapping threats across cloud web applications appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
   }
 ]

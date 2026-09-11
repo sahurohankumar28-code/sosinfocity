@@ -1,5 +1,12 @@
 [
   {
+    "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+    "link": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
+    "pubDate": "Fri, 11 Sep 2026 18:26:10 +0000",
+    "contentSnippet": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team.\nThe post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Introducing automatic remediation policies with Cloudflare CASB",
     "link": "https://blog.cloudflare.com/casb-policies/",
     "pubDate": "Fri, 11 Sep 2026 13:00:00 GMT",

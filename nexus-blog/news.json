@@ -61,19 +61,5 @@
     "pubDate": "Thu, 10 Sep 2026 02:05:17 +0000",
     "contentSnippet": "In August, we experienced five incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: August 2026 appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
-    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "pubDate": "Thu, 10 Sep 2026 00:00:00 GMT",
-    "contentSnippet": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
-    "source": "AI"
-  },
-  {
-    "title": "Introducing the Agents API",
-    "link": "https://openai.com/index/introducing-the-agents-api",
-    "pubDate": "Thu, 10 Sep 2026 00:00:00 GMT",
-    "contentSnippet": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
-    "source": "AI"
   }
 ]

@@ -26,12 +26,5 @@
     "pubDate": "Fri, 11 Sep 2026 13:00:00 GMT",
     "contentSnippet": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares and send webhooks without manual intervention.",
     "source": "Networking"
-  },
-  {
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-    "pubDate": "Fri, 11 Sep 2026 10:00:00 GMT",
-    "contentSnippet": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-    "source": "AI"
   }
 ]

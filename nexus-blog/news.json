@@ -12,12 +12,5 @@
     "pubDate": "Mon, 14 Sep 2026 12:00:00 GMT",
     "contentSnippet": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
     "source": "AI"
-  },
-  {
-    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-    "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-    "pubDate": "Mon, 14 Sep 2026 00:00:00 GMT",
-    "contentSnippet": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
-    "source": "AI"
   }
 ]

@@ -1,9 +1,16 @@
 [
   {
-    "title": "AWS Weekly Roundup: OpenAI GPT-6 Astra on Amazon Bedrock, Amazon Quick desktop GA, Kiro for students, and more (September 14, 2026)",
-    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/",
-    "pubDate": "Mon, 14 Sep 2026 15:56:33 +0000",
-    "contentSnippet": "There’s a particular energy to mid-September in New York. Pumpkin spice lattes are flowing, temperatures are dropping, and it’s nearly sweater weather. The city is back at full speed, and so is the AWS launch calendar. This week that energy showed up in a new frontier model on Amazon Bedrock, a desktop app for Amazon […]",
-    "source": "Cloud"
+    "title": "Have it both ways: stay discoverable in search while disallowing AI training",
+    "link": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+    "pubDate": "Tue, 15 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft.",
+    "source": "Networking"
+  },
+  {
+    "title": "Give every teammate and agent the right level of access to your Workers",
+    "link": "https://blog.cloudflare.com/workers-granular-authorization/",
+    "pubDate": "Tue, 15 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely.",
+    "source": "Networking"
   }
 ]

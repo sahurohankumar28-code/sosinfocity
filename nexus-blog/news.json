@@ -5,12 +5,5 @@
     "pubDate": "Mon, 14 Sep 2026 15:56:33 +0000",
     "contentSnippet": "There’s a particular energy to mid-September in New York. Pumpkin spice lattes are flowing, temperatures are dropping, and it’s nearly sweater weather. The city is back at full speed, and so is the AWS launch calendar. This week that energy showed up in a new frontier model on Amazon Bedrock, a desktop app for Amazon […]",
     "source": "Cloud"
-  },
-  {
-    "title": "How Fyxer built an AI executive assistant people trust",
-    "link": "https://openai.com/index/fyxer",
-    "pubDate": "Mon, 14 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
-    "source": "AI"
   }
 ]

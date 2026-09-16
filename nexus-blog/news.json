@@ -1,16 +1,9 @@
 [
   {
-    "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-    "link": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
-    "pubDate": "Tue, 15 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft.",
-    "source": "Networking"
-  },
-  {
-    "title": "Give every teammate and agent the right level of access to your Workers",
-    "link": "https://blog.cloudflare.com/workers-granular-authorization/",
-    "pubDate": "Tue, 15 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely.",
-    "source": "Networking"
+    "title": "Reimagining advertising with AI",
+    "link": "https://openai.com/index/reimagining-advertising-with-ai",
+    "pubDate": "Wed, 16 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+    "source": "AI"
   }
 ]

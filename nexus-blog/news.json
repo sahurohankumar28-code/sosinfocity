@@ -1,9 +1,37 @@
 [
   {
+    "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+    "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+    "pubDate": "Wed, 16 Sep 2026 18:14:22 +0000",
+    "contentSnippet": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge in the case ordered that radaris.com and more than a dozen other data broker domains be transferred to the plaintiffs.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "AWS reimagines the getting started experience",
+    "link": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+    "pubDate": "Wed, 16 Sep 2026 17:50:14 +0000",
+    "contentSnippet": "AWS has reimagined the getting started experience with smart and sensible defaults to help developers get started fast so that they can focus on building. New customers can sign up and get started right away with $100 in Free Tier credits, managed project environments, and simplified team and resource permissions. If their workload evolves, customers can activate advanced features to access the full breadth and depth of AWS in one step, with no migration required.",
+    "source": "Cloud"
+  },
+  {
+    "title": "Helping older adults use AI in everyday life",
+    "link": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+    "pubDate": "Wed, 16 Sep 2026 16:00:00 GMT",
+    "contentSnippet": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
+    "source": "AI"
+  },
+  {
     "title": "Reimagining advertising with AI",
     "link": "https://openai.com/index/reimagining-advertising-with-ai",
     "pubDate": "Wed, 16 Sep 2026 13:00:00 GMT",
     "contentSnippet": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+    "source": "AI"
+  },
+  {
+    "title": "How workers are unlocking new ways of working",
+    "link": "https://openai.com/index/unlocking-new-ways-of-working",
+    "pubDate": "Wed, 16 Sep 2026 09:00:00 GMT",
+    "contentSnippet": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
     "source": "AI"
   }
 ]

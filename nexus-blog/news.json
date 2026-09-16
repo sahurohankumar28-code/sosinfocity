@@ -1,5 +1,12 @@
 [
   {
+    "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+    "link": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
+    "pubDate": "Wed, 16 Sep 2026 20:06:17 GMT",
+    "contentSnippet": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investigation.",
+    "source": "Networking"
+  },
+  {
     "title": "Data Broker Radaris Loses Domains in Privacy Fight",
     "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
     "pubDate": "Wed, 16 Sep 2026 18:14:22 +0000",
@@ -14,6 +21,13 @@
     "source": "Cloud"
   },
   {
+    "title": "Our framework for reporting model misalignment",
+    "link": "https://openai.com/index/model-misalignment-reporting-framework",
+    "pubDate": "Wed, 16 Sep 2026 17:00:00 GMT",
+    "contentSnippet": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+    "source": "AI"
+  },
+  {
     "title": "Helping older adults use AI in everyday life",
     "link": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
     "pubDate": "Wed, 16 Sep 2026 16:00:00 GMT",
@@ -25,6 +39,13 @@
     "link": "https://openai.com/index/reimagining-advertising-with-ai",
     "pubDate": "Wed, 16 Sep 2026 13:00:00 GMT",
     "contentSnippet": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+    "source": "AI"
+  },
+  {
+    "title": "How to connect AI usage to business value",
+    "link": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+    "pubDate": "Wed, 16 Sep 2026 12:00:00 GMT",
+    "contentSnippet": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
     "source": "AI"
   },
   {

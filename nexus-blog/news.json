@@ -1,5 +1,26 @@
 [
   {
+    "title": "AWS Elastic Beanstalk introduces Cluster Mode",
+    "link": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/",
+    "pubDate": "Thu, 17 Sep 2026 19:20:21 +0000",
+    "contentSnippet": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+    "source": "Cloud"
+  },
+  {
+    "title": "From guidance to action: Security fundamentals that materially reduce risk ",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/",
+    "pubDate": "Thu, 17 Sep 2026 17:00:00 +0000",
+    "contentSnippet": "AI has made fundamental changes to the operating environment for cybersecurity. Explore exposure management guidance on recommended controls and take action and stay ahead of cyberthreats.\nThe post From guidance to action: Security fundamentals that materially reduce risk  appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Improving email security outcomes with real-world Microsoft Defender insights",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/",
+    "pubDate": "Thu, 17 Sep 2026 16:00:00 +0000",
+    "contentSnippet": "The latest email security benchmarking reports show strong Microsoft Defender performance across pre-delivery and post-delivery scenarios and reveal where threats and defenses continue to evolve.\nThe post Improving email security outcomes with real-world Microsoft Defender insights appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
     "link": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
     "pubDate": "Thu, 17 Sep 2026 00:26:43 +0000",
@@ -12,33 +33,5 @@
     "pubDate": "Wed, 16 Sep 2026 20:06:17 GMT",
     "contentSnippet": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investigation.",
     "source": "Networking"
-  },
-  {
-    "title": "Data Broker Radaris Loses Domains in Privacy Fight",
-    "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
-    "pubDate": "Wed, 16 Sep 2026 18:14:22 +0000",
-    "contentSnippet": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge in the case ordered that radaris.com and more than a dozen other data broker domains be transferred to the plaintiffs.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "AWS reimagines the getting started experience",
-    "link": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
-    "pubDate": "Wed, 16 Sep 2026 17:50:14 +0000",
-    "contentSnippet": "AWS has reimagined the getting started experience with smart and sensible defaults to help developers get started fast so that they can focus on building. New customers can sign up and get started right away with $100 in Free Tier credits, managed project environments, and simplified team and resource permissions. If their workload evolves, customers can activate advanced features to access the full breadth and depth of AWS in one step, with no migration required.",
-    "source": "Cloud"
-  },
-  {
-    "title": "Our framework for reporting model misalignment",
-    "link": "https://openai.com/index/model-misalignment-reporting-framework",
-    "pubDate": "Wed, 16 Sep 2026 17:00:00 GMT",
-    "contentSnippet": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-    "source": "AI"
-  },
-  {
-    "title": "Helping older adults use AI in everyday life",
-    "link": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-    "pubDate": "Wed, 16 Sep 2026 16:00:00 GMT",
-    "contentSnippet": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
-    "source": "AI"
   }
 ]

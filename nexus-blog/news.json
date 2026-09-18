@@ -1,5 +1,19 @@
 [
   {
+    "title": "Saving another 100TB of RAM with math (and Rust)",
+    "link": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+    "pubDate": "Fri, 18 Sep 2026 17:23:58 GMT",
+    "contentSnippet": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RAM usage with statistics.",
+    "source": "Networking"
+  },
+  {
+    "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+    "link": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+    "pubDate": "Fri, 18 Sep 2026 15:00:00 +0000",
+    "contentSnippet": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast.\nThe post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
     "link": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/",
     "pubDate": "Thu, 17 Sep 2026 21:11:48 +0000",
@@ -12,19 +26,5 @@
     "pubDate": "Thu, 17 Sep 2026 19:20:21 +0000",
     "contentSnippet": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
     "source": "Cloud"
-  },
-  {
-    "title": "From guidance to action: Security fundamentals that materially reduce risk ",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/",
-    "pubDate": "Thu, 17 Sep 2026 17:00:00 +0000",
-    "contentSnippet": "AI has made fundamental changes to the operating environment for cybersecurity. Explore exposure management guidance on recommended controls and take action and stay ahead of cyberthreats.\nThe post From guidance to action: Security fundamentals that materially reduce risk  appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Improving email security outcomes with real-world Microsoft Defender insights",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/",
-    "pubDate": "Thu, 17 Sep 2026 16:00:00 +0000",
-    "contentSnippet": "The latest email security benchmarking reports show strong Microsoft Defender performance across pre-delivery and post-delivery scenarios and reveal where threats and defenses continue to evolve.\nThe post Improving email security outcomes with real-world Microsoft Defender insights appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
   }
 ]

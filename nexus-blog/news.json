@@ -5,12 +5,5 @@
     "pubDate": "Fri, 18 Sep 2026 17:23:58 GMT",
     "contentSnippet": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RAM usage with statistics.",
     "source": "Networking"
-  },
-  {
-    "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-    "link": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
-    "pubDate": "Fri, 18 Sep 2026 15:00:00 +0000",
-    "contentSnippet": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast.\nThe post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

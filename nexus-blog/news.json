@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "title": "Python Workers are now generally available",
+    "link": "https://blog.cloudflare.com/python-workers-ga/",
+    "pubDate": "Mon, 21 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
+    "source": "Networking"
+  },
+  {
+    "title": "How V7 gives AI agents institutional memory",
+    "link": "https://openai.com/index/v7",
+    "pubDate": "Mon, 21 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+    "source": "AI"
+  }
+]

@@ -1,10 +1,45 @@
 [
   {
+    "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
+    "pubDate": "Mon, 21 Sep 2026 16:11:24 +0000",
+    "contentSnippet": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking […]",
+    "source": "Cloud"
+  },
+  {
     "title": "Python Workers are now generally available",
     "link": "https://blog.cloudflare.com/python-workers-ga/",
     "pubDate": "Mon, 21 Sep 2026 13:00:00 GMT",
     "contentSnippet": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
     "source": "Networking"
+  },
+  {
+    "title": "Advisory Group on Mathematics and Artificial Intelligence",
+    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "pubDate": "Mon, 21 Sep 2026 12:00:00 GMT",
+    "contentSnippet": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.",
+    "source": "AI"
+  },
+  {
+    "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+    "link": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+    "pubDate": "Mon, 21 Sep 2026 12:00:00 GMT",
+    "contentSnippet": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
+    "source": "AI"
+  },
+  {
+    "title": "Building standards for the next phase of AI",
+    "link": "https://openai.com/index/building-standards-next-phase-ai",
+    "pubDate": "Mon, 21 Sep 2026 10:00:00 GMT",
+    "contentSnippet": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
+    "source": "AI"
+  },
+  {
+    "title": "Expanding OpenAI Academy with new learning paths",
+    "link": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+    "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT",
+    "contentSnippet": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+    "source": "AI"
   },
   {
     "title": "How V7 gives AI agents institutional memory",

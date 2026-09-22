@@ -12,26 +12,5 @@
     "pubDate": "Mon, 21 Sep 2026 13:00:00 GMT",
     "contentSnippet": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
     "source": "Networking"
-  },
-  {
-    "title": "Advisory Group on Mathematics and Artificial Intelligence",
-    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "pubDate": "Mon, 21 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.",
-    "source": "AI"
-  },
-  {
-    "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-    "link": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-    "pubDate": "Mon, 21 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
-    "source": "AI"
-  },
-  {
-    "title": "Building standards for the next phase of AI",
-    "link": "https://openai.com/index/building-standards-next-phase-ai",
-    "pubDate": "Mon, 21 Sep 2026 10:00:00 GMT",
-    "contentSnippet": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-    "source": "AI"
   }
 ]

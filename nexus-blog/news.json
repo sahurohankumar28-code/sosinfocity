@@ -1,16 +1,30 @@
 [
   {
-    "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
-    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
-    "pubDate": "Mon, 21 Sep 2026 16:11:24 +0000",
-    "contentSnippet": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking […]",
-    "source": "Cloud"
+    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+    "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000",
+    "contentSnippet": "EvilTokens has quickly become one of the top PhaaS platforms, enabling device code phishing attacks through AI-assisted lures, automated infrastructure, and token theft. In collaboration with partners, Microsoft Digital Crimes Unit (DCU) facilitated a disruption of EvilTokens infrastructure and operations.\nThe post Unmasking EvilTokens: Getting to the root of device code phishing appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
   },
   {
-    "title": "Python Workers are now generally available",
-    "link": "https://blog.cloudflare.com/python-workers-ga/",
-    "pubDate": "Mon, 21 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
+    "title": "We just shipped support for the ugliest part of HTTP: Vary",
+    "link": "https://blog.cloudflare.com/vary-support/",
+    "pubDate": "Tue, 22 Sep 2026 14:04:31 GMT",
+    "contentSnippet": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpredictable.",
     "source": "Networking"
+  },
+  {
+    "title": "Introducing Worker Previews: isolated preview environments for every change your agent makes",
+    "link": "https://blog.cloudflare.com/worker-previews/",
+    "pubDate": "Tue, 22 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production.",
+    "source": "Networking"
+  },
+  {
+    "title": "Priorities and principles for effective third party assessments",
+    "link": "https://openai.com/index/priorities-principles-third-party-assessments",
+    "pubDate": "Tue, 22 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+    "source": "AI"
   }
 ]

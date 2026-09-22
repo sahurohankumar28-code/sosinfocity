@@ -1,5 +1,19 @@
 [
   {
+    "title": "Better prompt caching for GPT-6",
+    "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+    "pubDate": "Tue, 22 Sep 2026 21:00:00 GMT",
+    "contentSnippet": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+    "source": "AI"
+  },
+  {
+    "title": "Introducing GPT-6 Sol and Luna",
+    "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "pubDate": "Tue, 22 Sep 2026 18:00:00 GMT",
+    "contentSnippet": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+    "source": "AI"
+  },
+  {
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000",

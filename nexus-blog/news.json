@@ -1,5 +1,26 @@
 [
   {
+    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+    "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+    "pubDate": "Wed, 23 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+    "source": "AI"
+  },
+  {
+    "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+    "link": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
+    "pubDate": "Wed, 23 Sep 2026 13:00:00 +0000",
+    "contentSnippet": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute.\nThe post Developers want more efficient software. Here’s what over 1000 GitHub users told us they need. appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+    "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+    "pubDate": "Wed, 23 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+    "source": "AI"
+  },
+  {
     "title": "Introducing Amazon CloudWatch Omni: collaborative AI-powered observability for your applications",
     "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/",
     "pubDate": "Tue, 22 Sep 2026 22:23:14 +0000",
@@ -33,26 +54,5 @@
     "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000",
     "contentSnippet": "EvilTokens has quickly become one of the top PhaaS platforms, enabling device code phishing attacks through AI-assisted lures, automated infrastructure, and token theft. In collaboration with partners, Microsoft Digital Crimes Unit (DCU) facilitated a disruption of EvilTokens infrastructure and operations.\nThe post Unmasking EvilTokens: Getting to the root of device code phishing appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "We just shipped support for the ugliest part of HTTP: Vary",
-    "link": "https://blog.cloudflare.com/vary-support/",
-    "pubDate": "Tue, 22 Sep 2026 14:04:31 GMT",
-    "contentSnippet": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpredictable.",
-    "source": "Networking"
-  },
-  {
-    "title": "Introducing Worker Previews: isolated preview environments for every change your agent makes",
-    "link": "https://blog.cloudflare.com/worker-previews/",
-    "pubDate": "Tue, 22 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production.",
-    "source": "Networking"
-  },
-  {
-    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-    "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-    "pubDate": "Tue, 22 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-    "source": "AI"
   }
 ]

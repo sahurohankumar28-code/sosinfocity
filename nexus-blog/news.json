@@ -1,5 +1,19 @@
 [
   {
+    "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
+    "link": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/",
+    "pubDate": "Thu, 24 Sep 2026 20:58:46 +0000",
+    "contentSnippet": "Amazon EventBridge announces an enhanced custom event bus for organizations scaling event-driven applications across teams and accounts. Deploy a single event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and improved economics at scale.",
+    "source": "Cloud"
+  },
+  {
+    "title": "When chat is the wrong UI",
+    "link": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+    "pubDate": "Thu, 24 Sep 2026 20:00:00 +0000",
+    "contentSnippet": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
     "link": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
     "pubDate": "Thu, 24 Sep 2026 18:26:12 +0000",

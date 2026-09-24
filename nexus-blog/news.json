@@ -1,23 +1,30 @@
 [
   {
-    "title": "Rendering huge pull requests in the GitHub Copilot app",
-    "link": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
-    "pubDate": "Wed, 23 Sep 2026 18:29:49 +0000",
-    "contentSnippet": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments.\nThe post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+    "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+    "link": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+    "pubDate": "Thu, 24 Sep 2026 18:26:12 +0000",
+    "contentSnippet": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. \nThe post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog.",
     "source": "Development"
   },
   {
-    "title": "Two years of OpenAI Academy",
-    "link": "https://openai.com/index/two-years-of-openai-academy",
-    "pubDate": "Wed, 23 Sep 2026 16:00:00 GMT",
-    "contentSnippet": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-    "source": "AI"
+    "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+    "pubDate": "Thu, 24 Sep 2026 16:00:00 +0000",
+    "contentSnippet": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment.\nThe post Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
   },
   {
-    "title": "Reimagining the SOC for the agentic era in Microsoft Defender",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
-    "pubDate": "Wed, 23 Sep 2026 16:00:00 +0000",
-    "contentSnippet": "We are announcing ISOC in Microsoft Defender: a foundation built for agentic security that brings leading solutions for SIEM and threat protection together.\nThe post Reimagining the SOC for the agentic era in Microsoft Defender appeared first on Microsoft Security Blog.",
+    "title": "​​​​​​​​What’s new in Microsoft Security: September 2026​​",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+    "pubDate": "Thu, 24 Sep 2026 16:00:00 +0000",
+    "contentSnippet": "This month's updates help you discover and control local AI agents, extend Zero Trust to agent traffic, and strengthen SOC foundations.\nThe post ​​​​​​​​What’s new in Microsoft Security: September 2026​​ appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
+  },
+  {
+    "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+    "link": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+    "pubDate": "Thu, 24 Sep 2026 15:00:00 GMT",
+    "contentSnippet": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
+    "source": "Networking"
   }
 ]

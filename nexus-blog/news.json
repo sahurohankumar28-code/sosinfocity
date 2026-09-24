@@ -19,54 +19,5 @@
     "pubDate": "Wed, 23 Sep 2026 16:00:00 +0000",
     "contentSnippet": "We are announcing ISOC in Microsoft Defender: a foundation built for agentic security that brings leading solutions for SIEM and threat protection together.\nThe post Reimagining the SOC for the agentic era in Microsoft Defender appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-    "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-    "pubDate": "Wed, 23 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-    "source": "AI"
-  },
-  {
-    "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
-    "link": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
-    "pubDate": "Wed, 23 Sep 2026 13:00:00 +0000",
-    "contentSnippet": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute.\nThe post Developers want more efficient software. Here’s what over 1000 GitHub users told us they need. appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-    "link": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-    "pubDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
-    "source": "AI"
-  },
-  {
-    "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-    "link": "https://openai.com/index/ringg",
-    "pubDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-    "source": "AI"
-  },
-  {
-    "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-    "link": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-    "pubDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
-    "source": "AI"
-  },
-  {
-    "title": "Sam Altman’s remarks at the United Nations Security Council",
-    "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
-    "pubDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-    "contentSnippet": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-    "source": "AI"
-  },
-  {
-    "title": "Introducing MentalHealthBench",
-    "link": "https://openai.com/index/introducing-mentalhealthbench",
-    "pubDate": "Wed, 23 Sep 2026 10:00:00 GMT",
-    "contentSnippet": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
-    "source": "AI"
   }
 ]

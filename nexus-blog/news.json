@@ -1,5 +1,12 @@
 [
   {
+    "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+    "link": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+    "pubDate": "Fri, 25 Sep 2026 21:44:40 +0000",
+    "contentSnippet": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
     "link": "https://openai.com/index/proaction",
     "pubDate": "Fri, 25 Sep 2026 19:00:00 GMT",
@@ -33,19 +40,5 @@
     "pubDate": "Fri, 25 Sep 2026 13:00:00 GMT",
     "contentSnippet": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
     "source": "Networking"
-  },
-  {
-    "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
-    "link": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/",
-    "pubDate": "Thu, 24 Sep 2026 20:58:46 +0000",
-    "contentSnippet": "Amazon EventBridge announces an enhanced custom event bus for organizations scaling event-driven applications across teams and accounts. Deploy a single event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and improved economics at scale.",
-    "source": "Cloud"
-  },
-  {
-    "title": "When chat is the wrong UI",
-    "link": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
-    "pubDate": "Thu, 24 Sep 2026 20:00:00 +0000",
-    "contentSnippet": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

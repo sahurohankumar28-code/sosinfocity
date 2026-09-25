@@ -1,5 +1,12 @@
 [
   {
+    "title": "Agents can now set up your website’s security with Turnstile Spin",
+    "link": "https://blog.cloudflare.com/turnstile-spin/",
+    "pubDate": "Fri, 25 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
+    "source": "Networking"
+  },
+  {
     "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
     "link": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/",
     "pubDate": "Thu, 24 Sep 2026 20:58:46 +0000",

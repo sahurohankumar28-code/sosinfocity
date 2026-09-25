@@ -1,5 +1,33 @@
 [
   {
+    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+    "link": "https://openai.com/index/proaction",
+    "pubDate": "Fri, 25 Sep 2026 19:00:00 GMT",
+    "contentSnippet": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+    "source": "AI"
+  },
+  {
+    "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+    "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+    "pubDate": "Fri, 25 Sep 2026 18:00:00 +0000",
+    "contentSnippet": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done.\nThe post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+    "pubDate": "Fri, 25 Sep 2026 15:35:08 +0000",
+    "contentSnippet": "Microsoft details JADEPUFFER-linked Azure reconnaissance, resource deletion, and credential access using compromised service principals, identifying the activity as associated with Storm-3168 and providing guidance for defenders.\nThe post Storm-3168: Agentic-driven cloud attacks using compromised service principals appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Improving site performance by shipping more CSS",
+    "link": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+    "pubDate": "Fri, 25 Sep 2026 15:00:00 +0000",
+    "contentSnippet": "How we fully migrated github.com away from CSS-in-JS.\nThe post Improving site performance by shipping more CSS appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Agents can now set up your website’s security with Turnstile Spin",
     "link": "https://blog.cloudflare.com/turnstile-spin/",
     "pubDate": "Fri, 25 Sep 2026 13:00:00 GMT",
@@ -19,33 +47,5 @@
     "pubDate": "Thu, 24 Sep 2026 20:00:00 +0000",
     "contentSnippet": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-    "link": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
-    "pubDate": "Thu, 24 Sep 2026 18:26:12 +0000",
-    "contentSnippet": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. \nThe post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
-    "pubDate": "Thu, 24 Sep 2026 16:00:00 +0000",
-    "contentSnippet": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment.\nThe post Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "​​​​​​​​What’s new in Microsoft Security: September 2026​​",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
-    "pubDate": "Thu, 24 Sep 2026 16:00:00 +0000",
-    "contentSnippet": "This month's updates help you discover and control local AI agents, extend Zero Trust to agent traffic, and strengthen SOC foundations.\nThe post ​​​​​​​​What’s new in Microsoft Security: September 2026​​ appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-    "link": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
-    "pubDate": "Thu, 24 Sep 2026 15:00:00 GMT",
-    "contentSnippet": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
-    "source": "Networking"
   }
 ]

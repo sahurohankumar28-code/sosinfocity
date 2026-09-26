@@ -19,19 +19,5 @@
     "pubDate": "Fri, 25 Sep 2026 18:00:00 +0000",
     "contentSnippet": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done.\nThe post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
-    "pubDate": "Fri, 25 Sep 2026 15:35:08 +0000",
-    "contentSnippet": "Microsoft details JADEPUFFER-linked Azure reconnaissance, resource deletion, and credential access using compromised service principals, identifying the activity as associated with Storm-3168 and providing guidance for defenders.\nThe post Storm-3168: Agentic-driven cloud attacks using compromised service principals appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Improving site performance by shipping more CSS",
-    "link": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
-    "pubDate": "Fri, 25 Sep 2026 15:00:00 +0000",
-    "contentSnippet": "How we fully migrated github.com away from CSS-in-JS.\nThe post Improving site performance by shipping more CSS appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

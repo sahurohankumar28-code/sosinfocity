@@ -33,12 +33,5 @@
     "pubDate": "Fri, 25 Sep 2026 15:00:00 +0000",
     "contentSnippet": "How we fully migrated github.com away from CSS-in-JS.\nThe post Improving site performance by shipping more CSS appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Agents can now set up your website’s security with Turnstile Spin",
-    "link": "https://blog.cloudflare.com/turnstile-spin/",
-    "pubDate": "Fri, 25 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
-    "source": "Networking"
   }
 ]

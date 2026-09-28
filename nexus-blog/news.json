@@ -1,9 +1,37 @@
 [
   {
+    "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+    "link": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+    "pubDate": "Mon, 28 Sep 2026 19:00:00 +0000",
+    "contentSnippet": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.\nThe post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Highlights from Git 2.56",
+    "link": "https://github.blog/open-source/git/highlights-from-git-2-56/",
+    "pubDate": "Mon, 28 Sep 2026 17:23:33 +0000",
+    "contentSnippet": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.56 appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/",
+    "pubDate": "Mon, 28 Sep 2026 16:14:54 +0000",
+    "contentSnippet": "If there’s one theme that defined last week, it’s choice. The frontier models keep arriving, and the interesting question is no longer just “how smart is it?” but “which model fits this step, at this cost, at this latency?” That’s exactly what landed on Amazon Bedrock over the past few days: GPT-6 Sol and GPT-6 […]",
+    "source": "Cloud"
+  },
+  {
     "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
     "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
     "pubDate": "Mon, 28 Sep 2026 15:08:57 +0000",
     "contentSnippet": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "NeedyMantis: Unpacking a post-compromise malware family used in targeted operations",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
+    "pubDate": "Mon, 28 Sep 2026 15:00:00 +0000",
+    "contentSnippet": "Microsoft Threat Intelligence identified NeedyMantis, a modular post-compromise malware framework used in targeted intrusions that combines custom loaders, encrypted archives, and extensible components to maintain long-term access and support follow-on operations.\nThe post NeedyMantis: Unpacking a post-compromise malware family used in targeted operations appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
   },
   {
@@ -70,10 +98,24 @@
     "source": "Networking"
   },
   {
-    "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-    "link": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
-    "pubDate": "Sun, 27 Sep 2026 17:00:00 GMT",
-    "contentSnippet": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
-    "source": "Networking"
+    "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+    "link": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+    "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT",
+    "contentSnippet": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+    "source": "AI"
+  },
+  {
+    "title": "Are you a Codex Original?",
+    "link": "https://openai.com/form/codex-originals",
+    "pubDate": "Mon, 28 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
+    "source": "AI"
+  },
+  {
+    "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+    "link": "https://openai.com/index/basis-tax-workbook-with-astra",
+    "pubDate": "Mon, 28 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+    "source": "AI"
   }
 ]

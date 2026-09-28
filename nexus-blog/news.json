@@ -1,5 +1,75 @@
 [
   {
+    "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+    "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+    "pubDate": "Mon, 28 Sep 2026 15:08:57 +0000",
+    "contentSnippet": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Next.js applications, powered by Vite: introducing Vinext 1.0",
+    "link": "https://blog.cloudflare.com/vinext-nextjs-on-vite/",
+    "pubDate": "Mon, 28 Sep 2026 14:51:57 GMT",
+    "contentSnippet": "Vinext 1.0 graduates from an AI experiment to a production-ready framework, letting developers run Next.js apps on Vite. This release brings advanced cache warming, broader compatibility, and an automated testing pipeline.",
+    "source": "Networking"
+  },
+  {
+    "title": "Introducing cf: the agentic CLI for the entire Cloudflare API",
+    "link": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+    "pubDate": "Mon, 28 Sep 2026 14:50:37 GMT",
+    "contentSnippet": "We are releasing cf, our new command-line tool that mirrors the entire Cloudflare API and supports programmatic TypeScript configuration. We are also open-sourcing Forge, our internal SDK generator.",
+    "source": "Networking"
+  },
+  {
+    "title": "How fast is the web? Explore billions of real-user measurements with BEACON",
+    "link": "https://blog.cloudflare.com/how-fast-is-the-web/",
+    "pubDate": "Mon, 28 Sep 2026 14:43:05 GMT",
+    "contentSnippet": "Cloudflare is open-sourcing the BEACON dataset, making billions of anonymized Real User Monitoring (RUM) performance records publicly available on Google BigQuery. Explore real-world Core Web Vitals, soft navigation metrics, and performance breakdowns across browsers and regions.",
+    "source": "Networking"
+  },
+  {
+    "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents",
+    "link": "https://blog.cloudflare.com/voidzero-update/",
+    "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Since joining Cloudflare, VoidZero has delivered more than 80 releases that drastically speed up JavaScript compilation, linting, and testing. From a 10x faster React compiler to Vite+ 1.0, here’s how we are building faster tools for developers and AI agents.",
+    "source": "Networking"
+  },
+  {
+    "title": "Introducing Forge: the open source pipeline for generating SDKs, CLIs, docs, and more",
+    "link": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
+    "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Forge is a pluggable, open-source pipeline that runs in CI to generate SDKs, CLIs, and documentation directly from API definitions. By shifting generation upstream into individual team repositories, Forge keeps developer tools continuously in sync.",
+    "source": "Networking"
+  },
+  {
+    "title": "The road to the agentic browser: A Kitesurf update",
+    "link": "https://blog.cloudflare.com/kitesurf-update/",
+    "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites faster.",
+    "source": "Networking"
+  },
+  {
+    "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
+    "link": "https://blog.cloudflare.com/introducing-the-cold-start/",
+    "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare is launching The Cold Start, a startup competition giving five early-stage companies five minutes on stage at Cloudflare Connect. Grand Prize winner receives $500,000 in credits, a San Francisco billboard, and an invitation to our VIP speakers dinner.",
+    "source": "Networking"
+  },
+  {
+    "title": "EmDash 1.0: the stable CMS with a secure plugin registry",
+    "link": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
+    "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control.",
+    "source": "Networking"
+  },
+  {
+    "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
+    "link": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
+    "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "With the new experimental support for the Emscripten target in Rust Workers, many previously unsupported Rust libraries and applications can now be built and deployed directly to Cloudflare’s global Workers platform, including upcoming support for Tokio async.",
+    "source": "Networking"
+  },
+  {
     "title": "Cloudflare’s 2026 Annual Founders’ Letter",
     "link": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
     "pubDate": "Sun, 27 Sep 2026 17:00:00 GMT",

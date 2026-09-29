@@ -1,5 +1,12 @@
 [
   {
+    "title": "​​Beyond source code: A path to the keys to the kingdom",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
+    "pubDate": "Tue, 29 Sep 2026 16:00:00 +0000",
+    "contentSnippet": "Explore how Storm-3068 turned a compromised identity into broader cloud access and the steps organizations can take to defend their identities, pipelines, and cloud infrastructure.\nThe post ​​Beyond source code: A path to the keys to the kingdom appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
     "pubDate": "Tue, 29 Sep 2026 15:00:00 +0000",
@@ -77,31 +84,24 @@
     "source": "Networking"
   },
   {
-    "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
-    "link": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
-    "pubDate": "Mon, 28 Sep 2026 19:00:00 +0000",
-    "contentSnippet": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.\nThe post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "How we will do better for Australia",
-    "link": "https://openai.com/index/how-we-will-do-better-for-australia",
-    "pubDate": "Mon, 28 Sep 2026 19:00:00 GMT",
-    "contentSnippet": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+    "title": "Introducing GPT-6.1 Sol",
+    "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
+    "contentSnippet": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
     "source": "AI"
   },
   {
-    "title": "Towards safety cases for frontier AI training",
-    "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-    "pubDate": "Mon, 28 Sep 2026 19:00:00 GMT",
-    "contentSnippet": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+    "title": "DevDay 2026 Recap",
+    "link": "https://openai.com/index/devday-2026-recap",
+    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
+    "contentSnippet": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
     "source": "AI"
   },
   {
-    "title": "Highlights from Git 2.56",
-    "link": "https://github.blog/open-source/git/highlights-from-git-2-56/",
-    "pubDate": "Mon, 28 Sep 2026 17:23:33 +0000",
-    "contentSnippet": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.56 appeared first on The GitHub Blog.",
-    "source": "Development"
+    "title": "Introducing dots",
+    "link": "https://openai.com/index/introducing-dots",
+    "pubDate": "Tue, 29 Sep 2026 00:00:00 GMT",
+    "contentSnippet": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
+    "source": "AI"
   }
 ]

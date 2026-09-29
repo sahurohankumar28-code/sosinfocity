@@ -14,6 +14,13 @@
     "source": "AI"
   },
   {
+    "title": "Towards safety cases for frontier AI training",
+    "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+    "pubDate": "Mon, 28 Sep 2026 19:00:00 GMT",
+    "contentSnippet": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+    "source": "AI"
+  },
+  {
     "title": "Highlights from Git 2.56",
     "link": "https://github.blog/open-source/git/highlights-from-git-2-56/",
     "pubDate": "Mon, 28 Sep 2026 17:23:33 +0000",
@@ -103,12 +110,5 @@
     "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT",
     "contentSnippet": "With the new experimental support for the Emscripten target in Rust Workers, many previously unsupported Rust libraries and applications can now be built and deployed directly to Cloudflare’s global Workers platform, including upcoming support for Tokio async.",
     "source": "Networking"
-  },
-  {
-    "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-    "link": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-    "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT",
-    "contentSnippet": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-    "source": "AI"
   }
 ]

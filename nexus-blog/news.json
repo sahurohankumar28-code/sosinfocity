@@ -7,6 +7,13 @@
     "source": "Development"
   },
   {
+    "title": "How we will do better for Australia",
+    "link": "https://openai.com/index/how-we-will-do-better-for-australia",
+    "pubDate": "Mon, 28 Sep 2026 19:00:00 GMT",
+    "contentSnippet": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+    "source": "AI"
+  },
+  {
     "title": "Highlights from Git 2.56",
     "link": "https://github.blog/open-source/git/highlights-from-git-2-56/",
     "pubDate": "Mon, 28 Sep 2026 17:23:33 +0000",
@@ -102,20 +109,6 @@
     "link": "https://openai.com/index/lenfest-ai-collaborative-expansion",
     "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT",
     "contentSnippet": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-    "source": "AI"
-  },
-  {
-    "title": "Are you a Codex Original?",
-    "link": "https://openai.com/form/codex-originals",
-    "pubDate": "Mon, 28 Sep 2026 00:00:00 GMT",
-    "contentSnippet": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
-    "source": "AI"
-  },
-  {
-    "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-    "link": "https://openai.com/index/basis-tax-workbook-with-astra",
-    "pubDate": "Mon, 28 Sep 2026 00:00:00 GMT",
-    "contentSnippet": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
     "source": "AI"
   }
 ]

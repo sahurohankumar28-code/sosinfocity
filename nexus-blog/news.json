@@ -1,5 +1,68 @@
 [
   {
+    "title": "Cloudflare Impact reaches $100 million in donations",
+    "link": "https://blog.cloudflare.com/100-million-donations/",
+    "pubDate": "Wed, 30 Sep 2026 13:01:55 GMT",
+    "contentSnippet": "This week, Cloudflare's Impact programs will reach $100 million in donated services. This milestone means that thousands of entities including journalists, civil society, state and local governments, election management bodies, and public schools are being protected from cyberattacks.",
+    "source": "Networking"
+  },
+  {
+    "title": "Cut your AI spend with AI Gateway's Auto Router",
+    "link": "https://blog.cloudflare.com/auto-router/",
+    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramatically cut AI spend while maintaining performance.",
+    "source": "Networking"
+  },
+  {
+    "title": "Detect and send production issues straight to your agent",
+    "link": "https://blog.cloudflare.com/real-time-issue-detection/",
+    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "You can now use built-in error monitoring in Cloudflare Workers to group production failures and send stack traces, logs, traces, and application context directly to a coding agent to investigate further and open a pull request.",
+    "source": "Networking"
+  },
+  {
+    "title": "Simplifying domains for people and agents",
+    "link": "https://blog.cloudflare.com/simplifying-domains/",
+    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare Registrar’s new search delivers fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. Its expanded API and cf CLI also let agents search, register, and transfer domains.",
+    "source": "Networking"
+  },
+  {
+    "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
+    "link": "https://blog.cloudflare.com/monetization-gateway-beta/",
+    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed beta.",
+    "source": "Networking"
+  },
+  {
+    "title": "Pay Per Use: when AI uses your work, you should get paid",
+    "link": "https://blog.cloudflare.com/pay-per-use/",
+    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "Pay Per Use is now in beta. AI companies report when they use publishers’ content, and Cloudflare handles billing, payouts, and reporting, so our customers are paid according to use.",
+    "source": "Networking"
+  },
+  {
+    "title": "Identify AI model overuse with User Insights",
+    "link": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "contentSnippet": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. This is available free to AI Gateway users.",
+    "source": "Networking"
+  },
+  {
+    "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
+    "link": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+    "pubDate": "Wed, 30 Sep 2026 12:58:00 GMT",
+    "contentSnippet": "Cloudflare Containers now start 6x faster, let your agent choose each sandbox's image and instance type at runtime, and support filesystem snapshots in public beta, all controlled from a Durable Object.",
+    "source": "Networking"
+  },
+  {
+    "title": "The Internet has a second audience",
+    "link": "https://blog.cloudflare.com/agentic-web/",
+    "pubDate": "Wed, 30 Sep 2026 12:58:00 GMT",
+    "contentSnippet": "More than half the traffic reaching sites on Cloudflare is now automated, and AI agents are the fastest-growing part of it. We're giving site owners the tools to see who's visiting, decide who gets in, and charge for access.",
+    "source": "Networking"
+  },
+  {
     "title": "Phishing Abuses RMM Tools for Persistent Access",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
     "pubDate": "Tue, 29 Sep 2026 21:39:27 +0000",
@@ -26,82 +89,5 @@
     "pubDate": "Tue, 29 Sep 2026 15:00:00 +0000",
     "contentSnippet": "Explore GitHub’s latest transparency data and learn more about policy updates affecting developers and open source.\nThe post Developer policy update: Transparency, state policy, and what’s ahead appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Using AI to chart a course for our post-quantum migration",
-    "link": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "We’re building CryptoLabe, an internal AI-powered tool that discovers cryptography across our codebase, surfaces dependencies, and helps us progress toward a full post-quantum migration by 2029. Here’s what we’ve learned so far.",
-    "source": "Networking"
-  },
-  {
-    "title": "Building a certificate authority for the whole Internet",
-    "link": "https://blog.cloudflare.com/cloudflare-certificate-authority/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Twelve years after launching Universal SSL, Cloudflare is applying to become a certificate authority. By combining an established root, an ACME-first approach, and Merkle Tree Certificates, we are building a post-quantum CA for the open web.",
-    "source": "Networking"
-  },
-  {
-    "title": "Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks",
-    "link": "https://blog.cloudflare.com/ai-era-framework/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare introduces an adaptive security framework connecting risk discovery, agent governance, runtime protection, and AI-powered response in a continuous learning loop.",
-    "source": "Networking"
-  },
-  {
-    "title": "Building a post-quantum certificate authority with Merkle Tree Certificates",
-    "link": "https://blog.cloudflare.com/pq-ca-with-mtcs/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "As post-quantum signatures threaten to inflate TLS handshakes and certificate transparency logs, Merkle Tree Certificates offer a path to compact, auditable authentication. Cloudflare’s new certificate authority will support MTC issuance at scale.",
-    "source": "Networking"
-  },
-  {
-    "title": "We tested our own WAF with frontier AI models. Here’s what we found",
-    "link": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "We built a WAF tester that adapted each request based on what the WAF blocked or passed. This helped us explore variations that a fixed test might miss. We ran it across six attack categories on an authorized staging environment and discovered detection gaps worth fixing.  Here’s how the loop worked, what got through, and what we did about it.",
-    "source": "Networking"
-  },
-  {
-    "title": "Introducing Threat Signals: agentic skills for open-source threat intelligence, free for every Cloudflare account",
-    "link": "https://blog.cloudflare.com/threat-signals/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "We are expanding access to Cloudforce One's Threat Events Platform to every Cloudflare account and introducing Threat Signals. Threat Signals automatically parses open-source threat reporting, extracts structured indicators, and connects threat context directly to your WAF rules.",
-    "source": "Networking"
-  },
-  {
-    "title": "Is your domain using post-quantum encryption? Now you can see for yourself",
-    "link": "https://blog.cloudflare.com/post-quantum-visibility/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare has added visibility into post-quantum (PQ) encryption in TLS 1.3 directly into HTTP Analytics, Log Explorer, and Logpush. Learn how to make sure your domain is protected with PQ encryption.",
-    "source": "Networking"
-  },
-  {
-    "title": "Enforce positive security with Cloudflare Application Profiles",
-    "link": "https://blog.cloudflare.com/application-profiles/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare learns the structure of your HTTP requests and identifies deviations. You can add a positive security layer that helps reduce attack surface as AI makes it easier for attackers to generate and vary payloads.",
-    "source": "Networking"
-  },
-  {
-    "title": "Preventing quantum downgrade attacks against IPsec",
-    "link": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
-    "pubDate": "Tue, 29 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "A sophisticated attacker with a quantum computer can exploit a protocol design flaw to downgrade post-quantum IPsec tunnels to classical crypto. We helped the IETF develop a transcript authentication extension to prevent these attacks.",
-    "source": "Networking"
-  },
-  {
-    "title": "Introducing GPT-6.1 Sol",
-    "link": "https://openai.com/index/introducing-gpt-6-1-sol",
-    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
-    "contentSnippet": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
-    "source": "AI"
-  },
-  {
-    "title": "DevDay 2026 Recap",
-    "link": "https://openai.com/index/devday-2026-recap",
-    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
-    "contentSnippet": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-    "source": "AI"
   }
 ]

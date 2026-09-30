@@ -1,5 +1,12 @@
 [
   {
+    "title": "Phishing Abuses RMM Tools for Persistent Access",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+    "pubDate": "Tue, 29 Sep 2026 21:39:27 +0000",
+    "contentSnippet": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity\nThe post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "​​Beyond source code: A path to the keys to the kingdom",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
     "pubDate": "Tue, 29 Sep 2026 16:00:00 +0000",
@@ -95,13 +102,6 @@
     "link": "https://openai.com/index/devday-2026-recap",
     "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
     "contentSnippet": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-    "source": "AI"
-  },
-  {
-    "title": "Introducing dots",
-    "link": "https://openai.com/index/introducing-dots",
-    "pubDate": "Tue, 29 Sep 2026 00:00:00 GMT",
-    "contentSnippet": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
     "source": "AI"
   }
 ]

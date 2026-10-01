@@ -1,5 +1,54 @@
 [
   {
+    "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
+    "link": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
+    "pubDate": "Thu, 01 Oct 2026 20:04:04 +0000",
+    "contentSnippet": "Introducing the public preview of AWS Well-Architected Agent, an AI-powered service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications' cost, security, performance, and resilience—with ready-to-implement fixes aligned to your business goals.",
+    "source": "Cloud"
+  },
+  {
+    "title": "The eternal complement",
+    "link": "https://openai.com/index/the-eternal-complement",
+    "pubDate": "Thu, 01 Oct 2026 17:00:00 GMT",
+    "contentSnippet": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+    "source": "AI"
+  },
+  {
+    "title": "How Albertsons Companies is reimagining retail from the inside out",
+    "link": "https://openai.com/index/albertsons-reimagining-retail",
+    "pubDate": "Thu, 01 Oct 2026 16:00:00 GMT",
+    "contentSnippet": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+    "source": "AI"
+  },
+  {
+    "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+    "link": "https://blog.cloudflare.com/clef-decision-models/",
+    "pubDate": "Thu, 01 Oct 2026 15:34:02 GMT",
+    "contentSnippet": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data.",
+    "source": "Networking"
+  },
+  {
+    "title": "10 technical talks I’m excited about at GitHub Universe 2026",
+    "link": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/",
+    "pubDate": "Thu, 01 Oct 2026 15:07:16 +0000",
+    "contentSnippet": "From verifying AI-written code to securing npm dependencies, these are the sessions I’m building my Universe agenda around.\nThe post 10 technical talks I’m excited about at GitHub Universe 2026 appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Preparing governments for an era of interconnected cyber risk",
+    "link": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
+    "pubDate": "Thu, 01 Oct 2026 14:00:00 +0000",
+    "contentSnippet": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025.\nThe post Preparing governments for an era of interconnected cyber risk appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Insights from the 2026 Microsoft Digital Defense Report ",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "pubDate": "Thu, 01 Oct 2026 14:00:00 +0000",
+    "contentSnippet": "Read highlights from the 2026 Microsoft Digital Defense Report, which reflects a security environment that continues to grow more interconnected.\nThe post Insights from the 2026 Microsoft Digital Defense Report  appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "One year later: Sovereign AI and the fight for choice",
     "link": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
     "pubDate": "Thu, 01 Oct 2026 13:04:19 GMT",
@@ -60,34 +109,6 @@
     "link": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
     "pubDate": "Wed, 30 Sep 2026 22:10:00 +0000",
     "contentSnippet": "Amazon S3 Tables now offer complete support for the Apache Iceberg V3 spec. Upgrade existing V2 tables or create new V3 tables with built-in compaction, maintenance, and engine compatibility.",
-    "source": "Cloud"
-  },
-  {
-    "title": "Amazon S3 Vectors now supports metadata pre-filtering for higher recall on filtered searches",
-    "link": "https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/",
-    "pubDate": "Wed, 30 Sep 2026 20:03:34 +0000",
-    "contentSnippet": "Amazon S3 Vectors now supports metadata pre filtering, delivering up to 5x higher recall on filtered searches. Filters evaluate before similarity search so scoped queries return more relevant results. Ideal for RAG, agentic apps, and document search.",
-    "source": "Cloud"
-  },
-  {
-    "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-    "pubDate": "Wed, 30 Sep 2026 19:31:00 +0000",
-    "contentSnippet": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams.\nThe post ​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
-    "link": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/",
-    "pubDate": "Wed, 30 Sep 2026 17:22:31 +0000",
-    "contentSnippet": "Amazon Aurora PostgreSQL now lets you directly query Apache Iceberg and Parquet data stored in your data lake alongside live operational data—no ETL pipelines required. Powered by DuckDB embedded within Aurora, this capability enables single queries that join transactional and historical data using familiar PostgreSQL syntax. It supports AWS Glue Data Catalog, S3, and S3 Tables, with optimizations like predicate pushdown and caching for efficient performance.",
-    "source": "Cloud"
-  },
-  {
-    "title": "Celebrating Our Newest AWS Heroes – September 2026",
-    "link": "https://aws.amazon.com/blogs/aws/celebrating-our-newest-aws-heroes-september-2026/",
-    "pubDate": "Wed, 30 Sep 2026 17:04:05 +0000",
-    "contentSnippet": "Today, we’re excited to introduce the newest members of the AWS Heroes program. AWS Heroes are a vibrant, worldwide group of AWS experts who go above and beyond to share knowledge, mentor others, and build thriving communities. These individuals make a real difference in helping developers and organizations succeed with AWS. This month, we welcome […]",
     "source": "Cloud"
   }
 ]

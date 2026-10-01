@@ -1,5 +1,61 @@
 [
   {
+    "title": "One year later: Sovereign AI and the fight for choice",
+    "link": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+    "pubDate": "Thu, 01 Oct 2026 13:04:19 GMT",
+    "contentSnippet": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice.",
+    "source": "Networking"
+  },
+  {
+    "title": "Introducing Workers KV Instant — powered by Quicksilver",
+    "link": "https://blog.cloudflare.com/workers-kv-instant/",
+    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API.",
+    "source": "Networking"
+  },
+  {
+    "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+    "link": "https://blog.cloudflare.com/managed-cloudflare-os/",
+    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch in a few clicks.",
+    "source": "Networking"
+  },
+  {
+    "title": "Announcing Cloudflare K2: serverless event streams",
+    "link": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered log streams without the operational overhead of traditional broker clusters.",
+    "source": "Networking"
+  },
+  {
+    "title": "We want you to build the next Git platform on Cloudflare",
+    "link": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes.",
+    "source": "Networking"
+  },
+  {
+    "title": "AI Search is now generally available",
+    "link": "https://blog.cloudflare.com/ai-search-ga/",
+    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pricing works.",
+    "source": "Networking"
+  },
+  {
+    "title": "Support for modern cryptographic algorithms in Workers",
+    "link": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today.",
+    "source": "Networking"
+  },
+  {
+    "title": "Introducing Cloudflare Basin: an open, serverless data platform, now generally available",
+    "link": "https://blog.cloudflare.com/cloudflare-basin/",
+    "pubDate": "Thu, 01 Oct 2026 12:58:00 GMT",
+    "contentSnippet": "Cloudflare Basin is built on Apache Iceberg and R2 Object Storage. With general availability, developers can ingest, manage, and query large datasets at scale without paying data egress fees.",
+    "source": "Networking"
+  },
+  {
     "title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
     "link": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
     "pubDate": "Wed, 30 Sep 2026 22:10:00 +0000",
@@ -33,89 +89,5 @@
     "pubDate": "Wed, 30 Sep 2026 17:04:05 +0000",
     "contentSnippet": "Today, we’re excited to introduce the newest members of the AWS Heroes program. AWS Heroes are a vibrant, worldwide group of AWS experts who go above and beyond to share knowledge, mentor others, and build thriving communities. These individuals make a real difference in helping developers and organizations succeed with AWS. This month, we welcome […]",
     "source": "Cloud"
-  },
-  {
-    "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-    "pubDate": "Wed, 30 Sep 2026 14:00:00 +0000",
-    "contentSnippet": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance.\nThe post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Cloudflare Impact reaches $100 million in donations",
-    "link": "https://blog.cloudflare.com/100-million-donations/",
-    "pubDate": "Wed, 30 Sep 2026 13:01:55 GMT",
-    "contentSnippet": "This week, Cloudflare's Impact programs will reach $100 million in donated services. This milestone means that thousands of entities including journalists, civil society, state and local governments, election management bodies, and public schools are being protected from cyberattacks.",
-    "source": "Networking"
-  },
-  {
-    "title": "Cut your AI spend with AI Gateway's Auto Router",
-    "link": "https://blog.cloudflare.com/auto-router/",
-    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramatically cut AI spend while maintaining performance.",
-    "source": "Networking"
-  },
-  {
-    "title": "Detect and send production issues straight to your agent",
-    "link": "https://blog.cloudflare.com/real-time-issue-detection/",
-    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "You can now use built-in error monitoring in Cloudflare Workers to group production failures and send stack traces, logs, traces, and application context directly to a coding agent to investigate further and open a pull request.",
-    "source": "Networking"
-  },
-  {
-    "title": "Simplifying domains for people and agents",
-    "link": "https://blog.cloudflare.com/simplifying-domains/",
-    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare Registrar’s new search delivers fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. Its expanded API and cf CLI also let agents search, register, and transfer domains.",
-    "source": "Networking"
-  },
-  {
-    "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
-    "link": "https://blog.cloudflare.com/monetization-gateway-beta/",
-    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed beta.",
-    "source": "Networking"
-  },
-  {
-    "title": "Pay Per Use: when AI uses your work, you should get paid",
-    "link": "https://blog.cloudflare.com/pay-per-use/",
-    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "Pay Per Use is now in beta. AI companies report when they use publishers’ content, and Cloudflare handles billing, payouts, and reporting, so our customers are paid according to use.",
-    "source": "Networking"
-  },
-  {
-    "title": "Identify AI model overuse with User Insights",
-    "link": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
-    "pubDate": "Wed, 30 Sep 2026 13:00:00 GMT",
-    "contentSnippet": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. This is available free to AI Gateway users.",
-    "source": "Networking"
-  },
-  {
-    "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
-    "link": "https://blog.cloudflare.com/faster-agent-sandboxes/",
-    "pubDate": "Wed, 30 Sep 2026 12:58:00 GMT",
-    "contentSnippet": "Cloudflare Containers now start 6x faster, let your agent choose each sandbox's image and instance type at runtime, and support filesystem snapshots in public beta, all controlled from a Durable Object.",
-    "source": "Networking"
-  },
-  {
-    "title": "The Internet has a second audience",
-    "link": "https://blog.cloudflare.com/agentic-web/",
-    "pubDate": "Wed, 30 Sep 2026 12:58:00 GMT",
-    "contentSnippet": "More than half the traffic reaching sites on Cloudflare is now automated, and AI agents are the fastest-growing part of it. We're giving site owners the tools to see who's visiting, decide who gets in, and charge for access.",
-    "source": "Networking"
-  },
-  {
-    "title": "Disrupting a coordinated model-distillation campaign",
-    "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-    "pubDate": "Wed, 30 Sep 2026 10:30:00 GMT",
-    "contentSnippet": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-    "source": "AI"
-  },
-  {
-    "title": "Helping small businesses put AI to work",
-    "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-    "pubDate": "Wed, 30 Sep 2026 10:00:00 GMT",
-    "contentSnippet": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-    "source": "AI"
   }
 ]

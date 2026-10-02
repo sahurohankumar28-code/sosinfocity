@@ -103,12 +103,5 @@
     "pubDate": "Thu, 01 Oct 2026 12:58:00 GMT",
     "contentSnippet": "Cloudflare Basin is built on Apache Iceberg and R2 Object Storage. With general availability, developers can ingest, manage, and query large datasets at scale without paying data egress fees.",
     "source": "Networking"
-  },
-  {
-    "title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
-    "link": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
-    "pubDate": "Wed, 30 Sep 2026 22:10:00 +0000",
-    "contentSnippet": "Amazon S3 Tables now offer complete support for the Apache Iceberg V3 spec. Upgrade existing V2 tables or create new V3 tables with built-in compaction, maintenance, and engine compatibility.",
-    "source": "Cloud"
   }
 ]

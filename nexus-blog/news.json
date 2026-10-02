@@ -1,5 +1,26 @@
 [
   {
+    "title": "A model guide for the GPT-6 family",
+    "link": "https://openai.com/index/practical-guide-building-gpt-6",
+    "pubDate": "Fri, 02 Oct 2026 16:15:00 GMT",
+    "contentSnippet": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+    "source": "AI"
+  },
+  {
+    "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+    "link": "https://blog.cloudflare.com/streamline/",
+    "pubDate": "Fri, 02 Oct 2026 16:13:45 GMT",
+    "contentSnippet": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine.",
+    "source": "Networking"
+  },
+  {
+    "title": "AI is changing developer work. Here are three skills to strengthen.",
+    "link": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
+    "pubDate": "Fri, 02 Oct 2026 15:00:00 +0000",
+    "contentSnippet": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow.\nThe post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Introducing Web Search API via AI Gateway",
     "link": "https://blog.cloudflare.com/introducing-web-search-api/",
     "pubDate": "Fri, 02 Oct 2026 13:28:10 GMT",
@@ -63,38 +84,10 @@
     "source": "Networking"
   },
   {
-    "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
-    "link": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
-    "pubDate": "Thu, 01 Oct 2026 20:04:04 +0000",
-    "contentSnippet": "Introducing the public preview of AWS Well-Architected Agent, an AI-powered service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications' cost, security, performance, and resilience—with ready-to-implement fixes aligned to your business goals.",
-    "source": "Cloud"
-  },
-  {
-    "title": "The eternal complement",
-    "link": "https://openai.com/index/the-eternal-complement",
-    "pubDate": "Thu, 01 Oct 2026 17:00:00 GMT",
-    "contentSnippet": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "link": "https://openai.com/index/chatham-financial",
+    "pubDate": "Fri, 02 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
     "source": "AI"
-  },
-  {
-    "title": "How Albertsons Companies is reimagining retail from the inside out",
-    "link": "https://openai.com/index/albertsons-reimagining-retail",
-    "pubDate": "Thu, 01 Oct 2026 16:00:00 GMT",
-    "contentSnippet": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-    "source": "AI"
-  },
-  {
-    "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-    "link": "https://blog.cloudflare.com/clef-decision-models/",
-    "pubDate": "Thu, 01 Oct 2026 15:34:02 GMT",
-    "contentSnippet": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data.",
-    "source": "Networking"
-  },
-  {
-    "title": "10 technical talks I’m excited about at GitHub Universe 2026",
-    "link": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/",
-    "pubDate": "Thu, 01 Oct 2026 15:07:16 +0000",
-    "contentSnippet": "From verifying AI-written code to securing npm dependencies, these are the sessions I’m building my Universe agenda around.\nThe post 10 technical talks I’m excited about at GitHub Universe 2026 appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

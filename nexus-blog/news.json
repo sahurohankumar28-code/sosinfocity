@@ -1,5 +1,68 @@
 [
   {
+    "title": "Introducing Web Search API via AI Gateway",
+    "link": "https://blog.cloudflare.com/introducing-web-search-api/",
+    "pubDate": "Fri, 02 Oct 2026 13:28:10 GMT",
+    "contentSnippet": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Workers bindings.",
+    "source": "Networking"
+  },
+  {
+    "title": "8 major updates to Cloudflare Observability",
+    "link": "https://blog.cloudflare.com/one-observability-platform/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing.",
+    "source": "Networking"
+  },
+  {
+    "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+    "link": "https://blog.cloudflare.com/cloudflare-tracing/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack.",
+    "source": "Networking"
+  },
+  {
+    "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+    "link": "https://blog.cloudflare.com/enterprise-for-all-update/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools internally, and what is coming next.",
+    "source": "Networking"
+  },
+  {
+    "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+    "link": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products.",
+    "source": "Networking"
+  },
+  {
+    "title": "Follow the thread: a new dashboard to investigate account abuse",
+    "link": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account abuse.",
+    "source": "Networking"
+  },
+  {
+    "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+    "link": "https://blog.cloudflare.com/protected-quick-tunnels/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side.",
+    "source": "Networking"
+  },
+  {
+    "title": "Building for good: How civil society organizations are automating on Cloudflare",
+    "link": "https://blog.cloudflare.com/civil-society-automation/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare.",
+    "source": "Networking"
+  },
+  {
+    "title": "2026 Birthday week: network performance update",
+    "link": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+    "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining user privacy.",
+    "source": "Networking"
+  },
+  {
     "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
     "link": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
     "pubDate": "Thu, 01 Oct 2026 20:04:04 +0000",
@@ -33,75 +96,5 @@
     "pubDate": "Thu, 01 Oct 2026 15:07:16 +0000",
     "contentSnippet": "From verifying AI-written code to securing npm dependencies, these are the sessions I’m building my Universe agenda around.\nThe post 10 technical talks I’m excited about at GitHub Universe 2026 appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Preparing governments for an era of interconnected cyber risk",
-    "link": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
-    "pubDate": "Thu, 01 Oct 2026 14:00:00 +0000",
-    "contentSnippet": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025.\nThe post Preparing governments for an era of interconnected cyber risk appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Insights from the 2026 Microsoft Digital Defense Report ",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
-    "pubDate": "Thu, 01 Oct 2026 14:00:00 +0000",
-    "contentSnippet": "Read highlights from the 2026 Microsoft Digital Defense Report, which reflects a security environment that continues to grow more interconnected.\nThe post Insights from the 2026 Microsoft Digital Defense Report  appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "One year later: Sovereign AI and the fight for choice",
-    "link": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
-    "pubDate": "Thu, 01 Oct 2026 13:04:19 GMT",
-    "contentSnippet": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice.",
-    "source": "Networking"
-  },
-  {
-    "title": "Introducing Workers KV Instant — powered by Quicksilver",
-    "link": "https://blog.cloudflare.com/workers-kv-instant/",
-    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API.",
-    "source": "Networking"
-  },
-  {
-    "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-    "link": "https://blog.cloudflare.com/managed-cloudflare-os/",
-    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch in a few clicks.",
-    "source": "Networking"
-  },
-  {
-    "title": "Announcing Cloudflare K2: serverless event streams",
-    "link": "https://blog.cloudflare.com/cloudflare-k2-streams/",
-    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered log streams without the operational overhead of traditional broker clusters.",
-    "source": "Networking"
-  },
-  {
-    "title": "We want you to build the next Git platform on Cloudflare",
-    "link": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
-    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes.",
-    "source": "Networking"
-  },
-  {
-    "title": "AI Search is now generally available",
-    "link": "https://blog.cloudflare.com/ai-search-ga/",
-    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pricing works.",
-    "source": "Networking"
-  },
-  {
-    "title": "Support for modern cryptographic algorithms in Workers",
-    "link": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
-    "pubDate": "Thu, 01 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today.",
-    "source": "Networking"
-  },
-  {
-    "title": "Introducing Cloudflare Basin: an open, serverless data platform, now generally available",
-    "link": "https://blog.cloudflare.com/cloudflare-basin/",
-    "pubDate": "Thu, 01 Oct 2026 12:58:00 GMT",
-    "contentSnippet": "Cloudflare Basin is built on Apache Iceberg and R2 Object Storage. With general availability, developers can ingest, manage, and query large datasets at scale without paying data egress fees.",
-    "source": "Networking"
   }
 ]

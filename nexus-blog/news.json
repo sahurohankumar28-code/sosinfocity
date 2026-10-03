@@ -82,12 +82,5 @@
     "pubDate": "Fri, 02 Oct 2026 13:00:00 GMT",
     "contentSnippet": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining user privacy.",
     "source": "Networking"
-  },
-  {
-    "title": "Chatham scales its capital markets expertise with OpenAI",
-    "link": "https://openai.com/index/chatham-financial",
-    "pubDate": "Fri, 02 Oct 2026 00:00:00 GMT",
-    "contentSnippet": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
-    "source": "AI"
   }
 ]

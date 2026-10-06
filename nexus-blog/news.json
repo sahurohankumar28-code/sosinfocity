@@ -1,5 +1,19 @@
 [
   {
+    "title": "Building Git infrastructure for agent-scale development",
+    "link": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+    "pubDate": "Tue, 06 Oct 2026 20:57:56 +0000",
+    "contentSnippet": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development.\nThe post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "The keys to the Internet change on October 11. Are you ready?",
+    "link": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+    "pubDate": "Tue, 06 Oct 2026 17:50:11 GMT",
+    "contentSnippet": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
+    "source": "Networking"
+  },
+  {
     "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
     "link": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
     "pubDate": "Tue, 06 Oct 2026 16:09:36 +0000",
@@ -19,5 +33,12 @@
     "pubDate": "Tue, 06 Oct 2026 16:00:00 +0000",
     "contentSnippet": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management.\nThe post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
+  },
+  {
+    "title": "Advancing computer use with Ironclad",
+    "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "pubDate": "Tue, 06 Oct 2026 10:00:00 GMT",
+    "contentSnippet": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+    "source": "AI"
   }
 ]

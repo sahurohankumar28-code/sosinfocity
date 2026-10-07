@@ -1,5 +1,12 @@
 [
   {
+    "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+    "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+    "pubDate": "Wed, 07 Oct 2026 13:48:45 +0000",
+    "contentSnippet": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the global aerospace company Boeing, which manufactures the fleet of planes used by the employer of Rey's father -- Royal Jordanian Airlines.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Building Git infrastructure for agent-scale development",
     "link": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
     "pubDate": "Tue, 06 Oct 2026 20:57:56 +0000",
@@ -33,26 +40,5 @@
     "pubDate": "Tue, 06 Oct 2026 16:00:00 +0000",
     "contentSnippet": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management.\nThe post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "How Jump Trading is scaling quant research with ChatGPT",
-    "link": "https://openai.com/index/jump-trading",
-    "pubDate": "Tue, 06 Oct 2026 12:00:00 GMT",
-    "contentSnippet": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-    "source": "AI"
-  },
-  {
-    "title": "Sharing AI progress in mathematics",
-    "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-    "pubDate": "Tue, 06 Oct 2026 12:00:00 GMT",
-    "contentSnippet": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-    "source": "AI"
-  },
-  {
-    "title": "Advancing computer use with Ironclad",
-    "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
-    "pubDate": "Tue, 06 Oct 2026 10:00:00 GMT",
-    "contentSnippet": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
-    "source": "AI"
   }
 ]

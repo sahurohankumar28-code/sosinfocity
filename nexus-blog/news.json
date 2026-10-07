@@ -1,5 +1,26 @@
 [
   {
+    "title": "Secret protection must scale with software",
+    "link": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+    "pubDate": "Wed, 07 Oct 2026 17:45:34 +0000",
+    "contentSnippet": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.\nThe post Secret protection must scale with software appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+    "link": "https://blog.cloudflare.com/agentic-security-operations/",
+    "pubDate": "Wed, 07 Oct 2026 16:30:36 GMT",
+    "contentSnippet": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers grounded recommendations to Managed Defense Analysts.",
+    "source": "Networking"
+  },
+  {
+    "title": "3 lessons from frontier AI vulnerability research",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+    "pubDate": "Wed, 07 Oct 2026 16:00:00 +0000",
+    "contentSnippet": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel.\nThe post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
     "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
     "pubDate": "Wed, 07 Oct 2026 13:48:45 +0000",
@@ -7,38 +28,31 @@
     "source": "Cybersecurity"
   },
   {
+    "title": "Helping teens learn, plan, and shape the future of AI",
+    "link": "https://openai.com/index/teens-learn-and-plan",
+    "pubDate": "Wed, 07 Oct 2026 12:00:00 GMT",
+    "contentSnippet": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+    "source": "AI"
+  },
+  {
+    "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+    "link": "https://openai.com/index/radisson",
+    "pubDate": "Wed, 07 Oct 2026 07:00:00 GMT",
+    "contentSnippet": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+    "source": "AI"
+  },
+  {
+    "title": "GPT-6 and Intelligent UI for everyone",
+    "link": "https://openai.com/index/gpt-6-for-everyone",
+    "pubDate": "Wed, 07 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+    "source": "AI"
+  },
+  {
     "title": "Building Git infrastructure for agent-scale development",
     "link": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
     "pubDate": "Tue, 06 Oct 2026 20:57:56 +0000",
     "contentSnippet": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development.\nThe post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "The keys to the Internet change on October 11. Are you ready?",
-    "link": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-    "pubDate": "Tue, 06 Oct 2026 17:50:11 GMT",
-    "contentSnippet": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
-    "source": "Networking"
-  },
-  {
-    "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
-    "link": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
-    "pubDate": "Tue, 06 Oct 2026 16:09:36 +0000",
-    "contentSnippet": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day (2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, and 2025), I want to share the services and chart-topping metrics […]",
-    "source": "Cloud"
-  },
-  {
-    "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-    "link": "https://openai.com/index/atlassian-partnership",
-    "pubDate": "Tue, 06 Oct 2026 16:00:00 GMT",
-    "contentSnippet": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-    "source": "AI"
-  },
-  {
-    "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-    "pubDate": "Tue, 06 Oct 2026 16:00:00 +0000",
-    "contentSnippet": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management.\nThe post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
   }
 ]

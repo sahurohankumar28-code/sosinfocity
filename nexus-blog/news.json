@@ -1,37 +1,30 @@
 [
   {
+    "title": "How one bug bounty researcher chooses the features they investigate",
+    "link": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+    "pubDate": "Thu, 08 Oct 2026 17:02:52 +0000",
+    "contentSnippet": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub.\nThe post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+    "link": "https://blog.cloudflare.com/radar-redesign/",
+    "pubDate": "Thu, 08 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standardized components, we simplified navigation while preserving technical depth.",
+    "source": "Networking"
+  },
+  {
+    "title": "Disrupting AI-enabled “false front” operations",
+    "link": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+    "pubDate": "Thu, 08 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+    "source": "AI"
+  },
+  {
     "title": "Secret protection must scale with software",
     "link": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
     "pubDate": "Wed, 07 Oct 2026 17:45:34 +0000",
     "contentSnippet": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.\nThe post Secret protection must scale with software appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-    "link": "https://blog.cloudflare.com/agentic-security-operations/",
-    "pubDate": "Wed, 07 Oct 2026 16:30:36 GMT",
-    "contentSnippet": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers grounded recommendations to Managed Defense Analysts.",
-    "source": "Networking"
-  },
-  {
-    "title": "3 lessons from frontier AI vulnerability research",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-    "pubDate": "Wed, 07 Oct 2026 16:00:00 +0000",
-    "contentSnippet": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel.\nThe post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
-    "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
-    "pubDate": "Wed, 07 Oct 2026 13:48:45 +0000",
-    "contentSnippet": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the global aerospace company Boeing, which manufactures the fleet of planes used by the employer of Rey's father -- Royal Jordanian Airlines.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Helping teens learn, plan, and shape the future of AI",
-    "link": "https://openai.com/index/teens-learn-and-plan",
-    "pubDate": "Wed, 07 Oct 2026 12:00:00 GMT",
-    "contentSnippet": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
-    "source": "AI"
   }
 ]

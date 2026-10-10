@@ -5,19 +5,5 @@
     "pubDate": "Sat, 10 Oct 2026 00:17:42 +0000",
     "contentSnippet": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-    "link": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
-    "pubDate": "Fri, 09 Oct 2026 18:27:34 GMT",
-    "contentSnippet": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x.",
-    "source": "Networking"
-  },
-  {
-    "title": "Hack the World: Why hackathons are still the best place to learn to build",
-    "link": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
-    "pubDate": "Fri, 09 Oct 2026 16:00:00 +0000",
-    "contentSnippet": "The barriers to building software have collapsed. Today, anyone can build. Hackathons are a great place to start learning.\nThe post Hack the World: Why hackathons are still the best place to learn to build appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

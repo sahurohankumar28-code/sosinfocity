@@ -1,5 +1,26 @@
 [
   {
+    "title": "Under the hood, off the hot path: how D1 scales to millions of databases",
+    "link": "https://blog.cloudflare.com/d1-control-plane/",
+    "pubDate": "Tue, 13 Oct 2026 16:20:18 GMT",
+    "contentSnippet": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer Platform effectively.",
+    "source": "Networking"
+  },
+  {
+    "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/",
+    "pubDate": "Tue, 13 Oct 2026 15:59:06 +0000",
+    "contentSnippet": "Some numbers are hard to picture until you sit with them for a moment. Last week we published the Prime Day 2026 metrics, and the one that stuck with me is 2.3 quadrillion: the daily requests Amazon ElastiCache peaked at during the event. Prime Day ran back in June, so this post always lands as […]",
+    "source": "Cloud"
+  },
+  {
+    "title": "Rewinding the exponential: How we keep hardware usage down",
+    "link": "https://blog.cloudflare.com/rewinding-the-exponential/",
+    "pubDate": "Tue, 13 Oct 2026 15:51:41 GMT",
+    "contentSnippet": "Our strategies to optimize our data pipeline throughput without compromising data quality.",
+    "source": "Networking"
+  },
+  {
     "title": "Announcing AWS Lambda Web Functions",
     "link": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
     "pubDate": "Mon, 12 Oct 2026 22:34:47 +0000",
@@ -12,12 +33,5 @@
     "pubDate": "Mon, 12 Oct 2026 17:43:59 +0000",
     "contentSnippet": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.\nThe post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Filter, reshape, and redact logs before export with Transformers",
-    "link": "https://blog.cloudflare.com/transformers-on-logpush/",
-    "pubDate": "Mon, 12 Oct 2026 14:44:59 GMT",
-    "contentSnippet": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data before it reaches the destination.",
-    "source": "Networking"
   }
 ]

@@ -1,5 +1,33 @@
 [
   {
+    "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+    "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+    "pubDate": "Wed, 14 Oct 2026 14:22:49 +0000",
+    "contentSnippet": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
+    "pubDate": "Wed, 14 Oct 2026 13:00:00 +0000",
+    "contentSnippet": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies and other partners worldwide, Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem.\nThe post The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+    "link": "https://blog.cloudflare.com/hyperdrive-mysql/",
+    "pubDate": "Wed, 14 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available.",
+    "source": "Networking"
+  },
+  {
+    "title": "The EU’s next chapter in AI is agentic",
+    "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+    "pubDate": "Wed, 14 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+    "source": "AI"
+  },
+  {
     "title": "Microsoft Patches More Than 1,400 Security Flaws",
     "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
     "pubDate": "Tue, 13 Oct 2026 23:24:53 +0000",
@@ -33,12 +61,5 @@
     "pubDate": "Tue, 13 Oct 2026 15:51:41 GMT",
     "contentSnippet": "Our strategies to optimize our data pipeline throughput without compromising data quality.",
     "source": "Networking"
-  },
-  {
-    "title": "Higgsfield takes AI video from 1 minute to over 10",
-    "link": "https://openai.com/index/higgsfield-longer-videos-voice",
-    "pubDate": "Tue, 13 Oct 2026 12:00:00 GMT",
-    "contentSnippet": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
-    "source": "AI"
   }
 ]

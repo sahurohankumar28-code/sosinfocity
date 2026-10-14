@@ -1,5 +1,19 @@
 [
   {
+    "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+    "link": "https://blog.cloudflare.com/yandex-outage/",
+    "pubDate": "Wed, 14 Oct 2026 20:24:19 GMT",
+    "contentSnippet": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
+    "source": "Networking"
+  },
+  {
+    "title": "GitHub availability report: September 2026",
+    "link": "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
+    "pubDate": "Wed, 14 Oct 2026 20:01:35 +0000",
+    "contentSnippet": "In September, we experienced two incidents that resulted in degraded performance across GitHub services.  \nThe post GitHub availability report: September 2026 appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
     "link": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/",
     "pubDate": "Wed, 14 Oct 2026 19:30:48 +0000",

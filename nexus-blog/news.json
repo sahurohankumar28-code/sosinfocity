@@ -61,19 +61,5 @@
     "pubDate": "Wed, 14 Oct 2026 12:00:00 GMT",
     "contentSnippet": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
     "source": "AI"
-  },
-  {
-    "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-    "link": "https://openai.com/index/third-moment-research",
-    "pubDate": "Wed, 14 Oct 2026 07:00:00 GMT",
-    "contentSnippet": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
-    "source": "AI"
-  },
-  {
-    "title": "How Block is building AI-powered security with OpenAI technology",
-    "link": "https://openai.com/index/block-ai-powered-security",
-    "pubDate": "Wed, 14 Oct 2026 07:00:00 GMT",
-    "contentSnippet": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
-    "source": "AI"
   }
 ]

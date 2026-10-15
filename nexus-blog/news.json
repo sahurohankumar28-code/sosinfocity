@@ -1,5 +1,26 @@
 [
   {
+    "title": "The next developer interface is ambient intelligence",
+    "link": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+    "pubDate": "Thu, 15 Oct 2026 19:39:27 +0000",
+    "contentSnippet": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building.\nThe post The next developer interface is ambient intelligence appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Bringing GPT-Rosalind to academic research labs",
+    "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "pubDate": "Thu, 15 Oct 2026 19:00:00 GMT",
+    "contentSnippet": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+    "source": "AI"
+  },
+  {
+    "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+    "link": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+    "pubDate": "Thu, 15 Oct 2026 18:00:00 +0000",
+    "contentSnippet": "Put native GitHub features to work to review outside collaborator access and archive stale repositories.\nThe post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "A fully programmable secure web gateway",
     "link": "https://blog.cloudflare.com/programmable-gateway-dlp/",
     "pubDate": "Thu, 15 Oct 2026 17:11:12 GMT",
@@ -26,19 +47,5 @@
     "pubDate": "Thu, 15 Oct 2026 13:00:00 GMT",
     "contentSnippet": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike.",
     "source": "Networking"
-  },
-  {
-    "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-    "link": "https://blog.cloudflare.com/yandex-outage/",
-    "pubDate": "Wed, 14 Oct 2026 20:24:19 GMT",
-    "contentSnippet": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
-    "source": "Networking"
-  },
-  {
-    "title": "GitHub availability report: September 2026",
-    "link": "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
-    "pubDate": "Wed, 14 Oct 2026 20:01:35 +0000",
-    "contentSnippet": "In September, we experienced two incidents that resulted in degraded performance across GitHub services.  \nThe post GitHub availability report: September 2026 appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

@@ -1,5 +1,12 @@
 [
   {
+    "title": "Managing open-weight model risk in enterprise deployments",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+    "pubDate": "Fri, 16 Oct 2026 16:00:00 +0000",
+    "contentSnippet": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls.\nThe post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Continuous accountability for Verified bots",
     "link": "https://blog.cloudflare.com/verified-bots-accountability/",
     "pubDate": "Fri, 16 Oct 2026 13:00:00 GMT",
@@ -12,26 +19,5 @@
     "pubDate": "Thu, 15 Oct 2026 19:39:27 +0000",
     "contentSnippet": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building.\nThe post The next developer interface is ambient intelligence appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Bringing GPT-Rosalind to academic research labs",
-    "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-    "pubDate": "Thu, 15 Oct 2026 19:00:00 GMT",
-    "contentSnippet": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-    "source": "AI"
-  },
-  {
-    "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
-    "link": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
-    "pubDate": "Thu, 15 Oct 2026 18:00:00 +0000",
-    "contentSnippet": "Put native GitHub features to work to review outside collaborator access and archive stale repositories.\nThe post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "A fully programmable secure web gateway",
-    "link": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-    "pubDate": "Thu, 15 Oct 2026 17:11:12 GMT",
-    "contentSnippet": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform.",
-    "source": "Networking"
   }
 ]

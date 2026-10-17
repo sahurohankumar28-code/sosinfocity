@@ -12,12 +12,5 @@
     "pubDate": "Fri, 16 Oct 2026 16:00:00 +0000",
     "contentSnippet": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls.\nThe post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Continuous accountability for Verified bots",
-    "link": "https://blog.cloudflare.com/verified-bots-accountability/",
-    "pubDate": "Fri, 16 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
-    "source": "Networking"
   }
 ]

@@ -1,5 +1,12 @@
 [
   {
+    "title": "How Itaú is building generative AI for its entire customer base",
+    "link": "https://openai.com/index/itau-generative-ai",
+    "pubDate": "Fri, 16 Oct 2026 19:00:00 GMT",
+    "contentSnippet": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+    "source": "AI"
+  },
+  {
     "title": "Managing open-weight model risk in enterprise deployments",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
     "pubDate": "Fri, 16 Oct 2026 16:00:00 +0000",
@@ -12,12 +19,5 @@
     "pubDate": "Fri, 16 Oct 2026 13:00:00 GMT",
     "contentSnippet": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
     "source": "Networking"
-  },
-  {
-    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-    "link": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-    "pubDate": "Fri, 16 Oct 2026 00:00:00 GMT",
-    "contentSnippet": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-    "source": "AI"
   }
 ]

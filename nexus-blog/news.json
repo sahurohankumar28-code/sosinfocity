@@ -1,5 +1,26 @@
 [
   {
+    "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+    "link": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+    "pubDate": "Mon, 19 Oct 2026 19:12:53 GMT",
+    "contentSnippet": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
+    "source": "Networking"
+  },
+  {
+    "title": "How to continue a GitHub Copilot app session in VS Code",
+    "link": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+    "pubDate": "Mon, 19 Oct 2026 18:47:22 +0000",
+    "contentSnippet": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.\nThe post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Introducing Clairic, a new System One class of extraction models",
+    "link": "https://blog.cloudflare.com/clairic-extraction-model/",
+    "pubDate": "Mon, 19 Oct 2026 17:48:26 GMT",
+    "contentSnippet": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
+    "source": "Networking"
+  },
+  {
     "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
     "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/",
     "pubDate": "Mon, 19 Oct 2026 15:34:59 +0000",

@@ -1,5 +1,12 @@
 [
   {
+    "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+    "link": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+    "pubDate": "Tue, 20 Oct 2026 22:20:16 GMT",
+    "contentSnippet": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should do next.",
+    "source": "Networking"
+  },
+  {
     "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
     "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
     "pubDate": "Tue, 20 Oct 2026 17:03:38 +0000",
@@ -28,17 +35,10 @@
     "source": "AI"
   },
   {
-    "title": "Cutting our inference bill by 68% by being obsessive about optimization",
-    "link": "https://blog.cloudflare.com/obsessive-inference-optimization/",
-    "pubDate": "Mon, 19 Oct 2026 19:12:53 GMT",
-    "contentSnippet": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
-    "source": "Networking"
-  },
-  {
-    "title": "How to continue a GitHub Copilot app session in VS Code",
-    "link": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
-    "pubDate": "Mon, 19 Oct 2026 18:47:22 +0000",
-    "contentSnippet": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.\nThe post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog.",
-    "source": "Development"
+    "title": "OpenAI acquires Orchestra Bio",
+    "link": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+    "pubDate": "Tue, 20 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
+    "source": "AI"
   }
 ]

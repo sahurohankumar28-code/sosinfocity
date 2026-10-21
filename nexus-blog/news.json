@@ -1,5 +1,12 @@
 [
   {
+    "title": "Broad access through consistent standards",
+    "link": "https://openai.com/index/broad-access-through-consistent-standards",
+    "pubDate": "Wed, 21 Oct 2026 21:00:00 GMT",
+    "contentSnippet": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
+    "source": "AI"
+  },
+  {
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "pubDate": "Wed, 21 Oct 2026 18:23:55 +0000",
@@ -89,12 +96,5 @@
     "pubDate": "Wed, 21 Oct 2026 00:00:00 GMT",
     "contentSnippet": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
     "source": "AI"
-  },
-  {
-    "title": "8 eMudhra certificates are compromised. Here's what you need to know",
-    "link": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
-    "pubDate": "Tue, 20 Oct 2026 22:20:16 GMT",
-    "contentSnippet": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should do next.",
-    "source": "Networking"
   }
 ]

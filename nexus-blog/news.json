@@ -1,5 +1,33 @@
 [
   {
+    "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "pubDate": "Wed, 21 Oct 2026 18:23:55 +0000",
+    "contentSnippet": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments.\nThe post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "How AT&T is rethinking in-house legal work with OpenAI",
+    "link": "https://openai.com/index/att-legal",
+    "pubDate": "Wed, 21 Oct 2026 17:00:00 GMT",
+    "contentSnippet": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
+    "source": "AI"
+  },
+  {
+    "title": "The bridge to agent-scale Git infrastructure",
+    "link": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+    "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000",
+    "contentSnippet": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently.\nThe post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+    "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+    "pubDate": "Wed, 21 Oct 2026 15:26:07 +0000",
+    "contentSnippet": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Introducing full transaction detection for Cloudflare WAF",
     "link": "https://blog.cloudflare.com/full-transaction-waf/",
     "pubDate": "Wed, 21 Oct 2026 14:10:42 GMT",
@@ -42,10 +70,24 @@
     "source": "AI"
   },
   {
+    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+    "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+    "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
+    "contentSnippet": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+    "source": "AI"
+  },
+  {
     "title": "Using thousands of AI agents to uncover new leads in biological data",
     "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
     "pubDate": "Wed, 21 Oct 2026 04:50:00 GMT",
     "contentSnippet": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+    "source": "AI"
+  },
+  {
+    "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+    "link": "https://openai.com/index/empowering-cyber-defenders",
+    "pubDate": "Wed, 21 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
     "source": "AI"
   },
   {
@@ -54,19 +96,5 @@
     "pubDate": "Tue, 20 Oct 2026 22:20:16 GMT",
     "contentSnippet": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should do next.",
     "source": "Networking"
-  },
-  {
-    "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
-    "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
-    "pubDate": "Tue, 20 Oct 2026 17:03:38 +0000",
-    "contentSnippet": "Try Amazon ECS Gateway, a new account-level resource that simplifies ingress networking for containerized workloads by dynamically provisioning and managing the necessary infrastructure on your behalf, with all resources created directly in your account.",
-    "source": "Cloud"
-  },
-  {
-    "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-    "link": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
-    "pubDate": "Tue, 20 Oct 2026 16:05:03 +0000",
-    "contentSnippet": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results.\nThe post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

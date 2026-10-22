@@ -1,5 +1,19 @@
 [
   {
+    "title": "AWS Continuum for code vulnerabilities is now generally available",
+    "link": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+    "pubDate": "Thu, 22 Oct 2026 20:33:10 +0000",
+    "contentSnippet": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual investigation and days of cross-team coordination.",
+    "source": "Cloud"
+  },
+  {
+    "title": "Build more responsive apps with the Decisions API",
+    "link": "https://openai.com/index/decisions-api",
+    "pubDate": "Thu, 22 Oct 2026 19:00:00 GMT",
+    "contentSnippet": "Fast, focused, low-cost decisions for any application.",
+    "source": "AI"
+  },
+  {
     "title": "How bug bounty sharpens one researcher’s security skills",
     "link": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
     "pubDate": "Thu, 22 Oct 2026 17:21:30 +0000",
@@ -25,13 +39,6 @@
     "link": "https://openai.com/index/uber-chatgpt-work-rollout",
     "pubDate": "Thu, 22 Oct 2026 00:00:00 GMT",
     "contentSnippet": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
-    "source": "AI"
-  },
-  {
-    "title": "Broad access through consistent standards",
-    "link": "https://openai.com/index/broad-access-through-consistent-standards",
-    "pubDate": "Wed, 21 Oct 2026 21:00:00 GMT",
-    "contentSnippet": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
     "source": "AI"
   }
 ]

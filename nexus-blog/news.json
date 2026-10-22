@@ -1,5 +1,12 @@
 [
   {
+    "title": "How bug bounty sharpens one researcher’s security skills",
+    "link": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+    "pubDate": "Thu, 22 Oct 2026 17:21:30 +0000",
+    "contentSnippet": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers.\nThe post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
     "link": "https://blog.cloudflare.com/k-isms/",
     "pubDate": "Thu, 22 Oct 2026 13:00:00 GMT",
@@ -14,38 +21,17 @@
     "source": "AI"
   },
   {
+    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+    "link": "https://openai.com/index/uber-chatgpt-work-rollout",
+    "pubDate": "Thu, 22 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
+    "source": "AI"
+  },
+  {
     "title": "Broad access through consistent standards",
     "link": "https://openai.com/index/broad-access-through-consistent-standards",
     "pubDate": "Wed, 21 Oct 2026 21:00:00 GMT",
     "contentSnippet": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
     "source": "AI"
-  },
-  {
-    "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
-    "pubDate": "Wed, 21 Oct 2026 18:23:55 +0000",
-    "contentSnippet": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments.\nThe post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "How AT&T is rethinking in-house legal work with OpenAI",
-    "link": "https://openai.com/index/att-legal",
-    "pubDate": "Wed, 21 Oct 2026 17:00:00 GMT",
-    "contentSnippet": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-    "source": "AI"
-  },
-  {
-    "title": "The bridge to agent-scale Git infrastructure",
-    "link": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
-    "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000",
-    "contentSnippet": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently.\nThe post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-    "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-    "pubDate": "Wed, 21 Oct 2026 15:26:07 +0000",
-    "contentSnippet": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
-    "source": "Cybersecurity"
   }
 ]

@@ -1,5 +1,19 @@
 [
   {
+    "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+    "link": "https://blog.cloudflare.com/k-isms/",
+    "pubDate": "Thu, 22 Oct 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
+    "source": "Networking"
+  },
+  {
+    "title": "What FDE means at OpenAI",
+    "link": "https://openai.com/index/forward-deployed-engineering-means",
+    "pubDate": "Thu, 22 Oct 2026 06:00:00 GMT",
+    "contentSnippet": "What forward deployed engineering means at OpenAI",
+    "source": "AI"
+  },
+  {
     "title": "Broad access through consistent standards",
     "link": "https://openai.com/index/broad-access-through-consistent-standards",
     "pubDate": "Wed, 21 Oct 2026 21:00:00 GMT",
@@ -33,40 +47,5 @@
     "pubDate": "Wed, 21 Oct 2026 15:26:07 +0000",
     "contentSnippet": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Introducing full transaction detection for Cloudflare WAF",
-    "link": "https://blog.cloudflare.com/full-transaction-waf/",
-    "pubDate": "Wed, 21 Oct 2026 14:10:42 GMT",
-    "contentSnippet": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
-    "source": "Networking"
-  },
-  {
-    "title": "Cloudflare deploys protections against php2shell vulnerability",
-    "link": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
-    "pubDate": "Wed, 21 Oct 2026 13:56:45 GMT",
-    "contentSnippet": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
-    "source": "Networking"
-  },
-  {
-    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-    "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-    "pubDate": "Wed, 21 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
-    "source": "AI"
-  },
-  {
-    "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
-    "link": "https://blog.cloudflare.com/webmcp-commerce/",
-    "pubDate": "Wed, 21 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
-    "source": "Networking"
-  },
-  {
-    "title": "OpenAI models are coming to Google Cloud",
-    "link": "https://openai.com/index/openai-models-google-cloud",
-    "pubDate": "Wed, 21 Oct 2026 12:00:00 GMT",
-    "contentSnippet": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
-    "source": "AI"
   }
 ]

@@ -68,26 +68,5 @@
     "pubDate": "Wed, 21 Oct 2026 12:00:00 GMT",
     "contentSnippet": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
     "source": "AI"
-  },
-  {
-    "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-    "link": "https://openai.com/index/building-chatgpt-ad-stack",
-    "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-    "contentSnippet": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
-    "source": "AI"
-  },
-  {
-    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-    "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-    "pubDate": "Wed, 21 Oct 2026 07:00:00 GMT",
-    "contentSnippet": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
-    "source": "AI"
-  },
-  {
-    "title": "Using thousands of AI agents to uncover new leads in biological data",
-    "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-    "pubDate": "Wed, 21 Oct 2026 04:50:00 GMT",
-    "contentSnippet": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
-    "source": "AI"
   }
 ]

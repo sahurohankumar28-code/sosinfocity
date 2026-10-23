@@ -1,5 +1,12 @@
 [
   {
+    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+    "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+    "pubDate": "Fri, 23 Oct 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
+    "source": "AI"
+  },
+  {
     "title": "AWS Continuum for code vulnerabilities is now generally available",
     "link": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
     "pubDate": "Thu, 22 Oct 2026 20:33:10 +0000",
@@ -26,12 +33,5 @@
     "pubDate": "Thu, 22 Oct 2026 13:00:00 GMT",
     "contentSnippet": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
     "source": "Networking"
-  },
-  {
-    "title": "What FDE means at OpenAI",
-    "link": "https://openai.com/index/forward-deployed-engineering-means",
-    "pubDate": "Thu, 22 Oct 2026 06:00:00 GMT",
-    "contentSnippet": "What forward deployed engineering means at OpenAI",
-    "source": "AI"
   }
 ]

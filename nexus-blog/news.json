@@ -26,12 +26,5 @@
     "pubDate": "Thu, 22 Oct 2026 17:21:30 +0000",
     "contentSnippet": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers.\nThe post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
-    "link": "https://blog.cloudflare.com/k-isms/",
-    "pubDate": "Thu, 22 Oct 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
-    "source": "Networking"
   }
 ]

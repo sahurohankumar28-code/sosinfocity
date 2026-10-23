@@ -1,5 +1,40 @@
 [
   {
+    "title": "Origin Range Requests: Serving large files without range-request tuning",
+    "link": "https://blog.cloudflare.com/origin-range-requests/",
+    "pubDate": "Fri, 23 Oct 2026 18:22:59 GMT",
+    "contentSnippet": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+    "source": "Networking"
+  },
+  {
+    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "pubDate": "Fri, 23 Oct 2026 18:12:19 +0000",
+    "contentSnippet": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations.\nThe post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Bringing post-quantum cryptography to geographically fenced key management",
+    "link": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+    "pubDate": "Fri, 23 Oct 2026 18:06:56 GMT",
+    "contentSnippet": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
+    "source": "Networking"
+  },
+  {
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "pubDate": "Fri, 23 Oct 2026 17:00:00 GMT",
+    "contentSnippet": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+    "source": "AI"
+  },
+  {
+    "title": "Securing our frontier model training environment",
+    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "pubDate": "Fri, 23 Oct 2026 10:00:00 GMT",
+    "contentSnippet": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+    "source": "AI"
+  },
+  {
     "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
     "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
     "pubDate": "Fri, 23 Oct 2026 00:00:00 GMT",
@@ -12,19 +47,5 @@
     "pubDate": "Thu, 22 Oct 2026 20:33:10 +0000",
     "contentSnippet": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual investigation and days of cross-team coordination.",
     "source": "Cloud"
-  },
-  {
-    "title": "Build more responsive apps with the Decisions API",
-    "link": "https://openai.com/index/decisions-api",
-    "pubDate": "Thu, 22 Oct 2026 19:00:00 GMT",
-    "contentSnippet": "Fast, focused, low-cost decisions for any application.",
-    "source": "AI"
-  },
-  {
-    "title": "How bug bounty sharpens one researcher’s security skills",
-    "link": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-    "pubDate": "Thu, 22 Oct 2026 17:21:30 +0000",
-    "contentSnippet": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers.\nThe post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

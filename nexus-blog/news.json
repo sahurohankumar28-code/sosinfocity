@@ -19,12 +19,5 @@
     "pubDate": "Fri, 23 Oct 2026 18:06:56 GMT",
     "contentSnippet": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
     "source": "Networking"
-  },
-  {
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-    "pubDate": "Fri, 23 Oct 2026 17:00:00 GMT",
-    "contentSnippet": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-    "source": "AI"
   }
 ]

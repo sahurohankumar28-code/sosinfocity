@@ -57,6 +57,7 @@ const galleryData = {
          "events/photo_35.webp",
          "events/photo_36.webp",
          "events/photo_37.webp",
+         "events/photo_61.webp",
          "events/pic1.webp",
          "events/pic2.webp",
          "events/pic3.webp",

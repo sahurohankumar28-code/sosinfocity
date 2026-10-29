@@ -26,6 +26,20 @@ const galleryData = {
       "events/photo_23.webp"
     ]
   },
+  globalPulse: {
+    title: "Global Pulse",
+    images: [
+      "events/photo_44.webp",
+      "events/photo_42.webp",
+      "events/photo_43.webp",
+      "events/photo_41.webp",
+      "events/photo_45.webp",
+      "events/photo_46.webp",
+      "events/photo_50.webp",
+      "events/photo_49.webp",
+      "events/photo_47.webp"
+    ]
+  },
   celebration: {
     title: "Celebrations",
     images: [
@@ -60,7 +74,18 @@ const galleryData = {
          "events/pic15.webp",
          "events/pic16.webp",
          "events/pic17.webp",
-         "events/pic18.webp"
+         "events/pic18.webp",
+         "events/photo_51.webp",
+         "events/photo_52.webp",
+         "events/photo_53.webp",
+         "events/photo_54.webp",
+         "events/photo_55.webp",
+         "events/photo_56.webp",
+          "events/photo_57.webp",
+          "events/photo_58.webp",
+          "events/photo_59.webp",
+          "events/photo_60.webp"
+
     ]
   },
   awards: {

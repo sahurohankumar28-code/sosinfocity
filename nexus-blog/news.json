@@ -1,5 +1,12 @@
 [
   {
+    "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+    "link": "https://blog.cloudflare.com/emudhra-patching/",
+    "pubDate": "Fri, 30 Oct 2026 17:38:50 GMT",
+    "contentSnippet": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
+    "source": "Networking"
+  },
+  {
     "title": "Cloudflare services for private origins is now generally available",
     "link": "https://blog.cloudflare.com/private-origins-public-to-private/",
     "pubDate": "Fri, 30 Oct 2026 14:23:43 GMT",
@@ -7,24 +14,17 @@
     "source": "Networking"
   },
   {
-    "title": "An updated Model Spec for more capable and beneficial AI",
-    "link": "https://openai.com/index/updated-model-spec",
-    "pubDate": "Thu, 29 Oct 2026 17:00:00 GMT",
-    "contentSnippet": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+    "title": "Making it easier for websites to express AI training preferences",
+    "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "pubDate": "Fri, 30 Oct 2026 09:30:00 GMT",
+    "contentSnippet": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
     "source": "AI"
   },
   {
-    "title": "Tracking AI adoption in North Korean threat actor tradecraft",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
-    "pubDate": "Thu, 29 Oct 2026 16:00:00 +0000",
-    "contentSnippet": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are utilizing AI across their operations, reflecting a broader trend of threat actors incorporating AI into their attack chains.\nThe post Tracking AI adoption in North Korean threat actor tradecraft appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
-    "pubDate": "Thu, 29 Oct 2026 16:00:00 +0000",
-    "contentSnippet": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises.\nThe post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
+    "title": "Community safety report and new protections for teens",
+    "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "pubDate": "Fri, 30 Oct 2026 09:00:00 GMT",
+    "contentSnippet": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+    "source": "AI"
   }
 ]

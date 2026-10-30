@@ -1,5 +1,12 @@
 [
   {
+    "title": "Cloudflare services for private origins is now generally available",
+    "link": "https://blog.cloudflare.com/private-origins-public-to-private/",
+    "pubDate": "Fri, 30 Oct 2026 14:23:43 GMT",
+    "contentSnippet": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity.",
+    "source": "Networking"
+  },
+  {
     "title": "An updated Model Spec for more capable and beneficial AI",
     "link": "https://openai.com/index/updated-model-spec",
     "pubDate": "Thu, 29 Oct 2026 17:00:00 GMT",
@@ -19,19 +26,5 @@
     "pubDate": "Thu, 29 Oct 2026 16:00:00 +0000",
     "contentSnippet": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises.\nThe post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-    "link": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-    "pubDate": "Thu, 29 Oct 2026 12:55:00 GMT",
-    "contentSnippet": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
-    "source": "Networking"
-  },
-  {
-    "title": "How we detect frontier model misalignment",
-    "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-    "pubDate": "Thu, 29 Oct 2026 09:00:00 GMT",
-    "contentSnippet": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
-    "source": "AI"
   }
 ]

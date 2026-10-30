@@ -1,10 +1,4 @@
 const galleryData = {
-  departments: {
-    title: "Departments & Teams",
-    images: [
-      
-    ]
-  },
   training: {
     title: "Training & Development",
     images: [

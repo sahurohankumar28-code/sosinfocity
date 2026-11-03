@@ -1,5 +1,26 @@
 [
   {
+    "title": "Arnis turns any place on Earth into a Minecraft world",
+    "link": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+    "pubDate": "Tue, 03 Nov 2026 16:00:00 +0000",
+    "contentSnippet": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone.\nThe post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities ",
+    "link": "https://blog.cloudflare.com/zero-wire/",
+    "pubDate": "Tue, 03 Nov 2026 14:00:00 GMT",
+    "contentSnippet": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
+    "source": "Networking"
+  },
+  {
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "link": "https://openai.com/index/heimstaden",
+    "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
+    "contentSnippet": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+    "source": "AI"
+  },
+  {
     "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
     "link": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
     "pubDate": "Tue, 03 Nov 2026 02:24:31 +0000",
@@ -25,41 +46,6 @@
     "link": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
     "pubDate": "Mon, 02 Nov 2026 18:00:00 GMT",
     "contentSnippet": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-    "source": "AI"
-  },
-  {
-    "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
-    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
-    "pubDate": "Mon, 02 Nov 2026 16:45:48 +0000",
-    "contentSnippet": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite. In the […]",
-    "source": "Cloud"
-  },
-  {
-    "title": "Scaling Git at OpenAI",
-    "link": "https://openai.com/index/scaling-git-at-openai",
-    "pubDate": "Mon, 02 Nov 2026 15:30:00 GMT",
-    "contentSnippet": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
-    "source": "AI"
-  },
-  {
-    "title": "Introducing the Grid Protectors Program",
-    "link": "https://openai.com/index/grid-protectors-program",
-    "pubDate": "Mon, 02 Nov 2026 15:00:00 GMT",
-    "contentSnippet": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-    "source": "AI"
-  },
-  {
-    "title": "How we halved DNS build delay and cut memory use by 85%",
-    "link": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-    "pubDate": "Mon, 02 Nov 2026 14:00:00 GMT",
-    "contentSnippet": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving build delay.",
-    "source": "Networking"
-  },
-  {
-    "title": "LifeVal",
-    "link": "https://openai.com/index/lifeval",
-    "pubDate": "Mon, 02 Nov 2026 09:00:00 GMT",
-    "contentSnippet": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
     "source": "AI"
   }
 ]

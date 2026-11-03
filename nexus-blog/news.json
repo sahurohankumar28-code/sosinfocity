@@ -1,5 +1,19 @@
 [
   {
+    "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
+    "pubDate": "Tue, 03 Nov 2026 17:32:47 +0000",
+    "contentSnippet": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session.\nThe post Fake-download campaign uses trojanized installers to deliver monetization payloads appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms  ",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
+    "pubDate": "Tue, 03 Nov 2026 17:00:00 +0000",
+    "contentSnippet": "Read why Gartner named Microsoft a Leader in the inaugural 2026 Magic Quadrant for AI Agent Management Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms   appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Arnis turns any place on Earth into a Minecraft world",
     "link": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
     "pubDate": "Tue, 03 Nov 2026 16:00:00 +0000",
@@ -14,10 +28,24 @@
     "source": "Networking"
   },
   {
+    "title": "Accelerating engineering for the physical world",
+    "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+    "pubDate": "Tue, 03 Nov 2026 12:00:00 GMT",
+    "contentSnippet": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+    "source": "AI"
+  },
+  {
     "title": "Heimstaden is changing residential real estate management with AI",
     "link": "https://openai.com/index/heimstaden",
     "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
     "contentSnippet": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+    "source": "AI"
+  },
+  {
+    "title": "How Cisco defends at machine speed with OpenAI",
+    "link": "https://openai.com/index/cisco-cyber",
+    "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
+    "contentSnippet": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
     "source": "AI"
   },
   {
@@ -28,24 +56,10 @@
     "source": "Cybersecurity"
   },
   {
-    "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-    "pubDate": "Mon, 02 Nov 2026 20:20:59 +0000",
-    "contentSnippet": "Real-world exploitation concentrates in a small, high-impact subset of CVEs. Learn how defenders can prioritize vulnerabilities based on exploitation likelihood, exposure, and potential blast radius.\nThe post What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Rewarding defenders with bigger bug bounties",
-    "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-    "pubDate": "Mon, 02 Nov 2026 18:00:00 GMT",
-    "contentSnippet": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
-    "source": "AI"
-  },
-  {
-    "title": "Preparing our next security sprint to harden OpenAI",
-    "link": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-    "pubDate": "Mon, 02 Nov 2026 18:00:00 GMT",
-    "contentSnippet": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+    "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+    "link": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+    "pubDate": "Tue, 03 Nov 2026 00:00:00 GMT",
+    "contentSnippet": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
     "source": "AI"
   }
 ]

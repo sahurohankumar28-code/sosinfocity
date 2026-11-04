@@ -1,37 +1,23 @@
 [
   {
-    "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
-    "pubDate": "Tue, 03 Nov 2026 17:32:47 +0000",
-    "contentSnippet": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session.\nThe post Fake-download campaign uses trojanized installers to deliver monetization payloads appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
+    "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+    "link": "https://openai.com/index/openai-to-acquire-pierre",
+    "pubDate": "Wed, 04 Nov 2026 14:30:00 GMT",
+    "contentSnippet": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+    "source": "AI"
   },
   {
-    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms  ",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
-    "pubDate": "Tue, 03 Nov 2026 17:00:00 +0000",
-    "contentSnippet": "Read why Gartner named Microsoft a Leader in the inaugural 2026 Magic Quadrant for AI Agent Management Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms   appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Arnis turns any place on Earth into a Minecraft world",
-    "link": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
-    "pubDate": "Tue, 03 Nov 2026 16:00:00 +0000",
-    "contentSnippet": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone.\nThe post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities ",
-    "link": "https://blog.cloudflare.com/zero-wire/",
-    "pubDate": "Tue, 03 Nov 2026 14:00:00 GMT",
-    "contentSnippet": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
+    "title": "See the agents, set the terms: new visibility and control for personal agents",
+    "link": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+    "pubDate": "Wed, 04 Nov 2026 14:00:00 GMT",
+    "contentSnippet": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
     "source": "Networking"
   },
   {
-    "title": "Accelerating engineering for the physical world",
-    "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-    "pubDate": "Tue, 03 Nov 2026 12:00:00 GMT",
-    "contentSnippet": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+    "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+    "link": "https://openai.com/index/daybreak-red-aws-govcloud",
+    "pubDate": "Wed, 04 Nov 2026 07:00:00 GMT",
+    "contentSnippet": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
     "source": "AI"
   }
 ]

@@ -1,5 +1,12 @@
 [
   {
+    "title": "Want to Rent an Internet Address at the White House?",
+    "link": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+    "pubDate": "Thu, 05 Nov 2026 04:36:17 +0000",
+    "contentSnippet": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
     "link": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
     "pubDate": "Wed, 04 Nov 2026 23:34:52 +0000",
@@ -19,19 +26,5 @@
     "pubDate": "Wed, 04 Nov 2026 14:00:00 GMT",
     "contentSnippet": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
     "source": "Networking"
-  },
-  {
-    "title": "A thousand fewer paths to root",
-    "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-    "pubDate": "Wed, 04 Nov 2026 08:00:00 GMT",
-    "contentSnippet": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
-    "source": "AI"
-  },
-  {
-    "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-    "link": "https://openai.com/index/daybreak-red-aws-govcloud",
-    "pubDate": "Wed, 04 Nov 2026 07:00:00 GMT",
-    "contentSnippet": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
-    "source": "AI"
   }
 ]

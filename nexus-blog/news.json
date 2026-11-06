@@ -1,10 +1,24 @@
 [
   {
+    "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+    "pubDate": "Thu, 05 Nov 2026 23:46:50 +0000",
+    "contentSnippet": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents operating on behalf of threat actors then used the compromised OAuth applications to perform a variety of subsequent actions within compromised organizations.\nThe post Threat actors use agentic AI tooling to find and abuse exposed secrets appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Inside GitHub’s new Git storage architecture",
     "link": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
     "pubDate": "Thu, 05 Nov 2026 20:23:21 +0000",
     "contentSnippet": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.\nThe post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog.",
     "source": "Development"
+  },
+  {
+    "title": "Cult.fit builds operational muscle with Codex",
+    "link": "https://openai.com/index/cultfit-builds-with-codex",
+    "pubDate": "Thu, 05 Nov 2026 20:00:00 GMT",
+    "contentSnippet": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+    "source": "AI"
   },
   {
     "title": "New investments to reduce on-premises security risk",
@@ -28,6 +42,13 @@
     "source": "Cybersecurity"
   },
   {
+    "title": "Australian universities are creating AI-native graduates",
+    "link": "https://openai.com/index/australian-universities-ai-native-graduates",
+    "pubDate": "Thu, 05 Nov 2026 17:00:00 GMT",
+    "contentSnippet": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+    "source": "AI"
+  },
+  {
     "title": "Email threat landscape: Q3 2026 trends and insights",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
     "pubDate": "Thu, 05 Nov 2026 16:00:00 +0000",
@@ -49,24 +70,17 @@
     "source": "AI"
   },
   {
+    "title": "Merge builds product and business tools with OpenAI technology",
+    "link": "https://openai.com/index/merge-builds-with-openai",
+    "pubDate": "Thu, 05 Nov 2026 08:00:00 GMT",
+    "contentSnippet": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+    "source": "AI"
+  },
+  {
     "title": "Want to Rent an Internet Address at the White House?",
     "link": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
     "pubDate": "Thu, 05 Nov 2026 04:36:17 +0000",
     "contentSnippet": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "Setting a new standard for responsible AI infrastructure",
-    "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-    "pubDate": "Thu, 05 Nov 2026 02:00:00 GMT",
-    "contentSnippet": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-    "source": "AI"
-  },
-  {
-    "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
-    "link": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
-    "pubDate": "Wed, 04 Nov 2026 23:34:52 +0000",
-    "contentSnippet": "You can now migrate existing Apache Hive datasets in Amazon S3 to fully managed Apache Iceberg tables in Amazon S3 Tables, with no pipelines to build or compute to provision, while production workloads keep running.",
-    "source": "Cloud"
   }
 ]

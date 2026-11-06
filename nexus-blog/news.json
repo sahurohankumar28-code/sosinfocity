@@ -1,5 +1,26 @@
 [
   {
+    "title": "The post-quantum future of web privacy",
+    "link": "https://blog.cloudflare.com/vole-mole/",
+    "pubDate": "Fri, 06 Nov 2026 14:00:00 GMT",
+    "contentSnippet": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+    "source": "Networking"
+  },
+  {
+    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "link": "https://openai.com/index/partnering-with-hacktron",
+    "pubDate": "Fri, 06 Nov 2026 08:00:00 GMT",
+    "contentSnippet": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+    "source": "AI"
+  },
+  {
+    "title": "Measuring how AI agents handle everyday wet-lab science",
+    "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "pubDate": "Fri, 06 Nov 2026 00:00:00 GMT",
+    "contentSnippet": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+    "source": "AI"
+  },
+  {
     "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
     "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "pubDate": "Thu, 05 Nov 2026 23:46:50 +0000",
@@ -11,55 +32,6 @@
     "link": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
     "pubDate": "Thu, 05 Nov 2026 20:23:21 +0000",
     "contentSnippet": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.\nThe post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog.",
-    "source": "Development"
-  },
-  {
-    "title": "Cult.fit builds operational muscle with Codex",
-    "link": "https://openai.com/index/cultfit-builds-with-codex",
-    "pubDate": "Thu, 05 Nov 2026 20:00:00 GMT",
-    "contentSnippet": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-    "source": "AI"
-  },
-  {
-    "title": "New investments to reduce on-premises security risk",
-    "link": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/new-investments-to-reduce-on-premises-security-risk/4570381",
-    "pubDate": "Thu, 05 Nov 2026 17:10:14 +0000",
-    "contentSnippet": "We’re announcing a new on-premises security initiative, bringing together guidance, migration, and product investments.\nThe post New investments to reduce on-premises security risk appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Agents aren’t humans (but they kinda are)",
-    "link": "https://blog.cloudflare.com/trusted-agent-delegation/",
-    "pubDate": "Thu, 05 Nov 2026 17:03:04 GMT",
-    "contentSnippet": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traffic.",
-    "source": "Networking"
-  },
-  {
-    "title": "​​​​What’s new in Microsoft Security: November 2026",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
-    "pubDate": "Thu, 05 Nov 2026 17:00:00 +0000",
-    "contentSnippet": "Microsoft Security’s November 2026 updates strengthen AI agent security, least privilege, threat protection, and exposure management.\nThe post ​​​​What’s new in Microsoft Security: November 2026 appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Australian universities are creating AI-native graduates",
-    "link": "https://openai.com/index/australian-universities-ai-native-graduates",
-    "pubDate": "Thu, 05 Nov 2026 17:00:00 GMT",
-    "contentSnippet": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-    "source": "AI"
-  },
-  {
-    "title": "Email threat landscape: Q3 2026 trends and insights",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
-    "pubDate": "Thu, 05 Nov 2026 16:00:00 +0000",
-    "contentSnippet": "Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026 (July – September), even as QR code phishing declined, CAPTCHA-gated phishing recovered, and malicious messages spoofing familiar business-service sender domains exposed risks associated with security overrides.\nThe post Email threat landscape: Q3 2026 trends and insights appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Accessibility statements now have a home on GitHub",
-    "link": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
-    "pubDate": "Thu, 05 Nov 2026 16:00:00 +0000",
-    "contentSnippet": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes.\nThe post Accessibility statements now have a home on GitHub appeared first on The GitHub Blog.",
     "source": "Development"
   }
 ]

@@ -12,19 +12,5 @@
     "pubDate": "Fri, 06 Nov 2026 22:15:59 +0000",
     "contentSnippet": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.\nThe post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
     "source": "Development"
-  },
-  {
-    "title": "The post-quantum future of web privacy",
-    "link": "https://blog.cloudflare.com/vole-mole/",
-    "pubDate": "Fri, 06 Nov 2026 14:00:00 GMT",
-    "contentSnippet": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
-    "source": "Networking"
-  },
-  {
-    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-    "link": "https://openai.com/index/partnering-with-hacktron",
-    "pubDate": "Fri, 06 Nov 2026 08:00:00 GMT",
-    "contentSnippet": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-    "source": "AI"
   }
 ]

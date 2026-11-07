@@ -1,5 +1,12 @@
 [
   {
+    "title": "Beyond code generation: A developer’s guide to agentic engineering",
+    "link": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+    "pubDate": "Fri, 06 Nov 2026 22:15:59 +0000",
+    "contentSnippet": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.\nThe post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
     "title": "The post-quantum future of web privacy",
     "link": "https://blog.cloudflare.com/vole-mole/",
     "pubDate": "Fri, 06 Nov 2026 14:00:00 GMT",
@@ -12,26 +19,5 @@
     "pubDate": "Fri, 06 Nov 2026 08:00:00 GMT",
     "contentSnippet": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
     "source": "AI"
-  },
-  {
-    "title": "Measuring how AI agents handle everyday wet-lab science",
-    "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-    "pubDate": "Fri, 06 Nov 2026 00:00:00 GMT",
-    "contentSnippet": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-    "source": "AI"
-  },
-  {
-    "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-    "pubDate": "Thu, 05 Nov 2026 23:46:50 +0000",
-    "contentSnippet": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents operating on behalf of threat actors then used the compromised OAuth applications to perform a variety of subsequent actions within compromised organizations.\nThe post Threat actors use agentic AI tooling to find and abuse exposed secrets appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
-  },
-  {
-    "title": "Inside GitHub’s new Git storage architecture",
-    "link": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-    "pubDate": "Thu, 05 Nov 2026 20:23:21 +0000",
-    "contentSnippet": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.\nThe post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog.",
-    "source": "Development"
   }
 ]

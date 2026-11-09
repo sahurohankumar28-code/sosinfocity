@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "title": "ChatGPT Enterprise now available in AWS Marketplace",
+    "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+    "pubDate": "Mon, 09 Nov 2026 19:00:00 GMT",
+    "contentSnippet": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+    "source": "AI"
+  },
+  {
+    "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/",
+    "pubDate": "Mon, 09 Nov 2026 17:55:26 +0000",
+    "contentSnippet": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source stays writable except for a few […]",
+    "source": "Cloud"
+  },
+  {
+    "title": "Launching the Vite Ecosystem Fund",
+    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+    "pubDate": "Mon, 09 Nov 2026 13:00:00 GMT",
+    "contentSnippet": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare.",
+    "source": "Networking"
+  },
+  {
+    "title": "Kuken Industries searches 70 years of drawings in minutes",
+    "link": "https://openai.com/index/kuken",
+    "pubDate": "Mon, 09 Nov 2026 08:00:00 GMT",
+    "contentSnippet": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+    "source": "AI"
+  }
+]

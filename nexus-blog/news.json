@@ -1,5 +1,12 @@
 [
   {
+    "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+    "pubDate": "Mon, 09 Nov 2026 20:17:31 +0000",
+    "contentSnippet": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.\nThe post FORGE Lab uses agentic tools to identify memory safety issues in Rust appeared first on Microsoft Security Blog.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "ChatGPT Enterprise now available in AWS Marketplace",
     "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
     "pubDate": "Mon, 09 Nov 2026 19:00:00 GMT",
@@ -21,10 +28,24 @@
     "source": "Networking"
   },
   {
+    "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+    "link": "https://openai.com/index/control-room",
+    "pubDate": "Mon, 09 Nov 2026 13:00:00 GMT",
+    "contentSnippet": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+    "source": "AI"
+  },
+  {
     "title": "Kuken Industries searches 70 years of drawings in minutes",
     "link": "https://openai.com/index/kuken",
     "pubDate": "Mon, 09 Nov 2026 08:00:00 GMT",
     "contentSnippet": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+    "source": "AI"
+  },
+  {
+    "title": "CodeRabbit scales agentic software development and ships 20x more",
+    "link": "https://openai.com/index/coderabbit-codex-daybreak",
+    "pubDate": "Mon, 09 Nov 2026 08:00:00 GMT",
+    "contentSnippet": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
     "source": "AI"
   }
 ]

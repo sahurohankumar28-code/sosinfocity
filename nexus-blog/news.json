@@ -1,9 +1,37 @@
 [
   {
+    "title": "Git security vulnerabilities announced",
+    "link": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+    "pubDate": "Tue, 10 Nov 2026 18:00:00 +0000",
+    "contentSnippet": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know.\nThe post Git security vulnerabilities announced appeared first on The GitHub Blog.",
+    "source": "Development"
+  },
+  {
+    "title": "Helping caregivers use AI in everyday life",
+    "link": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+    "pubDate": "Tue, 10 Nov 2026 12:00:00 GMT",
+    "contentSnippet": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+    "source": "AI"
+  },
+  {
+    "title": "Introducing Businesses in ChatGPT",
+    "link": "https://openai.com/index/introducing-businesses-chatgpt",
+    "pubDate": "Tue, 10 Nov 2026 10:00:00 GMT",
+    "contentSnippet": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+    "source": "AI"
+  },
+  {
     "title": "Closing the AI guidance gap in education",
     "link": "https://openai.com/index/closing-ai-guidance-gap-education",
     "pubDate": "Tue, 10 Nov 2026 09:00:00 GMT",
     "contentSnippet": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+    "source": "AI"
+  },
+  {
+    "title": "Work at the Frontier: AI’s effect on freelance work",
+    "link": "https://openai.com/index/ai-effect-on-freelance-work",
+    "pubDate": "Tue, 10 Nov 2026 07:00:00 GMT",
+    "contentSnippet": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
     "source": "AI"
   },
   {
@@ -12,33 +40,5 @@
     "pubDate": "Mon, 09 Nov 2026 20:17:31 +0000",
     "contentSnippet": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.\nThe post FORGE Lab uses agentic tools to identify memory safety issues in Rust appeared first on Microsoft Security Blog.",
     "source": "Cybersecurity"
-  },
-  {
-    "title": "ChatGPT Enterprise now available in AWS Marketplace",
-    "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-    "pubDate": "Mon, 09 Nov 2026 19:00:00 GMT",
-    "contentSnippet": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
-    "source": "AI"
-  },
-  {
-    "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
-    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/",
-    "pubDate": "Mon, 09 Nov 2026 17:55:26 +0000",
-    "contentSnippet": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source stays writable except for a few […]",
-    "source": "Cloud"
-  },
-  {
-    "title": "Launching the Vite Ecosystem Fund",
-    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
-    "pubDate": "Mon, 09 Nov 2026 13:00:00 GMT",
-    "contentSnippet": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare.",
-    "source": "Networking"
-  },
-  {
-    "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-    "link": "https://openai.com/index/control-room",
-    "pubDate": "Mon, 09 Nov 2026 13:00:00 GMT",
-    "contentSnippet": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
-    "source": "AI"
   }
 ]

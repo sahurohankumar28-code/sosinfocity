@@ -1,5 +1,12 @@
 [
   {
+    "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+    "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+    "pubDate": "Tue, 10 Nov 2026 21:55:03 +0000",
+    "contentSnippet": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+    "source": "Cybersecurity"
+  },
+  {
     "title": "Git security vulnerabilities announced",
     "link": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
     "pubDate": "Tue, 10 Nov 2026 18:00:00 +0000",
@@ -33,12 +40,5 @@
     "pubDate": "Tue, 10 Nov 2026 07:00:00 GMT",
     "contentSnippet": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
     "source": "AI"
-  },
-  {
-    "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
-    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
-    "pubDate": "Mon, 09 Nov 2026 20:17:31 +0000",
-    "contentSnippet": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.\nThe post FORGE Lab uses agentic tools to identify memory safety issues in Rust appeared first on Microsoft Security Blog.",
-    "source": "Cybersecurity"
   }
 ]

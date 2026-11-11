@@ -7,43 +7,25 @@ const parser = new Parser();
 const DATA_FILE = path.join(__dirname, '..', 'news.json');
 
 const FEEDS = [
-  // AI
-  {
-    name: 'AI',
-    url: 'https://openai.com/news/rss.xml'
-  },
+    // Artificial Intelligence
+    ['name' => 'AI', 'url' => 'https://openai.com/news/rss.xml'],
+    ['name' => 'AI', 'url' => 'https://deepmind.google/blog/rss.xml'],
 
-  // Cloud
-  {
-    name: 'Cloud',
-    url: 'https://aws.amazon.com/blogs/aws/feed/'
-  },
+    // Cloud Computing
+    ['name' => 'Cloud', 'url' => 'https://aws.amazon.com/blogs/aws/feed/'],
 
-  // Cybersecurity
-  {
-    name: 'Cybersecurity',
-    url: 'https://krebsonsecurity.com/feed/'
-  },
-  {
-    name: 'Cybersecurity',
-    url: 'https://www.microsoft.com/en-us/security/blog/feed/'
-  },
-  {
-    name: 'Cybersecurity',
-    url: 'https://security.googleblog.com/feeds/posts/default'
-  },
+    // Cybersecurity
+    ['name' => 'Cybersecurity', 'url' => 'https://aws.amazon.com/blogs/security/feed/'],
+    ['name' => 'Cybersecurity', 'url' => 'https://krebsonsecurity.com/feed/'],
+    ['name' => 'Cybersecurity', 'url' => 'https://www.bleepingcomputer.com/feed/'],
+    ['name' => 'Cybersecurity', 'url' => 'https://feeds.feedburner.com/TheHackersNews'],
 
-  // Networking / Security
-  {
-    name: 'Networking',
-    url: 'https://blog.cloudflare.com/rss/'
-  },
+    // Networking
+    ['name' => 'Networking', 'url' => 'https://blog.cloudflare.com/rss/'],
+    ['name' => 'Networking', 'url' => 'https://blogs.cisco.com/networking/feed'],
 
-  // Development
-  {
-    name: 'Development',
-    url: 'https://github.blog/feed/'
-  }
+    // Software Development
+    ['name' => 'Development', 'url' => 'https://github.blog/feed/']
 ];
 
 
